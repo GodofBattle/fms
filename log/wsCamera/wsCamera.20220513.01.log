@@ -1,0 +1,130 @@
+[2022/05/13 15:19:08.624] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_TCPIP - 150.218.13.21] RTSP Stream Start
+[2022/05/13 15:29:48.847] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_TCPIP - 150.218.13.21] RTSP Stream Start
+[2022/05/13 15:43:23.419] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 15:49:38.223] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 15:52:03.378] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 15:53:46.823] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 15:53:46.925] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 15:53:58.097] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 15:53:58.399] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 15:53:58.508] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 15:54:10.365] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 15:58:06.106] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 15:58:06.213] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 15:58:14.759] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:00:12.788] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:00:12.889] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:00:17.701] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:01:11.683] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:01:11.803] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:01:27.517] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:02:58.505] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:02:58.611] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:04:14.436] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:04:14.540] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:04:14.562] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:04:58.080] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:05:07.416] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:05:07.516] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:05:07.540] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:05:10.382] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:06:07.663] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:06:55.406] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:08:13.758] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:08:13.860] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:08:13.880] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error1111
+[2022/05/13 16:08:20.886] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:10:02.888] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:10:02.992] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:10:03.012] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error1111
+[2022/05/13 16:29:50.183] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:29:50.320] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:29:59.094] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:30:18.359] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:30:32.246] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:30:32.353] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:30:32.373] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:30:37.632] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:30:37.951] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:30:38.061] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:30:38.084] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:33:51.972] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:34:11.617] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:34:11.733] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:34:11.849] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:35:41.061] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:35:41.185] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:35:41.206] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:37:24.591] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:37:24.699] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:37:24.717] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:38:35.171] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:38:35.275] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:38:35.294] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:41:26.007] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:41:26.109] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:44:10.683] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:44:10.787] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:44:10.807] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:45:04.839] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:45:04.960] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:46:52.555] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:46:52.670] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:46:52.691] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:49:08.477] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Disconnected WebSocket (0 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:49:25.402] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:49:25.509] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:49:25.531] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:49:37.188] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:49:37.325] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:49:40.118] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:49:46.203] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:49:46.550] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:50:28.881] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:50:29.043] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] New WebSocket Connection (1 total) - rtsp://admin:/1q2w3e@150.218.13.21:554/trackID=4
+[2022/05/13 16:50:29.217] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] CAMERA Stream Exit With Error
+[2022/05/13 16:52:20.213] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:53:09.061] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:55:12.066] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:56:07.797] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:56:14.065] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:57:03.698] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:57:17.713] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:57:55.529] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 16:59:00.513] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] RTSP Stream Start
+[2022/05/13 17:00:11.364] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:00:26.604] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:01:12.864] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:01:33.022] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:01:33.513] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/13 17:01:33.543] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=4
+[2022/05/13 17:01:36.293] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/13 17:02:33.200] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=4
+[2022/05/13 17:02:35.139] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:02:46.423] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/13 17:02:46.473] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=4
+[2022/05/13 17:02:46.663] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/13 17:02:52.680] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=4
+[2022/05/13 17:02:55.861] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:03:21.569] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/13 17:03:33.098] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=4
+[2022/05/13 17:03:49.517] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=4
+[2022/05/13 17:04:00.176] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:04:03.874] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/13 17:04:03.920] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=1
+[2022/05/13 17:04:26.379] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=1
+[2022/05/13 17:04:54.539] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:04:55.018] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/13 17:04:55.049] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/13 17:04:57.854] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/13 17:05:07.075] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:05:07.577] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/13 17:05:07.606] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/13 17:05:07.686] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/13 17:05:14.094] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/13 17:05:58.831] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:06:27.487] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:06:40.577] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:09:25.542] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:10:15.930] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/13 17:10:51.313] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start

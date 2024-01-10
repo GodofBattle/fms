@@ -1,0 +1,296 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Nanum Barun Gothic', 'Malgun Gothic';
+    font-size: 12px;
+    height: 100%;
+}
+
+:focus {
+    outline: none;
+}
+
+/***************************************************************************************************************/
+/* by shkoh 20190211: Bootstrap Customising Start                                                              */
+/***************************************************************************************************************/
+.container-fluid {
+    padding: 8px 2px;
+    height: 100%;
+}
+
+.panel {
+    border-radius: 0px;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.panel-default {
+    border: 3px solid #172f51;
+}
+
+.panel-default > .panel-heading {
+    padding: 3px 6px;
+    height: 32px;
+    border-radius: 0px;
+    background: #172f51;
+    border: none;
+    font-size: 1.2em;
+    text-shadow: 1px 1px #333333;
+    color: #f3f3f3;
+}
+
+.panel-default > .panel-body {
+    padding: 0px;    
+}
+
+.form-group {
+    margin-bottom: 3px;
+}
+
+.form-group label {
+    margin-bottom: 1px;
+}
+
+.form-control {
+    border-radius: 0px;
+    font-size: 1em;
+    height: 25px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20190211: Bootstrap Customising End                                                                */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20190211: zTree style start                                                                        */
+/***************************************************************************************************************/
+.ztree * {
+    font-size: 14px;
+    font-family: 'Nanum Barun Gothic', 'Yoon 윤고딕Display', 'Malgun Gothic';
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #124b9a;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 3px 0px 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20190211: zTree style end                                                                          */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20190211: kendo customized style start                                                             */
+/***************************************************************************************************************/
+.k-grid-content table {
+    text-align: left;
+    color: #222222;
+    font-size: 0.88em;
+}
+
+.k-grid-header th.k-header,
+.k-grid-header th {	
+    border-color: #e5e5e5;
+    height: 18px;
+    border-width: 0 0 0px 1px;
+    font-weight: bold;
+	color: #333333;
+    padding: 0.5em 0.6em 0.4em 0.6em;
+    font-size: 0.9em;
+    vertical-align: middle;
+}
+
+.k-grid-content table td {
+    border-color: #e5e5e5;
+    font-weight: bold;
+}
+
+.k-grid {
+    border: 1px solid #c5c5c5;
+    border-radius: 0px;
+}
+
+.k-grid tbody .k-button {
+    padding: 0.3em 0.5em;
+    font-size: 0.82em;
+    min-width: 52px;
+}
+
+div.k-grid-footer,
+div.k-grid-header,
+.k-grid-header {
+    border-bottom: none;
+}
+
+.k-alt {
+    background-color: #fafafa;
+}
+
+.k-state-selected {
+    color: #ffffff;
+    background-color: #317be0;
+    border-color: #317be0;
+}
+
+.k-state-focused {
+    box-shadow: inset 0 0 3px 0 #172f51;
+    border-radius: 0px;
+}
+
+.k-item.k-state-selected.k-state-focused.k-state-hover {
+    box-shadow: none;
+}
+
+.k-pager-wrap {
+    font-size: 11px;
+}
+
+.k-grid-norecords {
+    height: 90%;
+}
+
+.k-header > .k-grid-filter,
+.k-i-filter {
+    font-size: 0.81em;
+    right: 6px;
+}
+
+.k-i-sort-asc-sm,
+.k-i-sort-desc-sm {
+    margin: 0px;    
+}
+
+.k-loading-image {
+    display: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20190211: kendo customized style End                                                               */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20190212: DetailView Common Start                                                                  */
+/***************************************************************************************************************/
+.item-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+}
+
+#detail-content .table {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+#detail-equip-table > tbody > tr > th {
+    vertical-align: middle;
+    border-top: none;
+    padding: 4px 1px 4px 4px;
+    color: #333333;
+    width: 25%;
+}
+
+#detail-equip-table > tbody > tr > td {
+    padding: 4px 4px 4px 1px;
+    border-top: none;
+    width: 75%;
+    text-align: right;
+    vertical-align: middle;
+}
+/***************************************************************************************************************/
+/* by shkoh 20190212: DetailView Common End                                                                    */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20190212: DetailView - Sensor Grid Start                                                           */
+/***************************************************************************************************************/
+#detail-content .detail-unit {
+    font-size: 0.7em;
+}
+
+#detail-content .sensor-detail-level_0,
+#detail-content .sensor-detail-level_1,
+#detail-content .sensor-detail-level_2,
+#detail-content .sensor-detail-level_3,
+#detail-content .sensor-detail-level_4 {
+    padding: 0.3em 0.6em;
+    border-radius: 0.4em;
+    color: #f3f3f3;
+    text-shadow: 1px 1px #000000;
+}
+
+#detail-content .sensor-detail-level_0 {
+    background: #0161b8;
+}
+
+#detail-content .sensor-detail-level_1 {
+    background: #ff9c01;
+}
+
+#detail-content .sensor-detail-level_2 {
+    background: #fe6102;
+}
+
+#detail-content .sensor-detail-level_3 {
+    background: #de0303;
+}
+
+#detail-content .sensor-detail-level_N {
+    color: #222222;
+    text-shadow: none;
+    background: none;
+}
+
+#detail-content .sensor-detail-level_4 {
+    color: #a0a0a0;
+    text-shadow: none;
+    background: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20190212: DetailView - Sensor Grid End                                                             */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20190212: DetailView - Chart Start                                                                 */
+/***************************************************************************************************************/
+#alarmBarChart {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+/***************************************************************************************************************/
+/* by shkoh 20190212: DetailView - Chart End                                                                   */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20190212: AlarmView Start                                                                          */
+/***************************************************************************************************************/
+#alarm-content .level-img {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-size: 22px 22px;
+    background-position: center center;
+    vertical-align: middle;
+    line-height: 32px;
+    margin-left: 5px;
+}
+
+#alarm-content .k-grid {
+    border: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20190212: AlarmView End                                                                            */
+/***************************************************************************************************************/

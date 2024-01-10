@@ -1,0 +1,56 @@
+[2023/04/24 16:44:27.347] [ERROR] TypeError [ERR_UNKNOWN_ENCODING]: Unknown encoding: <ref *1> Handshake {
+  _events: [Object: null prototype],
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  sequenceNo: 1,
+  compressSequenceNo: -1,
+  resolve: [Function: bound _authSucceedHandler],
+  reject: [Function: bound _authFailHandler],
+  sending: false,
+  _createSecureContext: [Function: bound _createSecureContext],
+  _addCommand: [Function: bound _addCommandEnable],
+  getSocket: [Function: _getSocket],
+  onPacketReceive: [Function: parseHandshakeInit],
+  plugin: [Circular *1],
+  [Symbol(kCapture)]: false
+}
+    at new NodeError (node:internal/errors:387:5)
+    at _write (node:internal/streams/writable:295:13)
+    at Socket.Writable.write (node:internal/streams/writable:336:10)
+    at PacketOutputStream.flushBufferBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-output-stream.js:444:17)
+    at Object.send (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/handshake/client-handshake-response.js:118:7)
+    at Handshake.parseHandshakeInit (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/handshake/handshake.js:82:31)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ERR_UNKNOWN_ENCODING'
+}
+[2023/04/24 16:48:09.832] [ERROR] TypeError [ERR_UNKNOWN_ENCODING]: Unknown encoding: <ref *1> Handshake {
+  _events: [Object: null prototype],
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  sequenceNo: 1,
+  compressSequenceNo: -1,
+  resolve: [Function: bound _authSucceedHandler],
+  reject: [Function: bound _authFailHandler],
+  sending: false,
+  _createSecureContext: [Function: bound _createSecureContext],
+  _addCommand: [Function: bound _addCommandEnable],
+  getSocket: [Function: _getSocket],
+  onPacketReceive: [Function: parseHandshakeInit],
+  plugin: [Circular *1],
+  [Symbol(kCapture)]: false
+}
+    at new NodeError (node:internal/errors:387:5)
+    at _write (node:internal/streams/writable:295:13)
+    at Socket.Writable.write (node:internal/streams/writable:336:10)
+    at PacketOutputStream.flushBufferBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-output-stream.js:444:17)
+    at Object.send (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/handshake/client-handshake-response.js:118:7)
+    at Handshake.parseHandshakeInit (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/handshake/handshake.js:82:31)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12) {
+  code: 'ERR_UNKNOWN_ENCODING'
+}

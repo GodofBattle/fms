@@ -1,0 +1,484 @@
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Malgun Gothic';
+    font-size: 14px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(247, 249, 250), rgba(245, 249, 250, 0.2));
+    overflow: hidden;
+    user-select: none;
+}
+
+body[data="security_b1f"], 
+body[data="security_1f"],
+body[data="security_2f"],
+body[data="security_3f"],
+body[data="security_4f"] {
+    display: flex;
+}
+
+/*******************************************************************************************************/
+/* by shkoh 20211228: dashboard style start                                                            */
+/*******************************************************************************************************/
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+#map[data="security_b1f"], 
+#map[data="security_1f"],
+#map[data="security_2f"],
+#map[data="security_3f"],
+#map[data="security_4f"] {
+    width: 75vw;
+}
+
+#img {
+    width: inherit;
+    height: inherit;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*******************************************************************************************************/
+/* by shkoh 20211228: dashboard style end                                                              */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20211228: cytoscape style start                                                            */
+/*******************************************************************************************************/
+#cytoscape {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: block;
+    z-index: 10;
+}
+
+#cytoscape canvas {
+    width: inherit;
+    height: inherit;
+    display: block;
+}
+/*******************************************************************************************************/
+/* by shkoh 20211228: cytoscape style end                                                              */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20211229: custom style start                                                               */
+/*******************************************************************************************************/
+html .k-upload {
+    display: none;
+}
+
+.k-fab.k-pos-fixed {
+    z-index: 999999;
+}
+
+.i-fab-align .k-fab-item-icon {
+    background-color: #edcc6a;
+}
+
+.i-fab-align.k-state-hover .k-fab-item-icon {
+    background-color: #a38c48;
+}
+
+.i-fab-image .k-fab-item-icon {
+    background-color: #459cca;
+}
+
+.i-fab-image.k-state-hover .k-fab-item-icon {
+    background-color: #317092;
+}
+
+/* by shkoh 20220104: 온습도 아이템 */
+.i-th-item {
+    background-color: rgba(245, 245, 245, 0.75);
+    border: 4px solid #333333;
+    padding: 0.2em 0.4em;
+    border-radius: 20px;
+}
+
+.i-th-item-type-thtop {
+    border-top-right-radius: 0px;
+}
+
+.i-th-item-type-thbottom {
+    border-bottom-right-radius: 0px;
+}
+
+.i-th-item-lvl-0 {
+    border-color: #317be0;
+}
+
+.i-th-item-lvl-1 {
+    border-color: #f7bc2d;
+}
+
+.i-th-item-lvl-2 {
+    border-color: #f48d3b;
+}
+
+.i-th-item-lvl-3 {
+    border-color: #fc285e;
+}
+
+.i-th-item-lvl-4 {
+    border-color: #c030d3;
+}
+
+.i-th-item-lvl-5 {
+    border-color: #111111;
+}
+
+.i-th-item-lvl-6 {
+    border-color: #656565;
+}
+
+.i-th-icon-img {
+    width: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.i-th-icon-text {
+    min-width: 46px;
+    text-align: center;
+    font-size: 0.98em;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #111111;
+    padding: 0px 2px;
+}
+
+.i-th-icon-text-unit {
+    font-size: 0.55em;
+    padding-left: 3px;
+}
+
+.i-diagram-title {
+    position: fixed;
+    display: block;
+}
+
+.i-light-panel {
+    width: 24px;
+    height: 24px;
+    border-radius: 25%;
+}
+
+.i-light-panel-grab {
+    outline: 3px solid #26ace0;
+}
+
+.i-light-panel-grab-select {
+    outline: 3px solid #2ce21b;
+}
+
+.i-light-item {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(50,50,50,0.5);
+    border-radius: 50%;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+.i-light-item-on {
+    box-shadow: inset 0px 0px 6px 8px #feeb3c, 0px 0px 10px 6px #feeb3c;
+    background-color: transparent;
+}
+
+.i-light-item-text {
+    font-size: 9px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 24px;
+}
+
+.i-light-item-on > .i-light-item-text {
+    color: #333333;
+}
+
+.i-power-table-panel {
+    width: 120px;
+    height: 80px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+    padding: 0px 6px;
+    background-color: rgba(242, 242, 242, 0.7);
+    outline: 1px solid #c2c2c2;
+    box-shadow: inset 0 0 3px 1px #a0a0a0;
+    border: 1px solid #f2f2f2;
+    transform: scale(0.9);
+}
+
+.i-power-table-panel > .i-equip-name {
+    font-size: 12px !important;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+.i-sensor {
+    display: flex;
+    border: 1px solid #757575;
+    margin-bottom: 2px;
+}
+
+.i-power-table-panel > .i-sensor > .i-sensor-key {
+    flex: 1;
+    flex-basis: 42%;
+    font-size: 9px !important;
+    color: #ffffff;
+    background-color: #757575;
+    padding: 0px 2px;
+}
+
+.i-power-table-panel > .i-sensor > .i-sensor-value {
+    flex: 2;
+    flex-basis: 36%;
+    background-color: #ffffff;
+    font-size: 9px !important;
+    color:rgba(0, 0, 255, 0.8);
+    text-align: right;
+}
+
+.i-power-table-panel > .i-sensor > .i-sensor-unit {
+    flex: 1;
+    flex-basis: 18%;
+    background-color: #ffffff;
+    padding-left: 2px;
+    font-size: 8px !important;
+    color: #111111;
+    align-self: flex-end;
+}
+/*******************************************************************************************************/
+/* by shkoh 20211229: custom style end                                                                 */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20220105: customizing navigator style start                                                */
+/*******************************************************************************************************/
+.navigation {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    padding: 1px 2px;
+    z-index: 60;
+}
+
+.navigation .label {
+    display: block;
+    border-radius: 0px;
+    font-size: 1.8em;
+}
+
+.navigation .label-default {
+    background-color: rgba(119, 119, 119, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.navigation .label-primary {
+    background-color: rgba(51, 122, 183, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+/*******************************************************************************************************/
+/* by shkoh 20220105: customizing navigator style start                                                */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20220105: customizing heat map style start                                                 */
+/*******************************************************************************************************/
+.cfd-navigation {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    padding: 1px 2px;
+    z-index: 60;
+}
+
+.cfd-navigation .label {
+    display: block;
+    border-radius: 0px;
+    font-size: 1.8em;
+}
+
+.cfd-navigation .label-default {
+    background-color: rgba(119, 119, 119, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.cfd-navigation .label-primary {
+    background-color: rgba(51, 122, 183, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.cfd-table {
+    margin-top: 4px;
+    background-color: rgba(51, 122, 183, 0.4);
+}
+
+.cfd-text {
+    text-align: right;
+    vertical-align: middle;
+    font-size: 9px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #333333;
+    padding-left: 8px;
+}
+
+.cfd-tick {
+    width: 5px;
+    text-align: right;
+    vertical-align: middle;
+    font-size: 9px;
+    color: #ffffff;
+    padding: 0px 0px 0px 6px;
+}
+
+.cfd-legend {
+    width: 36px;
+    padding: 2px 10px 2px 4px;
+}
+
+.cfd-legend-draw {
+    width: 100%;
+    height: 100px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.8) 10%, rgba(0, 255, 0, 0.8) 50%, rgba(0, 0, 255, 0.8) 90%);
+}
+/*******************************************************************************************************/
+/* by shkoh 20220105: customizing heat map style end                                                   */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20220330: customizing event list style start                                               */
+/*******************************************************************************************************/
+#event-list {
+    width: 25vw;
+    padding: 2rem 1rem;
+}
+
+#i-events {
+    height: 100%;
+}
+
+#i-events.k-grid {
+    border: none;
+}
+
+.k-grid {
+    border: 1px solid #c5c5c5;
+}
+
+.k-grid-header th.k-header,
+.k-grid-header th {
+    border-color: #e5e5e5;
+    height: 18px;
+    border-width: 0 0 0px 1px;
+    font-weight: bold;
+	color: #333333;
+    padding: 0.5em 0.6em 0.4em 0.6em;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+.k-grid-header th.event-header {
+    background-color: #22326b;
+    color: #ffffff;
+}
+
+.k-grid-header .k-grid-header-wrap {
+    border: none;
+}
+
+.k-grid-content table {
+    text-align: left;
+    color: #222222;
+    font-size: 0.88em;
+}
+
+.k-grid-content table td {
+    border-color: #e5e5e5;
+}
+
+.k-grid-content table td.event-content-occurdate {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.k-grid-content table td.event-content-door {
+    font-size: 1em;
+}
+
+.k-grid-content table td.event-content-detail {
+    white-space: pre-wrap;
+}
+
+.k-grid-content table td.event-approve {
+    background-color: rgba(43, 154, 255, 0.4);
+    color: #333333;
+}
+
+.k-grid-content table td.event-warning {
+    background-color: #dd3853;
+    color: #ffffff;
+}
+
+.k-grid tbody .k-button {
+    padding: 0.3em 0.5em;
+    font-size: 0.82em;
+    min-width: 52px;
+}
+
+div.k-grid-footer,
+div.k-grid-header,
+.k-grid-header {
+    border-bottom: none;
+}
+
+.k-alt {
+    background-color: #fafafa;
+}
+
+.k-state-selected {
+    color: #ffffff;
+    background-color: #317be0;
+    border-color: #317be0;
+}
+
+.k-state-focused {
+    box-shadow: inset 0 0 3px 0 #172f51;
+    border-radius: 0px;
+}
+
+.k-item.k-state-selected.k-state-focused.k-state-hover {
+    box-shadow: none;
+}
+
+.k-pager-wrap {
+    font-size: 11px;
+}
+
+.k-grid-norecords {
+    height: 90%;
+}
+
+.k-header > .k-grid-filter,
+.k-i-filter {
+    font-size: 0.81em;
+    right: 6px;
+}
+
+.k-i-sort-asc-sm,
+.k-i-sort-desc-sm {
+    margin: 0px;    
+}
+/*******************************************************************************************************/
+/* by shkoh 20220330: customizing event list style end                                                 */
+/*******************************************************************************************************/

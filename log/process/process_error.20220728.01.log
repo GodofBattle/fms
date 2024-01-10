@@ -1,0 +1,13 @@
+[2022/07/28 09:32:01.982] [ERROR] Error [ERR_SOCKET_DGRAM_NOT_RUNNING]: Not running
+    at healthCheck (dgram.js:912:11)
+    at Socket.close (dgram.js:734:3)
+    at Transport.close (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-bacnet/lib/transport.js:79:18)
+    at Client.close (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-bacnet/lib/client.js:1649:21)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/bacnetController.js:40:24
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-bacnet/lib/client.js:733:7
+    at _invokeStore.<computed> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-bacnet/lib/client.js:163:7)
+    at Client._invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-bacnet/lib/client.js:144:19)
+    at Client._processError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-bacnet/lib/client.js:198:10)
+    at Client._handlePdu (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-bacnet/lib/client.js:429:14) {
+  code: 'ERR_SOCKET_DGRAM_NOT_RUNNING'
+}

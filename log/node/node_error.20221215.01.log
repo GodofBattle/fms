@@ -1,0 +1,26 @@
+[2022/12/15 17:36:18.976] [ERROR] ReferenceError: /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/views/customizing/pss/dashboard/index.ejs:78
+    76|     <%- include('./powerChart', { object_id: 'power_chart', left: '557px', top: '690px' }) %>
+    77| 
+ >> 78|     <%- include('./title', { object_id: 'threshold_t', label: '온도 정상범위: 16도 ~ 18도', left: '1720px', top: '600px' }) %>
+    79| 
+    80|     <%- include('./th', { object_id: 'th_1', left: '1720px', top: '600px', tooltip: '온습도 #1' }) %>
+    81|     <%- include('./th', { object_id: 'th_2', left: '1630px', top: '600px', tooltip: '온습도 #2' }) %>
+
+/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/views/customizing/pss/dashboard/title.ejs:1
+ >> 1| <div class="i-widget <%= class_name %>" id="<%= object_id %>" style="left: <%= left %>; top: <%= top %>">
+    2|     <span><%= label %></span>
+    3| </div>
+
+class_name is not defined
+    at eval (eval at compile (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:633:12), <anonymous>:10:26)
+    at returnedFn (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:668:17)
+    at include (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:666:39)
+    at eval (eval at compile (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:633:12), <anonymous>:113:17)
+    at returnedFn (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:668:17)
+    at tryHandleCache (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/application.js:640:10)
+    at Function.render (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/application.js:592:3) {
+  path: '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/views/customizing/pss/dashboard/index.ejs'
+}

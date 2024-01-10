@@ -1,0 +1,64 @@
+.modal-dialog {
+	width: 400px;
+}
+
+.modal-content {
+	border-radius: 0px;
+	box-shadow: 3px 3px 9px #333333;
+}
+
+.custom-modal-header {
+	background-color: #173052;
+	color: #ffffff;
+	text-shadow: 1px 1px #333333;
+	border: none;
+}
+
+.custom-modal-title {
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 25px;
+	border: none;
+}
+
+.custom-modal-body {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+}
+
+.custom-modal-footer {
+	border: 3px solid #173052;
+	border-radius: 0px;
+}
+
+.custom-btn-control {
+	text-align: center;
+}
+
+.custom-btn-cancel {
+	width: 120px;
+	font-size: 1.02em;
+	background: transparent;
+	color: #333333;
+	white-space: nowrap;
+	border-radius: 0px;
+	border: 1px solid #999999;
+}
+
+.custom-btn-cancel:hover,
+.custom-btn-cancel:focus {
+	background: #173052;
+	color: #ffffff;
+}
+
+#popup-img {
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	border: 0px;
+	background-color: #173052;
+	margin: 0px 8px 4px 0px;
+}

@@ -1,0 +1,9 @@
+[2022/07/27 18:14:58.257] [ERROR] Error: bind EADDRNOTAVAIL 10.10.10.101:47808
+    at dgram.js:352:20
+    at processTicksAndRejections (internal/process/task_queues.js:83:21) {
+  errno: -49,
+  code: 'EADDRNOTAVAIL',
+  syscall: 'bind',
+  address: '10.10.10.101',
+  port: 47808
+}

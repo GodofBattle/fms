@@ -1,0 +1,32 @@
+[2023/10/31 14:06:20.398] [ERROR] ReferenceError: set is not defined
+    at Object.updateGroup (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/lg_work_history2.js:67:22)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupSet.js:131:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023/10/31 14:23:13.265] [ERROR] TypeError: this.insertWorkHistory is not a function
+    at Object.updateGroup (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/lg_work_history2.js:63:21)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupSet.js:135:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023/10/31 16:22:14.776] [ERROR] Error: Cannot find module 'pd_code'
+Require stack:
+- /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/lg_work_history2.js
+- /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/monitoring.js
+- /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js
+- /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/bin/www
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/lg_work_history2.js:2:20)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/lg_work_history2.js',
+    '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/monitoring.js',
+    '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js',
+    '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/bin/www'
+  ]
+}

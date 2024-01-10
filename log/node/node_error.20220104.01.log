@@ -1,0 +1,42 @@
+[2022/01/04 14:38:57.859] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:70:16
+[2022/01/04 14:39:18.838] [ERROR] TypeError: Cannot read property 'charAt' of undefined
+    at Object.module.exports.splitQuery (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/parse.js:26:17)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:51:31)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1200:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:7
+    at new Promise (<anonymous>)
+    at Connection.query (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:171:12)
+    at Object.getInfoWithValue (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:81:39)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:60:23
+[2022/01/04 14:39:58.825] [ERROR] TypeError: Cannot read property 'charAt' of undefined
+    at Object.module.exports.splitQuery (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/parse.js:26:17)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:51:31)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1200:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:7
+    at new Promise (<anonymous>)
+    at Connection.query (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:171:12)
+    at Object.getInfoWithValue (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:81:39)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:60:23
+[2022/01/04 14:41:31.729] [ERROR] TypeError: Cannot read property 'charAt' of undefined
+    at Object.module.exports.splitQuery (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/parse.js:26:17)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:51:31)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1200:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:7
+    at new Promise (<anonymous>)
+    at Connection.query (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:171:12)
+    at Object.getInfoWithValue (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:81:39)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:60:23

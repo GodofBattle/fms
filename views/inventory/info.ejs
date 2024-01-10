@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210209: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css"/>
+    
+    <!-- by shkoh 20210209: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+    
+    <!-- by shkoh 20210209: ubiGuard style -->
+    <link rel="stylesheet" href="/stylesheets/inventory/popup.css"/>
+    <link rel="stylesheet" href="/stylesheets/inventory/inventory.css"/>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <article class="col-sm-12 col-md-12 col-lg-12 content">
+            <div id="tab-panel">
+                <ul>
+                    <li class="k-state-active">업체 정보</li>
+                    <li>담당자 정보</li>
+                    <li>모델 정보</li>
+                </ul>
+                <div id="company">
+                    <div class="custom-text-panel">
+                        <div class="custom-text-left">업체 정보</div>
+                        <div class="custom-text-right">
+                            <button type="button" class="btn btn-add" id="add-company" style="width: 65px;"></button>
+                            <button type="button" class="btn btn-update" id="update-company" style="width: 65px;"></button>
+                            <button type="button" class="btn btn-delete" id="delete-company" style="width: 65px;"></button>
+                        </div>
+                    </div>
+                    <div id="grid-company" class="custom-grid"></div>
+                </div>
+                <div id="worker">
+                    <div class="custom-text-panel">
+                        <div class="custom-text-left">담당자 정보</div>
+                        <div class="custom-text-right">
+                            <button type="button" class="btn btn-add" id="add-worker" style="width: 65px;"></button>
+                            <button type="button" class="btn btn-update" id="update-worker" style="width: 65px;"></button>
+                            <button type="button" class="btn btn-delete" id="delete-worker" style="width: 65px;"></button>
+                        </div>
+                    </div>
+                    <div id="grid-worker" class="custom-grid"></div>
+                </div>
+                <div id="model">
+                    <div class="custom-panel-grid">
+                        <div class="custom-grid-6" style="padding-right: 4px;">
+                            <div class="custom-text-panel">
+                                <div class="custom-text-left">모델 정보</div>
+                                <div class="custom-text-right">
+                                    <button type="button" class="btn btn-add" id="add-model" style="width: 65px;"></button>
+                                    <button type="button" class="btn btn-update" id="update-model" style="width: 65px;"></button>
+                                    <button type="button" class="btn btn-delete" id="delete-model" style="width: 65px;"></button>
+                                </div>
+                            </div>
+                            <div id="grid-model" class="custom-grid"></div>
+                        </div>
+                        <div class="custom-grid-6" style="padding-left: 4px;">
+                            <div style="padding-bottom: 4px;">
+                                <div class="custom-text-panel">
+                                    <div class="custom-text-left">모델 / 네트워크 정보</div>
+                                    <div class="custom-text-right">
+                                        <button type="button" class="btn btn-add" id="add-network" style="width: 65px;"></button>
+                                        <button type="button" class="btn btn-update" id="update-network" style="width: 65px;"></button>
+                                        <button type="button" class="btn btn-delete" id="delete-network" style="width: 65px;"></button>
+                                    </div>
+                                </div>
+                                <div id="grid-network" class="custom-grid-half-height"></div>
+                            </div>
+                            <div style="padding-top: 4px;">
+                                <div class="custom-text-panel">
+                                    <div class="custom-text-left">모델 / 전력 정보</div>
+                                    <div class="custom-text-right">
+                                        <button type="button" class="btn btn-add" id="add-power" style="width: 65px;"></button>
+                                        <button type="button" class="btn btn-update" id="update-power" style="width: 65px;"></button>
+                                        <button type="button" class="btn btn-delete" id="delete-power" style="width: 65px;"></button>
+                                    </div>
+                                </div>
+                                <div id="grid-power" class="custom-grid-half-height"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="modal fade" id="edit-company-popup" tabindex="-1" role="dialog" aria-labelledby="popupTitle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <h4 class="modal-title custom-modal-editor-title">자산관리 | 업체정보</h4>
+                </div>
+                <div class="modal-body custom-modal-editor-body">
+                    <table class="table" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <th scope="row">업체명*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="text" id="name" class="form-control" style="box-sizing: border-box;" placeholder="자산업체명" maxlength="30"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">주소</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="text" id="address" class="form-control" style="box-sizing: border-box;" placeholder="" maxlength="30"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">홈페이지</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="text" id="homepage" class="form-control" style="box-sizing: border-box;" placeholder="" maxlength="30"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">전화번호</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="text" id="telephone" class="form-control" style="box-sizing: border-box;" placeholder="- 없이 입력" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" maxlength="13"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">팩스</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 0px;">
+                                        <input type="text" id="fax" class="form-control" style="box-sizing: border-box;" placeholder="- 없이 입력" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" maxlength="13"/>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer custom-modal-editor-footer">
+                    <div class="custom-btn-control">
+                        <button id='btn-save-company' type='button' class='btn custom-btn-save'>저장</button>
+                        <button id='btn-cancel-company' type='button' class='btn custom-btn-cancel' data-dismiss='modal'>취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="edit-worker-popup" tabindex="-1" role="dialog" aria-labelledby="popupTitle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <h4 class="modal-title custom-modal-editor-title">자산관리 | 담당자정보</h4>
+                </div>
+                <div class="modal-body custom-modal-editor-body">
+                    <table class="table" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <th scope="row">분류*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <div id="worker-code-id" style="width: 100%; box-sizing: border-box"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">업체명*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <div id="worker-company-id" style="width: 100%; box-sizing: border-box"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">이름*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="text" id="worker-name" class="form-control" style="box-sizing: border-box;" placeholder="담당자명" maxlength="30"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">전화번호</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="text" id="worker-telephone" class="form-control" style="box-sizing: border-box;" placeholder="- 없이 입력" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" maxlength="13"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">휴대폰</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="text" id="worker-phone" class="form-control" style="box-sizing: border-box;" placeholder="- 없이 입력" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" maxlength="13"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">이메일</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 0px;">
+                                        <input type="text" id="worker-email" class="form-control" style="box-sizing: border-box;" placeholder="" maxlength="30"/>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer custom-modal-editor-footer">
+                    <div class="custom-btn-control">
+                        <button id='btn-save-worker' type='button' class='btn custom-btn-save'>저장</button>
+                        <button id='btn-cancel-worker' type='button' class='btn custom-btn-cancel' data-dismiss='modal'>취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="edit-model-popup" tabindex="-1" role="dialog" aria-labelledby="popupTitle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <h4 class="modal-title custom-modal-editor-title">자산관리 | 모델정보</h4>
+                </div>
+                <div class="modal-body custom-modal-editor-body">
+                    <table class="table" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <th scope="row">모델명*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="text" id="model-name" class="form-control" style="box-sizing: border-box;" placeholder="모델명" maxlength="30"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">제조사명*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <div id="model-company-id" style="width: 100%; box-sizing: border-box"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">폼 팩터/높이(RU)</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 0px;">
+                                        <input type="number" id="model-rack-unit" class="form-control" style="box-sizing: border-box;" min="0" max="99" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer custom-modal-editor-footer">
+                    <div class="custom-btn-control">
+                        <button id='btn-save-model' type='button' class='btn custom-btn-save'>저장</button>
+                        <button id='btn-cancel-model' type='button' class='btn custom-btn-cancel' data-dismiss='modal'>취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="edit-network-popup" tabindex="-1" role="dialog" aria-labelledby="popupTitle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <h4 class="modal-title custom-modal-editor-title">자산관리 | 모델 | 네트워크 정보</h4>
+                </div>
+                <div class="modal-body custom-modal-editor-body">
+                    <table class="table" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <th scope="row">네트워크 타입*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <div id="network-type" style="width: 100%; box-sizing: border-box"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">속도(Gbps)*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <div id="network-speed" style="width: 100%; box-sizing: border-box"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">포트 수*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 0px;">
+                                        <input type="number" id="network-port" class="form-control" style="box-sizing: border-box;" min="0" max="10" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer custom-modal-editor-footer">
+                    <div class="custom-btn-control">
+                        <button id='btn-save-network' type='button' class='btn custom-btn-save'>저장</button>
+                        <button id='btn-cancel-network' type='button' class='btn custom-btn-cancel' data-dismiss='modal'>취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="edit-power-popup" tabindex="-1" role="dialog" aria-labelledby="popupTitle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <h4 class="modal-title custom-modal-editor-title">자산관리 | 모델 | 전력 정보</h4>
+                </div>
+                <div class="modal-body custom-modal-editor-body">
+                    <table class="table" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <th scope="row">전압(V)</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="number" id="power-voltage" class="form-control" style="box-sizing: border-box;" min="0" max="100000" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">전류(A)</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="number" id="power-current" class="form-control" style="box-sizing: border-box;" min="0" max="100000" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">전력(kW)*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="number" id="power-watt" class="form-control" style="box-sizing: border-box;" min="0" max="100000" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">파워 수*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 0px;">
+                                        <input type="number" id="power-count" class="form-control" style="box-sizing: border-box;" min="0" max="999" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer custom-modal-editor-footer">
+                    <div class="custom-btn-control">
+                        <button id='btn-save-power' type='button' class='btn custom-btn-save'>저장</button>
+                        <button id='btn-cancel-power' type='button' class='btn custom-btn-cancel' data-dismiss='modal'>취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade in" id="event-popup" tabindex="-1" role="dialog" aria-labelledby='popupTitle'>
+        <div id='popup' class='modal-dialog' role='document'>
+            <div class='modal-content'>
+                <div class='modal-header custom-modal-header'>
+                    <h4 class='modal-title custom-modal-title'>
+                        <img src='/img/inventory/button/repair_done.png' id='popup-img' class='img-thumbnail'/>자산관리
+                    </h4>
+                    <div id='event-message' class='modal-body custom-modal-body'></div>
+                </div>
+                <div class='modal-footer custom-modal-footer'>
+                    <div class='custom-btn-control'>
+                        <button type='button' class='btn custom-btn-close' data-dismiss='modal'>닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class='modal fade in' id="delete-popup" tabindex='-1' role='dialog' aria-labelledby='popupTitle'>
+        <div id='popup' class='modal-dialog' role='document'>
+            <div class='modal-content'>
+                <div class='modal-header custom-modal-header'>
+                    <h4 id="delete-title" class='modal-title custom-modal-title'>
+                        <img src='/img/inventory/button/repair_done.png' id='popup-img' class='img-thumbnail'/>자산관리
+                    </h4>
+                    <div id="delete-body" class='modal-body custom-modal-body'></div>
+                </div>
+                <div class='modal-footer custom-modal-footer'>
+                    <div class='custom-btn-control'>
+                        <button id='btn-delete' type='button' class='btn custom-btn-delete' data-dismiss='modal'>삭제</button>
+                        <button id='btn-delete-cancel' type='button' class='btn custom-btn-cancel' data-dismiss='modal'>취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- by shkoh 20210209: 공통 js -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/cultures/kendo.culture.ko.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/jszip.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/pako_deflate.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210209: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <script src="/javascripts/inventory/info.js"></script>             
+    <script src="/javascripts/inventory/deleteCheck.js"></script>
+    <script src="/javascripts/inventory/eventResult.js"></script>
+</body>
+</html>

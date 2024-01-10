@@ -1,0 +1,204 @@
+[2022/01/03 15:34:20.535] [ERROR] SqlError: (conn=133329, no: 1054, SQLState: 42S22) Unknown column 'cs.id' in 'order clause'
+sql: SELECT 3 AS sorting, 1 AS group_sorting, CONCAT('S_', cs.sensor_id) AS id, CONCAT('E_', cs.equip_id) AS pid, cs.sensor_name AS name, cs.current_level AS level, pc.description AS icon, IF(ce.b_use = 'N', 'N', cs.b_use) AS isAvailable, ce.imageName AS imageN...
+    at Object.module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:55:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:523:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (events.js:376:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:188:23) {
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2022/01/03 17:11:52.159] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:60:16
+[2022/01/03 17:12:11.549] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:60:16
+[2022/01/03 17:15:02.548] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:15:46.607] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:16:00.140] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:16:27.348] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:16:35.687] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:18:44.927] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:18:52.916] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:19:25.383] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:19:27.794] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:19:29.217] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:19:30.396] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:19:37.029] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:20:11.614] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:21:13.439] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16
+[2022/01/03 17:43:45.118] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:86:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:127:14)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:65:16

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title><%= title %></title>
+
+    <!-- kdh 20180718 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <!-- by shkoh 20210525: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css"/>
+    
+    <!-- kdh 20180718 ubiGuard css -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css" />
+    <link rel="stylesheet" href="/stylesheets/monitoring_fault.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="search">
+            <div class="searching" style="padding: 0px 0px 4px 0px;">
+                <div class="first">
+                </div>
+                <div class="last">
+                    <div class="conditions">
+                        <span class="searching-label">조회기간: </span>
+                        <input id="start-date" class="custom-date" type="text"/>
+                        <span class="searching-icon"> ~ </span>
+                        <input id="end-date" class="custom-date" type="text"/>
+                        <button id="init-date" class="custom-button" title="현재일로부터 지난 1년 간의 기간으로 재설정">기간 재설정</button>
+                        <input id="search-button" type="button" class="custom-search-button" title="자산정보 검색"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">설비종류: <%= data.equipKind %> | 설비명: <%= data.name %></div>
+            <div class="panel-body">
+                <div id="report-page"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popoverEdit" class="popover" role="tooltip">
+        <div class="arrow" id="arrow" style="left: 87%;"></div>
+        <div class="popover-content">
+            <div id="content">
+                <table id="edit" class="table" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <th scope="row">조치시간</th>
+                            <td>
+                                <input type="text" id="actionDate" class="popover-input"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">조치자</th>
+                            <td>
+                                <input type="text" id="actionUser" class="popover-input" maxlength="10"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">조치내용</th>
+                            <td>
+                                <textarea class="popover-input" id="actionContent"></textarea> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="popover-footer">
+            <button type="button" class="btn btn-primary" id="btn-popover-save">저장</button>
+            <button type="button" class="btn btn-danger" id="btn-popover-delete">삭제</button>
+            <button type="button" class="btn btn-success" id="btn-popover-close">닫기</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let g_equipId = parseInt("<%= data.Id %>");
+        let g_occurDate = "<%= occurDate %>";
+        let g_sensorId = parseInt("<%= sensorId %>");
+        let g_alarmLevel = "<%= alarmLevel %>";
+    </script>
+
+    <script type="text/x-kendo-template" id="action-template">
+        #if(data.action_date !== null && data.action_user_name !== null && data.action_content !== null) {#
+            <div style="float: left;">
+                <b>조치시간:</b> #: data.action_date #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>조치자:</b> #: data.action_user_name #
+                <br>
+                <b>조치내용: #: data.action_content #</b>
+            </div>
+        #} #
+        <button class="action-icon" type="button" onClick="showEditPopover(event)"></button>
+    </script>
+
+    <!-- kdh 20180718 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+    
+    <!-- by shkoh 20210525: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+    
+    <!-- kdh 20180718 UbiGaurd js -->
+    <script src="/javascripts/monitoring/datePicker.js"></script>
+    <script src="/javascripts/monitoring/fault/fault.js"></script>
+</body>
+</html>

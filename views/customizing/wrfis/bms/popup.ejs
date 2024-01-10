@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210222: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20210225: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css"/>
+
+    <!-- by shkoh 20210222: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+
+    <!-- by shkoh 20210222: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/wrfis/bms_popup.css"/>
+</head>
+<body>
+    <div id="bms" class="container-fluid content" bms-id="<%= id %>">
+        <div class="panel">
+            <div class="panel-heading custom-inline-heading">
+                <h4 id="panel-bms-title" class="panel-title custom-inline-heading-title"></h4>
+                <div class="custom-controller">
+                    <input id="searching-date" type="text" class="custom-date"/>
+                    <button id="btn-today" type="button" class="custom-button">오늘</button>
+                    <button id="btn-search" type="button" class="custom-button custom-searching">조회</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">배터리 일일 상세정보</h4>
+            </div>
+            <table class="table table-condensed">
+                <tbody>
+                    <tr>
+                        <th class="custom-table-title">1조 평균전압</th>
+                        <td rowspan="2" class="custom-table-chart">
+                            <div id="voltage1-chart" class="custom-chart"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="custom-table-value"><span id="voltage1-val"> - </span><span class="custom-unit">V</span></th>
+                    </tr>
+                    <tr>
+                        <th class="custom-table-title">2조 평균전압</th>
+                        <td rowspan="2">
+                            <div id="voltage2-chart" class="custom-chart"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="custom-table-value"><span id="voltage2-val"> - </span><span class="custom-unit">V</span></th>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-condensed">
+                <tbody>
+                    <tr>
+                        <th class="custom-table-title">1조 평균온도</th>
+                        <td rowspan="2">
+                            <div id="temperature1-chart" class="custom-chart"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="custom-table-value"><span id="temperature1-val"> - </span><span class="custom-unit">℃</span></th>
+                    </tr>
+                    <tr>
+                        <th class="custom-table-title">2조 평균온도</th>
+                        <td rowspan="2">
+                            <div id="temperature2-chart" class="custom-chart"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="custom-table-value"><span id="temperature2-val"> - </span><span class="custom-unit">℃</span></th>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-condensed">
+                <tbody>
+                    <tr>
+                        <th class="custom-table-title">1조 평균임피던스</th>
+                        <td rowspan="2">
+                            <div id="impedance1-chart" class="custom-chart"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="custom-table-value"><span id="impedance1-val"> - </span></th>
+                    </tr>
+                    <tr>
+                        <th class="custom-table-title">2조 평균임피던스</th>
+                        <td rowspan="2">
+                            <div id="impedance2-chart" class="custom-chart"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="custom-table-value"><span id="impedance2-val"> - </span></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- by shkoh 20210222: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210225: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+
+    <!-- by shkoh 20210222: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20210225: ubiguard -->
+    <script src="/javascripts/diagram/datePicker.js"></script>
+    <script src="/javascripts/diagram/wrfis/bms_popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,850 @@
+html {
+	height: 100%;
+}
+
+body {
+    font-family: 'Nanum Barun Gothic', 'Yoon 윤고딕Display', 'Malgun Gothic';
+    font-size: 12px;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+a:focus {
+    outline: none;
+}
+
+/***************************************************************************
+ by shkoh 20180411: Header 시작
+****************************************************************************/
+.navbar {
+    margin-bottom: 0px;
+    min-height: 40px;
+}
+
+.navbar-inverse {
+    background: #172f51;
+}
+
+.navbar-fixed-top {
+    border: 0px;
+}
+
+.navbar-inverse .navbar-brand {
+    width: 180px;
+    height: 40px;
+    background-image: url('/img/menu/logo_up.png');
+    background-position: 12px 0px;
+    background-repeat: no-repeat;
+}
+
+/* by shkoh 20190115: 국민연금관리공단 전용 */
+.navbar-inverse .navbar-brand.nps {
+    width: 222px;
+    height: 40px;
+    background-image: url('/img/menu/nps_logo_198x30.png');
+    background-position: 14px 9px;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    cursor: pointer;
+}
+
+.navbar-inverse .navbar-text {
+    color: #ffffff;
+    user-select: none;
+    margin: 0px;
+    padding: 16px 2px 0px 4px;
+}
+
+.navbar-collapse {
+    float: right;
+}
+
+.navbar-nav > li > a,
+.top-logout > a {
+    padding: 8px 10px;
+}
+
+.navbar-nav > li > a > span,
+.top-logout > a > span {
+    padding: 0px 4px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 1.04em;
+    line-height: 24px;
+}
+
+#top_menu .navbar-nav > .open > a {
+    background-color: #317ae0;
+    background-image: none;
+    color: #ffffff;
+}
+
+#top_menu .navbar-nav > a:active {
+    outline: none;
+}
+
+.dropdown {
+    border-left: 1px solid #142b4a;
+    border-right: 1px solid #21406d;
+}
+
+.dropdown-menu {
+    width: auto;
+    border: #c5c5c5;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgba(18,35,61,.7);
+    font-size: 1em;
+    border-radius: 0px;
+}
+
+.dropdown-menu > hr {
+    margin: 0px 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    color: #ffffff;
+    padding: 8px 12px;
+    cursor: pointer;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropdown-menu > li > a:hover {
+    color: #ffffff;
+    background: #317ae0;
+    cursor: pointer;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20200817: bootstrap dropdown-submenu adding styles start                                                                          */
+/**********************************************************************************************************************************************/
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: -1px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #cccccc;
+    margin-top: 5px;
+    margin-right: -10px;
+    padding-right: 5px;
+}
+.dropdown-submenu:hover > a:after {
+    border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+    float: none;
+}
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20200817: bootstrap dropdown-submenu adding styles end                                                                            */
+/**********************************************************************************************************************************************/
+
+.top-button {
+    float: right;
+    display: flex;
+    height: 40px;
+}
+
+.top-alarm {
+    flex: 1;
+    text-align: center;
+    font-size: 1.1em;
+    display: inline-flex;
+}
+
+#alarm-icon {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    width: 40px;
+}
+
+.alarm-status {
+    background-image: url("/img/menu/alarm_on.png");
+    background-size: 24px 24px;
+}
+
+.alarm-status-off {
+    background-image: url("/img/menu/alarm_off.png");
+    background-size: 24px 24px;
+}
+
+#current_alarm {
+    width: auto;
+}
+
+.badge {
+    color: #e80228;
+    background-color: #ffffff;
+    font-size: 1.14em;
+    margin-top: 10px;
+    margin-right: 8px;
+    user-select: none;
+    padding: 4px 6px 0px 6px;
+    line-height: 1.3em;
+}
+
+.top-logout {
+    flex: 2;    
+    text-align: center;
+    background-color: #12233d;
+}
+
+.top-logout > a {
+    display: block;
+    text-decoration: none;
+}
+
+#navbar_end:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .navbar-text {
+        display: none;
+    }
+}
+/***************************************************************************
+ by shkoh 20180411: Header 끝
+****************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20181025: Alarm Popover Start                                                                      */
+/***************************************************************************************************************/
+.k-notification {
+    border: none;
+    border-radius: 8px;
+}
+
+#popoverAlarm {
+    top: 34px;
+    left: auto;
+    right: 6px;
+    display: none;
+    max-width: 360px;
+    width: 360px;
+    background-color: rgba(84,84,84,0.8);
+    border: none;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.popover-header {
+    background-color: rgba(84,84,84,.8);
+    color: #ffffff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 8px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#popover-content {
+    padding: 4px 8px;
+    height: calc(100vh - 110px);
+}
+
+.popover.bottom > .arrow:after {
+    border-bottom-color: rgba(84,84,84,.9);
+}
+
+.popover_top_header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.popover_top_header_text {
+    flex: 1;
+}
+
+.popover_top_header_button {
+    align-self: center;
+    user-select: none;
+}
+
+.popover_top_header_button:hover {
+    cursor: pointer;
+    background-color: #666666;
+}
+
+.popover_top_header_button:active {
+    background-color: #353535;
+}
+
+#alarmPopupContainer {
+    background: transparent;
+    position: relative;
+    z-index: 100;
+}
+
+.k-notification-alarm-occur {
+    margin: 8px 6px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.k-notification-alarm-occur:hover {
+    box-shadow: 0px 0px 8px 4px rgba(34, 123, 195, 0.8);
+    cursor: pointer;
+}
+
+.alarm-popup > table > tbody > tr > td {
+    padding: 4px;
+}
+
+.alarm-level {
+    height: 50px;
+}
+
+.alarm-popup > table > tbody > tr > td.popup-icon {
+    width: 50px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 8px;
+}
+
+.alarm-popup > table > tbody > tr > td.popup-message {
+    width: 270px;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px #333333;
+}
+
+.alarm-popup > table > tbody > tr > td.popup-close {
+    width: 20px;
+    cursor: pointer;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/img/monitoring/widget_close.png');
+    border-top-right-radius: 8px;
+}
+
+.alarm-popup > table > tbody > tr > td.popup-close:hover {
+    background-image: url('/img/monitoring/widget_close_dark.png');
+}
+
+.alarm-popup > table > tbody > tr.alarm-content > td {
+    padding-left: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.alarm-heading {
+    padding: 2px;
+    font-size: 17px;
+}
+
+.name-heading {
+    padding: 2px;
+    font-size: 11px;
+    color: #eeeeee;
+}
+
+.alarm-level-0 {
+    background-color: #0161b8;
+}
+
+.alarm-level-1 {
+    background-color: #ff9c01;
+}
+
+.alarm-level-2 {
+    background-color: #fe6102;
+}
+
+.alarm-level-3 {
+    background-color: #de0303;
+}
+
+.alarm-level-4 {
+    background-color: #511a81;
+}
+
+.alarm-level-5 {
+    background-color: #000000;
+}
+
+.alarm-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 40px;
+}
+
+.alarm-message {
+    font-size: 12px;
+    padding-bottom: 6px;
+}
+
+.alarm-date {
+    font-size: 10px;
+    color: #888888;
+}
+/***************************************************************************************************************/
+/* by shkoh 20181025: Alarm Popover End                                                                        */
+/***************************************************************************************************************/
+
+/***************************************************************************
+ by shkoh 20180411: iframe 시작
+****************************************************************************/
+.iframe-viewer-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    max-width: 100%
+}
+
+.iframe-viewer-container iframe,
+.iframe-viewer-container object,
+.iframe-viewer-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/***************************************************************************
+ by shkoh 20180411: iframe 시작
+****************************************************************************/
+
+
+/***************************************************************************
+ by shkoh 20180411: footer 시작
+****************************************************************************/
+footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 25px;
+	background-color: #f3f3f3;
+	color: #170352;
+	text-align: center;
+    line-height: 25px;
+    z-index: 10;    /* by shkoh 20160126: User Setting에서 Footer가 최상단으로 오지 않아서 추가함 */
+    display: flex;
+}
+
+footer p {
+    margin: 0px;
+    user-select: none;
+    flex: 1;
+}
+
+footer .servertime {
+    text-align: right;
+    padding-right: 20px;
+    font-family: 'Hack';
+    color: #172f51;
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: -2px;
+    font-stretch: ultra-condensed;
+}
+
+footer .alarm-legend-collection {
+    text-align: left;
+    padding-left: 10px;
+}
+
+footer .alarm-legend {
+    font-size: 1.06em;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+    display: inline-block;
+    width: 4.8em;
+    line-height: 1.35em;
+    padding: 0.14em 0.3em 0.1em 0.3em;
+    vertical-align: middle;
+}
+
+@media (max-width: 1350px) {
+    .copyright {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .copyright {
+        display: none;
+    }
+}
+/***************************************************************************
+ by shkoh 20180411: footer 끝
+****************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210219: Animation Style Start                                                                                                   */
+/**********************************************************************************************************************************************/
+/*base code*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+  
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+/*the animation definition*/
+@-webkit-keyframes paddingOut {
+    0% {
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+    100% {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@keyframes paddingOut {
+    0% {
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+    100% {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.paddingOut {
+    -webkit-animation-name: paddingOut;
+    animation-name: paddingOut;
+}
+
+/*the animation definition*/
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+    100% {
+        opacity: 0;
+        margin-top: -35px;
+    }
+}
+  
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+    100% {
+        opacity: 0;
+        margin-top: -35px;
+    }
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+/*the animation definition*/
+@-webkit-keyframes fontGrowUp {
+    0% {
+        font-size: 1.04em;
+    }
+    100% {
+        font-size: 1.14em;
+    }
+}
+  
+@keyframes fontGrowUp {
+    0% {
+        font-size: 1.04em;
+    }
+    100% {
+        font-size: 1.14em;
+    }
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210219: Animation Style End                                                                                                     */
+/**********************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210129: 우리FIS 로고 전용 - 사용하지 않을 경우 스타일을 만들 필요 없음                                                                       */
+/**********************************************************************************************************************************************/
+body.wrfis {
+    font-family: 'KoPub Dotum' !important;
+    font-size: 18px;
+}
+
+.navbar-inverse.wrfis {    
+    background: url('/img/menu/wrfis_menu_bar.png');
+    user-select: none;
+}
+
+.top-logout.wrfis {
+    background: transparent;
+}
+
+.navbar-inverse .navbar-brand.wrfis {
+    width: 250px;
+    height: 40px;
+    background-image: url('/img/menu/wrfis_logo_fms.png');
+    background-position: 8px 8px;
+    background-size: 94%;
+}
+
+.navbar-text.wrfis {
+    display: none;
+}
+
+.custom-menu.wrfis {
+    position: relative;
+    left: 30px;
+}
+
+#top_menu .navbar-nav.wrfis > .open > a {
+    background-color: #317ae033;
+}
+
+.navbar-nav.wrfis > li > a > span,
+.top-logout.wrfis > a > span {
+    font-weight: bold;
+    text-shadow: 2px 2px #222222;
+}
+
+.dropdown.wrfis {
+    border-left: 1px solid #122a4d33;
+    border-right: 1px solid #1d3b649c;
+}
+
+.dropdown.wrfis:hover {
+    background: #00569d9f;
+}
+
+.dropdown-menu.wrfis > li > a {
+    font-weight: bold;
+    text-shadow: 2px 2px #222222;
+}
+
+.dropdown-menu.wrfis > li > a:hover {
+    background: #00569d9f;
+}
+
+.selected-menu-wrfis {
+    border-bottom: 2px solid #fcfcfc;
+}
+
+.top-servertime.wrfis {
+    font-family: 'DSDIGI' !important;
+    align-self: center;
+    padding-right: 10px;
+    color: #506de1;
+    text-shadow: 1px 1px #000000;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.badge.wrfis {
+    line-height: 18px;
+    font-size: 1.0em;
+    border-radius: 8px;
+    padding: 3px 4px 1px 4px;
+    margin-top: 10px;
+}
+
+.alarm-legend-collection.wrfis {
+    font-size: 14px;
+}
+
+.alarm-legend.wrfis {
+    font-size: 14px;
+}
+
+.copyright.wrfis {
+    font-size: 14px;
+}
+
+#popoverAlarm.wrfis {
+    right: 23px;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210129: 우리FIS 로고 전용 - 사용하지 않을 경우 스타일을 만들 필요 없음                                                                       */
+/**********************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20211201: 한국전력 대전 ICT 센터 로고 전용 - 사용하지 않을 경우 스타일을 만들 필요 없음                                                            */
+/**********************************************************************************************************************************************/
+body.kepco {
+    font-family: 'KoPub Dotum' !important;
+    font-size: 16px;
+}
+
+.navbar-inverse.kepco {    
+    background: url('/img/menu/wrfis_menu_bar.png');
+    user-select: none;
+}
+
+.top-logout.kepco {
+    background: transparent;
+}
+
+.navbar-inverse .navbar-brand.kepco {
+    width: 150px;
+    height: 40px;
+    background-image: url('/img/menu/kepco_logo.png');
+    background-position: 8px 8px;
+    background-size: 95%;
+}
+
+.navbar-text.kepco {
+    display: none;
+}
+
+.custom-menu.kepco {
+    position: relative;
+    left: 30px;
+}
+
+#top_menu .navbar-nav.kepco > .open > a {
+    background-color: #317ae033;
+}
+
+.navbar-nav.kepco > li > a > span,
+.top-logout.kepco > a > span {
+    text-shadow: none;
+}
+
+.dropdown.kepco {
+    border-left: 1px solid #122a4d33;
+    border-right: 1px solid #1d3b649c;
+}
+
+.dropdown.kepco:hover {
+    background: #00569d9f;
+    
+    -webkit-animation-name: fontGrowUp;
+    animation-name: fontGrowUp;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.dropdown-menu.kepco > li > a {
+    text-shadow: none;
+}
+
+.dropdown-menu.kepco > li > a:hover {
+    background: #00569d9f;
+        
+    -webkit-animation-name: fontGrowUp;
+    animation-name: fontGrowUp;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.selected-menu-kepco {
+    border-bottom: 2px solid #fcfcfc;
+}
+
+.top-servertime.kepco {
+    font-family: 'DSDIGI' !important;
+    align-self: center;
+    padding-right: 10px;
+    color: #506de1;
+    text-shadow: 1px 1px #000000;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.badge.kepco {
+    line-height: 18px;
+    font-size: 1.0em;
+    border-radius: 8px;
+    padding: 3px 4px 1px 4px;
+    margin-top: 10px;
+}
+
+.alarm-legend-collection.kepco {
+    font-size: 14px;
+}
+
+.alarm-legend.kepco {
+    font-size: 14px;
+}
+
+.copyright.kepco {
+    font-size: 14px;
+}
+
+#popoverAlarm.kepco {
+    right: 23px;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20211201: 한국전력 대전 ICT 센터 로고 전용 - 사용하지 않을 경우 스타일을 만들 필요 없음                                                            */
+/**********************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20240109: Server Connection Status Style Start                                                                                    */
+/**********************************************************************************************************************************************/
+.i-server-connection-background {
+    z-index: 999999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #33333388;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.i-server-connection-text {
+    background-color: #87878775;
+    color: #eeeeee;
+    border-radius: 1rem;
+    text-shadow: 2px 2px #333333;
+    padding: 3em 6em;
+    box-shadow: 0px 0px 8px 6px #322222;
+    font-size: 3em;
+    text-align: center;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20240109: Server Connection Status Style End                                                                                      */
+/**********************************************************************************************************************************************/

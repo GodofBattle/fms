@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210129: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20210129: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/wrfis/index.css"/>
+</head>
+<body>
+    <div class="wrfis-main">
+        <div class="wrfis-panel pms">
+            <div class="wrfis-menu">
+                <div class="wrfis-menu-title">PMS</div>
+                <div class="wrfis-menu-btn step">08F</div>
+                <div class="wrfis-menu-btn step link-wrfis" fms-url="wrfis_pms_7f" fms-middle-text="PMS" fms-end-text="7F">07F</div>
+                <div class="wrfis-menu-btn step">06F</div>
+                <div class="wrfis-menu-btn step link-wrfis" fms-url="wrfis_pms_4f" fms-middle-text="PMS" fms-end-text="4F">04F</div>
+                <div class="wrfis-menu-btn step">03F</div>
+                <div class="wrfis-menu-btn step">02F</div>
+                <div class="wrfis-menu-btn step">01F</div>
+                <div class="wrfis-menu-btn step">B5F</div>
+            </div>
+        </div>
+        <div class="wrfis-panel fms">
+            <div class="wrfis-menu">
+                <div class="wrfis-menu-title link-wrfis" fms-url="monitoring" fms-middle-text="모니터링" fms-end-text="">FMS</div>
+            </div>
+        </div>
+        <div class="wrfis-panel bms">
+            <div class="wrfis-menu">
+                <div class="wrfis-menu-title" style="margin-bottom: 40px;">BMS</div>
+                <div class="wrfis-menu-btn step link-wrfis" fms-url="wrfis_bms_lead" fms-middle-text="BMS" fms-end-text="납">납 배터리</div>
+                <div class="wrfis-menu-btn step link-wrfis" fms-url="wrfis_bms_lithium" fms-middle-text="BMS" fms-end-text="리튬">리튬 배터리</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- by shkoh 20210129: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <script>        
+        $(function() {
+            $('.link-wrfis').on('click', function() {
+                const url = $(this).attr('fms-url');
+                const m_t = $(this).attr('fms-middle-text');
+                const e_t = $(this).attr('fms-end-text');
+
+                if(parent) {
+                    parent.onSelectViewer(url, m_t, e_t);
+                }
+            });
+
+            $('.wrfis-panel').on('mouseenter', function() {
+                const wrfis_menu = $(this).find('.wrfis-menu');
+
+                if(wrfis_menu.hasClass('wrfis-menu-leave')) {
+                    wrfis_menu.removeClass('wrfis-menu-leave');
+                    wrfis_menu.removeClass('wrfis-menu-hover');
+                }
+
+                if(!wrfis_menu.hasClass('wrfis-menu-hover')) {
+                    wrfis_menu.addClass('wrfis-menu-hover');
+                    
+                    wrfis_menu.find('.step').each(function(idx, ele) {
+                        $(ele).addClass('ani-step-' + (idx + 1));
+                    });
+                }
+            });
+
+            $('.wrfis-panel').on('mouseleave', function() {
+                const wrfis_menu = $(this).find('.wrfis-menu');
+
+                if(wrfis_menu.hasClass('wrfis-menu-hover')) {
+                    wrfis_menu.addClass('wrfis-menu-leave');
+                    
+                    wrfis_menu.find('.step').each(function(idx, ele) {
+                        $(ele).removeClass('ani-step-' + (idx + 1));
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

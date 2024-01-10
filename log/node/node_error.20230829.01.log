@@ -1,0 +1,253 @@
+[2023/08/29 09:11:40.621] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+sql: SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getListPerEquipment (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:98:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  sql: "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/29 09:11:50.120] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+sql: SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getListPerEquipment (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:98:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  sql: "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/29 09:14:03.180] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+sql: SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getListPerEquipment (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:98:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  sql: "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/29 09:14:56.444] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+sql: SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getListPerEquipment (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:98:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  sql: "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/29 09:17:32.307] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+sql: SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getListPerEquipment (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:98:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  sql: "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/29 09:18:06.109] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+sql: SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getListPerEquipment (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:98:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  sql: "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/29 09:32:58.892] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+sql: SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getListPerEquipment (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:98:39)
+    at async /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/monitoring.js:61:23 {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  sql: "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/29 09:33:03.191] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+sql: SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getListPerEquipment (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:98:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  sql: "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/29 09:35:21.220] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+sql: SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getListPerEquipment (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:98:39)
+    at async /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/monitoring.js:61:23 {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  sql: "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/29 09:46:21.829] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+sql: SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getListPerEquipment (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:98:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  sql: "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/29 09:46:32.214] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+sql: SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getListPerEquipment (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor.js:98:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  sql: "SELECT cs.node_id AS id, cs.sensor_id AS sensor_id, cs.sensor_name AS name, cs.sensor_type AS sensor_type, IF(SUBSTRING(cs.sensor_type, 1, 1) = 'A', cs.current_value, CASE cs.current_value WHEN 0 THEN cst.d_value_0_label WHEN 1 THEN cst.d_value_1_label WHE...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/29 09:53:39.711] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/08/29 09:54:57.811] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)

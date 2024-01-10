@@ -1,0 +1,186 @@
+6<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= title %></title>
+
+    <!-- by shkoh 20220720: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20220720: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
+    <!-- by shkoh 20220720: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css" />
+
+    <!-- by shkoh 20220720: cytoscape  -->
+    <link rel="stylesheet" href="/component/jquery-qtip-3.0.3/jquery.qtip.min.css" />
+
+    <!-- by shkoh 20220720: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/pss/dashboard.css"/>
+</head>
+<body data="<%= type %>">
+    <div class="i-widget i-iso" style="left: 940px; top: 420px;">
+    </div>
+
+    <%- include('./hvac', { object_id: 'hvac_1', left: '30px', top: '180px', header_text: '1호기' }) %>
+    <%- include('./hvac', { object_id: 'hvac_2', left: '30px', top: '254px', header_text: '2호기' }) %>
+    <%- include('./hvac', { object_id: 'hvac_3', left: '30px', top: '328px', header_text: '3호기' }) %>
+    <%- include('./hvac', { object_id: 'hvac_4', left: '30px', top: '402px', header_text: '4호기' }) %>
+    <%- include('./hvac', { object_id: 'hvac_5', left: '30px', top: '476px', header_text: '5호기' }) %>
+    <%- include('./hvac', { object_id: 'hvac_6', left: '30px', top: '550px', header_text: '6호기' }) %>
+
+    <%- include('./ups_battery', { object_id: 'ups1_battery', left: '52px', top: '765px' }) %>
+    <%- include('./ups_battery', { object_id: 'ups2_battery', left: '282px', top: '765px' }) %>
+    
+    <%- include('./label', { object_id: 'ups1_r', class_name: 'i-ups-text', left: '125px', top: '791px' }) %>
+    <%- include('./label', { object_id: 'ups1_s', class_name: 'i-ups-text', left: '125px', top: '819px' }) %>
+    <%- include('./label', { object_id: 'ups1_t', class_name: 'i-ups-text', left: '125px', top: '846px' }) %>
+    <%- include('./label', { object_id: 'ups1_mode', class_name: 'i-ups-text-mode', left: '110px', top: '874px' }) %>
+
+    <%- include('./label', { object_id: 'ups2_r', class_name: 'i-ups-text', left: '354px', top: '791px' }) %>
+    <%- include('./label', { object_id: 'ups2_s', class_name: 'i-ups-text', left: '354px', top: '819px' }) %>
+    <%- include('./label', { object_id: 'ups2_t', class_name: 'i-ups-text', left: '354px', top: '846px' }) %>
+    <%- include('./label', { object_id: 'ups2_mode', class_name: 'i-ups-text-mode', left: '339px', top: '874px' }) %>
+
+    <%- include('./loadFactor', { object_id: 'ups1_r_load', left: '35px', top: '970px', type: 'r' }) %>
+    <%- include('./loadFactor', { object_id: 'ups1_s_load', left: '35px', top: '1000px', type: 's' }) %>
+    <%- include('./loadFactor', { object_id: 'ups1_t_load', left: '35px', top: '1030px', type: 't' }) %>
+
+    <%- include('./loadFactor', { object_id: 'ups2_r_load', left: '265px', top: '970px', type: 'r' }) %>
+    <%- include('./loadFactor', { object_id: 'ups2_s_load', left: '265px', top: '1000px', type: 's' }) %>
+    <%- include('./loadFactor', { object_id: 'ups2_t_load', left: '265px', top: '1030px', type: 't' }) %>
+
+    <%- include('./title', { object_id: 'panel_title_total', label: '전체 사용 전력', class_name: 'i-title-panel', left: '580px', top: '420px' }) %>
+    <%- include('./title', { object_id: 'panel_title_total_kw', label: '/ 950 kW', class_name: 'i-title-panel unit', left: '735px', top: '420px' }) %>
+    <%- include('./title', { object_id: 'panel_title_total', label: 'IT 전력(UPS)', class_name: 'i-title-panel', left: '580px', top: '465px' }) %>
+    <%- include('./title', { object_id: 'panel_title_total_kw', label: '/ 200 kW', class_name: 'i-title-panel unit', left: '735px', top: '465px' }) %>
+    <%- include('./title', { object_id: 'panel_title_total', label: '항온 전력(한전)', class_name: 'i-title-panel', left: '580px', top: '510px' }) %>
+    <%- include('./title', { object_id: 'panel_title_total_kw', label: '/ 750 kW', class_name: 'i-title-panel unit', left: '735px', top: '510px' }) %>
+
+    <%- include('./label', { object_id: 'kw', class_name: 'i-kw-text', left: '656px', top: '420px' }) %>
+    <%- include('./label', { object_id: 'kw_it', class_name: 'i-kw-text', left: '656px', top: '465px' }) %>
+    <%- include('./label', { object_id: 'kw_hvac', class_name: 'i-kw-text', left: '656px', top: '510px' }) %>
+    
+    <%- include('./powerChart', { object_id: 'power_chart', left: '557px', top: '620px' }) %>
+
+    <%- include('./threshold', { object_id: 'threshold_t', label: '온도', unit: '℃', class_name: 'i-title-threshold', left: '946px', top: '340px' }) %>
+    <%- include('./threshold', { object_id: 'threshold_h', label: '습도', unit: '%', class_name: 'i-title-threshold', left: '946px', top: '360px' }) %>
+
+    <%- include('./title', { object_id: 'header_title', label: '온습도 / 분전반 현황', class_name: 'i-title-header', left: '1650px', top: '345px' }) %>
+
+    <%- include('./title', { object_id: 'title_hvac_1', label: '항온1호기', class_name: 'i-title-hvac', left: '1728px', top: '810px' }) %>
+    <%- include('./title', { object_id: 'title_hvac_2', label: '항온2호기', class_name: 'i-title-hvac', left: '1600px', top: '816px' }) %>
+    <%- include('./title', { object_id: 'title_hvac_3', label: '항온3호기', class_name: 'i-title-hvac', left: '1471px', top: '825px' }) %>
+    
+    <%- include('./title', { object_id: 'title_hvac_4', label: '항온4호기', class_name: 'i-title-hvac', left: '1428px', top: '523px' }) %>
+    <%- include('./title', { object_id: 'title_hvac_5', label: '항온5호기', class_name: 'i-title-hvac', left: '1524px', top: '524px' }) %>
+    <%- include('./title', { object_id: 'title_hvac_6', label: '항온6호기', class_name: 'i-title-hvac', left: '1617px', top: '525px' }) %>
+
+    <%- include('./th', { object_id: 'th_1', left: '1720px', top: '570px', tooltip: '온습도 #1', title: '온습도1' }) %>
+    <%- include('./th', { object_id: 'th_2', left: '1630px', top: '570px', tooltip: '온습도 #2', title: '온습도2' }) %>
+    <%- include('./th', { object_id: 'th_3', left: '1535px', top: '570px', tooltip: '온습도 #3', title: '온습도3' }) %>
+    <%- include('./th', { object_id: 'th_4', left: '1440px', top: '570px', tooltip: '온습도 #4', title: '온습도4' }) %>
+
+    <%- include('./th', { object_id: 'th_5', left: '1678px', top: '710px', tooltip: '온습도 #5', title: '온습도5' }) %>
+    <%- include('./th', { object_id: 'th_6', left: '1575px', top: '710px', tooltip: '온습도 #6', title: '온습도6' }) %>
+    <%- include('./th', { object_id: 'th_7', left: '1465px', top: '710px', tooltip: '온습도 #7', title: '온습도7' }) %>
+    <%- include('./th', { object_id: 'th_8', left: '1220px', top: '470px', tooltip: '온습도 #8', title: '온습도8' }) %>
+
+    <%- include('./panel', { object_id: 'panel_1', left: '1690px', top: '415px', tooltip: '항온항습기 분전반(좌)', title: '항온분전반' }) %>
+    <%- include('./panel', { object_id: 'panel_2', left: '1557px', top: '398px', tooltip: 'UPS 2차분기 #1(좌)', title: 'UPS분전반' }) %>
+    <%- include('./panel', { object_id: 'panel_3', left: '1450px', top: '398px', tooltip: 'UPS 2차분기 #2(좌)', title: 'UPS분전반' }) %>
+    <%- include('./panel', { object_id: 'panel_4', left: '1345px', top: '398px', tooltip: 'UPS 2차분기 #3(좌)', title: 'UPS분전반' }) %>
+    
+    <%- include('./panel', { object_id: 'panel_5', left: '1780px', top: '830px', tooltip: '항온항습기 분전반(우)', title: '항온분전반' }) %>
+    <%- include('./panel', { object_id: 'panel_6', left: '1649px', top: '830px', tooltip: 'UPS 2차분기 #1(우)', title: 'UPS분전반' }) %>
+    <%- include('./panel', { object_id: 'panel_7', left: '1520px', top: '830px', tooltip: 'UPS 2차분기 #2(우)', title: 'UPS분전반' }) %>
+    <%- include('./panel', { object_id: 'panel_8', left: '1390px', top: '830px', tooltip: 'UPS 2차분기 #3(우)', title: 'UPS분전반' }) %>
+    
+    <svg>
+        <defs>
+            <linearGradient id="arcBarColor">
+                <stop offset="0%" style="stop-color: #ffffff"/>
+                <stop offset="100%" style="stop-color: #c4d0e3"/>
+            </linearGradient>
+            <linearGradient id="gaugeBarColor">
+                <stop offset="0%" style="stop-color: #ffffff"/>
+                <stop offset="50%" style="stop-color: #c4d0e380"/>
+                <stop offset="100%" style="stop-color: #ffffff"/>
+            </linearGradient>
+            <linearGradient id="waveColorDefault" gradientTransform="rotate(0)">
+                <stop offset="0%" style="stop-color: #93a4d3"/>
+                <stop offset="100%" style="stop-color: #333333"/>
+            </linearGradient>
+            <linearGradient id="waveColorBlue" gradientTransform="rotate(90)">
+                <stop offset="0%" style="stop-color: #97abff90"/>
+                <stop offset="100%" style="stop-color: #12359790"/>
+            </linearGradient>
+        </defs>
+    </svg>
+    <%- include('./liquidGauge', { object_id: 'th_server', left: '700px', top: '80px' }) %>
+    <%- include('./liquidGauge', { object_id: 'th_ups', left: '1125px', top: '80px' }) %>
+    <%- include('./liquidGauge', { object_id: 'th_did', left: '1550px', top: '80px' }) %>
+    
+    <%- include('./alarm', { object_id: 'alarm_list', left: '552px', top: '975px' }) %>
+
+    <%- include('./serverTime', { object_id: 'server_time', left: '1660px', top: '10px' }) %>
+
+    <!-- by shkoh 20220720: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20220720: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20220720: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+
+    <!-- by shkoh 20220720: cytoscape  -->
+    <script src="/component/jquery-qtip-3.0.3/jquery.qtip.min.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-qtip.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-cxtmenu.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-node-html-label.min.js"></script>
+
+    <!-- by shkoh 20220721: liquid fill guage -->
+    <script src="/component/liquidFillGauge/d3.v3.min.js"></script>
+    <script src="/component/liquidFillGauge/liquidFillGauge.js"></script>
+
+    <!-- by shkoh 20220720: ubiGuard -->
+    <script src="/javascripts/customizing/pss/dashboard/main.js"></script>
+
+<%if(grade != 'USR00') {%>
+    <script>
+        $(function() {
+            initTimeout();
+        });
+
+        function initTimeout() {
+            const timer = setInterval(function() {
+                loadItems();
+            }, 10000);
+        }
+    </script>
+<%}%>
+</body>
+</html>

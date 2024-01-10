@@ -1,0 +1,30 @@
+[2021/12/22 13:12:39.306] [ERROR] /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/viewer.js:86
+        const results = await db_cn_equipment.getPopupInfo(equipId);
+                        ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:54:14)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+[2021/12/22 13:13:43.759] [ERROR] /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/viewer.js:86
+        const results = await db_cn_equipment.getPopupInfo(equipId);
+                        ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:54:14)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)

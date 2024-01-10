@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20200916: kendoui-bootstrap styles -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <!-- by shkoh 20200916: bootstrap styles -->
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+
+    <!-- by shkoh 20200819: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css"/>
+
+    <!-- by shkoh 20190710: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css" />
+    <link rel="stylesheet" href="/stylesheets/monitoring_popup_sensor_chart.css" />
+</head>
+<body>
+    <div class="container-fluid content">
+        <div id="searching-conditions">
+            <div class="form-group">
+                <label>데이터 조회</label>
+                <div class="btn-group" data-toggle="buttons" style="padding: 0px 10px;">
+                    <label id="selected_day" selected-table="hour" class="btn btn-check active">
+                        <input type="radio" name="options" autocomplete="off">시간별 추이
+                    </label>
+                    <label id="selected_month" selected-table="day" class="btn btn-check">
+                        <input type="radio" name="options" autocomplete="off">일별 추이
+                    </label>
+                </div>
+                <input id="start-date" type="text">
+            </div>
+            <div class="last">
+                <button id="searching" class="custom-search-button"></button>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">[<%= info.equipName %>] <%= info.sensorName %></div>
+            <div class="panel-body">
+                <div id="sensor_chart" equip-id="<%= info.equipId %>" data-id="<%= info.sensorId %>" data-type="<%= info.sensorType %>"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- by shkoh 20200916: jquery -->
+    <!-- <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script> -->
+    
+    <!-- by shkoh 20200916: bootstrap -->
+    
+    <!-- by shkoh 20200916: kendoui -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20200916: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+
+    <!-- by shkoh 20200916: ubiGuard -->
+    <script src="/javascripts/monitoring/datePicker.js"></script>
+    <script src="/javascripts/monitoring/popup/sensor_chart.js"></script>
+</body>
+</html>

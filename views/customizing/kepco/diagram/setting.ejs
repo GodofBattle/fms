@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20211228: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20211228: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
+    <!-- by shkoh 20211228: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css" />
+
+    <!-- by shkoh 20211228: cytoscape  -->
+    <link rel="stylesheet" href="/component/jquery-qtip-3.0.3/jquery.qtip.min.css" />
+
+    <!-- by shkoh 20211228: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css" />
+    <link rel="stylesheet" href="/stylesheets/kepco/diagram_popup.css" />
+</head>
+<body data-id="<%= id %>">
+    <div class="container-fluid">
+        <aside class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="padding-left: 0px; padding-right: 3px;">
+            <div class="panel">
+                <div class="panel-heading">
+                    <div class="i-header">TYPE</div>
+                </div>
+                <div class="panel-body">
+                    <div id="type-tree" class="i-tree-content"></div>
+                </div>
+            </div>
+        </aside>
+        <aside class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="padding-left: 3px; padding-right: 3px;">
+            <div class="panel">
+                <div class="panel-heading">
+                    <div class="i-header">연계 그룹/설비/센서</div>
+                </div>
+                <div class="panel-body">
+                    <div id="equipment-tree" class="i-tree-content"></div>
+                </div>
+            </div>
+        </aside>
+        <article class="col-xs-5 col-sm-5 col-md-5 col-lg-5" style="padding-left: 3px; padding-right: 0px;">
+            <div class="panel">
+                <div class="panel-heading">
+                    <div class="i-header i-right">
+                        <button type="button" class="btn save-button" id="saveSetting" style="width:65px;"></button>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="i-info-content">
+                        <table class="table">
+                            <colgroup>
+                                <col width="25%"/>
+                                <col width="75%"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>TYPE</th>
+                                    <td><span id="i-type">아이콘 타입을 선택하세요</span></td>
+                                </tr>
+                                <tr>
+                                    <th>연계 <span id="i-link-type-name"></span></th>
+                                    <td><span id="i-link">연계항목을 선택하세요</span></td>
+                                </tr>
+                                <tr>
+                                    <th>X축 위치</th>
+                                    <td><input id="i-x-pos" style="width: 100%"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Y축 위치</th>
+                                    <td><input id="i-y-pos" style="width: 100%"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table" id="i-sensor-info-table" style="display: none;">
+                            <colgroup>
+                                <col width="25%"/>
+                                <col width="75%"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th id="i-sensor-type"></th>
+                                    <td><span id="i-sensor-detail"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- by shkoh 20211228: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20211228: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20211228: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+
+    <script src="/javascripts/customizing/kepco/diagram/equipmentTree.js"></script>
+    <script src="/javascripts/customizing/kepco/diagram/typeTree.js"></script>
+    <script src="/javascripts/customizing/kepco/diagram/setting.js"></script>
+</body>
+</html>

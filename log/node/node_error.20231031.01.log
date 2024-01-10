@@ -1,0 +1,42 @@
+[2023/10/31 14:35:10.525] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT vca.equip_id, vca.equip_name, (SELECT code_name FROM pd_code WHERE code_id = pe.equip_code) AS equip_kind, vca.sensor_id, vca.sensor_name, IFNULL((SELECT code_name FROM pd_code WHERE code_id = cs.sensor_code), '') AS sensor_kind, vca.`level` AS alar...
+sql: SELECT vca.equip_id, vca.equip_name, (SELECT code_name FROM pd_code WHERE code_id = pe.equip_code) AS equip_kind, vca.sensor_id, vca.sensor_name, IFNULL((SELECT code_name FROM pd_code WHERE code_id = cs.sensor_code), '') AS sensor_kind, vca.`level` AS alar...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getMonitoringAlarmList (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/ft_current_alarm.js:10:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT vca.equip_id, vca.equip_name, (SELECT code_name FROM pd_code WHERE code_id = pe.equip_code) AS equip_kind, vca.sensor_id, vca.sensor_name, IFNULL((SELECT code_name FROM pd_code WHERE code_id = cs.sensor_code), '') AS sensor_kind, vca.`level` AS alar...",
+  sql: "SELECT vca.equip_id, vca.equip_name, (SELECT code_name FROM pd_code WHERE code_id = pe.equip_code) AS equip_kind, vca.sensor_id, vca.sensor_name, IFNULL((SELECT code_name FROM pd_code WHERE code_id = cs.sensor_code), '') AS sensor_kind, vca.`level` AS alar...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/10/31 14:39:22.072] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT 1 AS sorting, CASE group_name WHEN '기타' THEN 1 ELSE 1 END AS group_sorting, CONCAT('G_', group_id) AS id, CONCAT('G_', IFNULL(p_group_id, 0)) AS pid, group_name AS name, current_level AS level, 'group' AS icon, 'Y' AS isAvailable, imageName, null AS...
+sql: SELECT 1 AS sorting, CASE group_name WHEN '기타' THEN 1 ELSE 1 END AS group_sorting, CONCAT('G_', group_id) AS id, CONCAT('G_', IFNULL(p_group_id, 0)) AS pid, group_name AS name, current_level AS level, 'group' AS icon, 'Y' AS isAvailable, imageName, null AS...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getGroupTree (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/tree.js:44:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT 1 AS sorting, CASE group_name WHEN '기타' THEN 1 ELSE 1 END AS group_sorting, CONCAT('G_', group_id) AS id, CONCAT('G_', IFNULL(p_group_id, 0)) AS pid, group_name AS name, current_level AS level, 'group' AS icon, 'Y' AS isAvailable, imageName, null AS...",
+  sql: "SELECT 1 AS sorting, CASE group_name WHEN '기타' THEN 1 ELSE 1 END AS group_sorting, CONCAT('G_', group_id) AS id, CONCAT('G_', IFNULL(p_group_id, 0)) AS pid, group_name AS name, current_level AS level, 'group' AS icon, 'Y' AS isAvailable, imageName, null AS...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}

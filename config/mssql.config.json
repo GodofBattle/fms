@@ -1,0 +1,22 @@
+{
+    "kepco": {
+        "accessSystem": {
+            "connection": {
+                "user": "sa",
+                "password": "1234",
+                "server": "10.10.20.32",
+                "database": "TAMSDB",
+                "pool": {
+                    "max": 10,
+                    "min": 0,
+                    "idleTimeoutMillis": 30000
+                },
+                "options": {
+                    "encrypt": false,
+                    "trustServerCertificate": false
+                }
+            },
+            "query": "SELECT TOP(50) v.id, v.yyyyMMdd, v.HHmmss, v.door, v.name, v.sensor, v.status, v.logStatus, v.deviceId, v.doorId FROM view_log_device_icomer v WHERE CONCAT(v.deviceId, v.doorId) IN ($$1) ORDER BY v.id DESC"
+        }
+    }
+}

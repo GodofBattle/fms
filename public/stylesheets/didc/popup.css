@@ -1,0 +1,565 @@
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Malgun Gothic';
+    font-size: 12px;
+    height: 100vh;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    user-select: none;
+    padding: 0.5em;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0;
+}
+
+.btn:active:focus, .btn:focus,
+:focus,
+a:focus {
+    outline: none;
+}
+
+/***************************************************************************************************************/
+/* by shkoh 20230825: kendo ui customizing start                                                               */
+/***************************************************************************************************************/
+.k-grid {
+    border: 1px solid #c5c5c5;
+    border-radius: 0px;
+}
+
+.k-grid table,
+.k-grid-content table {
+    text-align: center;
+    color: #222222;
+    font-size: 1em;
+}
+
+.k-grid-header th.k-header,
+.k-grid-header th {
+    text-align: center;
+    border-color: #e5e 5e5;
+    border-width: 0 0 0px 1px;
+    font-weight: bold;
+    color: #333333;
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+
+.k-grid-content table td {
+    border-color: #e5e5e5;
+    cursor: pointer;
+}
+
+div.k-grid-header,
+div.k-grid-footer,
+.k-grid-header {
+    border-bottom: none;
+}
+
+.k-alt {
+    background-color: #fafafa;
+}
+
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+.k-state-selected {
+    background-color: #317be0;
+    border-color: #317be0;
+}
+
+.k-grid tr.k-state-focused:hover td {
+    background-color: #ebebeb;
+}
+
+.k-grid tr.k-state-selected:hover td {
+    background-color: #3379b5;
+}
+
+.k-state-focused,
+.k-state-focused.k-state-selected {
+    box-shadow: none;
+}
+
+.k-button-group .k-button.k-state-active {
+    color: #ffffff;
+    border-color: #285e8e;
+    background-color: #3276b1;
+    box-shadow: none;
+}
+
+.k-button-group .k-button.k-state-active:hover {
+    color: #ffffff;
+    border-color: #214f77;
+    background-color: #275d8d;
+}
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+
+.k-pager-wrap {
+    font-size: 1em;
+}
+
+.k-grid-norecords {
+    height: 90%;
+}
+
+.k-dropdown-wrap,
+.k-dropdown-wrap.k-state-border-down,
+.k-list-container.k-state-border-up,
+.k-popup .k-list .k-state-focused,
+.k-list .k-state-hover,
+.k-textbox,
+.k-button,
+.k-multiselect-wrap,
+.k-treeview .k-in,
+.k-checkbox,
+.k-grouping-header .k-group-indicator,
+.k-drag-clue,
+.k-numeric-wrap {
+    border-radius: 0px;
+}
+
+.k-item.k-state-selected.k-state-focused.k-state-hover,
+.k-split-button:focus,
+.k-split-container .k-button:focus {
+    box-shadow: none;
+}
+
+.k-button-group .k-button:first-child,
+.k-split-button .k-button:first-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.k-button-group .k-button:last-child,
+.k-split-button .k-button:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.k-split-button .k-button:last-child {
+    padding: 2px;
+}
+
+.k-grid .k-grid-toolbar > * {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.k-grid-toolbar:first-child {
+    border-radius: 0px;
+}
+
+.k-grid-toolbar {
+    padding: 3px 6px;
+}
+
+.k-toolbar > * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.k-button {
+    padding: 4px 8px;
+}
+
+.k-dropdowntree .k-button .k-icon {
+    font-size: 1em;
+}
+
+.k-list-container.k-popup-dropdowntree .k-check-all {
+    margin: 8px 8px 0;
+}
+
+.k-list-container.k-popup-dropdowntree .k-treeview {
+    padding: 4px 8px;
+    color: #172f51;
+}
+
+.k-multiselect-wrap {
+    padding-right: 0px;
+}
+
+.k-multiselect-wrap li {
+    padding-right: 1.2em;
+    color: #ffffff;
+    background-color: #428bca;
+}
+/***************************************************************************************************************/
+/* by shkoh 20230825: kendo ui customizing end                                                                 */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20230825: popup customizing style start                                                            */
+/***************************************************************************************************************/
+.i-popup {
+    display: flex;
+    height: 100%;
+}
+
+.i-popup > .i-tree {
+    flex: 1;
+    padding: 0em 0.5em 0em 0em;
+    flex-basis: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.i-popup > .i-list {
+    flex: 3;
+    flex-basis: 200px;
+    height: 100%;
+}
+
+.i-popup > .i-list .i-lvl-img {
+    width: 100%;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.i-popup > .i-list .i-lvl-img-0 {
+    background-image: url(/img/monitoring/L0.png);
+}
+
+.i-popup > .i-list .i-lvl-img-1 {
+    background-image: url(/img/monitoring/L1.png);
+}
+
+.i-popup > .i-list .i-lvl-img-2 {
+    background-image: url(/img/monitoring/L2.png);
+}
+
+.i-popup > .i-list .i-lvl-img-3 {
+    background-image: url(/img/monitoring/L3.png);
+}
+
+.i-popup > .i-list .i-lvl-img-4 {
+    background-image: url(/img/monitoring/L4.png);
+}
+
+.i-popup > .i-list .i-lvl-img-5 {
+    background-image: url(/img/monitoring/L5.png);
+}
+
+.i-popup > .i-list .i-lvl-img-6 {
+    background-image: url(/img/monitoring/L6.png);
+}
+
+.i-popup > .i-list .k-pager-sm .k-pager-info,
+.i-popup > .i-list .k-pager-md .k-pager-info {
+    display: flex;
+}
+
+.i-popup > .i-list .i-background-white,
+.i-popup > .i-list .k-state-selected > .i-background-white {
+    background-color: #ffffff;
+}
+
+.i-popup > .i-list .k-grid-pager,
+.i-popup > .i-list .k-pager-wrap .k-pager-first,
+.i-popup > .i-list .k-pager-wrap .k-pager-last {
+    border-radius: 0px;
+}
+
+.i-popup > .i-list .i-alert-row {
+    font-size: 0.92em;
+}
+
+.i-popup > .i-list .i-alert-row:last-of-type {
+    text-align: left;
+    text-indent: 1em;
+}
+
+.i-popup > .i-list .k-button:focus,
+.i-popup > .i-list .k-button:focus:hover {
+    box-shadow: none;
+}
+
+.i-popup > .i-list .k-button-group .k-button.i-lvl-view {
+    border: 1px double #99999933;
+    background: transparent;
+    color: #888888;
+    text-decoration: line-through;
+}
+
+.i-popup > .i-list .k-button-group .k-button.i-lvl-view.k-state-active {
+    text-decoration: none;
+}
+
+.i-popup > .i-list .k-button-group .k-button.k-state-active.i-lvl-view.i-lvl-1 {
+    color: #222222;
+    background: linear-gradient(134deg, #ffe601, #ffc363);
+}
+
+.i-popup > .i-list .k-button-group .k-button.k-state-active.i-lvl-view.i-lvl-2 {
+    color: #ffffff;
+    background: linear-gradient(134deg, #ff5900e6, #ff8238);
+}
+
+.i-popup > .i-list .k-button-group .k-button.k-state-active.i-lvl-view.i-lvl-3 {
+    color: #ffffff;
+    background: linear-gradient(134deg, #ff0000, #ff3f3f);
+}
+
+.i-popup > .i-list .k-button-group .k-button.k-state-active.i-lvl-view.i-lvl-5 {
+    color: #ffffff;
+    background: linear-gradient(134deg, #262626, #6f6f6f);
+}
+
+.i-popup > .i-info {
+    flex: 2;
+    height: 100%;
+    flex-basis: 180px;
+    margin-left: 0.5em;
+}
+
+.i-popup > .i-info > .i-equipment-info {
+    height: 7em;
+    font-size: 1em;
+}
+
+.i-popup > .i-info > .i-equipment-info > .i-equipment-info-row {
+    display: flex;
+    padding: 0.2em 0em;
+    align-items: center;
+}
+
+.i-popup > .i-info > .i-equipment-info > .i-equipment-info-row > .i-equipment-info-row-key {
+    flex: 1.2;
+}
+
+.i-popup > .i-info > .i-equipment-info > .i-equipment-info-row > .i-equipment-info-row-value {
+    flex: 3;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.i-popup > .i-info > .i-equipment-info > .i-equipment-info-row > .i-equipment-info-row-value .i-equipment-info-lvl {
+    padding: 0.1em 0.5em;
+    border-radius: 0.2em;
+    color: #f3f3f3;
+    text-shadow: 1px 1px #333333;
+}
+
+.i-popup > .i-info > .i-equipment-info > .i-equipment-info-row > .i-equipment-info-row-value .i-equipment-info-lvl.i-lvl-1 {
+    color: #333333;
+    text-shadow: none;
+}
+
+.i-popup > .i-info > .i-equipment-info > .i-equipment-info-row > .i-equipment-info-row-value .i-equipment-info-lvl.i-lvl-6 {
+    background-color: #656565;
+}
+
+.i-popup > .i-info > .i-sensor-list {
+    height: calc(100% - 7em);
+}
+
+.i-popup > .i-info > .i-sensor-list .k-pager-sm .k-pager-info,
+.i-popup > .i-info > .i-sensor-list .k-pager-md .k-pager-info {
+    display: flex;
+}
+
+.i-popup > .i-info > .i-sensor-list .k-loading-mask {
+    display: none;
+}
+
+.k-loading-image {
+    display: none;
+}
+
+.i-popup > .i-info > .i-sensor-list .i-sensor-value {
+    font-weight: bold;
+    border-radius: 0.4em;
+    padding: 0.3em 0.6em;
+    color: #f3f3f3;
+    text-shadow: 1px 1px #333333;
+}
+
+.i-popup > .i-info > .i-sensor-list .i-sensor-value .i-unit {
+    font-size: 0.5em;
+}
+
+
+.i-popup > .i-info > .i-sensor-list .i-sensor-value.i-lvl-1 {
+    color: #333333;
+    text-shadow: none;
+}
+
+.i-popup > .i-info > .i-sensor-list .i-sensor-value.i-is-event-N {
+    color: #333333;
+    text-shadow: none;
+    background: none;
+}
+
+.i-popup > .i-info > .i-sensor-list .i-sensor-value.i-lvl-4 {
+    color: #a0a0a0;
+    text-shadow: none;
+}
+
+.i-popup .i-threshold-panel {
+    text-align: left;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row {
+    display: flex;
+    align-items: center;
+}
+                
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row .i-threshold-ai-input {
+    flex: 1;
+    margin-bottom: 0.2em;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row .i-threshold-di-label {
+    flex: 1;
+    margin-bottom: 0.2em;
+    margin-right: 0.2em;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row .i-threshold-di-level {
+    flex: 1;
+    margin-left: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row .i-threshold-di-level .k-input {
+    padding: 0.3em 0em;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row .i-threshold-di-level .i-dropdownlist-lvl {
+    padding: 0.2em 0.6em;
+    border-radius: 0.4em;
+    color: #f3f3f3;
+    text-shadow: 1px 1px #333333;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row .i-threshold-di-level .i-dropdownlist-lvl.i-lvl-1 {
+    color: #333333;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row.i-threshold-di {
+    margin: 0.2em 0;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row > .k-label.k-input-label {
+    padding-left: 0.4em;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row.lvl-1 > .k-label.k-input-label {
+    border-left: 8px solid #f3f10d;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row.lvl-2 > .k-label.k-input-label {
+    border-left: 8px solid #fa8007;
+}
+
+.i-popup .i-threshold-panel .i-threshold-content .i-threshold-c-row.lvl-3 > .k-label.k-input-label {
+    border-left: 8px solid #f60a0a;
+}
+
+.i-popup .i-threshold-panel .i-threshold-set {
+    float: right;
+}
+
+.i-popup .i-popup-hr {
+    margin: 1em 0.2em;
+    border-color: #dadada;
+}
+
+#i-popup-tree-set {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.i-normal,
+.i-lvl-0 {
+    background: linear-gradient(134deg, #0161b8, #0086ff);
+}
+
+.i-warning,
+.i-lvl-1 {
+    background: linear-gradient(134deg, #ffe601, #ffc363);
+}
+
+.i-major,
+.i-lvl-2 {
+    background: linear-gradient(134deg, #ff5900e6, #ff8238);
+}
+
+.i-critical,
+.i-lvl-3 {
+    background: linear-gradient(134deg, #ff0000, #ff3f3f);
+}
+
+.i-connection-down,
+.i-lvl-5 {
+    background: linear-gradient(134deg, #262626, #6f6f6f);
+}
+/***************************************************************************************************************/
+/* by shkoh 20230825: popup customizing style end                                                              */
+/***************************************************************************************************************/
+
+
+
+/***************************************************************************************************************/
+/* by MJ 20230907: kendo ui customizing start                                                               */
+/***************************************************************************************************************/
+#detail-rack-container {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+#detail-rack-container-table {
+    height: 85%;
+}
+
+#i-rack-data-name {
+    margin: 0px;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d5d5;
+    color: #12233d;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#i-rack-data-name ~ .i-popup-Info-Box {
+    width: 100%;
+    max-width: 100%;
+    padding: 4px 0 4px 0;
+}
+
+#i-rack-data-name ~ .i-popup-Info-Box > ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0.2em 0em;
+}
+
+#i-rack-data-name ~ .i-popup-Info-Box > ul >li:first-of-type {
+    color: #333333;
+    flex: 1.2;
+    font-size: 1em;
+}
+
+#i-rack-data-name ~ .i-popup-Info-Box > ul > li:last-of-type {
+    flex: 3;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+}

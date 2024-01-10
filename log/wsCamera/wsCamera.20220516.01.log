@@ -1,0 +1,486 @@
+[2022/05/16 08:28:57.149] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 08:32:02.572] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 08:50:36.812] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 08:52:47.425] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 08:55:29.685] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 08:55:29.881] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - 
+[2022/05/16 08:57:13.969] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 08:57:14.031] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] 계정정보가 틀렸습니다. 카메라의 아이디, 패스워드를 확인하세요
+[2022/05/16 09:00:35.086] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:04:33.144] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:09:01.871] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:09:20.313] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:11:40.406] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:13:04.821] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:14:30.744] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:14:36.252] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] 계정정보가 틀렸습니다. 카메라의 아이디, 패스워드를 확인하세요
+[2022/05/16 09:15:49.484] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:15:49.613] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] 계정정보가 틀렸습니다. 카메라의 아이디, 패스워드를 확인하세요
+[2022/05/16 09:16:05.635] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:16:05.720] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] 계정정보가 틀렸습니다. 카메라의 아이디, 패스워드를 확인하세요
+[2022/05/16 09:16:23.202] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:17:10.439] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:17:10.586] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 09:17:10.619] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 09:17:13.586] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 09:17:18.729] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 09:23:35.394] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:24:00.133] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:43:27.558] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:50:17.831] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:50:18.151] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 09:50:18.208] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 09:50:20.926] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 09:51:02.888] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 09:51:50.321] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:51:50.460] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 09:51:50.492] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 09:51:50.658] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 09:53:47.371] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 09:54:04.663] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:54:04.911] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 09:54:04.944] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 09:54:07.604] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 09:54:44.947] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:54:45.095] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 09:54:45.124] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 09:54:47.870] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 09:57:15.931] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:57:16.059] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 09:57:16.090] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 09:57:18.725] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 09:57:33.025] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 09:57:33.152] [INFO]  [2022/05/16 09:57:33.180] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 09:57:35.935] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:02:30.789] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:02:30.930] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:02:30.959] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:02:31.098] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:09:07.543] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:09:07.708] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:09:07.738] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:09:10.733] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:09:19.055] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:09:19.240] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:09:19.273] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:09:19.411] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:09:53.954] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:09:54.129] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:09:54.192] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:09:56.589] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:10:00.810] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:10:00.987] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:10:01.122] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:12:24.686] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:12:24.851] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:12:27.644] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:12:31.236] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:12:31.385] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:12:31.437] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:12:31.507] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:12:46.804] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:12:47.048] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:12:47.165] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:13:08.796] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:13:11.364] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:13:13.275] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:13:13.457] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:13:13.514] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:13:13.538] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:13:18.956] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:13:19.096] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:13:19.142] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:13:19.212] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:13:24.984] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:13:25.176] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:13:25.229] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:13:25.271] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:13:32.047] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:13:32.240] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:13:32.283] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:13:32.365] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:13:40.252] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:13:40.407] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:13:40.452] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:13:40.557] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:16:36.395] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:16:36.539] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:16:36.569] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:16:38.810] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:17:58.790] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:17:59.000] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:17:59.028] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:17:59.094] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:18:00.101] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:18:00.299] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:18:00.326] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=3
+[2022/05/16 10:18:00.380] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:18:11.773] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:18:11.986] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:18:12.024] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:18:44.198] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:18:44.547] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:18:44.737] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:18:44.782] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:18:46.965] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:02.636] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:02.759] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:02.790] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:02.855] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:05.048] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:05.219] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:05.244] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:05.297] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:07.665] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:07.793] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:07.818] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:07.872] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:09.771] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:09.923] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:09.950] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:10.010] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:12.116] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:12.326] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:12.354] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:13.498] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:13.612] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:13.636] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:13.688] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:14.339] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:14.533] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:14.561] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:14.612] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:15.529] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:15.673] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:15.697] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:15.750] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:16.437] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:16.584] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:16.608] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:16.658] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:17.615] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:17.732] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:17.757] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:17.809] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:22.326] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:22.463] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:22.496] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:22.564] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:38.202] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:38.341] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:38.366] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:38.498] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:19:42.485] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:19:42.732] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:19:42.760] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:19:42.822] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:20:00.175] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:20:00.305] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:20:00.331] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:20:00.383] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:20:09.589] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:20:09.793] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:20:09.821] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:20:09.945] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Exit With Error
+[2022/05/16 10:20:34.723] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:20:34.880] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:20:34.919] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:20:37.978] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:21:48.964] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:21:49.083] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:21:49.114] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:43:25.526] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:46:33.979] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:46:34.183] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:46:34.214] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:46:39.765] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:46:41.252] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 10:47:01.146] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 10:47:20.745] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 10:47:24.648] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 10:47:42.452] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 10:50:37.762] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 10:50:37.930] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 10:50:37.959] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:50:40.320] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 10:50:41.503] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 10:50:55.648] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 10:51:02.292] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 10:51:04.267] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 10:51:08.067] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 10:51:16.822] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 10:55:16.799] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 10:55:52.762] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 10:57:23.152] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:00:41.727] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:00:51.733] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:00:51.748] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:01:01.750] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:01:01.761] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:01:11.763] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:01:11.776] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:01:21.779] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:01:21.792] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:01:31.794] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:01:31.805] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:01:41.807] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:01:41.822] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:01:47.123] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:01:51.824] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:01:55.838] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:01:57.125] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:02:05.841] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:02:05.857] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:02:15.859] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:02:15.871] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:02:25.873] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:02:25.894] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:02:35.897] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:02:35.911] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:02:45.912] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:02:45.926] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:02:55.541] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:03:06.124] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:03:11.046] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:03:21.048] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:03:21.114] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:03:31.117] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:03:31.130] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:03:41.132] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:03:41.145] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:03:51.148] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:03:51.188] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:04:01.190] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:04:01.204] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:04:11.207] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:04:11.217] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:04:21.220] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:04:21.241] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:04:31.243] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:04:31.262] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:04:41.264] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:04:41.276] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:04:51.278] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:04:51.292] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:05:01.294] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:05:01.441] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 11:05:01.617] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 11:05:01.653] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 11:05:25.773] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 11:05:27.799] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:05:37.802] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:05:37.817] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:05:47.818] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:05:47.831] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:05:57.833] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:05:57.846] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:05:59.703] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:06:07.849] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:06:09.706] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:06:09.719] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:06:19.721] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:06:19.734] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:06:29.736] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:06:29.748] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:06:39.751] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:06:39.770] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:06:49.772] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:06:49.786] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:06:59.788] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:06:59.803] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:07:09.806] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:07:09.821] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:07:19.823] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:07:19.854] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:07:43.145] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:07:53.150] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:07:53.168] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:07:54.550] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:08:03.170] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:08:04.552] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:08:04.571] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:08:14.573] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:08:14.584] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:08:24.586] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:08:24.602] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:08:34.604] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:08:34.621] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:08:44.623] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:08:44.638] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:08:54.639] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:08:54.654] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:09:04.655] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:09:04.712] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:09:14.714] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:09:14.728] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:09:24.730] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:09:31.570] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:09:41.573] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:10:44.203] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:10:54.208] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:10:54.223] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:11:04.225] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:11:04.250] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:11:14.253] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:11:14.272] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:11:24.274] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:11:24.290] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:11:34.292] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:11:34.312] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:11:44.315] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:11:44.330] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:11:54.332] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:11:54.345] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:12:04.346] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:12:04.358] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:12:14.361] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:12:14.372] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:12:24.374] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:12:24.392] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:12:34.394] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:12:34.425] [INFO]  [CAM 114 1F기계실#1-5:CCTV_IDIS - 150.218.13.20] RTSP Stream Start
+[2022/05/16 11:14:33.062] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:14:43.066] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:14:43.083] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:14:53.085] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:14:53.098] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:14:53.602] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:14:56.959] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:15:03.101] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:15:03.605] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:15:06.962] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:15:06.980] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:15:16.982] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:15:16.993] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:15:26.996] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:15:27.016] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:15:33.827] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:15:37.019] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:15:43.829] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:15:43.843] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:15:53.845] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:15:53.862] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:16:03.864] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:16:03.877] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:16:13.879] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:16:13.891] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:16:23.894] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:16:23.908] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:16:33.910] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:16:33.931] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:16:43.933] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:16:43.948] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:16:53.949] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:16:53.963] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:17:03.965] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:17:03.981] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:17:13.982] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:17:13.994] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:17:23.997] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:17:24.042] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:17:34.044] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:17:34.058] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:17:44.059] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:17:44.071] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:17:54.072] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:17:54.085] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:18:04.087] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:18:04.104] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:18:14.107] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:18:14.126] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:18:24.129] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:18:24.142] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:18:34.143] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:18:34.156] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:18:44.158] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:18:44.171] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:18:54.172] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:18:54.219] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:19:04.221] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:19:04.235] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:19:14.237] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:19:14.250] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:19:24.253] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:19:24.266] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:19:34.269] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:19:34.290] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:19:44.292] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:19:44.305] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:19:54.307] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:19:54.319] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:20:04.322] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:20:19.357] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:20:29.361] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:20:29.385] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:20:39.387] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:20:39.403] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:20:49.405] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:20:49.421] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:20:59.423] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:20:59.470] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:21:09.472] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:21:09.485] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:21:19.488] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:21:19.500] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:21:29.502] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:21:29.514] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:21:39.516] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:21:39.530] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] RTSP Stream Start
+[2022/05/16 11:21:49.532] [INFO]  [CAM 110 1F기계실#1-1:CCTV_IDIS - 150.218.13.46] 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:22:11.713] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:22:21.717] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:22:21.737] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:22:31.740] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:22:31.753] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:22:41.755] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:22:41.778] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:22:51.779] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:22:51.793] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:23:01.796] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:23:01.811] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:23:08.489] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:23:11.813] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:23:18.492] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:23:18.511] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:23:28.514] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:23:28.527] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:23:38.530] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:23:38.589] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:23:48.591] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:23:48.616] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:23:58.619] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:23:58.647] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:24:08.649] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:24:08.664] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:24:18.666] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:24:18.685] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:24:28.687] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:24:28.705] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:24:38.707] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:24:38.722] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:24:48.724] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:24:48.742] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:24:58.743] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:24:58.755] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:25:08.758] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:25:35.462] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:25:46.599] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:26:07.284] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] RTSP Stream Start
+[2022/05/16 11:26:17.286] [INFO]  [CAM 104 1F항온실#1-3(동):CCTV_IDIS - 150.218.13.26] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:27:00.404] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:27:10.409] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:27:10.425] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:27:20.427] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:27:20.490] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:27:30.492] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:27:30.541] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:27:40.543] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:27:40.562] [INFO]  [CAM 113 1F기계실#1-4:CCTV_IDIS - 150.218.13.55] RTSP Stream Start
+[2022/05/16 11:28:03.497] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] RTSP Stream Start
+[2022/05/16 11:28:13.501] [INFO]  [CAM 111 1F기계실#1-2:CCTV_IDIS - 150.218.13.74] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:32:51.600] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] RTSP Stream Start
+[2022/05/16 11:33:01.602] [INFO]  [CAM 112 1F기계실#1-3:CCTV_IDIS - 150.218.13.71] Network timeout: 카메라에 접속할 수 없습니다. 카메라 설정 혹은 네트워크 상태를 확인하세요
+[2022/05/16 11:33:07.927] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] RTSP Stream Start
+[2022/05/16 11:33:08.120] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] CAMERA Stream Open: 60000
+[2022/05/16 11:33:08.151] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2
+[2022/05/16 11:33:13.160] [INFO]  [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.10.105:554/trackID=2

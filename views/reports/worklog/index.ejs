@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20231106: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css"/>
+
+    <!-- by shkoh 20210415: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css"/>
+    
+    <!-- by shkoh 20231106: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+
+    <!-- by shkoh 20210303: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+    
+    <!-- by shkoh 20231106: ubiGuard style -->
+    <link rel="stylesheet" href="/stylesheets/worklog.css"/>
+</head>
+<body>
+    <div class="container-fluid content">
+        <article class="col-sm-12 col-md-12 col-lg-12 content-panel">
+            <div class="panel panel-default panel-header">
+                <div class="panel-heading">검색조건</div>
+                <div class="panel-body">
+                    <div class="searching">
+                        <div class="first">
+                        </div>
+                        <div class="last">
+                            <div class="conditions">
+                                <span class="searching-label">
+                                    조회기간:
+                                </span>
+                                <input id="start-date" class="custom-date" type="text"/>
+                                <span class="searching-icon">
+                                    ~
+                                </span>
+                                <input id="end-date" class="custom-date" type="text"/>
+                                <button id="init-date" class="custom-button">기간 재설정</button>
+                                <input id="search-button" type="button" class="custom-search-button" title="작업로그 검색(최대 1만건)"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searching-notification">* 최대 1만건까지 조회가능</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">작업이력</div>
+                <div class="panel-body i-log-grid">
+                    <div id="log-page"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- by shkoh 20231106: 공통 js -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/cultures/kendo.culture.ko.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/jszip.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/pako_deflate.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210415: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+
+    <!-- by shkoh 20231106: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20231106: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exhide.min.js"></script>
+
+    <!-- by shkoh 20231109: pdf export -->
+    <script src="/component/jsPDF/jspdf.min.js"></script>
+    <script src="/component/jsPDF-autotable/jspdf.plugin.autotable.min.js"></script>
+    <script src="/fonts/MalgunGothic-normal.js" type="module"></script>
+    <script src="/fonts/MalgunGothic-bold.js" type="module"></script>
+
+    <!-- by shkoh 20231109: UbiGuard -->
+    <script src="/javascripts/worklog/datePicker.js"></script>
+    <script src="/javascripts/worklog/main.js"></script>
+</body>
+</html>

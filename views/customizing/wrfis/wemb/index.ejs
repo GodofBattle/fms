@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210303: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20210303: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+
+    <!-- by shkoh 20210303: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20210303: ubiGuard style -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/wrfis/wemb_setting.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="tab-panel">
+            <ul>
+                <li class="k-state-active" id="dashboard">메인 대시보드</li>
+                <li id="dd_macha">기계통합계통도</li>
+                <li id="dd02_hecw">[기계] 냉방용 열교환기 계통도</li>
+                <li id="dd03_cstk">[기계] 축냉조 계통도</li>
+                <li id="dd10_ctow">[기계] 냉각탑 계통도</li>
+                <li id="dd05_mbjb">전기통합계통도</li>
+                <li id="dd06_ups">[전기] UPS 계통도</li>
+                <li id="dd07_sts">[전기] STS 계통도</li>
+                <li id="page6">X 메인분전반 계통도</li>
+                <li id="page9">X 발전기 계통도</li>
+            </ul>
+            <!-- page1: 메인 대시보드 -->
+            <div class="custom-tabstrip-panel" style="font-size: 12px;">
+                <% include ./wemb_dashboard %>
+            </div>
+            <!-- page2: 위엠비 기계 통합 계통도 -->
+            <div class="custom-tabstrip-panel" style="font-size: 12px;">
+                <% include ./wemb_macha %>
+            </div>
+            <!-- page3: 냉방용 열교환기 계통도 -->
+            <div class="custom-tabstrip-panel">
+                <% include ./wemb_heatExchanger %>
+            </div>
+            <!-- page4: 축냉조 계통도 -->
+            <div class="custom-tabstrip-panel">
+                <% include ./wemb_cstk %>
+            </div>
+            <!-- page5: 냉각탑 계통도 -->
+            <div class="custom-tabstrip-panel">
+                <% include ./wemb_ctow %>
+            </div>
+            <!-- page5: 위엠비 전기 통합 계통도 -->
+            <div class="custom-tabstrip-panel">
+                <% include ./wemb_elec %>
+            </div>
+            <!-- page6: UPS 계통도 -->
+            <div class="custom-tabstrip-panel">
+                <% include ./wemb_ups %>
+            </div>
+            <!-- page8: STS 계통도 -->
+            <div class="custom-tabstrip-panel">
+                <% include ./wemb_sts %>
+            </div>
+            <!-- page6: 메인분전반 계통도 -->
+            <div class="custom-tabstrip-panel">
+            </div>
+            <!-- page9: 발전기 계통도 -->
+            <div class="custom-tabstrip-panel">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDialogTree" tabindex="-2" role="dialog" aria-labelledby="modalDialogTree">
+        <div class="modal-dialog" role="document" style="width:450px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modalTreeTitle" class="modal-title" style="font-weight:600;">WEMB 연결 설비 선택</h5>
+                </div>
+                <div class="modal-body modal-tree-body" id="modalDialogTreeBody" style="height:500px;">
+                    <div id="modal-tree" class="ztree"></div>
+                </div>
+                <div class="modal-footer custom-modal-footer">
+                    <input class="filter-text" type="search" name="search" placeholder="필터링"/>
+                    <button type="button" class="btn btn-primary" id="btn-modal-tree-link">등록</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-popup-setting" tabindex="-3" role="dialog" aria-labelledby="modal-popup-setting">
+        <div class="modal-dialog" role="document" style="width:450px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modalTreeTitle" class="modal-title" style="font-weight:600;">WEMB 팝업 설비 선택</h5>
+                </div>
+                <div class="modal-body modal-tree-body" style="height:500px;">
+                    <div id="modal-tree-popup" class="ztree"></div>
+                </div>
+                <div class="modal-footer custom-modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-modal-popup-set">팝업등록</button>
+                    <button type="button" class="btn btn-default" id="btn-modal-popup-clear">팝업해제</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- by shkoh 20210303: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210303: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20210303: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exhide.min.js"></script>
+
+    <script src="/javascripts/customizing/wrfis/wemb/treeContent.js"></script>
+    <script src="/javascripts/customizing/wrfis/wemb/main.js"></script>
+</body>
+</html>

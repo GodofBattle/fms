@@ -1,0 +1,9 @@
+[2023/03/09 14:36:25.579] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/03/09 14:36:50.874] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:59248
+[2023/03/09 14:36:58.370] [INFO]  234
+[2023/03/09 14:36:59.787] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:59248
+[2023/03/09 14:37:26.547] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/03/09 14:37:38.173] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:59455
+[2023/03/09 14:38:26.150] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/03/09 14:38:31.539] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:59690
+[2023/03/09 14:38:39.905] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:59690

@@ -1,0 +1,37 @@
+<div id="didc-leak" class="i-widget i-alert-items" style="left: <%= left %>; top: <%= top %>; width: <%= width %>; height: <%= height %>">
+    <div class="i-title">
+        누수
+    </div>
+    <div class="i-contents">
+        <div class="i-status">
+            <div class="i-info">B1F</div>
+<% for(let idx = 0; idx < 4; idx++) {%>
+    <% if(idx < 3) {%>
+            <div id="i-leak-b1f-<%= idx + 1 %>" class="i-item">
+                <div class="i-mark">
+                    <span class="i-block"></span>
+                </div>
+                <div class="i-mark-name"></div>
+            </div>
+    <%} else {%>
+            <div id="i-leak-b1f-<%= idx + 1 %>" class="i-no-item"></div>
+    <%}%>
+<%}%>
+        </div>
+        <div class="i-status">
+            <div class="i-info">B2F</div>
+<% for(let idx = 0; idx < 4; idx++) {%>
+    <% if(idx < 4) {%>
+            <div id="i-leak-b2f-<%= idx + 1 %>" class="i-item">
+                <div class="i-mark">
+                    <span class="i-block"></span>
+                </div>
+                <div class="i-mark-name"></div>
+            </div>
+    <%} else {%>
+            <div id="i-leak-b2f-<%= idx + 1 %>" class="i-no-item"></div>
+    <%}%>
+<%}%>
+        </div>
+    </div>
+</div>

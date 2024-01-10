@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- by shkoh 20190211: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css"/>
+
+    <!-- by shkoh 20190211: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+
+    <!-- by shkoh 20190211: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20190211: ubiGuard style -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/nps/dashboard_fault.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <aside class="col-xs-4 col-sm-3 col-md-2 col-lg-2" style="padding: 0px 4px; height: 100%;">
+            <div class="panel panel-default">
+                <div class="panel-heading">그룹/설비 장애현황</div>
+                <div class="panel-body">
+                    <div id="tree-content"></div>
+                </div>
+            </div>
+        </aside>
+        <aside class="col-xs-4 col-sm-3 col-md-3 col-lg-3" style="padding: 0px 4px; height: 100%;">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="detail-title">그룹 내 설비 통계현황</div>
+                <div class="panel-body">
+                    <div id="detail-content" class="item-content"></div>
+                </div>
+            </div>
+        </aside>
+        <article class="col-xs-4 col-sm-6 col-md-7 col-lg-7" style="padding: 0px 4px; height: 100%;">
+            <div class="panel panel-default">
+                <div class="panel-heading">현재장애 목록 - <span id="alarm-count">0</span>건</span></div>
+                <div class="panel-body">
+                    <div id="alarm-content"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- by shkoh 20190211: 공통 js -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20190211: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20190211: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+
+    <script src="/javascripts/nps/dashboard/fault/treeContent.js"></script>
+    <script src="/javascripts/nps/dashboard/fault/detailContent.js"></script>
+    <script src="/javascripts/nps/dashboard/fault/alarmContent.js"></script>
+    <script src="/javascripts/nps/dashboard/fault/fault.js"></script>
+</body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- by shkoh 20200813: kendoui-bootstrap styles -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+
+    <!-- by shkoh 20200813: bootstrap styles -->
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+
+    <!-- by shkoh 20200814: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+
+    <!-- by shkoh 20200814: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20200819: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css"/>
+
+    <!-- by shkoh 20200813: ubiguard style -->
+    <link rel="stylesheet" href="/stylesheets/reports.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <article class="col-sm-12 col-md-12 col-lg-12 content-panel-only">
+            <div class="panel panel-default panel-header">
+                <div class="panel-heading">검색조건</div>
+                <div class="panel-body">
+                    <div class="searching">
+                        <div class="first">
+                        </div>
+                        <div class="last">
+                            <div class="conditions">
+                                <input id="searching-date" class="custom-date" type="text"/>
+                                <input id="search-button" type="button" class="custom-search-button" title="우리FIS 설비 일일 점검일지 조회"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">설비 일일 점검일지</div>
+                <div class="panel-body">
+                    <div id="report-toolbar"></div>
+                    <div id="report-page">
+                        <div id="report-content" class="r-report-content-landscape">
+                            <table class="r-table r-table-header">
+                                <tr>
+                                    <th rowspan="1" colspan="2" width="5%" data-type="stamp" class="r-border-left r-border-top">작 성</th>
+                                    <th rowspan="1" colspan="2" width="5%" data-type="stamp" class="r-border-left r-border-top">검 토</th>
+                                    <th rowspan="1" colspan="2" width="5%" data-type="stamp" class="r-border-left r-border-top r-border-right">승 인</th>
+                                    <th rowspan="2" colspan="28" data-type="stamp" class="r-font-title r-font-underline">설비 일일 점검일지</th>
+                                    <th rowspan="1" colspan="2" width="5%" data-type="stamp" class="r-border-left r-border-top r-border-right">확 인</th>
+                                </tr>
+                                <tr height="50">
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom r-border-right"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom r-border-right"></td>
+                                </tr>
+                            </table>
+                            <table class="r-table r-table-info">
+                                <tr height="30">
+                                    <td rowspan="1" colspan="18" width="50%" class="r-font-info r-align-left r-valign-bottom"><span id="report-date"></span></td>
+                                    <td rowspan="1" colspan="18" width="50%" class="r-font-info r-align-right r-valign-bottom">O : 정상&nbsp;&nbsp;&nbsp;&nbsp;X : 점검요망&nbsp;&nbsp;&nbsp;&nbsp;- : 해당사항 없음</td>
+                                </tr>
+                            </table>
+                            <table id="r-table-equipment-daily" class="r-table r-table-contents">
+                                <colgroup>
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                    <col width="2.78%">
+                                </colgroup>
+                                <thead>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="12" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">점 검 사 항</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">00:00</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">02:00</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">04:00</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">06:00</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">08:00</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">10:00</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">12:00</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">14:00</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">16:00</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">18:00</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">20:00</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info r-font-bold r-bk-gray">22:00</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="3" colspan="3" class="r-border-left r-border-top r-font-info">열교환기</td>
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">기기 가동시 이상소음 및 냄새발생 유무</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">기기 진동 및 누수 상태 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">운전부하 및 온도, 압력 입출구 상태 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="3" colspan="3" class="r-border-left r-border-top r-font-info">냉동기</td>
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">기기 운전시 이상소음 및 판넬 표시등 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">유압 유온의 상태 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">냉수 및 냉각수 입출구 온도, 압력 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="2" colspan="3" class="r-border-left r-border-top r-font-info">냉각탑</td>
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">누수 및 장애물 유무 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">제어반의 작동 확인 등의 기능 상태를 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="4" colspan="3" class="r-border-left r-border-top r-font-info">보일러</td>
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">연소상태 확인, 연료공급, 공급수 확인</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">노즐 이물질 및 탄소부착 점검, 매연 확인</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">사용압력 등 지시계에 의한 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">스팀헤더 지시계 및 밸브 열림상태 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="2" colspan="3" class="r-border-left r-border-top r-font-info">축냉조</td>
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">냉수 및 압력 상태 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">외관 및 밸브 누수 상태 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="3" colspan="3" class="r-border-left r-border-top r-font-info">각종펌프</td>
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">기기 가동시 이상소음 및 냄새발생 유무</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">기기 베어링, 진동, 누수 상태 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">운전부하 및 온도, 압력 입출구 상태 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="4" colspan="3" class="r-border-left r-border-top r-font-info">항온항습기</td>
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">기기 작동상태 이상유무</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">설정 온, 습도(24℃, 40%) 상태점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">냉수공급 및 환수온도 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">스팀배관 누기점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="4" colspan="3" class="r-border-left r-border-top r-font-info">기타</td>
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">전산실 하중점검(전산장비 700kgf/㎥ 이하)</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">전산실 침수방지 시설 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">전산실 외벽침입 접근경보설비 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="38">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left">전산실 장비 배치 및 이중마루 점검</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="288">
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-border-bottom r-font-info">비고</td>
+                                        <td scope="col" rowspan="1" colspan="33" class="r-border-left r-border-top r-border-right r-border-bottom r-font-info r-align-left r-valign-top">* 기타항목은 1일 4회 점검.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="r-table r-table-bottom">
+                                <tr height="60">
+                                    <td colspan="36" class="r-font-footer r-valign-bottom">(주)우리피앤에스</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- by shkoh 20200813: jquery -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+
+    <!-- by shkoh 20200813: bootstrap -->
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <!-- by shkoh 20200814: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20200813: kendoui -->
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/cultures/kendo.culture.ko.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/jszip.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/pako_deflate.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+    
+    <!-- by shkoh 20200814: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+
+    <!-- by shkoh 20200819: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+
+    <!-- by shkoh 20200824: export pdf -->
+    <script src="/component/jsPDF/jspdf.min.js"></script>
+    <script src="/component/jsPDF-autotable/jspdf.plugin.autotable.min.js"></script>
+    <script src="/fonts/MalgunGothic-normal.js"></script>
+    <script src="/fonts/MalgunGothic-bold.js"></script>
+    
+    <!-- by shkoh 20200813: reports javascripts -->
+    <script src="/javascripts/reports/datePicker.js"></script>
+    <script src="/javascripts/reports/exportUtil.js"></script>
+    <script src="/javascripts/reports/wrfis/equipment_daily.js"></script>
+</body>
+</html>

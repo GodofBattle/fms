@@ -1,0 +1,208 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #ffffff;
+    font-family: 'KoPub Dotum';
+    overflow: hidden;
+}
+
+:focus {
+    outline: none;
+}
+
+/***************************************************************************************************************/
+/* by shkoh 20210324: bootstrap 3.x re-define start                                                            */
+/***************************************************************************************************************/
+.container-fluid {
+    padding: 20px 40px;
+    height: 100%;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210324: bootstrap 3.x re-define end                                                              */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210324: icomer-pue panel style start                                                             */
+/***************************************************************************************************************/
+.pue-panel {
+    width: 1509px;
+    height: 431px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.pue-panel > .contents {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/customizing/didc/pue_background.png);
+    background-size: 1509px 431px;
+    background-repeat: no-repeat;
+    background-position: 50% 0vh;
+    display: flex;
+}
+
+.pue-panel > .contents > .pue {
+    flex: 1.0;
+    display: flex;
+    flex-direction: column;
+    padding: 106px 51px 173px 51px;
+}
+
+.pue-panel > .contents > .pue > .values {
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 40px 0px;
+}
+
+.pue-panel > .contents > .pue > .values > .current {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #333333;
+    display: inline-block;
+    width: 200px;
+    padding: 0px 30px;
+    line-height: 72px;
+    text-align: right;
+}
+
+.pue-panel > .contents > .pue > .values > .icon {
+    font-size: 24px;
+    padding-left: 15px;
+    line-height: 72px;
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.pue-panel > .contents > .pue > .values > .icon.up:after {
+    color: #3a8ac0;
+    content: '\25B4';
+}
+
+.pue-panel > .contents > .pue > .values > .icon.down:after {
+    color: #d15435;
+    content: '\25BE';
+}
+
+.pue-panel > .contents > .pue > .values > .compare {
+    font-size: 25px;
+    color: #42ccee;
+    text-shadow: 1px 1px 2px #333333;
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    line-height: 72px;
+}
+
+.pue-panel > .contents > .pue > .formula {
+    padding: 35px 10px;
+    margin: auto;
+    font-size: 18px;
+    text-shadow: 0px 0px #333333;
+}
+
+.pue-panel > .contents > .pue > .formula.extra {
+    font-size: 16px;
+}
+
+.pue-panel > .contents > .pue > .formula > .formula-table > tbody > tr > th {
+    padding: 0px 4px;
+    text-align: center;
+}
+
+.pue-panel > .contents > .pue > .formula > .formula-table > tbody > tr > th.equation {
+    padding: 0px 12px;
+}
+
+.pue-panel > .contents > .pue > .formula > .formula-table > tbody > tr > th.border-top {
+    border-top: 2px solid #333333;
+    padding: 4px 8px;
+}
+
+.pue-panel > .contents > .pie {
+    flex: 1.8;
+    padding: 36px 0px 36px 0px;
+}
+
+.pue-panel > .contents > .pie > .pie-chart {
+    width: 600px;
+    height: 360px;
+}
+
+.pue-panel > .contents > .kw {
+    flex: 1.2;
+    padding: 110px 30px 30px 30px;
+}
+
+.pue-panel > .contents > .kw > .contents {
+    padding: 30px;
+}
+
+.pue-panel > .contents > .kw > .contents.extra {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pue-panel > .contents > .kw > .contents .table {
+    margin-bottom: 0px;
+}
+
+.pue-panel > .contents > .kw > .contents .table > tbody > tr > td {
+    height: 60px;
+    vertical-align: middle;
+}
+
+.pue-panel > .contents > .kw > .contents.extra .table > tbody > tr > td {
+    height: 50px;
+}
+
+.pue-panel > .contents > .kw > .contents .table > tbody > tr > td.title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #454545;
+}
+
+.pue-panel > .contents > .kw > .contents .table > tbody > tr > td.value {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    color: #1a689c;
+    text-shadow: 1px 1px 1px #dddddd;
+}
+
+.pue-panel > .contents > .kw > .contents.extra .table > tbody > tr > td.value {
+    font-size: 25px;
+}
+
+.pue-panel > .contents > .kw > .contents .table > tbody > tr > td.unit {
+    font-size: 13px;
+    color: #666666;
+    padding-left: 0px;
+    padding-top: 15px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210324: icomer-pue panel style end                                                               */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210324: icomer-pue chart panel style start                                                       */
+/***************************************************************************************************************/
+.chart-panel {
+    margin: auto;
+    border-radius: 6px;
+    width: 1498px;
+    height: 100%;
+    box-shadow: 1px 1px 4px #666666;
+    background: linear-gradient(to bottom, #edededed, #fefefecd);
+}
+
+.chart-panel > .bar-chart {
+    width: 100%;
+    height: 100%;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210324: icomer-pue chart panel style end                                                         */
+/***************************************************************************************************************/

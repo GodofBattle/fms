@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <title><%= title %></title>
+
+        <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+        <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+        <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+        <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+
+        <!-- by shkoh 20180515: custom scrollber -->
+        <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+        
+        <link rel="stylesheet" href="/stylesheets/fonts.css" />
+        <link rel="stylesheet" href="/stylesheets/top_menu.css" />
+    </head>
+<%if(site) {%>
+    <body class="<%= site %>">
+<%} else {%>
+    <body>
+<%}%>
+        <header id="top_menu">
+            <nav class="navbar navbar-inverse <%= site %> navbar-fixed-top">
+                <div class="container-fluid" style="padding-right:0px;">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#menu" aria-expanded="true" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+<%if(site) {%>
+                        <a class="navbar-brand <%= site %>" href="/"></a>
+<%} else {%>
+                        <a class="navbar-brand" href="/"></a>
+<%}%>
+                        <p class="navbar-text <%= site %>" id="navbar_user"></p>
+                        <p class="navbar-text <%= site %>" id="navbar_middle"></p>
+                        <p class="navbar-text <%= site %>" id="navbar_end"></p>
+                    </div>
+<%if(site === 'wrfis') {%>
+                    <div class="custom-menu <%= site %>">
+                        <ul class="nav navbar-nav <%= site %>">
+                            <li id="dropdown-monitoring" class="dropdown <%= site %>">
+                                <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <!-- <img src="/img/menu/gnb_icon01.png"> -->
+                                    <span>모니터링</span>
+                                </a>
+                                <ul class="dropdown-menu <%= site %>">
+                                    <li style="list-style: none;"><a class="fms_menu" data="monitoring">FMS</a></li>
+                                    <li class="dropdown-submenu" style="list-style: none;">
+                                        <a>PMS</a>
+                                        <ul class="dropdown-menu <%= site %>">
+                                            <li style="list-style: none;"><a class="fms_menu" data="wrfis_pms_4f">04F PMS</a></li>
+                                            <li style="list-style: none;"><a class="fms_menu" data="wrfis_pms_7f">07F PMS</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu" style="list-style: none;">
+                                        <a>BMS</a>
+                                        <ul class="dropdown-menu <%= site %>">
+                                            <li style="list-style: none;"><a class="fms_menu" data="wrfis_bms_lead">납 배터리</a></li>
+                                            <li style="list-style: none;"><a class="fms_menu" data="wrfis_bms_lithium">리튬 배터리</a></li>
+                                        </ul>
+                                    </li>
+                                    <hr>
+                                    <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_hvacdiagram">항온항습기 가동현황</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_thdiagram">온습도 가동현황</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="wrfis_pue">PUE 모니터링(냉수제외)</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="wrfis_pue_extra">PUE 모니터링(냉수포함)</a></li>
+                                    <hr>
+                                    <li class="dropdown-submenu" style="list-style: none;">
+                                        <a>온도분포도</a>
+                                        <ul class="dropdown-menu <%= site %>">
+                                            <li style="list-style: none;"><a class="fms_menu" data="wrfis_cfd_8f">08F 온도분포도</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown <%= site %>">
+                                <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <!-- <img src="/img/menu/gnb_icon07.png" style="width: 24px; height: 24px;"> -->
+                                    <span>장애관리</span>
+                                </a>
+                                <ul class="dropdown-menu <%= site %>">
+                                    <li style="list-style: none;"><a class="fms_menu" data="dashboard_fault">장애현황</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="history_alarm">장애이력</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown <%= site %>">
+                                <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <!-- <img src="/img/menu/gnb_icon02.png"> -->
+                                    <span>통계 / 정보</span>
+                                </a>
+                                <ul class="dropdown-menu <%= site %>">
+                                    <li style="list-style: none;"><a class="fms_menu" data="statistics_data">데이터 통계</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="report_data">데이터 보고서</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="asset">설비정보</a></li>
+                                    <hr>
+                                    <li class="dropdown-submenu" style="list-style: none;">
+                                        <a>사용자 보고서</a>
+                                        <ul class="dropdown-menu <%= site %>">
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_temphumi">온습도 보고서</a></li>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_temphumi_avg">온습도 가동현황 보고서</a></li>
+                                            <hr>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_ups">UPS 전력 사용현황</a></li>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_hvac">항온항습기 가동현황</a></li>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_pms">PMS 사용현황</a></li>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_pue">PUE 보고서(냉수제외)</a></li>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_pue_extra">PUE 보고서(냉수포함)</a></li>
+                                            <!-- <hr>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_equipdaily">설비 점검일지</a></li>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_saftycheckdaily">위험물 점검일지</a></li>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_electriccheckdaily">전기 점검일지</a></li>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_datadaily">DATA 운영관리일지</a></li>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_upsdaily">UPS 일지</a></li>
+                                            <hr>
+                                            <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_electricspec">전기 확인명세서</a></li>
+                                            <li style="list-style: none;"><a>기계 확인명세서</a></li> -->
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown <%= site %>">
+                                <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <!-- <img src="/img/menu/gnb_icon02.png"> -->
+                                    <span>자산관리</span>
+                                </a>
+                                <ul class="dropdown-menu <%= site %>">
+                                    <li style="list-style: none;"><a class="fms_menu" data="inventory_info">정보관리</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="inventory_asset">자산관리</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="inventory_history">내역관리</a></li>
+                                    <hr>
+                                    <li style="list-style: none;"><a class="fms_menu" data="inventory_report_asset">자산정보</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="inventory_report_repair">자산 수리내역</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="inventory_report_change">자산 변경내역</a></li>
+                                </ul>
+                            </li>
+                            <li id="dropdown-settings" class="dropdown <%= site %>">
+                                <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <!-- <img src="/img/menu/gnb_icon05.png"> -->
+                                    <span>설정</span>
+                                </a>
+                                <ul class="dropdown-menu <%= site %>">
+                                    <li style="list-style: none;"><a class="fms_menu" data="setting_user">사용자 설정</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="setting_sensor">임계값 설정</a></li>
+<%if(grade == 'USR00') {%>
+                                    <hr>
+                                    <li style="list-style: none;"><a class="fms_menu" data="predefine_code">코드 사전설정</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="predefine_equipment">설비 사전설정</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="predefine_inventory">자산 사전설정</a></li>
+                                    <hr>
+                                    <li style="list-style: none;"><a class="fms_menu" data="setting_wemb">WEMB 설정</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="setting_icomer">ICOMER 설정</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="icon_tester">ICON TESTER</a></li>
+<%}%>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapsed navbar-collapse">
+                        <div class="top-button">
+                            <div class="top-servertime <%= site %>">
+                                <div>
+                                    <!-- <img src="/img/menu/watcher.png" style="width: 24px; height: 24px; margin-right: 4px;"> -->
+                                    <span id="server_time"></span>
+                                </div>
+                            </div>
+                            <div class="top-alarm">
+                                <a id="alarm-icon" class="alarm-status" role="button"></a>
+                                <a id="current_alarm" role="button">
+                                    <span class="badge <%= site %>">0</span>
+                                </a>
+                                <div id="popoverAlarm" class="popover fade bottom in <%= site %>" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="popover-header">
+                                        <div class="popover_top_header">
+                                            <span class="popover_top_header_text">미확인 알람</span>
+                                            <span class="label label-default popover_top_header_button" title="미인지 알람 모두 지우기">모두 지우기</span>
+                                        </div>
+                                    </div>
+                                    <div id="popover-content" class="popover-content">
+                                        <div id="alarmPopupContainer"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-logout <%= site %>" id="logout">
+                                <a href="#" role="button">
+                                    <span>logout</span>
+                                    <img src="/img/menu/gnb_icon06.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+<%} else if(site === 'kepco') {%>
+                        <div class="custom-menu <%= site %>">
+                            <ul class="nav navbar-nav <%= site %>">
+                                <li id="dropdown-monitoring" class="dropdown <%= site %>">
+                                    <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <!-- <img src="/img/menu/gnb_icon01.png"> -->
+                                        <span>모니터링</span>
+                                    </a>
+                                    <ul class="dropdown-menu <%= site %>">
+                                        <li style="list-style: none;"><a class="fms_menu has_outsourcing dashboard" data="kepco" viewer-host="<%= dashboard_host %>">대시보드</a></li>
+                                        <!-- <li style="list-style: none;"><a class="fms_menu has_outsourcing 3d" data="kepco_airview" viewer-host="<%= dashboard_host %>">조감도</a></li> -->
+                                        <hr>
+                                        <li style="list-style: none;"><a class="fms_menu" data="monitoring">운영자 화면</a></li>
+                                        <li style="list-style: none;"><a class="fms_menu" data="kepco_pue">PUE 대시보드</a></li>
+                                        <li style="list-style: none;"><a class="fms_menu" data="kepco_power">전력계통도</a></li>
+                                        <hr>
+                                        <li class="dropdown-submenu" style="list-style: none;">
+                                            <a>온도분포도</a> 
+                                            <ul class="dropdown-menu <%= site %>">
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_temp_1f_1">1F ICT 서버실 1</a></li>
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_temp_1f_2">1F ICT 서버실 2</a></li>
+                                                <!-- <li style="list-style: none;"><a class="fms_menu" data="kepco_temp_2f">2F</a></li> -->
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu" style="list-style: none;">
+                                            <a>조명관리</a>
+                                            <ul class="dropdown-menu <%= site %>">
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_light_b1f">B1F</a></li>
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_light_1f">1F</a></li>
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_light_2f">2F</a></li>
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_light_3f">3F</a></li>
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_light_4f">4F</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu" style="list-style: none;">
+                                            <a>보안 모니터링</a>
+                                            <ul class="dropdown-menu <%= site %>">
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_security_b1f">B1F</a></li>
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_security_1f">1F</a></li>
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_security_2f">2F</a></li>
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_security_3f">3F</a></li>
+                                                <li style="list-style: none;"><a class="fms_menu" data="kepco_security_4f">4F</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown <%= site %>">
+                                    <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <!-- <img src="/img/menu/gnb_icon07.png" style="width: 24px; height: 24px;"> -->
+                                        <span>장애관리</span>
+                                    </a>
+                                    <ul class="dropdown-menu <%= site %>">
+                                        <li style="list-style: none;"><a class="fms_menu" data="dashboard_fault">장애현황</a></li>
+                                        <li style="list-style: none;"><a class="fms_menu" data="history_alarm">장애이력</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown <%= site %>">
+                                    <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <!-- <img src="/img/menu/gnb_icon02.png"> -->
+                                        <span>통계 / 정보</span>
+                                    </a>
+                                    <ul class="dropdown-menu <%= site %>">
+                                        <li style="list-style: none;"><a class="fms_menu" data="statistics_data">데이터 통계</a></li>
+                                        <li style="list-style: none;"><a class="fms_menu" data="report_data">데이터 보고서</a></li>
+                                        <!-- <hr>
+                                        <li class="dropdown-submenu" style="list-style: none;">
+                                            <a>사용자 보고서</a>
+                                            <ul class="dropdown-menu <%= site %>">
+                                                <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_temphumi">온습도 보고서</a></li>
+                                            </ul>
+                                        </li> -->
+                                    </ul>
+                                </li>
+                                <li class="dropdown <%= site %>">
+                                    <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <!-- <img src="/img/menu/gnb_icon02.png"> -->
+                                        <span>기반설비관리</span>
+                                    </a>
+                                    <ul class="dropdown-menu <%= site %>">
+                                        <li style="list-style: none;"><a class="fms_menu" data="kepco_asset_info">기반설비정보</a></li>
+                                        <li style="list-style: none;"><a class="fms_menu" data="kepco_asset_history">기반설비 작업이력</a></li>
+                                    </ul>
+                                </li>
+                                <li id="dropdown-settings" class="dropdown <%= site %>">
+                                    <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <!-- <img src="/img/menu/gnb_icon05.png"> -->
+                                        <span>설정</span>
+                                    </a>
+                                    <ul class="dropdown-menu <%= site %>">
+                                        <li style="list-style: none;"><a class="fms_menu" data="setting_user">사용자 설정</a></li>
+                                        <li style="list-style: none;"><a class="fms_menu" data="setting_sensor">임계치 설정</a></li>
+<%if(grade == 'USR00') {%>
+                                        <hr>
+                                        <li style="list-style: none;"><a class="fms_menu" data="predefine_code">코드 사전설정</a></li>
+                                        <li style="list-style: none;"><a class="fms_menu" data="predefine_equipment">설비 사전설정</a></li>
+                                        <li style="list-style: none;"><a class="fms_menu" data="predefine_inventory">자산 사전설정</a></li>
+                                        <hr>
+                                        <li style="list-style: none;"><a class="fms_menu" data="kepco_setting_icomer">ICOMER 설정</a></li>
+<%}%>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapsed navbar-collapse">
+                            <div class="top-button">
+                                <div class="top-servertime <%= site %>">
+                                    <div>
+                                        <!-- <img src="/img/menu/watcher.png" style="width: 24px; height: 24px; margin-right: 4px;"> -->
+                                        <span id="server_time"></span>
+                                    </div>
+                                </div>
+                                <div class="top-alarm">
+                                    <a id="alarm-icon" class="alarm-status" role="button"></a>
+                                    <a id="current_alarm" role="button">
+                                        <span class="badge <%= site %>">0</span>
+                                    </a>
+                                    <div id="popoverAlarm" class="popover fade bottom in <%= site %>" role="tooltip">
+                                        <div class="arrow"></div>
+                                        <div class="popover-header">
+                                            <div class="popover_top_header">
+                                                <span class="popover_top_header_text">미확인 알람</span>
+                                                <span class="label label-default popover_top_header_button" title="미인지 알람 모두 지우기">모두 지우기</span>
+                                            </div>
+                                        </div>
+                                        <div id="popover-content" class="popover-content">
+                                            <div id="alarmPopupContainer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="top-logout <%= site %>" id="logout">
+                                    <a href="#" role="button">
+                                        <span>logout</span>
+                                        <img src="/img/menu/gnb_icon06.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+<%} else if(site === 'pss') {%>
+    <% include ./customizing/pss/top_menu %>
+<%} else if(site === 'kisa118') {%>
+    <% include ./customizing/kisa118/top_menu %>
+<%} else if(site === 'knet') {%>
+    <% include ./customizing/knet/top_menu %>
+<%} else if(site === 'didc') {%>
+    <% include ./customizing/didc/top_menu %>
+<%} else {%>
+                    <div class="collapsed navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="draopdown-toggle fms_menu" data="monitoring" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="/img/menu/gnb_icon01.png"><span>모니터링</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="/img/menu/gnb_icon07.png" style="width: 24px; height: 24px;"><span>장애관리</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li style="list-style: none;"><a class="fms_menu" data="dashboard_fault">장애현황</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="history_alarm">장애이력</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="/img/menu/gnb_icon02.png"><span>통계 / 정보</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li style="list-style: none;"><a class="fms_menu" data="statistics_data">데이터 통계</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="report_data">데이터 보고서</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="asset">설비정보</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="/img/menu/gnb_icon05.png"><span>설정</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li style="list-style: none;"><a class="fms_menu" data="setting_user">사용자 설정</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="setting_sensor">임계값 설정</a></li>
+<%if(grade == 'USR00') {%>
+                                    <hr>
+                                    <li style="list-style: none;"><a class="fms_menu" data="predefine_code">코드 사전설정</a></li>
+                                    <li style="list-style: none;"><a class="fms_menu" data="predefine_equipment">설비 사전설정</a></li>
+<%}%>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="top-button">
+                            <div class="top-alarm">
+                                <a id="alarm-icon" class="alarm-status" role="button"></a>
+                                <a id="current_alarm" role="button"><span class="badge">0</span></a>
+                                <div id="popoverAlarm" class="popover fade bottom in" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="popover-header">
+                                        <div class="popover_top_header">
+                                            <span class="popover_top_header_text">미확인 알람</span>
+                                            <span class="label label-default popover_top_header_button" title="미인지 알람 모두 지우기">모두 지우기</span>
+                                        </div>
+                                    </div>
+                                    <div id="popover-content" class="popover-content">
+                                        <div id="alarmPopupContainer"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-logout" id="logout">
+                                <a href="#" role="button">
+                                    <span>logout</span>
+                                    <img src="/img/menu/gnb_icon06.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+<%}%>
+                </div>
+            </nav>
+
+<%if(site === 'wrfis') {%>
+            <audio preload="auto" id='alarmSound' type="audio/mpeg" src="/sound/beep.mp3"></audio>
+            <audio preload="auto" id='alarmSound1' type="audio/mpeg" src="/sound/MINOR.mp3"></audio>
+            <audio preload="auto" id='alarmSound2' type="audio/mpeg" src="/sound/MAJOR_wrfis.mp3"></audio>
+            <audio preload="auto" id='alarmSound3' type="audio/mpeg" src="/sound/CRITICAL.mp3"></audio>
+            <audio preload="auto" id='alarmSound4' type="audio/mpeg" src="/sound/NOANSWER.mp3"></audio>
+            <audio preload="auto" id='alarmSound5' type="audio/mpeg" src="/sound/DISCONNECT.mp3"></audio>
+<%} else {%>
+            <audio preload="auto" id='alarmSound' type="audio/mpeg" src="/sound/beep.mp3"></audio>
+            <audio preload="auto" id='alarmSound1' type="audio/mpeg" src="/sound/MINOR.mp3"></audio>
+            <audio preload="auto" id='alarmSound2' type="audio/mpeg" src="/sound/MAJOR.mp3"></audio>
+            <audio preload="auto" id='alarmSound3' type="audio/mpeg" src="/sound/CRITICAL.mp3"></audio>
+            <audio preload="auto" id='alarmSound4' type="audio/mpeg" src="/sound/NOANSWER.mp3"></audio>
+            <audio preload="auto" id='alarmSound5' type="audio/mpeg" src="/sound/DISCONNECT.mp3"></audio>
+<%}%>
+        </header>
+
+        <div class="iframe-viewer-container">
+            <script> 
+                const start_viewer_url = "<%= url %>";
+                const start_middle_text = "<%= middle_text %>";
+                const start_end_text = "<%= end_text %>";
+            </script>
+            <iframe id="mainViewer" frameborder="0" allowfullscreen referrerpolicy="no-referrer" allowpaymentrequest="false"></iframe>
+        </div>
+
+<%if(site) {%>
+        <footer>
+            <p class="alarm-legend-collection <%= site %>">
+                장애등급: 
+                <span class="alarm-legend <%= site%>" style="background-color:#0161b8;color:#f3f3f3;">정&nbsp;&nbsp;상</span>
+                <span class="alarm-legend <%= site%>" style="background-color:#ff9c01;color:#f3f3f3;">주&nbsp;&nbsp;의</span>
+                <span class="alarm-legend <%= site%>" style="background-color:#fe6102;color:#f3f3f3;">경&nbsp;&nbsp;고</span>
+                <span class="alarm-legend <%= site%>" style="background-color:#de0303;color:#f3f3f3;">위&nbsp;&nbsp;험</span>
+                <span class="alarm-legend <%= site%>" style="background-color:#511a81;color:#f3f3f3;">응답없음</span>
+                <span class="alarm-legend <%= site%>" style="background-color:#000000;color:#f3f3f3;">통신불량</span>
+                <span class="alarm-legend <%= site%>" style="background-color:#656565;color:#f3f3f3;">사용안함</span>
+            </p>
+            <p class="copyright <%= site %>">Copyright ⓒ UbiGuard LTD All rights reserved</p>
+            <p class="servertime">
+            </p>
+        </footer>
+<%} else {%>
+        <footer>
+            <p class="alarm-legend-collection">
+                장애등급: 
+                <span class="alarm-legend" style="background-color:#0161b8;color:#f3f3f3;">정&nbsp;&nbsp;상</span>
+                <span class="alarm-legend" style="background-color:#ff9c01;color:#f3f3f3;">주&nbsp;&nbsp;의</span>
+                <span class="alarm-legend" style="background-color:#fe6102;color:#f3f3f3;">경&nbsp;&nbsp;고</span>
+                <span class="alarm-legend" style="background-color:#de0303;color:#f3f3f3;">위&nbsp;&nbsp;험</span>
+                <span class="alarm-legend" style="background-color:#511a81;color:#f3f3f3;">응답없음</span>
+                <span class="alarm-legend" style="background-color:#000000;color:#f3f3f3;">통신불량</span>
+                <span class="alarm-legend" style="background-color:#656565;color:#f3f3f3;">사용안함</span>
+            </p>
+            <p class="copyright">Copyright ⓒ 2016 - 2021 UbiGuard FMS 5.0 LTD All rights reserved</p>
+            <p class="servertime">
+                <span id="server_time"></span>
+            </p>
+        </footer>
+<%}%>
+
+<%if(site === 'didc') {%>
+        <div id="i-server-connection-panel" class="i-server-connection-background">
+            <div class="i-server-connection-text">
+                서버와의 연결이 비정상적으로 종료되었습니다.<br>
+                <b style="color: #d24747;">새로고침</b>하여 재접속하시기 바랍니다.
+            </div>
+        </div>
+<%}%>
+        <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+        <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+        <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+        <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+
+        <!-- by shkoh 20180515: custom scrollbar -->
+        <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+        <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+        
+        <script src="/javascripts/top_menu.js"></script>
+    </body>
+</html>

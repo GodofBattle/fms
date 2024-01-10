@@ -1,0 +1,84 @@
+[2022/12/22 09:42:57.659] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2022/12/22 09:43:14.550] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51293
+[2022/12/22 09:44:23.320] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51293
+[2022/12/22 09:44:23.522] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51307
+[2022/12/22 09:44:23.532] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:44:34.251] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51307
+[2022/12/22 09:44:34.443] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51316
+[2022/12/22 09:44:34.451] [INFO]  [2022/12/22 09:45:27.036] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51316
+[2022/12/22 09:45:27.258] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51327
+[2022/12/22 09:45:27.268] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:45:45.745] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51327
+[2022/12/22 09:45:45.918] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51339
+[2022/12/22 09:45:45.925] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:46:05.167] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51339
+[2022/12/22 09:46:05.358] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51348
+[2022/12/22 09:46:05.367] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:46:21.102] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51348
+[2022/12/22 09:46:21.282] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51359
+[2022/12/22 09:46:21.288] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:46:33.929] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51359
+[2022/12/22 09:46:34.099] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51371
+[2022/12/22 09:46:34.107] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:47:01.821] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51371
+[2022/12/22 09:47:02.023] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51382
+[2022/12/22 09:47:02.031] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:47:10.413] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51382
+[2022/12/22 09:47:10.617] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51392
+[2022/12/22 09:47:10.627] [INFO]  [2022/12/22 09:47:15.111] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51392
+[2022/12/22 09:47:15.278] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51393
+[2022/12/22 09:47:15.284] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:47:20.808] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51393
+[2022/12/22 09:47:20.983] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51402
+[2022/12/22 09:47:20.992] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:47:27.262] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51402
+[2022/12/22 09:47:27.435] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51411
+[2022/12/22 09:47:27.442] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:47:35.174] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51411
+[2022/12/22 09:47:35.345] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51421
+[2022/12/22 09:47:35.354] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:47:40.213] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51421
+[2022/12/22 09:47:40.355] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51422
+[2022/12/22 09:47:40.382] [INFO]  [2022/12/22 09:47:49.726] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51422
+[2022/12/22 09:47:49.871] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51434
+[2022/12/22 09:47:56.765] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51434
+[2022/12/22 09:47:56.915] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51443
+[2022/12/22 09:47:56.941] [INFO]  [2022/12/22 09:48:06.928] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51443
+[2022/12/22 09:48:07.096] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51452
+[2022/12/22 09:48:07.105] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:48:14.151] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51452
+[2022/12/22 09:48:14.319] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51461
+[2022/12/22 09:48:14.327] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:48:21.658] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51461
+[2022/12/22 09:48:21.824] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51469
+[2022/12/22 09:48:21.832] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:48:48.601] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51469
+[2022/12/22 09:48:48.782] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51480
+[2022/12/22 09:48:56.745] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51480
+[2022/12/22 09:48:56.914] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51487
+[2022/12/22 09:48:56.926] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:49:05.088] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51487
+[2022/12/22 09:49:05.262] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51495
+[2022/12/22 09:49:05.271] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:49:10.122] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51495
+[2022/12/22 09:49:10.285] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51498
+[2022/12/22 09:49:58.944] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51498
+[2022/12/22 09:49:59.159] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51513
+[2022/12/22 09:49:59.170] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:50:20.248] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51513
+[2022/12/22 09:50:20.424] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51525
+[2022/12/22 09:50:20.437] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:50:40.139] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51525
+[2022/12/22 09:50:40.294] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51538
+[2022/12/22 09:51:00.715] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51538
+[2022/12/22 09:51:00.892] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51549
+[2022/12/22 09:51:00.912] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:51:39.990] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51549
+[2022/12/22 09:51:40.194] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51560
+[2022/12/22 09:51:40.200] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:52:19.307] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51560
+[2022/12/22 09:52:19.491] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:51570
+[2022/12/22 09:52:19.502] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/12/22 09:55:56.328] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:51570
+[2022/12/22 09:55:56.881] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:52414
+[2022/12/22 09:55:56.929] [INFO]  [2022/12/22 10:08:21.534] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:52414

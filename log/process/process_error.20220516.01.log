@@ -1,0 +1,83 @@
+[2022/05/16 08:50:55.646] [ERROR] TypeError: Cannot read property 'call' of undefined
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:357:16)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2022/05/16 08:53:21.357] [ERROR] TypeError: Cannot read property 'call' of undefined
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:357:16)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2022/05/16 08:55:30.052] [ERROR] TypeError: Cannot read property 'call' of undefined
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:357:16)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2022/05/16 08:57:14.046] [ERROR] TypeError: Cannot read property 'call' of undefined
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:357:16)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2022/05/16 09:00:35.154] [ERROR] TypeError: Cannot read property 'call' of undefined
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:357:16)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2022/05/16 09:02:59.311] [ERROR] /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:30
+                camera.getSystemDateAndTime((this, err, time, xml) => {
+                                             ^^^^
+
+SyntaxError: Invalid destructuring assignment target
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:13:20)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+[2022/05/16 09:03:29.363] [ERROR] /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:30
+                camera.getSystemDateAndTime((this, err, time, xml) => {
+                                             ^^^^
+
+SyntaxError: Invalid destructuring assignment target
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:13:20)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+[2022/05/16 09:54:07.605] [ERROR] TypeError: Cannot read property 'clients' of undefined
+    at VideoStream.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:108:43)
+    at VideoStream.emit (events.js:376:20)
+    at Mpeg1Muxer.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:85:17)
+    at Mpeg1Muxer.emit (events.js:376:20)
+    at ChildProcess.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/mpeg1muxer.js:51:19)
+    at ChildProcess.emit (events.js:376:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+    at Process.callbackTrampoline (internal/async_hooks.js:134:14)
+[2022/05/16 09:55:07.311] [ERROR] TypeError: Cannot read property 'clients' of undefined
+    at VideoStream.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:108:43)
+    at VideoStream.emit (events.js:376:20)
+    at Mpeg1Muxer.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:85:17)
+    at Mpeg1Muxer.emit (events.js:376:20)
+    at ChildProcess.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/mpeg1muxer.js:51:19)
+    at ChildProcess.emit (events.js:376:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+    at Process.callbackTrampoline (internal/async_hooks.js:134:14)

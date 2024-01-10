@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+
+    <title>로그이력보기 : <%= data.title %></title>
+
+    <!-- kdh 20180913 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+    <!-- kdh 20180913 ubiGuard css -->
+    <link rel="stylesheet" href="/stylesheets/monitoring_log.css" />
+</head>
+<body>
+    <script type="text/javascript">
+        let g_equipId = <%= data.Id %>;
+    </script>
+    
+    <div class="container-fluid">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                그룹/설비명: <label class="log-title"><%= data.name2 %></label>
+                통신방식: <label class="log-title" id="logMod"><%= data.log_mod %></label>
+                IP: <label class="log-title" id="logIp"><%= data.ip %></label>
+                Port: <label class="log-title" id="logPort"><%= data.port %></label>
+                DeviceID: <label class="log-title" id="logDeviceId"><%= data.device_id %></label>
+                장애등급: <label class="log-title" id="logStatus"><%= data.log_status %></label>
+                <button type="button" id="btnRefresh" class="btn" title="refresh">
+                    <span class="btn-refresh"></span>
+                </button>
+            </div>
+            <div class="panel-body" style="padding: 0px;">
+                <pre id="log" aria-readonly="true"></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- kdh 20180913 공통 js -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>    
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+    <script src="/javascripts/monitoring/log/log.js"></script>
+</body>
+</html>

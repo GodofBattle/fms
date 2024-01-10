@@ -1,0 +1,61 @@
+[2021/11/01 10:58:36.188] [ERROR] Error: ENOENT: no such file or directory, mkdir '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/public/img/diagram/tester/ICON-TESTER'
+    at Object.mkdirSync (fs.js:1009:3)
+    at DiskStorage.destination [as getDestination] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/fileUploadDiagram.js:26:20)
+    at DiskStorage._handleFile (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/storage/disk.js:31:8)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/lib/make-middleware.js:144:17
+    at allowAll (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/index.js:8:3)
+    at wrappedFileFilter (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/index.js:44:7)
+    at Busboy.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/lib/make-middleware.js:114:7)
+    at Busboy.emit (events.js:376:20)
+    at Busboy.emit (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/busboy/lib/main.js:38:33)
+    at PartStream.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/busboy/lib/types/multipart.js:213:13) {
+  errno: -2,
+  syscall: 'mkdir',
+  code: 'ENOENT',
+  path: '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/public/img/diagram/tester/ICON-TESTER'
+}
+[2021/11/01 11:00:06.824] [ERROR] Error: ENOENT: no such file or directory, mkdir '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/public/img/diagram/tester/ICON-TESTER'
+    at Object.mkdirSync (fs.js:1009:3)
+    at DiskStorage.destination [as getDestination] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/fileUploadDiagram.js:26:20)
+    at DiskStorage._handleFile (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/storage/disk.js:31:8)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/lib/make-middleware.js:144:17
+    at allowAll (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/index.js:8:3)
+    at wrappedFileFilter (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/index.js:44:7)
+    at Busboy.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/lib/make-middleware.js:114:7)
+    at Busboy.emit (events.js:376:20)
+    at Busboy.emit (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/busboy/lib/main.js:38:33)
+    at PartStream.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/busboy/lib/types/multipart.js:213:13) {
+  errno: -2,
+  syscall: 'mkdir',
+  code: 'ENOENT',
+  path: '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/public/img/diagram/tester/ICON-TESTER'
+}
+[2021/11/01 11:01:01.186] [ERROR] Error: ENOENT: no such file or directory, mkdir '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/public/img/diagram/tester/ICON'
+    at Object.mkdirSync (fs.js:1009:3)
+    at DiskStorage.destination [as getDestination] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/fileUploadDiagram.js:26:20)
+    at DiskStorage._handleFile (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/storage/disk.js:31:8)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/lib/make-middleware.js:144:17
+    at allowAll (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/index.js:8:3)
+    at wrappedFileFilter (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/index.js:44:7)
+    at Busboy.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/lib/make-middleware.js:114:7)
+    at Busboy.emit (events.js:376:20)
+    at Busboy.emit (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/busboy/lib/main.js:38:33)
+    at PartStream.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/busboy/lib/types/multipart.js:213:13) {
+  errno: -2,
+  syscall: 'mkdir',
+  code: 'ENOENT',
+  path: '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/public/img/diagram/tester/ICON'
+}
+[2021/11/01 11:03:02.027] [ERROR] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:124:11)
+    at Object.join (path.js:1110:7)
+    at DiskStorage.destination [as getDestination] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/fileUploadDiagram.js:18:36)
+    at DiskStorage._handleFile (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/storage/disk.js:31:8)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/lib/make-middleware.js:144:17
+    at allowAll (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/index.js:8:3)
+    at wrappedFileFilter (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/index.js:44:7)
+    at Busboy.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/multer/lib/make-middleware.js:114:7)
+    at Busboy.emit (events.js:376:20)
+    at Busboy.emit (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/busboy/lib/main.js:38:33) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}

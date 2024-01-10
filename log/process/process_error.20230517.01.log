@@ -1,0 +1,35 @@
+[2023/05/17 10:26:26.610] [ERROR] TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received function userPassword
+    at new NodeError (node:internal/errors:387:5)
+    at Hash.update (node:internal/crypto/hash:109:11)
+    at Function.encryptPassword (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/handshake/auth/native-password-auth.js:37:23)
+    at Object.send (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/handshake/client-handshake-response.js:38:38)
+    at Handshake.parseHandshakeInit (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/handshake/handshake.js:82:31)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2023/05/17 11:01:20.756] [ERROR] TypeError: Assignment to constant variable.
+    at userId (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/mariadb.config.js:12:20)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/mariadb.config.js:33:11)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+    at require (node:internal/modules/cjs/helpers:108:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_equipment.js:1:27)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+[2023/05/17 11:01:42.103] [ERROR] TypeError: Assignment to constant variable.
+    at userId (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/mariadb.config.js:12:20)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/mariadb.config.js:33:11)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1245:10)
+    at Module.load (node:internal/modules/cjs/loader:1069:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:904:12)
+    at Module.require (node:internal/modules/cjs/loader:1093:19)
+    at require (node:internal/modules/cjs/helpers:108:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_equipment.js:1:27)
+    at Module._compile (node:internal/modules/cjs/loader:1191:14)

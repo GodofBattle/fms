@@ -1,0 +1,4 @@
+[2022/08/22 14:16:47.724] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] RTSP Stream Start
+[2022/08/22 14:16:47.992] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] CAMERA Stream Open: 60000
+[2022/08/22 14:16:48.084] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.56:554/trackID=1
+[2022/08/22 14:20:23.248] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.56:554/trackID=1

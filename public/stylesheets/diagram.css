@@ -1,0 +1,848 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Malgun Gothic';
+    font-size: 12px;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgb(247, 249, 250), rgba(245, 249, 250, 0.2));
+    overflow: hidden;
+    user-select: none;
+}
+
+/*******************************************************************************************************/
+/* by shkoh 20200923: dashboard style start                                                            */
+/*******************************************************************************************************/
+#map {
+    width: inherit;
+    height: inherit;
+}
+
+#img {
+    width: inherit;
+    height: inherit;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*******************************************************************************************************/
+/* by shkoh 20200923: dashboard style end                                                              */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20200924: cytoscape style start                                                            */
+/*******************************************************************************************************/
+#cytoscape {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    display: block;
+    z-index: 10;
+}
+
+#cytoscape canvas {
+    width: inherit;
+    height: inherit;
+    display: block;
+}
+/*******************************************************************************************************/
+/* by shkoh 20200924: cytoscape style end                                                              */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20200925: cytoscape node style start                                                       */
+/*******************************************************************************************************/
+.node-border-level-0 {
+    border-color: #317be0;
+}
+
+.node-border-level-1 {
+    border-color: #f7bc2d;
+}
+
+.node-border-level-2 {
+    border-color: #f48d3b;
+}
+
+.node-border-level-3 {
+    border-color: #fc285e;
+}
+
+.node-border-level-4 {
+    border-color: #8c2ce0;
+}
+
+.node-border-level-5 {
+    border-color: #101010;
+}
+
+.node-border-level-6 {
+    border-color: #757575;
+}
+
+.hvac-icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 42px 42px;
+    width: 42px;
+    height: 42px;
+}
+
+.hvac-ctrl {
+    background-color: rgba(244, 244, 244, 0.8);
+    border-width: 3px;
+    border-style: solid;
+    padding: 2px 4px;
+}
+
+.th-icon-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+}
+
+.th-icon-text {
+    color: #111111;
+    text-shadow: 0px 0px 1px #111111;
+    font-weight: bold;
+    padding: 2px 2px 0px 2px;
+    font-size: 1.05em;
+    text-align: left;
+    width: 30px;
+}
+
+.th-icon-text-unit {
+    font-size: 0.55em;
+}
+/*******************************************************************************************************/
+/* by shkoh 20200925: cytoscape node style end                                                         */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20200923: kendoui customizing style start                                                  */
+/*******************************************************************************************************/
+.k-upload {
+    border: none;
+    margin-right: 8px;
+}
+
+.k-upload .k-upload-button,
+.k-upload-sync .k-upload-button {
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.k-upload-status {
+    display: none;
+}
+
+.k-dropzone {
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.k-dropzone .k-upload-status {
+    padding-right: 20px;
+}
+
+.k-dropzone-hint {
+    display: none;
+}
+
+.k-button {
+    padding: 2px 10px;
+}
+/*******************************************************************************************************/
+/* by shkoh 20200923: kendoui customizing style end                                                    */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20200923: ztree customizing style start                                                    */
+/*******************************************************************************************************/
+.ztree * {
+    font-size: 14px;
+    font-family: 'Malgun Gothic';
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #124b9a;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 3px 0px 0px;
+}
+/*******************************************************************************************************/
+/* by shkoh 20200923: ztree customizing style end                                                      */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20200923: control button style start                                                       */
+/*******************************************************************************************************/
+#ctrlButtons {
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    padding: 2px;
+    display: inline-flex;
+    z-index: 50;
+}
+/*******************************************************************************************************/
+/* by shkoh 20200923: control button style end                                                         */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20200923: legend style start                                                               */
+/*******************************************************************************************************/
+#legend {
+    z-index: 50;
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    padding: 6px 8px;
+    display: inline-flex;
+    border-radius: 8px;
+    background: rgba(222, 222, 222, 0.8);
+    box-shadow: 0px 0px 5px #333333;
+}
+
+#legend table {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#legend table td {
+    padding: 1px 0px;
+}
+
+#legend .alarm-grade {
+    display: inline-flex;
+}
+
+#legend .grade {
+    padding: 0px 4px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-shadow: 1px 1px #111111;
+    margin: 0px 2px;
+    border-width: 3px;
+    border-style: solid;
+}
+
+#legend .grade-normal {
+    border-color: #317be0;
+    background-color: #317be0;
+}
+
+#legend .grade-normal2 {
+    border-color: #317be0;
+    background-color: #ffffff;
+    color: #111111;
+    text-shadow: none;
+}
+
+#legend .grade-warning {
+    border-color: #f7bc2d;
+    background-color: #f7bc2d;
+}
+
+#legend .grade-warning2 {
+    border-color: #f7bc2d;
+    background-color: #ffffff;
+    color: #111111;
+    text-shadow: none;
+}
+
+#legend .grade-major {
+    border-color: #f48d3b;
+    background-color: #f48d3b;
+}
+
+#legend .grade-major2 {
+    border-color: #f48d3b;
+    background-color: #ffffff;
+    color: #111111;
+    text-shadow: none;
+}
+
+#legend .grade-down {
+    border-color: #fc285e;
+    background-color: #fc285e;
+}
+
+#legend .grade-down2 {
+    border-color: #fc285e;
+    background-color: #ffffff;
+    color: #111111;
+    text-shadow: none;
+}
+
+#legend .icon-cell {
+    text-align: right;
+    font-size: 0.98em;
+}
+
+#legend .table-icon {
+    width: 24px;
+    height: 24px;
+}
+/*******************************************************************************************************/
+/* by shkoh 20200923: legend style end                                                                 */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20210222: customizing pms style start                                                      */
+/*******************************************************************************************************/
+.pms-navigation {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    padding: 6px 8px;
+    display: inline-flex;
+}
+
+.pms-navigation > h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#pms-navi:hover {
+    cursor: pointer;
+}
+/*******************************************************************************************************/
+/* by shkoh 20210222: customizing pms style end                                                        */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20210224: customizing bms style start                                                      */
+/*******************************************************************************************************/
+.bms-navigation {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    padding: 6px 8px;
+    display: inline-flex;
+}
+
+.bms-navigation > h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.bms-navigation .label {
+    border-radius: 0px;
+}
+
+.bms-navigation .label-default {
+    background-color: rgba(119, 119, 119, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.bms-navigation .label-primary {
+    background-color: rgba(51, 122, 183, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+
+#bms-navi:hover {
+    cursor: pointer;
+}
+
+/* by shkoh 20210224: BMS(납) 노드 스타일 */
+.wrfis-bms-item {
+    padding: 0px;
+    width: 210px;
+    height: 160px;
+    background-image: url(/img/customizing/wrfis/bms_lead.png);
+    background-size: 210px 160px;
+    background-repeat: no-repeat;
+    background-position: 0vw 0vh;
+}
+
+.wrfis-bms-item > .bms-title {
+    color: #ffffff;
+    font-size: 22px;
+    padding-left: 35px;
+    padding-top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.wrfis-bms-item > .bms-contents {
+    display: flex;
+    margin-top: 16px;
+}
+
+.wrfis-bms-item > .bms-contents > .left {
+    flex: 1.2;
+    padding: 10px 0px 10px 21px;
+}
+
+.wrfis-bms-item > .bms-contents > .left > .charging {
+    padding-top: 2px;
+    width: 26px;
+    height: 76px;
+    background-size: 26px 76px;
+    background-repeat: no-repeat;
+    background-position: 0vw 0vh;
+    background-image: url(/img/customizing/wrfis/battery_0.png);
+    animation: aniBattery 6s infinite both;
+}
+
+.wrfis-bms-item > .bms-contents > .left > .charging.lvl0,
+.wrfis-bms-item > .bms-contents > .left > .charging.lvl1,
+.wrfis-bms-item > .bms-contents > .left > .charging.lvl2,
+.wrfis-bms-item > .bms-contents > .left > .charging.lvl3 {
+    animation-play-state: running;
+}
+
+.wrfis-bms-item > .bms-contents > .left > .charging.lvl4,
+.wrfis-bms-item > .bms-contents > .left > .charging.lvl5,
+.wrfis-bms-item > .bms-contents > .left > .charging.lvl6 {
+    animation-play-state: paused;
+}
+
+@keyframes aniBattery {
+    0% {
+        background-image: url(/img/customizing/wrfis/battery_0.png);
+    } 20% {
+        background-image: url(/img/customizing/wrfis/battery_20_y.png);
+    } 40% {
+        background-image: url(/img/customizing/wrfis/battery_40.png);
+    } 60% {
+        background-image: url(/img/customizing/wrfis/battery_60_y.png);
+    } 80% {
+        background-image: url(/img/customizing/wrfis/battery_80.png);
+    } 100% {
+        background-image: url(/img/customizing/wrfis/battery_100_y.png);
+    }
+}
+
+.wrfis-bms-item > .bms-contents > .right {
+    flex: 3.6;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;    
+    padding: 20px 10px 20px 0px;
+}
+
+.wrfis-bms-item > .bms-contents > .right.lvl0 {
+    border-color: #0161b8;
+}
+
+.wrfis-bms-item > .bms-contents > .right.lvl1 {
+    border-color: #ff9c01;
+}
+
+.wrfis-bms-item > .bms-contents > .right.lvl2 {
+    border-color: #fe6102;
+}
+
+.wrfis-bms-item > .bms-contents > .right.lvl3 {
+    border-color: #de0303;
+}
+
+.wrfis-bms-item > .bms-contents > .right.lvl4 {
+    border-color: #511a81;
+}
+
+.wrfis-bms-item > .bms-contents > .right.lvl5 {
+    border-color: #000000;
+}
+
+.wrfis-bms-item > .bms-contents > .right.lvl6 {
+    border-color: #656565;
+}
+
+.wrfis-bms-item > .bms-contents > .right > .text {
+    font-size: 12px;
+    text-align: right;
+}
+
+.wrfis-bms-item > .bms-contents > .right > .value {
+    text-align: right;
+}
+
+.wrfis-bms-item > .bms-contents > .right > .system-value {
+    color: #444444;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+/*******************************************************************************************************/
+/* by shkoh 20210224: customizing bms style end                                                        */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20210318: customizing bms - lithum sysytem style start                                     */
+/*******************************************************************************************************/
+.wrfis-bms-sys-item {
+    padding: 0px;
+    color: #ffffff;
+    width: 800px;
+    height: 180px;
+    background-image: url(/img/customizing/wrfis/bms_system.png);
+    background-size: 800px 180px;
+    background-repeat: no-repeat;
+    background-position: 0vw 0vh;
+    display: flex;
+}
+
+.wrfis-bms-sys-item > .bms-sys-title {
+    flex: 1.6;
+    font-size: 22px;
+    padding-left: 35px;
+    font-weight: bold;
+    padding-top: 4px;
+    text-shadow: 1px 1px 2px #666666;
+}
+
+.wrfis-bms-sys-item > .bms-sys-text {
+    padding-top: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+.wrfis-bms-sys-item > .bms-sys-status {
+    flex: 0.85;
+}
+
+.wrfis-bms-sys-item > .bms-sys-status.lvl0 {
+    color: #0161b8;
+}
+
+.wrfis-bms-sys-item > .bms-sys-status.lvl1 {
+    color: #ff9c01;
+}
+
+.wrfis-bms-sys-item > .bms-sys-status.lvl2 {
+    color: #fe6102;
+}
+
+.wrfis-bms-sys-item > .bms-sys-status.lvl3 {
+    color: #de0303;
+}
+
+.wrfis-bms-sys-item > .bms-sys-status.lvl4 {
+    color: #511a81;
+}
+
+.wrfis-bms-sys-item > .bms-sys-status.lvl5 {
+    color: #000000;
+}
+
+.wrfis-bms-sys-item > .bms-sys-status.lvl6 {
+    color: #656565;
+}
+
+.wrfis-bms-sys-item > .bms-sys-battery {
+    flex: 0.95;
+}
+
+.wrfis-bms-sys-item > .bms-sys-battery.lvl0 {
+    color: #0161b8;
+}
+
+.wrfis-bms-sys-item > .bms-sys-battery.lvl1 {
+    color: #ff9c01;
+}
+
+.wrfis-bms-sys-item > .bms-sys-battery.lvl2 {
+    color: #fe6102;
+}
+
+.wrfis-bms-sys-item > .bms-sys-battery.lvl3 {
+    color: #de0303;
+}
+
+.wrfis-bms-sys-item > .bms-sys-battery.lvl4 {
+    color: #511a81;
+}
+
+.wrfis-bms-sys-item > .bms-sys-battery.lvl5 {
+    color: #000000;
+}
+
+.wrfis-bms-sys-item > .bms-sys-battery.lvl6 {
+    color: #656565;
+}
+
+.wrfis-bms-sys-item > .bms-sys-time {
+    flex: 1.2;
+    color: #333333;
+}
+
+.wrfis-bms-sys-item > .bms-sys-vol-curr {
+    flex: 1.4;
+    color: #333333;
+}
+
+.wrfis-bms-rack-item {
+    padding: 0px;
+    color: #ffffff;
+    width: 148px;
+    height: 120px;
+    background-image: url(/img/customizing/wrfis/bms_rack.png);
+    background-size: 148px 120px;
+    background-repeat: no-repeat;
+    background-position: 0vw 0vh;
+    display: flex;
+}
+
+.wrfis-bms-rack-item > .left {
+    flex: 1;
+    padding: 16px 8px 8px 10px;
+}
+
+.wrfis-bms-rack-item > .left > .charging {
+    padding-top: 2px;
+    width: 26px;
+    height: 76px;
+    background-size: 26px 76px;
+    background-repeat: no-repeat;
+    background-position: 0vw 0vh;
+}
+
+.wrfis-bms-rack-item > .left > .charging.charging_0 {
+    background-image: url(/img/customizing/wrfis/battery_0.png);
+    animation: charging_0 2s infinite both;
+}
+
+.wrfis-bms-rack-item > .left > .charging.charging_20 {
+    background-image: url(/img/customizing/wrfis/battery_20.png);
+    animation: charging_20 2s infinite both;
+}
+
+.wrfis-bms-rack-item > .left > .charging.charging_40 {
+    background-image: url(/img/customizing/wrfis/battery_40.png);
+    animation: charging_40 2s infinite both;
+}
+
+.wrfis-bms-rack-item > .left > .charging.charging_60 {
+    background-image: url(/img/customizing/wrfis/battery_60.png);
+    animation: charging_60 2s infinite both;
+}
+
+.wrfis-bms-rack-item > .left > .charging.charging_80 {
+    background-image: url(/img/customizing/wrfis/battery_80.png);
+    animation: charging_80 2s infinite both;
+}
+
+.wrfis-bms-rack-item > .left > .charging.charging_100 {
+    background-image: url(/img/customizing/wrfis/battery_100.png);
+    animation: charging_100 2s infinite both;
+}
+
+@keyframes charging_0 {
+    0% {
+        background-image: url(/img/customizing/wrfis/battery_0.png);
+    } 50% {
+        background-image: url(/img/customizing/wrfis/battery_0_y.png);
+    } 100% {
+        background-image: url(/img/customizing/wrfis/battery_0.png);
+    }
+}
+
+@keyframes charging_20 {
+    0% {
+        background-image: url(/img/customizing/wrfis/battery_20.png);
+    } 50% {
+        background-image: url(/img/customizing/wrfis/battery_20_y.png);
+    } 100% {
+        background-image: url(/img/customizing/wrfis/battery_20.png);
+    }
+}
+
+@keyframes charging_40 {
+    0% {
+        background-image: url(/img/customizing/wrfis/battery_40.png);
+    } 50% {
+        background-image: url(/img/customizing/wrfis/battery_40_y.png);
+    } 100% {
+        background-image: url(/img/customizing/wrfis/battery_40.png);
+    }
+}
+
+@keyframes charging_60 {
+    0% {
+        background-image: url(/img/customizing/wrfis/battery_60.png);
+    } 50% {
+        background-image: url(/img/customizing/wrfis/battery_60_y.png);
+    } 100% {
+        background-image: url(/img/customizing/wrfis/battery_60.png);
+    }
+}
+
+@keyframes charging_80 {
+    0% {
+        background-image: url(/img/customizing/wrfis/battery_80.png);
+    } 50% {
+        background-image: url(/img/customizing/wrfis/battery_80_y.png);
+    } 100% {
+        background-image: url(/img/customizing/wrfis/battery_80.png);
+    }
+}
+
+@keyframes charging_100 {
+    0% {
+        background-image: url(/img/customizing/wrfis/battery_100.png);
+    } 50% {
+        background-image: url(/img/customizing/wrfis/battery_100_y.png);
+    } 100% {
+        background-image: url(/img/customizing/wrfis/battery_100.png);
+    }
+}
+
+.wrfis-bms-rack-item > .left > .charging-percent {
+    margin-top: -1px;
+    margin-left: -6px;
+    text-align: center;
+    font-weight: bold;
+    color: #9be778;
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.wrfis-bms-rack-item > .right {
+    flex: 3;
+    padding-left: 2px;
+    padding-top: 8px;
+}
+
+.wrfis-bms-rack-item > .right > .rack-text {
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.wrfis-bms-rack-item > .right > .rack-text.rack-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+.wrfis-bms-rack-item > .right > .rack-text.rack-title.lvl0 {
+    color: #0161b8;
+}
+
+.wrfis-bms-rack-item > .right > .rack-text.rack-title.lvl1 {
+    color: #ff9c01;
+}
+
+.wrfis-bms-rack-item > .right > .rack-text.rack-title.lvl2 {
+    color: #fe6102;
+}
+
+.wrfis-bms-rack-item > .right > .rack-text.rack-title.lvl3 {
+    color: #de0303;
+}
+
+.wrfis-bms-rack-item > .right > .rack-text.rack-title.lvl4 {
+    color: #511a81;
+}
+
+.wrfis-bms-rack-item > .right > .rack-text.rack-title.lvl5 {
+    color: #000000;
+}
+
+.wrfis-bms-rack-item > .right > .rack-text.rack-title.lvl6 {
+    color: #656565;
+}
+
+.wrfis-bms-rack-item > .right > .rack-value {
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+    color: #ececec;
+}
+
+.wrfis-bms-rack-item > .right > .rack-value.voltage {
+    margin-top: 8px;
+}
+
+.wrfis-bms-rack-item > .right > .rack-value.current {
+    margin-top: 4px;
+}
+
+.wrfis-bms-rack-item > .right > .rack-value.soh {
+    margin-top: 4px;
+}
+/*******************************************************************************************************/
+/* by shkoh 20210318: customizing bms - lithum sysytem style end                                       */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20210512: customizing heat map style start                                                 */
+/*******************************************************************************************************/
+.cfd-navigation {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    padding: 6px 8px;
+    z-index: 60;
+}
+
+.cfd-navigation > h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.cfd-navigation .label {
+    border-radius: 0px;
+}
+
+.cfd-navigation .label-default {
+    background-color: rgba(119, 119, 119, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.cfd-navigation .label-primary {
+    background-color: rgba(51, 122, 183, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.cfd-table {
+    margin-top: 20px;
+    float: right;
+    background-color: rgba(51, 122, 183, 0.4);
+}
+
+.cfd-text {
+    text-align: right;
+    vertical-align: middle;
+    font-size: 9px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #333333;
+    padding-left: 8px;
+}
+
+.cfd-tick {
+    width: 5px;
+    text-align: right;
+    vertical-align: middle;
+    font-size: 9px;
+    color: #ffffff;
+    padding: 0px 0px 0px 6px;
+}
+
+.cfd-legend {
+    width: 36px;
+    padding: 2px 10px 2px 4px;
+}
+
+.cfd-legend-draw {
+    width: 100%;
+    height: 100px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.8) 10%, rgba(0, 255, 0, 0.8) 50%, rgba(0, 0, 255, 0.8) 90%);
+}
+/*******************************************************************************************************/
+/* by shkoh 20210512: customizing heat map style end                                                   */
+/*******************************************************************************************************/

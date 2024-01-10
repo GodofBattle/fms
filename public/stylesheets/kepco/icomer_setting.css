@@ -1,0 +1,313 @@
+html {
+    height: 100%;
+}
+
+body {
+	background-color: #f3f3f3;
+    font-family: 'Nanum Barun Gothic', 'Yoon 윤고딕Display', 'Malgun Gothic';
+    font-size: 14px;
+    height: 100%;
+}
+
+:focus {
+    outline: none;
+}
+
+/***************************************************************************************************************/
+/* by shkoh 20210303: bootstrap style custom start                                                             */
+/***************************************************************************************************************/
+.container-fluid {
+    padding: 8px;
+}
+
+.list-group {
+    margin-bottom: 12px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210303: bootstrap style custom end                                                               */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210303: tab panel style start                                                                    */
+/***************************************************************************************************************/
+.k-tabstrip-wrapper:focus {
+    outline: none;
+}
+
+.k-tabstrip {
+    border: none;
+}
+
+.k-tabstrip:focus {
+    box-shadow: none;
+}
+
+.k-tabstrip > .k-content {
+    border: none;
+    padding: 0px;
+}
+
+.k-tabstrip .k-tabstrip-items {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.k-tabstrip-bottom>.k-tabstrip-items .k-item {
+    border-bottom: none;
+}
+
+.k-tabstrip-items .k-item.k-state-active {
+    margin-left: -1px;
+    border-left: 1px solid #c5c5c5;
+    border-right: 1px solid #c5c5c5;
+    border-bottom: none;
+
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    background-color: #172f51;
+}
+
+.k-tabstrip-items .k-state-active .k-link {
+    color: #f5f5f5;
+    text-shadow: 1px 1px #111111;
+}
+
+.k-tabstrip-items {
+    font-weight: bold;
+}
+
+#tab-panel {
+    box-shadow: 1px 1px 6px rgba(15, 15, 15, 0.6);
+}
+/***************************************************************************************************************/
+/* by shkoh 20210303: tab panel style end                                                                      */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210303: ztree style start                                                                        */
+/***************************************************************************************************************/
+#treeViewer {
+    height: 100%;
+}
+
+.ztree * {
+    font-size: 16px;
+    font-family: 'Nanum Barun Gothic', 'Yoon 윤고딕Display', 'Malgun Gothic';
+}
+
+.ztree li {
+    margin: 2px;
+}
+
+.ztree li ul {
+    margin: 2px;
+}
+
+.ztree li a {
+    color: #000000;    
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #124b9a;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 3px 0px 0px;
+}
+
+#modal-tree.ztree li span.button,
+#modal-tree-popup.ztree li span.button {
+    background-image: url(/component/zTree_v3.5.23/css/zTreeStyleWhite/img/zTreeStandard.png);
+}
+/***************************************************************************************************************/
+/* by shkoh 20210303: ztree style end                                                                          */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210303: group tree view popup style start                                                        */
+/***************************************************************************************************************/
+#modalDialogIcon > .modal-dialog > .modal-content,
+#modalDialogTree > .modal-dialog > .modal-content,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content,
+#modal-popup-setting > .modal-dialog > .modal-content {
+    border-radius: 0px;
+    background-color: rgba(18,35,61,0.9);
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-header,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-header,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-header,
+#modal-popup-setting > .modal-dialog > .modal-content > .modal-header {
+    color: #ffffff;
+    padding: 6px 2px;
+    border-color: #666666;
+    margin: 0px 10px;
+    background-color: transparent;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-body,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-body,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-body,
+#modal-popup-setting > .modal-dialog > .modal-content > .modal-body {
+    color: #ffffff;
+    padding: 6px 15px;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-body > .form-inline,
+#modal-popup-setting > .modal-dialog > .modal-content > .modal-body > .form-inline {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-footer,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-footer,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-footer,
+#modal-popup-setting > .modal-dialog > .modal-content > .modal-footer {
+    padding: 6px 2px;
+    margin: 0px 10px;
+    border-color: #666666;
+    color: #ffffff;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-footer button,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-footer button,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-footer button,
+#modal-popup-setting > .modal-dialog > .modal-content > .modal-footer button {
+    border-radius: 0px;
+    padding: 4px 8px;
+}
+
+.modal-body.modal-tree-body .ztree li a {
+    color: #ffffff;
+}
+
+.filter-text {
+    float: left;
+    padding: 1px 3px;
+    width: 300px;
+    color: #333333;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+    width: 10px;
+    height: 10px;
+    position: inline-block;
+    right: 20px;
+    background-image: url(/img/monitoring/widget_close_dark.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 10px 10px;
+    outline: 0;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210303: group tree view popup style end                                                          */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210303: custom start                                                                             */
+/***************************************************************************************************************/
+.custom-panel {
+    display: flex;
+}
+
+.custom-panel-zone {
+    flex: 1;
+    padding: 0.8em 1.1em;
+}
+
+.custom-list-title {
+    padding: 4px 12px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.custom-panel-air-zone {
+    flex: 1;
+    padding: 25px 60px;
+}
+
+.custom-panel-elec-zone {
+    flex: 1;
+    padding: 12px 20px;;
+}
+
+.custom-btn-group {
+    float: right;
+    top: -3px;
+}
+
+.custom-btn {
+    padding: 3px 6px;
+    font-size: 0.8em;
+}
+
+.custom-span {
+    font-weight: bold;
+    color: blue;
+}
+
+.is-popup {
+    margin-left: 3px;
+    font-size: 0.4em;
+    background-color: #333333;
+    color: #ffffff;
+    display: none;
+    border-radius: 4px;
+    padding: 0px 2px;
+}
+
+.is-popup.custom-popup {
+    display: inline-block;
+}
+
+.custom-panel-temp-zone {
+    flex: 1;
+    padding: 2px;
+}
+
+.custom-temp-list-group-item {
+    padding: 1px 2px;
+    text-align: center;
+}
+
+.custom-temp-btn {
+    padding: 0px 2px;
+    font-size: 0.5em;
+}
+
+.selected-item {
+    background-color: #317be0;
+    color: #eeeeee;
+}
+
+input[type='checkbox'].custom-checkbox {
+    margin: 0px 4px 0px 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210303: custom end                                                                               */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210316: custom temperature humid setting style start                                             */
+/***************************************************************************************************************/
+.custom-th-list-group > .list-group-item {
+    padding: 6px;
+}
+
+.custom-th-list-group > li > div.custom-btn-group {
+    top: -4px;
+}
+
+.custom-th-list-group > li > div > button.custom-btn {
+    padding: 1px 4px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210316: custom temperature humid setting style end                                               */
+/***************************************************************************************************************/

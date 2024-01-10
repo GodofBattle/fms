@@ -1,0 +1,556 @@
+/***************************************************************************************************************/
+/* by shkoh 20180806: monitoring_popup_setting.css common start                                                */
+/***************************************************************************************************************/
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Nanum Barun Gothic', 'Yoon 윤고딕Display', 'Malgun Gothic';
+    height: 100%;
+    overflow: hidden;
+}
+
+:focus {
+    outline: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180806: monitoring_popup_setting.css common end                                                  */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180806: bootstrap 3.x re-define start                                                            */
+/***************************************************************************************************************/
+.content {
+    padding: 8px 2px;
+    height: 100%;
+}
+
+.panel {
+    border-radius: 0px;
+    height: 100%;
+    margin-bottom: 4px;
+}
+
+.panel-primary {
+    border: 3px solid #172f51;
+}
+
+.panel-heading {
+    border-radius: 0px;
+}
+
+.panel-primary > .panel-heading {
+    padding: 3px 6px;
+    height: 32px;
+    background: none;
+    background-color: #172f51;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn {
+    border-radius: 0px;
+}
+
+.form-group-sm .form-control-static {
+    padding: 0px;
+}
+
+.checkbox {
+    margin: 0px;
+}
+
+.btn-group > .btn {
+    border-radius: 0px;
+}
+
+.btn-group > .btn-default:active,
+label.btn.btn-default.active {
+    border-color: #172f51;
+    background-color: #124b9a;
+    color: #f3f3f3;
+    text-shadow: 0 1px 1px #333;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180806: bootstrap 3.x re-define end                                                              */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180822: custom style start                                                                       */
+/***************************************************************************************************************/
+.custom-text-right {
+    padding: 0px;
+    float: right;
+    margin-top: -1px;
+}
+
+.custom-text-right .btn {
+	height: 26px;
+	padding: 0px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.custom-text-right .btn:active {
+    box-shadow: none;
+    outline: none;
+}
+
+.custom-text-right .btn:active:focus,
+.custom-text-right .btn:focus {
+    outline: none;
+}
+
+.custom-text-right .btn-success,
+.custom-text-right .btn-success:focus {
+    background-image: url("/img/setting/btn_save_01.png");
+    background-color: #172f51;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+.custom-text-right .btn-success:hover,
+.custom-text-right .btn-success:active {
+    background-image: url("/img/setting/btn_save_02.png");
+    background-color: #172f51;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+.custom-form-group {
+    width: 100%;
+    display: inline-flex;
+}
+
+.custom-dropdown-template {
+    display: flex;
+    padding: 10px 1px;
+}
+
+.custom-dropdown-image {
+    width: 100px;
+    height: 100%;
+}
+
+.custom-dropdown-text {
+    margin: auto;
+}
+
+.custom-dropdown-icon {
+    margin: auto 0px;
+    padding-right: 8px;
+}
+
+.custom-close-icon {
+    width: 12px;
+    height: 12px;
+    background-image: url(/img/monitoring/widget_close.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    display: block;
+}
+
+.custom-close-icon:hover {
+    cursor: pointer;
+    background-image: url(/img/monitoring/widget_close_dark.png);
+}
+/***************************************************************************************************************/
+/* by shkoh 20180822: custom style end                                                                         */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180816: table re-define start                                                                    */
+/***************************************************************************************************************/
+.table {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.table > tbody > tr > th {
+	color: #444444;
+    border-top: none;
+    padding: 1rem 0.2rem 1rem 1rem;
+    vertical-align: top;
+}
+
+.table > tbody > tr > td {
+    padding: 3px 6px 3px 2px;
+    border-top: 1px solid transparent;
+    text-align: right;
+    vertical-align: top;
+}
+
+.table > tbody > tr > td.imageViewer {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+.form-group-sm .form-control {
+    border-radius: 0px;
+    font-size: 11px;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#groupParentName:focus,
+#equipmentParentName:focus {
+    outline: none;
+    border-color: #ccc;
+    box-shadow: none;
+}
+
+#userSelectButtonForParentGroup {
+    box-shadow: none;
+}
+
+#userSelectButtonForParentGroup:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.i-community[disabled] {
+    opacity: 50%;
+    color: #888888;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180816: table re-define end                                                                      */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180806: ztree start                                                                              */
+/***************************************************************************************************************/
+#treeViewer {
+    height: 100%;
+}
+
+.ztree * {
+    font-size: 14px;
+    font-family: 'Nanum Barun Gothic', 'Yoon 윤고딕Display', 'Malgun Gothic';
+}
+
+.ztree li a {
+    color: #000000;
+    font-weight: 400;
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #124b9a;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 3px 0px 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180806: ztree end                                                                                */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20200619: kendo ui progress loading start                                                          */
+/***************************************************************************************************************/
+.k-loading-text {
+    text-indent: 0px;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 10;
+}
+/***************************************************************************************************************/
+/* by shkoh 20200619: kendo ui progress loading end                                                            */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20200619: kendo ui dropdown list start                                                             */
+/***************************************************************************************************************/
+.k-upload,
+.k-dropdown,
+.k-dropdown-wrap,
+.k-dropdown-wrap .k-input,
+.k-dropdown-wrap.k-state-border-down,
+.k-dropdown-wrap.k-state-border-up,
+.k-dropdown-wrap.k-state-border-down .k-input,
+.k-dropdown-wrap .k-select,
+.k-list-container.k-state-border-up,
+.k-textbox {
+    border-radius: 0px;
+}
+
+.k-dropdown {
+    width: 100%;
+}
+
+.k-popup .k-list .k-state-focused {
+    border-radius: 0px;
+}
+
+.k-list .k-state-hover {
+    background-color: #76abd9;
+    border-radius: 0px;
+}
+
+.k-list-optionlabel {
+    border-radius: 0px;
+    padding: 8px 12px;
+}
+
+.k-list-optionlabel.k-state-selected.k-state-focused {
+    padding: 8px 12px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20200619: kendo ui dropdown list end                                                               */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20200619: kendo ui fileupload start                                                                */
+/***************************************************************************************************************/
+.k-upload {
+    border: none;
+}
+
+.k-dropzone {
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.k-dropzone .k-dropzone-hint {
+    display: none;
+}
+
+.k-upload .k-upload-button,
+.k-upload-sync .k-upload-button {
+    margin: 0px;
+    border-radius: 0px;
+    padding: 4px 0px 3px 0px;
+    font-size: 1.2em;
+    min-width: 28px;
+}
+
+.k-dropzone .k-upload-status {
+    display: none;
+}
+
+.k-button {
+    padding: 2px 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20200619: kendo ui fileupload end                                                                  */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180820: group tree view popup style start                                                        */
+/***************************************************************************************************************/
+#modalDialogIcon > .modal-dialog > .modal-content,
+#modalDialogTree > .modal-dialog > .modal-content,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content {
+    border-radius: 0px;
+    background-color: rgba(18,35,61,0.9);
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-header,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-header,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-header {
+    color: #ffffff;
+    padding: 6px 2px;
+    border-color: #666666;
+    margin: 0px 10px;
+    background-color: transparent;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-body,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-body,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-body {
+    color: #ffffff;
+    padding: 6px 15px;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-body > .form-inline {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-footer,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-footer,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-footer {
+    padding: 6px 2px;
+    margin: 0px 10px;
+    border-color: #666666;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-footer button,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-footer button,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-footer button {
+    border-radius: 0px;
+    padding: 4px 8px;
+}
+
+#modalDialogTreeBody .ztree li a {
+    color: #ffffff;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180820: group tree view popup style end                                                          */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* kdh 20181219: attention equip re-define start                                                         */
+/***************************************************************************************************************/
+.custom-text-right.attention .btn-success,
+.custom-text-right.attention .btn-success:focus {
+    background-image: url("/img/setting/btn_set_01.png");
+    background-color: #172f51;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+.custom-text-right.attention .btn-success:hover,
+.custom-text-right.attention .btn-success:active {
+    background-image: url("/img/setting/btn_set_02.png");
+    background-color: #172f51;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+.custom-text-right.attention .btn-danger,
+.custom-text-right.attention .btn-danger:focus {
+    background-image: url("/img/setting/btn_del_01.png");
+    background-color: #172f51;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+.custom-text-right.attention .btn-danger:hover,
+.custom-text-right.attention .btn-danger:active {
+    background-image: url("/img/setting/btn_del_02.png");
+    background-color: #172f51;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+table > tbody > tr > th.title {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.btn-group > label.btn.btn-check {
+    margin-left: 9px;
+    margin-right: 10px;
+}
+
+.btn-check {
+    background-color: transparent;
+    background-image: url('/img/user/check_02.png');
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    background-size: 16px;
+    padding: 0px 12px 0px 24px;
+    margin-left: 0px;
+    font-size: 1em;
+    text-align: left;
+}
+
+.btn-check.active,
+.btn-check:active {
+    background-image: url('/img/user/check_01.png');
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+#reset {
+    border: none;
+    background-color: transparent;
+    margin-left: -7px;
+}
+
+.ztree#userListTree {
+    margin-left: -14px;
+    padding-top: 0px;
+}
+
+.ztree#userListTree li {
+    padding-bottom: 5px;
+}
+/***************************************************************************************************************/
+/* kdh 20181219: attention equip table re-define end                                                           */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180516: TreeView - Context Menu 스타일 시작                                                       */
+/***************************************************************************************************************/
+#treeContextMenu {
+    position: absolute;
+    visibility: hidden;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    border: 1px solid #c5c5c5;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    background-clip: padding-box;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#treeContextMenu > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: outside none none;
+    line-height: 20px;
+}
+
+#treeContextMenu > ul > hr {
+    margin: 0px 4px;
+    border-top-color: #cccccc;
+}
+
+#treeContextMenu > ul > li > a {
+    display: block;
+    padding: 3px 10px;
+    color: #333333;
+}
+
+#treeContextMenu > ul > li > a:hover,
+#treeContextMenu > ul > li > a:focus {
+    text-decoration: none;
+    background-color: #317be0;
+    color: #ffffff;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180516: TreeView - Context Menu 스타일 끝                                                         */
+/***************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20211221: air-datepicker customizing styles start                                                                                 */
+/**********************************************************************************************************************************************/
+.datepicker {
+    border-radius: 0px;
+}
+
+.datepicker--nav-title i {
+    color: #4a4a4a;
+}
+
+input.custom-date {
+    text-align: left;
+    text-indent: 0;
+    padding: 5px 10px;
+    color: #555555;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20211221: air-datepicker customizing styles end                                                                                   */
+/**********************************************************************************************************************************************/

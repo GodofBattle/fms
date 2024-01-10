@@ -1,0 +1,34 @@
+<div id="didc-alert" class="i-widget i-alert" style="left: <%= left %>; top: <%= top %>; width: <%= width %>; height: <%= height %>">
+    <div class="i-header">
+        <div class="i-title">장애 현황</div>
+        <div class="i-legend">
+            <div class="i-mark i-lvl-1 i-popup">
+                <div class="i-mark-name">주의</div>
+                <div class="i-mark-value">-</div>
+            </div>
+            <div class="i-mark i-lvl-2 i-popup">
+                <div class="i-mark-name">경고</div>
+                <div class="i-mark-value">-</div>
+            </div>
+            <div class="i-mark i-lvl-3 i-popup">
+                <div class="i-mark-name">위험</div>
+                <div class="i-mark-value">-</div>
+            </div>
+            <div class="i-mark i-lvl-4 i-lvl-5 i-popup">
+                <div class="i-mark-name">통신이상</div>
+                <div class="i-mark-value">-</div>
+            </div>
+        </div>
+    </div>
+    <div class="i-contents">
+    </div>
+</div>
+
+<script type="text/x-kendo-template" id="alert-template">
+    <div class="i-alert-item">
+        <div class="i-alert-item-occur">#: data.occur #</div>
+        <div class="i-alert-item-panel">
+            <span class="i-alert-item-lvl i-lvl-#: data.lvl #">#: data.lvl_text #: #:data.name #</span> #: data.msg #
+        </div>
+    </div>
+</script>

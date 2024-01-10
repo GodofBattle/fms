@@ -1,0 +1,4 @@
+[2022/03/07 13:44:32.845] [INFO]  [카메라1 - 10.10.20.211] RTSP Stream Start
+[2022/03/07 13:44:33.293] [INFO]  [카메라1 - 10.10.20.211] CAMERA Stream Open: 60000
+[2022/03/07 13:44:33.452] [INFO]  [카메라1 - 10.10.20.211] New WebSocket Connection (1 total) - rtsp://admin:Password1!@10.10.20.211:554/onvif/media2?profile=Profile1
+[2022/03/07 13:44:38.374] [INFO]  [카메라1 - 10.10.20.211] Disconnected WebSocket (0 total) - rtsp://admin:Password1!@10.10.20.211:554/onvif/media2?profile=Profile1

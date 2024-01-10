@@ -1,0 +1,131 @@
+[2021/12/10 16:09:21.855] [ERROR] Error: connect ECONNREFUSED 127.0.0.1:80
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+    at TCPConnectWrap.callbackTrampoline (internal/async_hooks.js:134:14) {
+  errno: -61,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 80
+}
+[2021/12/10 16:16:53.542] [ERROR] TypeError: dest.on is not a function
+    at IncomingMessage.Readable.pipe (internal/streams/readable.js:671:8)
+    at ClientRequest.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:56:19)
+    at Object.onceWrapper (events.js:483:26)
+    at ClientRequest.emit (events.js:376:20)
+    at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:647:27)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:126:17)
+    at Socket.socketOnData (_http_client.js:515:22)
+    at Socket.emit (events.js:376:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+[2021/12/10 17:11:48.647] [ERROR] Error: listen EADDRINUSE: address already in use :::9999
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at new WebSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket-server.js:74:20)
+    at VideoStream.pipeStreamToSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:91:19)
+    at new VideoStream (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:23:8)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:55:29
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 9999
+}
+[2021/12/10 17:12:10.447] [ERROR] TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer. Received an instance of Object
+    at ServerResponse.end (_http_outgoing.js:811:13)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021/12/10 17:12:54.110] [ERROR] TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer. Received an instance of Object
+    at ServerResponse.end (_http_outgoing.js:811:13)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021/12/10 17:13:44.919] [ERROR] TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer. Received an instance of Object
+    at ServerResponse.end (_http_outgoing.js:811:13)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021/12/10 17:14:16.121] [ERROR] TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer. Received an instance of Object
+    at ServerResponse.end (_http_outgoing.js:811:13)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021/12/10 17:43:14.137] [ERROR] Error: listen EADDRINUSE: address already in use :::9999
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at new WebSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket-server.js:74:20)
+    at VideoStream.pipeStreamToSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:91:19)
+    at new VideoStream (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:23:8)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:55:29
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 9999
+}
+[2021/12/10 17:46:18.935] [ERROR] Error: listen EADDRINUSE: address already in use :::9999
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at new WebSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket-server.js:74:20)
+    at VideoStream.pipeStreamToSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:91:19)
+    at new VideoStream (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:23:8)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:55:29
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 9999
+}
+[2021/12/10 17:56:01.016] [ERROR] Error: listen EADDRINUSE: address already in use :::9999
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at new WebSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket-server.js:74:20)
+    at VideoStream.pipeStreamToSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:91:19)
+    at new VideoStream (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:23:8)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:55:29
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 9999
+}
+[2021/12/10 18:13:09.127] [ERROR] Error: listen EADDRINUSE: address already in use :::9999
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at new WebSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket-server.js:74:20)
+    at VideoStream.pipeStreamToSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:91:19)
+    at new VideoStream (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:23:8)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:55:33
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 9999
+}

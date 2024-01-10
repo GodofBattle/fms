@@ -1,0 +1,523 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Malgun Gothic';
+    height: 100%;
+}
+
+:focus {
+    outline: none;
+}
+
+input[type="checkbox"] {
+    margin: 4px 6px 1px 1px;
+}
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210209: tab customizing styles start                                                                                            */
+/**********************************************************************************************************************************************/
+.k-tabstrip-wrapper:focus {
+    outline: none;
+}
+
+.k-tabstrip:focus {
+    box-shadow: none;
+}
+
+.k-tabstrip > .k-content {
+    border: none;
+    padding: 0px;
+}
+
+.k-tabstrip .k-content.k-state-active {
+    background-color: #f3f3f3;   
+}
+
+.k-tabstrip .k-tabstrip-items {
+    margin-top: -1px;
+}
+
+.k-tabstrip-items .k-item.k-state-active {
+    border-left: 1px solid #172f51;
+    border-right: 1px solid #172f51;
+    border-bottom: 1px solid #172f51;
+}
+
+.k-tabstrip-items {
+    font-weight: bold;
+}
+
+.k-tabstrip-bottom > .k-tabstrip-items .k-item,
+.k-tabstrip-bottom > .k-tabstrip-items .k-state-active {
+    border-radius: 0px;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210209: tab customizing styles end                                                                                              */
+/**********************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210209: bootstrap customizing styles start                                                                                      */
+/**********************************************************************************************************************************************/
+.container-fluid {
+    padding: 0px 2px;
+    height: 100%;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210209: bootstrap customizing styles end                                                                                        */
+/**********************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210209: kendo ui customizing styles start                                                                                       */
+/**********************************************************************************************************************************************/
+.k-grid {
+    /* border: 1px solid #172f51; */
+    border: none;
+    border-radius: 0px;
+}
+
+.k-grid table,
+.k-grid-content table {
+    text-align: left;
+    color: #222222;
+    font-size: 0.88em;
+}
+
+.k-grid-header th.k-header,
+.k-grid-header th {
+    border-color: #e5e5e5;
+    height: 18px;
+    border-width: 0 0 0px 1px;
+    font-weight: bold;
+    color: #333333;
+    padding: 0.5em 0.6em 0.4em 0.6em;
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+
+.k-grid-header:first-child {
+    border-radius: 0px;
+}
+
+.k-grid-header th.k-state-focused {
+    box-shadow: none;
+}
+
+.k-grid-header-wrap {
+    border-color: transparent;
+}
+
+.k-grid tr td {
+    font-weight: bold;
+}
+
+.k-grid-content table td {
+    border-color: #e5e5e5;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+div.k-grid-header,
+div.k-grid-footer,
+.k-grid-header {
+    border-bottom: none;
+}
+
+.k-alt {
+    background-color: #fafafa;
+}
+
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+.k-state-selected {
+    background-color: #317be0;
+    border-color: #317be0;
+}
+
+.k-grid tr.k-state-focused:hover td {
+    background-color: #ebebeb;
+}
+
+.k-grid tr.k-state-selected:hover td {
+    background-color: #3379b5;
+}
+
+.k-state-selected td.k-state-focused,
+.k-state-focused,
+td.k-state-focused,
+.k-grid tr.k-state-selected:hover td.k-state-focused,
+.k-state-focused.k-state-selected {
+    box-shadow: none;
+}
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+
+.k-pager-wrap {
+    font-size: 11px;
+}
+
+.k-grid-norecords {
+    height: 90%;
+}
+
+.k-dropdown-wrap,
+.k-dropdown-wrap .k-input,
+.k-dropdown-wrap.k-state-border-down,
+.k-list-container.k-state-border-up,
+.k-popup .k-list .k-state-focused,
+.k-list .k-state-hover,
+.k-textbox,
+.k-button,
+.k-autocomplete,
+.k-autocomplete .k-input,
+.k-list-optionlabel,
+.k-textarea {
+    border-radius: 0px;
+}
+
+.k-item.k-state-selected.k-state-focused.k-state-hover,
+.k-split-button:focus,
+.k-split-container .k-button:focus,
+.k-popup .k-list .k-state-focused {
+    box-shadow: none;
+}
+
+.k-split-button .k-button:first-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.k-split-button .k-button:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 2px;
+}
+
+.k-grid .k-grid-toolbar > * {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.k-grid-toolbar:first-child {
+    border-radius: 0px;
+}
+
+.k-grid-toolbar {
+    padding: 3px 6px;
+}
+
+.k-toolbar > * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.k-button {
+    padding: 4px 8px;
+}
+
+/* by shkoh 20200715: kendo grid에서 loading 이미지를 보여주지 않는다 */
+#grid-company .k-loading-image {
+    display: none;
+}
+
+/* by shkoh 20210409: kendo grid file upload custom style */
+.k-menu .k-item>.k-link {
+    padding: 8px 12px;
+}
+
+.k-upload {
+    border: none;
+}
+
+.k-dropzone {
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.k-dropzone .k-dropzone-hint {
+    display: none;
+}
+
+.k-upload .k-upload-button,
+.k-upload-sync .k-upload-button {
+    margin: 0px;
+    border-radius: 0px;
+    padding: 2px;
+    font-size: 14px;
+    min-width: 28px;
+    height: 29px;
+    align-items: baseline;
+    border-left: none;
+}
+
+.k-dropzone .k-upload-status {
+    display: none;
+}
+
+.k-upload .k-button {
+    padding: 2px 0px;
+}
+
+/* by shkoh 20210415: modal custom style */
+.modal {
+    z-index: 200;
+}
+
+.modal-backdrop {
+    z-index: 190;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210209: kendo ui customizing styles end                                                                                         */
+/**********************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210405: ztree customzing style start                                                                                            */
+/**********************************************************************************************************************************************/
+.ztree * {
+    font-size: 14px;
+    font-family: 'Malgun Gothic';
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #124b9a;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 3px 0px 0px;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210405: ztree customzing style end                                                                                              */
+/**********************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210209: custom content styles start                                                                                             */
+/**********************************************************************************************************************************************/
+.content {
+    padding: 8px;
+    height: 100%;
+}
+
+.custom-content-panel {
+    padding: 0px 4px;
+    height: 100%;
+}
+
+.custom-text-panel {
+    width: 100%;
+    height: 36px;
+    background-color: #172f51;
+    display: block;
+}
+
+.custom-text-left {
+    float: left;
+    color: #ffffff;
+    padding: 3px 7px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+.custom-text-right {
+    padding: 3px 3px 0px 0px;
+    float: right;
+}
+
+.btn {
+    height: 30px;
+    padding: 0px 1px 0px 1px;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.btn-add,
+.btn-add:focus {
+    background: url('/img/inventory/button/btn_add_01.png');
+}
+
+.btn-add:hover,
+.btn-add:active {
+    background: url('/img/inventory/button/btn_add_02.png') no-repeat 0px;
+}
+
+.btn-update,
+.btn-update:focus {
+    background: url('/img/inventory/button/btn_edit_01.png');
+}
+
+.btn-update:hover,
+.btn-update:active {
+    background: url('/img/inventory/button/btn_edit_02.png') no-repeat 0px;
+}
+
+.btn-delete,
+.btn-delete:focus {
+    background: url('/img/inventory/button/btn_delete_01.png');
+}
+
+.btn-delete:hover,
+.btn-delete:active {
+    background: url('/img/inventory/button/btn_delete_02.png') no-repeat 0px;
+}
+
+.custom-popup-content {
+    text-align: center;
+    color: #333333;
+}
+
+.custom-panel-grid {
+    display: flex;
+}
+
+.custom-grid,
+.custom-grid-half-height {
+    border: 1px solid #172f51;
+}
+
+.custom-grid-6 {
+    width: 50%;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210209: custom content styles end                                                                                               */
+/**********************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210405: custom content - asset styles start                                                                                     */
+/**********************************************************************************************************************************************/
+.custom-content,
+.custom-content-tree {
+    border: 1px solid #172f51;
+}
+
+.asset-detail {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+    padding: 8px;
+}
+
+.asset-detail > .table {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 13px;
+}
+
+.asset-detail > .table > tbody > tr > th {
+	color: #333333;
+	border-top: none;
+	padding: 3px 2px 3px 12px;
+	width: 32%;
+	vertical-align: middle;
+}
+
+.asset-detail > .table > tbody > tr > td {
+	padding: 3px 12px 3px 12px;
+	border-top: none;
+	width: 68%;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.asset-detail > .table > tbody > tr > td .custom-label {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 4px 0px;
+    color: #999999;
+}
+
+.asset-detail > .table > tbody > tr > td input[readonly] {
+    user-select: none;
+}
+
+.asset-detail > .table > tbody > tr > td input[readonly]:focus {
+    outline: none;
+    border-color: #cccccc;
+    box-shadow: none;
+}
+
+.asset-detail > .table > tbody > tr > td .custom-optional-btn {
+    box-shadow: none;
+    border-radius: 0px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+.asset-detail > .table > tbody > tr > td .custom-optional-btn:hover {
+    border-color: #aeaeae;
+    background-color: #ebebeb;
+}
+
+.asset-detail > .table > tbody > tr > td .custom-optional-btn:focus:active {
+    box-shadow: 0 0 7px 0 #76abd9, inset 0 3px 5px rgb(0 0 0 / 13%);
+    border-color: #69ace6;
+}
+
+.asset-detail > .table > tbody > tr > td .k-input {
+	font-size: 12px;
+}
+
+/* by shkoh 20210409: image dropdownlist inner template custom style */
+.custom-dropdown-template {
+    display: flex;
+    padding: 10px 1px;
+}
+
+.custom-dropdown-image {
+    width: 100px;
+    height: 100%;
+}
+
+.custom-dropdown-text {
+    margin: auto;
+    word-break: break-all;
+    white-space: pre-wrap;
+    padding: 0px 4px;
+    width: 140px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.custom-dropdown-icon {
+    margin: auto 0px;
+    padding-right: 8px;
+}
+
+.custom-close-icon {
+    width: 12px;
+    height: 12px;
+    background-image: url(/img/monitoring/widget_close.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    display: block;
+}
+
+.custom-close-icon:hover {
+    cursor: pointer;
+    background-image: url(/img/monitoring/widget_close_dark.png);
+}
+
+/* by shkoh 20210415: modal 창에서 datepicker 보이도록 조치 */
+.modal-open .datepickers-container {
+    z-index: 300;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210405: custom content - asset styles end                                                                                       */
+/**********************************************************************************************************************************************/

@@ -1,0 +1,163 @@
+[2022/05/13 15:08:46.478] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2022/05/13 15:13:30.115] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2022/05/13 15:14:32.105] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2022/05/13 15:15:29.077] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2022/05/13 15:48:59.765] [ERROR] /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:42
+    const startStreaming = ({ ws_port }) {
+                                         ^
+
+SyntaxError: Unexpected token '{'
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:13:20)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+[2022/05/13 16:02:58.634] [ERROR] TypeError: Cannot read property 'message' of undefined
+    at Mpeg1Muxer.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:91:94)
+    at Mpeg1Muxer.emit (events.js:388:22)
+    at ChildProcess.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/mpeg1muxer.js:51:19)
+    at ChildProcess.emit (events.js:376:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+    at Process.callbackTrampoline (internal/async_hooks.js:134:14)
+[2022/05/13 16:34:11.849] [ERROR] TypeError: callback_error is not a function
+    at VideoStream.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:86:17)
+    at VideoStream.emit (events.js:376:20)
+    at Mpeg1Muxer.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:85:17)
+    at Mpeg1Muxer.emit (events.js:376:20)
+    at ChildProcess.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/mpeg1muxer.js:51:19)
+    at ChildProcess.emit (events.js:376:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+    at Process.callbackTrampoline (internal/async_hooks.js:134:14)
+[2022/05/13 16:35:41.185] [ERROR] TypeError: callback_error is not a function
+    at VideoStream.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:86:17)
+    at VideoStream.emit (events.js:376:20)
+    at Mpeg1Muxer.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:85:17)
+    at Mpeg1Muxer.emit (events.js:376:20)
+    at ChildProcess.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/mpeg1muxer.js:51:19)
+    at ChildProcess.emit (events.js:376:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+    at Process.callbackTrampoline (internal/async_hooks.js:134:14)
+[2022/05/13 16:37:28.824] [ERROR] Error: [object Object]
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:95:27
+    at VideoStream.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:86:17)
+    at VideoStream.emit (events.js:376:20)
+    at Mpeg1Muxer.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:85:17)
+    at Mpeg1Muxer.emit (events.js:376:20)
+    at ChildProcess.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/mpeg1muxer.js:51:19)
+    at ChildProcess.emit (events.js:376:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+    at Process.callbackTrampoline (internal/async_hooks.js:134:14)
+[2022/05/13 16:38:35.296] [ERROR] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.json (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:264:10)
+    at ServerResponse.send (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:158:21)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:95:37
+    at VideoStream.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:86:17)
+    at VideoStream.emit (events.js:376:20)
+    at Mpeg1Muxer.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:85:17)
+    at Mpeg1Muxer.emit (events.js:376:20)
+    at ChildProcess.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/mpeg1muxer.js:51:19) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+[2022/05/13 16:44:10.808] [ERROR] TypeError: m_stream.wsServer.clients.filter is not a function
+    at VideoStream.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:87:55)
+    at VideoStream.emit (events.js:376:20)
+    at Mpeg1Muxer.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:85:17)
+    at Mpeg1Muxer.emit (events.js:376:20)
+    at ChildProcess.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/mpeg1muxer.js:51:19)
+    at ChildProcess.emit (events.js:376:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+    at Process.callbackTrampoline (internal/async_hooks.js:134:14)
+[2022/05/13 16:52:20.217] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2022/05/13 16:53:09.065] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2022/05/13 16:55:12.070] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}

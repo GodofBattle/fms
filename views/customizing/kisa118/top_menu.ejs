@@ -1,0 +1,69 @@
+<div class="collapsed navbar-collapse">
+    <ul class="nav navbar-nav">
+        <li class="dropdown">
+            <a href="#" class="draopdown-toggle fms_menu" data="monitoring" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="/img/menu/gnb_icon01.png"><span>모니터링</span>
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="/img/menu/gnb_icon07.png" style="width: 24px; height: 24px;"><span>장애관리</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li style="list-style: none;"><a class="fms_menu" data="dashboard_fault">장애현황</a></li>
+                <li style="list-style: none;"><a class="fms_menu" data="history_alarm">장애이력</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="/img/menu/gnb_icon02.png"><span>통계 / 정보</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li style="list-style: none;"><a class="fms_menu" data="statistics_data">데이터 통계</a></li>
+                <li style="list-style: none;"><a class="fms_menu" data="report_data">데이터 보고서</a></li>
+                <li style="list-style: none;"><a class="fms_menu" data="reports_wrfis_temphumi">온습도 보고서</a></li>
+                <li style="list-style: none;"><a class="fms_menu" data="asset">설비정보</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="draopdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="/img/menu/gnb_icon05.png"><span>설정</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li style="list-style: none;"><a class="fms_menu" data="setting_user">사용자 설정</a></li>
+                <li style="list-style: none;"><a class="fms_menu" data="setting_sensor">임계값 설정</a></li>
+<%if(grade == 'USR00') {%>
+                <hr>
+                <li style="list-style: none;"><a class="fms_menu" data="predefine_code">코드 사전설정</a></li>
+                <li style="list-style: none;"><a class="fms_menu" data="predefine_equipment">설비 사전설정</a></li>
+<%}%>
+            </ul>
+        </li>
+    </ul>
+    <div class="top-button">
+        <div class="top-alarm">
+            <a id="alarm-icon" class="alarm-status" role="button"></a>
+            <a id="current_alarm" role="button"><span class="badge">0</span></a>
+            <div id="popoverAlarm" class="popover fade bottom in" role="tooltip">
+                <div class="arrow"></div>
+                <div class="popover-header">
+                    <div class="popover_top_header">
+                        <span class="popover_top_header_text">미확인 알람</span>
+                        <span class="label label-default popover_top_header_button" title="미인지 알람 모두 지우기">모두 지우기</span>
+                    </div>
+                </div>
+                <div id="popover-content" class="popover-content">
+                    <div id="alarmPopupContainer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="top-logout" id="logout">
+            <a href="#" role="button">
+                <span>logout</span>
+                <img src="/img/menu/gnb_icon06.png">
+            </a>
+        </div>
+    </div>
+</div>

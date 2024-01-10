@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20211228: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20211228: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
+    <!-- by shkoh 20211228: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css" />
+
+    <!-- by shkoh 20211228: cytoscape  -->
+    <link rel="stylesheet" href="/component/jquery-qtip-3.0.3/jquery.qtip.min.css" />
+
+    <!-- by shkoh 20211228: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css" />
+    <link rel="stylesheet" href="/stylesheets/kepco/diagram.css" />
+</head>
+<body data="<%= type %>">
+    <div id="map" data="<%= type %>" is-heatmap="<%= is_heatmap %>">
+        <div id="cytoscape" tabindex="1"></div>
+        <div id="qtip-container"></div>
+<%if(is_heatmap === true) {%>
+        <div id="heatmap" style="width: 100%; height: 100%; display: block; position: absolute;"></div>
+<%}%>
+<%if(image != '') {%>
+        <div id="img" class="<%= type %>" style="background-image: url('<%=image%>');"></div>
+<%}%>
+        <div>
+            <button id="fab"></button>
+        </div>
+
+<%if(is_heatmap === true) {%>
+        <div class="cfd-navigation">
+            <div class="label label-primary"><%= typeName %></div>
+            <table class="cfd-table">
+                <tr>
+                    <td class="cfd-text"><span class="cfd-max">26</span>℃</td>
+                    <td class="cfd-tick">-</td>
+                    <td class="cfd-legend" rowspan="3">
+                        <div class="cfd-legend-draw"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cfd-text"><span class="cfd-normal">18</span>℃</td>
+                    <td class="cfd-tick">-</td>
+                </tr>
+                <tr>
+                    <td class="cfd-text"><span class="cfd-min">10</span>℃</td>
+                    <td class="cfd-tick">-</td>
+                </tr>
+            </table>
+        </div>
+<%}%>
+
+        <div class="navigation">
+            <div class="label label-primary"><%= typeName %></div>
+        </div>
+    </div>
+
+<%if(type === 'security_b1f' || type === 'security_1f' || type === 'security_2f' || type === 'security_3f' || type === 'security_4f') {%>
+    <div id="event-list">
+        <div id="i-events"></div>
+    </div>
+<%}%>
+
+    <input id="file-upload" name="files" type="file" style="display: none;"/>
+    
+    <!-- by shkoh 20211228: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20211228: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20211228: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+
+    <!-- by shkoh 20211228: cytoscape  -->
+    <script src="/component/jquery-qtip-3.0.3/jquery.qtip.min.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-qtip.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-cxtmenu.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-node-html-label.min.js"></script>
+
+<%if(is_heatmap === true) {%>
+    <!-- by shkoh 20211229: heatmap -->
+    <script src="/component/temperature-map-gl/temperature-map-gl.js"></script>
+    <script src="/javascripts/customizing/kepco/diagram/heatmap.js"></script>
+<%}%>
+    
+    <!-- by shkoh 20211228: ubiGuard -->
+    <script src="/javascripts/customizing/kepco/diagram/items.js"></script>
+    <script src="/javascripts/customizing/kepco/diagram/main.js"></script>
+<%if(grade != 'USR00') {%>
+    <script>
+        $(function() {
+            initTimeout();
+        });
+
+        function initTimeout() {
+            const timer = setInterval(function() {
+                loadItems();
+            }, 5000);
+        }
+    </script>
+<%}%>
+</body>
+</html>

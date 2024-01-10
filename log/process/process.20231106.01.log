@@ -1,0 +1,67 @@
+[2023/11/06 10:10:02.818] [INFO]  [UbiGuard FMS 5.6] SIGTERM로 node process(39047) 종료
+[2023/11/06 13:48:22.106] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 13:48:22.180] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 14:03:05.674] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 14:03:05.681] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 14:03:05.683] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:05.685] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:05.687] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:05.688] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:05.689] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:05.689] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:05.690] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:05.691] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:05.692] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:05.692] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:05.693] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:05.694] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(4860) 종료
+[2023/11/06 14:03:18.369] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 14:03:41.559] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 14:04:49.441] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 14:04:49.447] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 14:09:21.800] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 14:09:21.806] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 14:31:04.644] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 14:31:04.651] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 15:49:45.860] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 15:49:45.866] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 15:52:31.025] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 15:52:31.031] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 16:38:45.861] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 16:38:45.867] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:17:20.785] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:17:20.792] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:21:48.216] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:21:48.223] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:26:40.150] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:26:40.157] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:29:36.393] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:29:36.399] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:38:35.114] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:38:35.121] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:41:02.521] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:41:02.528] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:42:31.574] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:42:31.584] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:47:24.892] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:47:24.899] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:47:35.672] [INFO]  [UbiGuard FMS 5.6] ReferenceError (으)로 node process(7292) 종료
+[2023/11/06 17:48:51.355] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:48:51.361] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:49:47.996] [INFO]  [UbiGuard FMS 5.6] ReferenceError (으)로 node process(7329) 종료
+[2023/11/06 17:50:54.709] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:50:54.715] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:51:35.640] [INFO]  [UbiGuard FMS 5.6] ReferenceError (으)로 node process(7367) 종료
+[2023/11/06 17:52:43.947] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:52:43.954] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:53:15.037] [INFO]  [UbiGuard FMS 5.6] ReferenceError (으)로 node process(7403) 종료
+[2023/11/06 17:53:50.154] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:53:50.161] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:54:33.160] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(7421) 종료
+[2023/11/06 17:55:21.884] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:55:21.891] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 17:56:24.241] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(7473) 종료
+[2023/11/06 17:56:31.188] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 17:56:31.195] [INFO]  [UbiGuard FMS 5.6] port 3000 시작
+[2023/11/06 18:39:35.544] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/11/06 18:39:35.551] [INFO]  [UbiGuard FMS 5.6] port 3000 시작

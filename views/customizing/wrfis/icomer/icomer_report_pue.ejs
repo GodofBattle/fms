@@ -1,0 +1,12 @@
+<div class="custom-panel">
+    <div class="custom-panel-zone">
+        <ul class="list-group">
+            <li class="list-group-item custom-list-title"><span>PUE 보고서(냉수제외) 전용 - Object Name으로 설정</span></li>
+            <%- include('./item_li', { object_id: 'pue', object_name: 'PUE', link_text: '연결', clear_text: '연결해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+        <ul class="list-group">
+            <li class="list-group-item custom-list-title"><span>PUE 보고서(냉수포함) 전용 - Object Name으로 설정</span></li>
+            <%- include('./item_li', { object_id: 'pueextra', object_name: 'PUEEXTRA', link_text: '연결', clear_text: '연결해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+    </div>
+</div>

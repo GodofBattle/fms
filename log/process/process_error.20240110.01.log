@@ -1,0 +1,12 @@
+[2024/01/10 10:45:29.665] [ERROR] TypeError: items is not iterable
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/rackDiagram.js:158:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024/01/10 10:45:29.679] [ERROR] TypeError: items is not iterable
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/rackDiagram.js:158:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024/01/10 10:45:29.680] [ERROR] TypeError: items is not iterable
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/rackDiagram.js:158:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024/01/10 10:45:29.682] [ERROR] TypeError: items is not iterable
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/rackDiagram.js:158:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

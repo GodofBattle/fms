@@ -1,0 +1,451 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: "Malgun Gothic";
+    font-size: 13px;
+}
+
+.content {
+    padding: 8px 2px 8px 2px;
+}
+
+.panel {
+    margin-bottom: 10px;
+}
+
+.panel-primary {
+    border: none;
+}
+
+.panel-heading {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.panel-primary > .panel-heading {
+    background: #11243d;
+	border-bottom: 1px solid #20406b;
+    padding: 8px 15px;
+}
+
+.panel-body {
+    background-image: -webkit-gradient(linear, top, bottom, from(#173052), to(#051936));
+    background-image: -webkit-linear-gradient(top, #173052, #051936);
+    background-image: -moz-linear-gradient(top, #173052, #051936);
+    background-image: linear-gradient(to bottom, #173052, #051936);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#basicAlarmInfo > .panel-heading {
+    background: #11243d;
+    border: none;
+}
+
+#basicAlarmInfo > .panel-body {
+    background: #11243d;
+    padding: 7px 15px;
+}
+
+.form-control {
+    border: 1px solid #cfd4da;
+    border-radius: 0px;
+    color: #333333;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+/*********************************************************************************
+ by shkoh 20180412: 사용자 정보 버튼 시작
+**********************************************************************************/
+.btn {
+    border-radius: 0px;
+}
+
+.btn-custom {
+    background-color: transparent;
+    width: 38px;
+    height: 64px;
+    border: none;
+    padding-top: 46px;
+    color: #ffffff !important;
+}
+
+.btn-custom:hover, .btn-custom:active, .btn-custom:focus {
+	color: #ffffff !important;
+}
+
+.btn-info-custom, .btn-info-custom:focus {
+	background: url("/img/user/user_add.png") no-repeat 0px;
+    background-position: center 0px;
+    outline: none !important;
+}
+
+.btn-warning-custom, .btn-warning-custom:focus {
+	background: url("/img/user/user_delete.png") no-repeat 0px;
+    background-position: center 0px;
+    outline: none !important;
+}
+
+.btn-success-custom, .btn-success-custom:focus {
+	background: url("/img/user/user_save.png") no-repeat 0px;
+    background-position: center 0px;
+    outline: none !important;
+}
+
+.btn-danger-custom, .btn-danger-custom:focus {
+	background: url("/img/user/user_cancel.png") no-repeat 0px;
+    background-position: center 0px;
+    outline: none !important;
+}
+
+.btn-edit-custom, .btn-edit-custom:focus {
+	background: url("../../img/new/edit_color.png") no-repeat 10px; 	
+}
+
+.btn-info-custom:hover {
+    background: url("/img/user/user_add_select.png") no-repeat 0px;
+    background-position: center 0px;
+    color: #317BE0 !important;
+}
+
+.btn-info-custom[disabled] {
+    background: url("/img/user/user_add.png") no-repeat 0px;
+    background-position: center 0px;
+    color: #666666 !important;
+}
+
+.btn-warning-custom:hover {
+    background: url("/img/user/user_delete_select.png") no-repeat 0px;
+    background-position: center 0px;
+    color: #317BE0 !important;
+}
+
+.btn-warning-custom[disabled] {
+    background: url("/img/user/user_delete.png") no-repeat 0px;
+    background-position: center 0px;
+    color: #666666 !important;
+}
+
+.btn-success-custom:hover {
+    background: url("/img/user/user_save_select.png") no-repeat 0px;
+    background-position: center 0px;
+    color: #317BE0 !important;
+}
+
+.btn-success-custom[disabled] {
+    background: url("/img/user/user_save.png") no-repeat 0px;
+    background-position: center 0px;
+    color: #666666 !important;
+}
+
+.btn-danger-custom:hover {
+    background: url("/img/user/user_cancel_select.png") no-repeat 0px;
+    background-position: center 0px;
+    color: #317BE0 !important;
+}
+
+.btn-danger-custom[disabled] {
+    background: url("/img/user/user_cancel.png") no-repeat 0px;
+    background-position: center 0px;
+    color: #666666 !important;
+}
+
+.btn-default-usr01 {
+    background-color: #60a9dc !important;
+}
+
+.btn-default-usr02 {
+    background-color: #6ccef5 !important;
+}
+
+.btn-default-usr03 {
+    background-color: #8297a8 !important;
+}
+
+.btn-userList {
+    background: #162f51;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+    border: 1px solid #345580;
+    color: #ffffff !important;
+}
+
+.k-state-selected {
+    background: #162f51;
+    color: #ffffff;
+    padding: 13px 30px;
+    border: 3px solid #ffffff;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.k-state-focused {
+    -webkit-box-shadow: inset 0 0 10px 3px #ffffff;
+    box-shadow: inset 0 0 10px 3px #ffffff;
+}
+
+#userList {
+    border: none;
+    background: transparent;
+}
+
+#userSelectButtonForStartGroup:focus {
+    outline: none;
+}
+/*********************************************************************************
+ by shkoh 20180412: 사용자 정보 버튼 끝
+**********************************************************************************/
+
+.control-label {
+    color: #ffffff;
+}
+
+.btn-check {
+    background-color: transparent;
+    color: #ffffff;
+    background-image: url('/img/user/check_02.png');
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding: 6px 12px 10px 25px;
+}
+
+.btn-check.active, .btn-check:active {
+    background-image: url('/img/user/check_01.png');
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-check:hover,
+.btn-check:focus {
+    color: #ffffff;
+}
+
+.btn-check[disabled] {
+    color: #666666;
+    background-image: url('/img/user/check_02.png');
+}
+
+/* by shkoh 20180416: zTree 스타일 시작 */
+.ztree * {
+    font-size: 14px;
+    font-family: "Malgun Gothic";
+}
+
+.ztree li a {
+    color: #ffffff;
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #124b9a;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 3px 0px 0px;
+}
+/* by shkoh 20180416: zTree 스타일 끝 */
+
+/* by shkoh 20180423: 사용자 시작 그룹 설정 팝업 스타일 시작 */
+#modalDialogIcon > .modal-dialog > .modal-content,
+#modalDialogTree > .modal-dialog > .modal-content,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content {
+    border-radius: 0px;
+    background-color: rgba(18,35,61,0.9);
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-header,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-header,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-header {
+    color: #ffffff;
+    padding: 6px 2px;
+    border-color: #666666;
+    margin: 0px 10px;
+    background-color: transparent;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-body,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-body,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-body {
+    color: #ffffff;
+    padding: 6px 15px;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-body > .form-inline {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-footer,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-footer,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-footer {
+    padding: 6px 2px;
+    margin: 0px 10px;
+    border-color: #666666;
+}
+
+#modalDialogIcon > .modal-dialog > .modal-content > .modal-footer button,
+#modalDialogTree > .modal-dialog > .modal-content > .modal-footer button,
+#modalDialogCameraLinkTree > .modal-dialog > .modal-content > .modal-footer button {
+    border-radius: 0px;
+    padding: 4px 8px;
+}
+
+#modalDialogTreeBody .ztree li a {
+    color: #ffffff;
+}
+/* by shkoh 20180423: 사용자 시작 그룹 설정 팝업 트리 스타일 끝 */
+
+/***************************************************************************************************************/
+/* by shkoh 20181114: bootstrap 3.x re-define tooltip start                                                    */
+/***************************************************************************************************************/
+.tooltip {
+    cursor: pointer;
+    user-select: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20181114: bootstrap 3.x re-define tooltip end                                                      */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20181115: alarm setting style start                                                                */
+/***************************************************************************************************************/
+.alarm_setting_label {
+    cursor: pointer;
+    user-select: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20181115: alarm setting style end                                                                  */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by wchoi 20190121: alarm requirement style start                                                            */
+/***************************************************************************************************************/
+.js-range-sensor-slider {
+    text-align: left;
+    background-color: #11243d;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.js-range-equip-slider {
+    text-align: left;
+    background-color: #11243d;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.irs--flat {
+    width: 100%;
+}
+.irs irs--flat js-irs-0 {
+    float: left;
+}
+
+.irs irs--flat js-irs-1 {
+    float: right;
+}
+
+
+
+/***************************************************************************************************************/
+/* by wchoi 20190121: alarm requirement style end                                                              */
+/***************************************************************************************************************/
+.btn-threshold {
+    float: left;
+}
+
+.btn-communication {
+    float: left;
+}
+
+.btn-backmove {
+    background-color: transparent;
+    color: #ffffff;
+    background-image: url('/img/user/circle_back_02.png');
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding: 6px 12px 10px;
+}
+
+.btn-backmove.active, .btn-backmove:active {
+    background-image: url('/img/user/circle_back_01.png');
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-backmove[disabled] {
+    color: #666666;
+    background-image: url('/img/user/circle_back_02.png');
+}
+
+.btn-nextmove {
+    background-color: transparent;
+    color: #ffffff;
+    background-image: url('/img/user/circle_next_02.png');
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding: 6px 12px 10px;
+}
+
+.btn-nextmove.active, .btn-nextmove:active {
+    background-image: url('/img/user/circle_next_01.png');
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-nextmove[disabled] {
+    color: #666666;
+    background-image: url('/img/user/circle_next_02.png');
+}
+
+.alarm-legend {
+    padding: 0px 6px;
+    font-weight: bolder;
+    font-size: 1.05em;
+    border-radius: 4px;
+    text-shadow: 1px 1px #000000;
+}
+
+#alarm_threshold {
+    float: left;
+    margin-right: 10px;
+}
+
+#alarm_communication {
+    float: left;
+}
+
+#backmove-threshold,
+#backmove-communication {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    float: left;
+}
+#alarm-threshold,
+#alarm-communication {
+    padding-top: 9px;
+    padding-bottom: 8px;
+    float: left;
+}
+#nextmove-threshold,
+#nextmove-communication {
+    padding-top: 8px;
+    padding-left: 2px;
+    padding-bottom: 8px;
+    float: left;
+}

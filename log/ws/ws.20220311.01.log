@@ -1,0 +1,49 @@
+[2022/03/11 08:56:17.183] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2022/03/11 08:56:33.668] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:51777
+[2022/03/11 10:04:00.029] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2022/03/11 10:04:10.844] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:52102
+[2022/03/11 10:30:52.222] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2022/03/11 10:30:58.139] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:58739
+[2022/03/11 10:32:35.313] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:58739
+[2022/03/11 10:32:35.853] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:59144
+[2022/03/11 10:32:35.856] [INFO]  [2022/03/11 10:33:04.525] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:59144
+[2022/03/11 10:33:04.983] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:59272
+[2022/03/11 10:33:25.970] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:59366
+[2022/03/11 10:33:59.006] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:59272
+[2022/03/11 10:33:59.525] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:59518
+[2022/03/11 10:36:17.717] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:59518
+[2022/03/11 10:36:18.274] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:60095
+[2022/03/11 10:37:11.486] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:60095
+[2022/03/11 10:37:11.960] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:60322
+[2022/03/11 10:37:11.964] [INFO]  [2022/03/11 10:38:13.069] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:60322
+[2022/03/11 10:38:13.558] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:60581
+[2022/03/11 10:38:13.566] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/03/11 10:42:18.522] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:60581
+[2022/03/11 10:42:19.066] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:61750
+[2022/03/11 10:43:17.419] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:61750
+[2022/03/11 10:43:17.899] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:62008
+[2022/03/11 10:43:36.824] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:62008
+[2022/03/11 10:43:37.337] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:62092
+[2022/03/11 10:43:37.339] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/03/11 10:44:07.318] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:62092
+[2022/03/11 10:44:07.794] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:62227
+[2022/03/11 10:44:31.317] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:62227
+[2022/03/11 10:44:31.797] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:62334
+[2022/03/11 10:44:31.801] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/03/11 10:47:19.733] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:62334
+[2022/03/11 10:47:20.264] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:63042
+[2022/03/11 10:51:59.942] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:63042
+[2022/03/11 10:52:02.040] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:64236
+[2022/03/11 10:52:44.442] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:64236
+[2022/03/11 10:52:46.249] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:64425
+[2022/03/11 10:52:46.251] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/03/11 10:53:27.739] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:64425
+[2022/03/11 10:53:29.990] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:64612
+[2022/03/11 10:53:58.141] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:64612
+[2022/03/11 10:53:58.623] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:64742
+[2022/03/11 10:54:20.539] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:64742
+[2022/03/11 10:54:21.033] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:64842
+[2022/03/11 10:54:21.040] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/03/11 10:55:56.473] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:64842
+[2022/03/11 10:55:56.955] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.29:65254
+[2022/03/11 10:55:56.960] [INFO]  [2022/03/11 11:24:55.000] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.29:65254

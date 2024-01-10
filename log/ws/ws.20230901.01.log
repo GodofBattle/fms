@@ -1,0 +1,60 @@
+[2023/09/01 10:57:52.272] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:60397
+[2023/09/01 10:57:54.920] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:50259
+[2023/09/01 10:57:55.088] [INFO]  {"command":"login","user_id":"admin","type":"client"}
+[2023/09/01 10:59:02.817] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:50259
+[2023/09/01 10:59:03.791] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:50294
+[2023/09/01 10:59:03.798] [INFO]  {"command":"login","user_id":"admin","type":"client"}
+[2023/09/01 13:59:18.811] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:50294
+[2023/09/01 13:59:19.216] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:54469
+[2023/09/01 13:59:19.304] [INFO]  {"command":"login","user_id":"admin","type":"client"}
+[2023/09/01 14:04:29.695] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:54469
+[2023/09/01 14:04:30.130] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:54666
+[2023/09/01 14:04:30.204] [INFO]  {"command":"login","user_id":"admin","type":"client"}
+[2023/09/01 14:10:02.740] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/09/01 14:10:11.734] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:56129
+[2023/09/01 14:10:11.735] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 14:18:13.610] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:56129
+[2023/09/01 14:18:13.946] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:58076
+[2023/09/01 14:18:13.961] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 14:18:21.107] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:58076
+[2023/09/01 14:18:21.390] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:58111
+[2023/09/01 14:18:21.404] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 16:29:35.758] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/09/01 16:31:27.881] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:57773
+[2023/09/01 16:31:27.884] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 16:33:12.068] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/09/01 16:49:33.177] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:62602
+[2023/09/01 16:49:33.179] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 16:55:56.439] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:62602
+[2023/09/01 16:55:56.768] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:64290
+[2023/09/01 16:55:56.796] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 16:56:05.724] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:64290
+[2023/09/01 16:56:06.005] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:64341
+[2023/09/01 16:56:06.016] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 16:56:20.841] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:64341
+[2023/09/01 16:56:21.143] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:64409
+[2023/09/01 16:56:21.147] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 16:57:17.818] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:64409
+[2023/09/01 16:57:18.242] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:64651
+[2023/09/01 16:57:18.250] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 16:59:29.345] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:64651
+[2023/09/01 16:59:29.666] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:65210
+[2023/09/01 16:59:29.694] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 16:59:57.757] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:65210
+[2023/09/01 16:59:58.073] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:65331
+[2023/09/01 16:59:58.079] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 17:00:11.323] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:65331
+[2023/09/01 17:00:11.938] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:65394
+[2023/09/01 17:00:12.019] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 17:01:36.400] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:65394
+[2023/09/01 17:01:37.388] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:49363
+[2023/09/01 17:01:37.421] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 17:02:08.603] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:49363
+[2023/09/01 17:02:09.349] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:49505
+[2023/09/01 17:02:09.539] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 17:02:13.080] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:49505
+[2023/09/01 17:02:13.368] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:49523
+[2023/09/01 17:02:13.371] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/09/01 17:02:52.217] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:49523
+[2023/09/01 17:02:52.614] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:49687
+[2023/09/01 17:02:52.616] [INFO]  {"command":"login","user_id":"icomer","type":"client"}

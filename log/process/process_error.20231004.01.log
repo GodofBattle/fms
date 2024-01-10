@@ -1,0 +1,3 @@
+[2023/10/04 15:04:16.409] [ERROR] TypeError: items is not iterable
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:917:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

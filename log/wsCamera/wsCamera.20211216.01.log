@@ -1,0 +1,4 @@
+[2021/12/16 10:21:53.833] [INFO]  [카메라 - 10.10.20.210] RTSP Stream Start
+[2021/12/16 10:21:54.376] [INFO]  [카메라 - 10.10.20.210] CAMERA Stream Open: 60000
+[2021/12/16 10:21:54.656] [INFO]  [카메라 - 10.10.20.210] New WebSocket Connection (1 total)
+[2021/12/16 10:21:58.794] [INFO]  [카메라 - 10.10.20.210] Disconnected WebSocket (0 total)

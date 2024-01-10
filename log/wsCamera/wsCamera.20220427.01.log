@@ -1,0 +1,23 @@
+[2022/04/27 11:17:06.676] [INFO]  [new_equip_1987 - 10.10.20.204] RTSP Stream Start
+[2022/04/27 11:17:43.752] [INFO]  [new_equip_1987 - 10.10.20.204] RTSP Stream Start
+[2022/04/27 11:18:25.557] [INFO]  [new_equip_1987 - 10.10.20.204] RTSP Stream Start
+[2022/04/27 11:19:05.262] [INFO]  [new_equip_1987 - 10.10.20.204] RTSP Stream Start
+[2022/04/27 11:46:40.853] [INFO]  [new_equip_1987 - 10.10.20.204] RTSP Stream Start
+[2022/04/27 11:47:06.169] [INFO]  [new_equip_1987 - 10.10.20.204] RTSP Stream Start
+[2022/04/27 11:47:06.682] [INFO]  [new_equip_1987 - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/04/27 11:47:06.866] [INFO]  [new_equip_1987 - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/04/27 11:47:18.238] [INFO]  [new_equip_1987 - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/04/27 11:47:18.713] [INFO]  [new_equip_1987 - 10.10.20.204] RTSP Stream Start
+[2022/04/27 11:47:19.116] [INFO]  [new_equip_1987 - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/04/27 11:47:19.145] [INFO]  [new_equip_1987 - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/04/27 11:48:20.448] [INFO]  [new_equip_1987 - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/04/27 13:06:48.448] [INFO]  [new_equip_1987 - 10.10.20.204] RTSP Stream Start
+[2022/04/27 13:19:34.713] [INFO]  [new_equip_1987 - 10.10.20.204] RTSP Stream Start
+[2022/04/27 13:20:37.967] [INFO]  [new_equip_1987 - 10.10.20.204] RTSP Stream Start
+[2022/04/27 13:20:38.439] [INFO]  [new_equip_1987 - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/04/27 13:20:38.509] [INFO]  [new_equip_1987 - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/04/27 13:21:05.004] [INFO]  [new_equip_1987 - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/04/27 13:33:26.879] [INFO]  [new_equip_1987 - 10.10.20.204] RTSP Stream Start
+[2022/04/27 13:33:27.330] [INFO]  [new_equip_1987 - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/04/27 13:33:27.360] [INFO]  [new_equip_1987 - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/04/27 13:33:34.330] [INFO]  [new_equip_1987 - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1

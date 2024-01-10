@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20180806: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+
+    <!-- by shkoh 20180806: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
+    <!-- by shkoh 20180806: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyleEquip/zTreeStyle.css" />
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20180806: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/monitoring_popup_setting.css" />
+</head>
+<body>
+    <div class="container-fluid content">
+        <aside class="col-xs-4 col-sm-4 col-md-4 col-lg-3" style="padding-left:4px; padding-right:4px; height: 100%;">
+            <div class="panel panel-primary">
+                <div class="panel-heading">설비/그룹 트리</div>
+                <div id="treeContent" class="panel-body" style="padding: 5px;">
+                    <div id="treeViewer"></div>
+                </div>
+            </div>
+        </aside>
+        <article class="col-xs-8 col-sm-8 col-md-8 col-lg-9" style="padding-left: 4px; padding-right: 4px; height: 100%;">
+            <div class="panel panel-primary">
+                <div id="panelContentName" class="panel-heading">
+                    관심 설비 통보 설정
+                    <div class="custom-text-right attention">
+                        <button type="button" class="btn btn-danger" id="resetSetting" style="width:65px;"></button>
+                        <button type="button" class="btn btn-success" id="saveSetting" style="width:65px;"></button>
+                        </div>
+                </div>
+                <div id="panelContent" class="panel-body" style="padding: 5px;">
+                    <div id="viewer"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- by shkoh 20180806: 공통 js -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20180806: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+    
+    <!-- by shkoh 20180806: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+
+    <!-- kdh 20181218 -->
+    <script src="/javascripts/monitoring/popup/attention.js"></script>
+    <script src="/javascripts/monitoring/popup/setting_treeContent.js"></script>
+    <script src="/javascripts/monitoring/popup/attention_equipmentContent.js"></script>
+    <script src="/javascripts/monitoring/popup/attention_userTreeView.js"></script>
+</body>
+</html>

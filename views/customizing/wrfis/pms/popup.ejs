@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210222: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20210222: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
+    <!-- by shkoh 20210222: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css" />
+
+    <!-- by shkoh 20210222: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/wrfis/pms_popup.css"/>
+</head>
+<body>
+    <div id="pms" class="container-fluid content" pms-id="<%= id %>">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title"></div>
+            </div>
+            <div class="panel-body pms">
+                <table class="table table-condensed chart-table">
+                    <tbody>
+                        <tr>
+                            <td style="width: 2%"></td>
+                            <td class="custom-chart-table">
+                                <div id="voltage-avg"></div>
+                            </td>
+                            <td style="width: 9%"></td>
+                            <td class="custom-chart-table">
+                                <div id="voltage-rst"></div>
+                            </td>
+                            <td style="width: 9%"></td>
+                            <td class="custom-chart-table">
+                                <div id="voltage-rssttr"></div>
+                            </td>
+                            <td style="width: 2%"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6" style="padding-right:1px;">
+                <table id="table-left" class="panel-table table table-condensed">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" width="17%">전력량<br>(kWh)</th>
+                            <th rowspan="2" width="15.5%">전력<br>(kW)</th>
+                            <th rowspan="2" width="12.5%">역률<br>(pF)</th>
+                            <th colspan="4">전류(A)</th>
+                            <th rowspan="2" width="6%">PMS<br>No.</th>
+                            <th rowspan="2" width="5%"></th>
+                        </tr>
+                        <tr>
+                            <th width="11%">R</th>
+                            <th width="11%">S</th>
+                            <th width="11%">T</th>
+                            <th width="11%">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-xs-6" style="padding-left:1px;">
+                <table id="table-right" class="panel-table table table-condensed">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" width="5%"></th>
+                            <th rowspan="2" width="6%">PMS<br>No.</th>
+                            <th colspan="4">전류(A)</th>
+                            <th rowspan="2" width="12.5%">역률<br>(pF)</th>
+                            <th rowspan="2" width="15.5%">전력<br>(kW)</th>
+                            <th rowspan="2" width="17%">전력량<br>(kWh)</th>
+                        </tr>
+                        <tr>
+                            <th width="11%">Total</th>
+                            <th width="11%">T</th>
+                            <th width="11%">S</th>
+                            <th width="11%">R</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modalDialogIcon" tabindex="-1" role="dialog" aria-labelledby="modalDialogIcon">
+        <div class="modal-dialog" role="document" style="width: 600px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal-dialog-icon-title" style="font-weight:700;">분전반 차단기 연결</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="using_breaker" class="btn-group" data-toggle="buttons" style="margin-bottom: 8px;">
+                        <label class="btn btn-pms btn-primary active">
+                            <input type="radio" name="usingOption" id="no_use_breaker" value="N" checked/>
+                            <span>사용안함</span>
+                        </label>
+                        <label class="btn btn-pms btn-primary">
+                            <input type="radio" name="usingOption" id="use_breaker" value="Y"/>
+                            <span>사용</span>
+                        </label>
+                    </div>
+                    <form class="form-inline">
+                        <fieldset>
+                            <div class="form-group">
+                                <label>PMS No.</label>
+                                <input type="number" class="form-control" id="pms_number" min="1" max="100" value="1">
+                                <div class="radio" id="phase_option">
+                                    <label class="radio-inline active">
+                                        <input type="radio" name="phaseOption" id="phase_one" value="N" checked/>
+                                        <span>단상</span>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="phaseOption" id="phase_three" value="Y"/>
+                                        <span>3상</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <form class="form-inline">
+                        <fieldset>
+                            <div class="form-group">
+                                <label>전류 Total</label>
+                                <p class="form-control-static" id="selected-item-current-total"></p>
+                            </div>
+                            <button type="button" class="btn find-button" id="remove-current-total">연결삭제</button>
+                            <button type="button" class="btn find-button" id="find-current-total">센서찾기</button>
+                        </fieldset>
+                    </form>
+                    <form class="form-inline">
+                        <fieldset>
+                            <div class="form-group">
+                                <label>전류 R</label>
+                                <p class="form-control-static" id="selected-item-current-r"></p>
+                            </div>
+                            <button type="button" class="btn find-button" id="remove-current-r">연결삭제</button>
+                            <button type="button" class="btn find-button" id="find-current-r">센서찾기</button>
+                        </fieldset>
+                    </form>
+                    <form class="form-inline">
+                        <fieldset>
+                            <div class="form-group">
+                                <label>전류 S</label>
+                                <p class="form-control-static" id="selected-item-current-s"></p>
+                            </div>
+                            <button type="button" class="btn find-button" id="remove-current-s">연결삭제</button>
+                            <button type="button" class="btn find-button" id="find-current-s">센서찾기</button>
+                        </fieldset>
+                    </form>
+                    <form class="form-inline">
+                        <fieldset>
+                            <div class="form-group">
+                                <label>전류 T</label>
+                                <p class="form-control-static" id="selected-item-current-t"></p>
+                            </div>
+                            <button type="button" class="btn find-button" id="remove-current-t">연결삭제</button>
+                            <button type="button" class="btn find-button" id="find-current-t">센서찾기</button>
+                        </fieldset>
+                    </form>
+                    <form class="form-inline">
+                        <fieldset>
+                            <div class="form-group">
+                                <label>역률</label>
+                                <p class="form-control-static" id="selected-item-factor"></p>
+                            </div>
+                            <button type="button" class="btn find-button" id="remove-factor">연결삭제</button>
+                            <button type="button" class="btn find-button" id="find-factor">센서찾기</button>
+                        </fieldset>
+                    </form>
+                    <form class="form-inline">
+                        <fieldset>
+                            <div class="form-group">
+                                <label>전력</label>
+                                <p class="form-control-static" id="selected-item-kw"></p>
+                            </div>
+                            <button type="button" class="btn find-button" id="remove-kw">연결삭제</button>
+                            <button type="button" class="btn find-button" id="find-kw">센서찾기</button>
+                        </fieldset>
+                    </form>
+                    <form class="form-inline">
+                        <fieldset>
+                            <div class="form-group">
+                                <label>전력량</label>
+                                <p class="form-control-static" id="selected-item-kwh"></p>
+                            </div>
+                            <button type="button" class="btn find-button" id="remove-kwh">연결삭제</button>
+                            <button type="button" class="btn find-button" id="find-kwh">센서찾기</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-modal-footer-confirm">저장</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modalDialogTree" tabindex="-2" role="dialog" aria-labelledby="modalDialogTree">
+        <div class="modal-dialog" role="document" style="width:500px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight:700;">PMS 연결 트리</h4>
+                </div>
+                <div class="modal-body" id="modalDialogTreeBody" style="height:500px;">
+                    <div id="modal-tree" class="ztree"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-modal-tree-link">연결</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- by shkoh 20210222: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210222: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20210222: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+
+    <!-- by shkoh 20210222: cytoscape  -->
+    <script src="/component/jquery-qtip-3.0.3/jquery.qtip.min.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-cxtmenu.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-node-html-label.min.js"></script>
+
+    <!-- by shkoh 20210222: ubiGuard -->
+    <script src="/javascripts/diagram/tree.js"></script>
+    <script src="/javascripts/diagram/wrfis/pms_popup.js"></script>
+</body>
+</html>

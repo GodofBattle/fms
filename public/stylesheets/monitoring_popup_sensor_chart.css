@@ -1,0 +1,269 @@
+/***************************************************************************************************************/
+/* by shkoh 20180806: monitoring_popup_setting.css common start                                                */
+/***************************************************************************************************************/
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Nanum Barun Gothic', 'Yoon 윤고딕Display', 'Malgun Gothic';
+    height: 100%;
+    overflow: hidden;
+}
+
+:focus {
+    outline: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180806: monitoring_popup_setting.css common end                                                  */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180806: bootstrap 3.x re-define start                                                            */
+/***************************************************************************************************************/
+.content {
+    padding: 6px;
+    height: 100%;
+}
+
+.panel {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    box-shadow: 1px 1px 6px rgba(15, 15, 15, 0.6);
+}
+
+.panel-primary {
+    border: none;
+}
+
+.panel-heading {
+    border-radius: 0px;
+}
+
+.panel-primary > .panel-heading {
+    padding: 6px;
+    height: 34px;
+    background: none;
+    background-color: #172f51;
+    border: none;
+    font-size: 1.3em;
+    text-shadow: 1px 1px #111111;
+    color: #f3f3f3;
+    font-weight: bold;
+}
+
+.panel-primary > .panel-body {
+    padding: 4px 8px;
+}
+
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn {
+    border-radius: 0px;
+}
+
+.form-group-sm .form-control-static {
+    padding: 0px;
+}
+
+.checkbox {
+    margin: 0px;
+}
+
+.btn-group > .btn {
+    border-radius: 0px;
+}
+
+.btn-group > .btn-default:active,
+label.btn.btn-default.active {
+    border-color: #172f51;
+    background-color: #124b9a;
+    color: #f3f3f3;
+    text-shadow: 0 1px 1px #333;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180806: bootstrap 3.x re-define end                                                              */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180822: custom style start                                                                       */
+/***************************************************************************************************************/
+.custom-text-right {
+    padding: 0px;
+    float: right;
+    margin-top: -1px;
+}
+
+.custom-text-right .btn {
+	height: 26px;
+	padding: 0px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.custom-text-right .btn:active {
+    box-shadow: none;
+    outline: none;
+}
+
+.custom-text-right .btn:active:focus,
+.custom-text-right .btn:focus {
+    outline: none;
+}
+
+.custom-text-right .btn-success,
+.custom-text-right .btn-success:focus {
+    background-image: url("/img/setting/btn_save_01.png");
+    background-color: #172f51;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+.custom-text-right .btn-success:hover,
+.custom-text-right .btn-success:active {
+    background-image: url("/img/setting/btn_save_02.png");
+    background-color: #172f51;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180822: custom style end                                                                         */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180816: table re-define start                                                                    */
+/***************************************************************************************************************/
+.table {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 0.9em;
+}
+
+.table > tbody > tr > th {
+	color: #444444;
+    border-top: none;
+    padding: 3px 2px 3px 12px;
+    width: 28%;
+    vertical-align: middle;
+}
+
+.table > tbody > tr > td {
+    padding: 3px 12px 3px 2px;
+    border-top: none;
+    width: 72%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.form-group-sm .form-control {
+    border-radius: 0px;
+    font-size: 1.0em;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#groupParentName:focus,
+#equipmentParentName:focus {
+    outline: none;
+    border-color: #ccc;
+    box-shadow: none;
+}
+
+#userSelectButtonForParentGroup {
+    box-shadow: none;
+}
+
+#userSelectButtonForParentGroup:focus {
+    outline: none;
+    box-shadow: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180816: table re-define end                                                                      */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20190715: private style start                                                                      */
+/***************************************************************************************************************/
+#searching-conditions {
+    display: flex;
+    margin-bottom: 6px;
+}
+
+#searching-conditions .form-date > label {
+    font-size: 0.8em;
+    padding-left: 8px;
+    margin: 0px;
+}
+
+#searching-conditions .form-group > label {
+    padding-top: 6px;
+    padding-left: 5px;
+    font-size: 1em;
+    margin: 0px;
+}
+
+#searching-conditions input {
+    cursor: pointer;
+    border-radius: 0px;
+    font-size: 12px;
+    text-align: center;
+    text-indent: 0;
+}
+
+#searching-conditions .form-group .btn-check {
+    background-color: transparent;
+    background-image: url('/img/user/check_02.png');
+    background-repeat: no-repeat;
+    background-position: 0px top;
+    background-size: 18px;
+    padding: 0px 12px 0px 21px;
+    margin-left: 0px;
+    font-size: 1.05em;
+}
+
+#searching-conditions .form-group .btn-check.active,
+#searching-conditions .form-group .btn-check:active {
+    background-image: url('/img/user/check_01.png');
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+#searching-conditions .last {
+    flex: 1;
+    text-align: end;
+    align-self: center;
+}
+
+.custom-search-button {
+    width: 85px;
+    height: 30px;
+    border: none;
+    background-image: url('/img/report/btn_search_01.png');
+    background-repeat: no-repeat;
+    box-shadow: none;
+    margin: 0px 0px 0px 10px;
+    background-position: -9px 0px;
+}
+
+.custom-search-button:hover {
+    background-image: url('/img/report/btn_search_02.png');
+    background-repeat: no-repeat;
+    background-position: -9px 0px;
+}
+
+.custom-search-button:focus {
+    box-shadow: 0 0 3px 1px #76abd9;
+    background-color: #76abd9;
+}
+/***************************************************************************************************************/
+/* by shkoh 20190715: private style end                                                                        */
+/***************************************************************************************************************/

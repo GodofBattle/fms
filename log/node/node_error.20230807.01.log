@@ -1,0 +1,62 @@
+[2023/08/07 16:37:25.247] [ERROR] TypeError: Cannot read properties of undefined (reading 'length')
+    at PacketOutputStream.writeUtf8StringEscapeQuote (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-output-stream.js:190:29)
+    at Query.writeParam (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/common-text-cmd.js:170:13)
+    at Query.writeParam (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/common-text-cmd.js:160:22)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:102:14)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.insertDiagramItem (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_diagram.js:10:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023/08/07 16:38:05.727] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT vca.`level` AS idx, vca.level_text, COUNT(vca.`level`) AS alarm_cnt FROM view_current_alarm vca JOIN cn_equipment ce ON vca.equip_id = ce.equip_id WHERE FIND_IN_SET(ce.group_id, ?) GROUP BY vca.`level`; - parameters:[undefined]
+sql: SELECT vca.`level` AS idx, vca.level_text, COUNT(vca.`level`) AS alarm_cnt FROM view_current_alarm vca JOIN cn_equipment ce ON vca.equip_id = ce.equip_id WHERE FIND_IN_SET(ce.group_id, ?) GROUP BY vca.`level`; - parameters:[undefined]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getStatisticsAlarmList (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/ft_current_alarm.js:27:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    'SELECT vca.`level` AS idx, vca.level_text, COUNT(vca.`level`) AS alarm_cnt FROM view_current_alarm vca JOIN cn_equipment ce ON vca.equip_id = ce.equip_id WHERE FIND_IN_SET(ce.group_id, ?) GROUP BY vca.`level`; - parameters:[undefined]',
+  sql: 'SELECT vca.`level` AS idx, vca.level_text, COUNT(vca.`level`) AS alarm_cnt FROM view_current_alarm vca JOIN cn_equipment ce ON vca.equip_id = ce.equip_id WHERE FIND_IN_SET(ce.group_id, ?) GROUP BY vca.`level`; - parameters:[undefined]',
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/08/07 16:39:45.155] [ERROR] TypeError: Cannot read properties of undefined (reading 'length')
+    at PacketOutputStream.writeUtf8StringEscapeQuote (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-output-stream.js:190:29)
+    at Query.writeParam (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/common-text-cmd.js:170:13)
+    at Query.writeParam (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/common-text-cmd.js:160:22)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:102:14)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.insertDiagramItem (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_diagram.js:10:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023/08/07 17:05:17.309] [ERROR] SqlError: (conn=110124, no: 1916, SQLState: 22003) Got overflow when converting '' to DECIMAL. Value truncated
+sql: UPDATE cn_diagram SET ? WHERE ?; - parameters:[{"pos_x":0.487,"pos_y":0.215},{"index":"06e2993b-cbf4-475f-9111-4470b2a21f1d"}]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Got overflow when converting '' to DECIMAL. Value truncated",
+  sql: 'UPDATE cn_diagram SET ? WHERE ?; - parameters:[{"pos_x":0.487,"pos_y":0.215},{"index":"06e2993b-cbf4-475f-9111-4470b2a21f1d"}]',
+  fatal: false,
+  errno: 1916,
+  sqlState: '22003',
+  code: 'ER_DATA_OVERFLOW'
+}

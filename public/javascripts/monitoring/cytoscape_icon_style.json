@@ -1,0 +1,226 @@
+{
+    "normal": {
+        "node": {
+            "shape": "roundrectangle",
+            "width": "36px",
+            "height": "36px",
+
+            "label": "data(name)",
+            "font-family": "arial",
+            "font-size": "13px",
+            "font-weight": "bolder",
+            "text-halign": "center",
+            "text-valign": "bottom",
+
+            "text-outline-width": 0.1,
+
+            "background-color": "transparent",
+            "background-opacity": 0,
+
+            "padding-left": 1,
+            "padding-right": 1,
+            "padding-top": 1,
+            "padding-bottom": 2,
+
+            "color": "#000000"
+        },
+        
+        "equip": {
+            "background-image": "data(bgImg)",
+            "background-width": "36px",
+            "background-height": "36px",
+            "background-fit": "none",
+            "text-background-color": "#ffffff",
+            "text-background-opacity": 0.7,
+            "text-background-shape": "rectangle",
+            "text-background-padding": 2
+        },
+
+        "equip_hvac" : {
+            "text-background-color": "#ffffff",
+            "text-background-opacity": 0.7,
+            "text-background-shape": "rectangle",
+            "text-background-padding": "2px"
+        },
+
+        "equip_door" : {
+            "text-background-color": "#ffffff",
+            "text-background-opacity": 0.7,
+            "text-background-shape": "rectangle",
+            "text-background-padding": "2px"
+        },
+        
+        "equip_alarm": {
+            "background-image": "data(bgImg_ani)"
+        },
+
+        "nvr": {
+            "text-background-color": "#ffffff",
+            "text-background-opacity": 0.7,
+            "text-background-shape": "rectangle",
+            "text-background-padding": "2px",
+            "background-image": "data(bgImg)",
+            "background-width": "36px",
+            "background-height": "36px",
+            "background-fit": "none"
+        },
+
+        "group": {
+            "background-image": "data(bgImg)",
+            "background-width": "36px",
+            "background-height": "36px",
+            "background-fit": "none",
+            "text-background-color": "#ffffff",
+            "text-background-opacity": 0.7,
+            "text-background-shape": "rectangle",
+            "text-background-padding": "2px"
+        },
+
+        "group_alarm": {
+            "background-image": "data(bgImg_ani)"
+        }
+    },
+    
+    "point": {
+        "node": {
+            "shape": "ellipse",
+            "width": "12px",
+            "height": "12px",
+            
+            "label": "data(name)",
+            "font-family": "arial",
+            "font-size": "13px",
+            "font-weight": "bolder",
+            "text-halign": "center",
+            "text-valign": "bottom",
+
+            "text-outline-width": 0.1,
+            
+            "background-color": "transparent",
+            "background-opacity": 0,
+
+            "padding-left": 1,
+            "padding-right": 1,
+            "padding-top": 1,
+            "padding-bottom": 1,
+
+            "color": "#000000"
+        },
+
+        "equip": {
+            "shape": "ellipse",
+            "width": "12px",
+            "height": "12px",
+            "label": "",
+            "background-color": "data(alarmColor)",
+            "background-opacity": 1,
+            "border-width": 2,
+            "border-stype": "solid",
+            "border-color": "#000000"
+        },
+
+        "group": {
+            "shape": "roundrectangle",
+            "width": "36px",
+            "height": "36px",
+            
+            "label": "data(name)",
+            
+            "background": "transparent",
+            "background-opacity": 0,
+            
+            "background-image": "data(bgImg)",
+            "background-image-opacity": 1,
+            "background-width": "32px",
+            "background-height": "32px",
+            "background-fit": "none"
+        }
+    },
+
+    "dummy": {
+        "node_dummy": {
+            "shape": "ellipse",
+            "width": "5px",
+            "height": "5px",
+            "background-color": "#000000",
+            "background-opacity": 1,
+            "content": "",
+            "padding-bottom": 3,
+            "_comment_padding-bottom": "by shkoh 20180702: dummy 점이 normal style일 때와 point style인 경우 일관성을 맞추기 위해서 적용"
+        },
+
+        "edge": {
+            "line-color": "#0161b8",
+            "width": "2px"
+        }
+    },
+
+    "leak": {
+        "node_leakdummy": {
+            "shape": "roundrectangle",
+            "width": "30px",
+            "height": "16px",
+            "background-color": "#000000",
+            "background-opacity": 1,
+            "font-family": "Malgun Gothic",
+            "font-size": "10px",
+            "font-weight": "bolder",
+            "text-halign": "center",
+            "text-valign": "center",
+            "color": "#ffff00",
+            "content": "data(distance)"
+        },
+
+        "node_leakPoint": {
+            "shape": "roundrectangle",
+            "width": "46px",
+            "height": "24px",
+            "background-color": "#000000",
+            "background-opacity": 1,
+            "font-family": "Malgun Gothic",
+            "font-size": "16px",
+            "font-weight": "bolder",
+            "text-halign": "center",
+            "text-valign": "center",
+            "color": "#ffffff",
+            "content": "data(distance)"
+        }
+    },
+
+    "selection": {
+        "normal": {
+            "line-color": "#000000",
+            "target-arrow-color": "#000000",
+            "source-arrow-color": "#000000",
+            "background-color": "#000000"        
+        },
+        "point": {
+            "shape": "ellipse",
+            "background-color": "data(alarmColor)",
+            "background-opacity": 0.8,
+            "width": "16px",
+            "height": "16px",
+            "border-width": 4
+        },
+        "dummy_selected": {
+            "border-width": "2px",
+            "border-style": "solid",
+            "border-color": "#000000",
+            "background-color": "#303030"
+        },
+        "equip_selected": {
+            "shape": "roundrectangle",
+            "background-opacity": 0.5,
+            "background-color": "#000000",
+            "width": "38px",
+            "height": "38px"
+        },
+        "group_selected": {
+            "shape": "roundrectangle",
+            "background-opacity": 0.5,
+            "background-color": "#000000",
+            "width": "38px",
+            "height": "38px"
+        }
+    }
+}

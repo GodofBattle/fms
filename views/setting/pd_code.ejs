@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/stylesheets/predefine_code.css"/>
+</head>
+<body>
+    <div class="container-fluid content">
+        <aside id="tree-panel" class="col-sm-3 col-md-3 col-lg-2" style="padding-left: 4px; padding-right: 4px; height: 100%;">
+            <div class="panel panel-primary">
+                <div class="panel-heading">사전코드 목록</div>
+                <div class="panel-body" style="padding: 5px;">
+                    <div id="code-tree" class="ztree"></div>
+                </div>
+            </div>
+            <div id="rMenu">
+                <ul>
+                    <li><a id="menu-add" onclick="addPdCode()">사전 코드 추가</a></li>
+                    <li><a id="menu-update" onclick="updatePdCode()">사전 코드 수정</a></li>
+                </ul>
+            </div>
+        </aside>
+        <article class="col-sm-9 col-md-9 col-lg-10" style="padding-left: 4px; padding-right: 4px; height: 100%;">
+            <div class="panel panel-primary">
+                <div class="custom-panel-heading">
+                    <div id="grid-title"></div>
+                    <div class="button-right">
+                        <button type="submit" class="btn btn-add" id="addCode" style="width:65px;"></button>
+                        <button type="submit" class="btn btn-save" id="saveCode" style="width:65px;"></button>
+                        <button type="button" class="btn btn-cancel" id="cancelCode" style="width:65px;"></button>
+                        <button type="button" class="btn btn-delete" id="deleteCode" style="width:65px;"></button> 
+                    </div>
+                </div>
+                <div class="panel-body" style="padding: 0px;">
+                    <div id="pdCodeGrid"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="pdCodeModal" tabindex="-1" role="dialog" aria-labelledby="pdCodeModalLabel">
+        <div class="modal-dialog" role="document" style="width: 500px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-modal="Close" style="opacity: 1; color: #ffffff;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="pdCodeModalLabel"></h4>
+                </div>
+                <div class="modal-body" style="padding-bottom: 5px;">
+                    <div class="row editRow">
+                        <label class="col-sm-5 pdCodeTitleText">사전코드</label>
+                        <input type="text" id="pdCodeText" class="col-sm-3" maxlength="4" onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'');" style="text-transform: uppercase;" placeholder="영문 대문자" />
+                        <select id="pdCodeList" class="col-sm-3"></select>
+                    </div>
+                    <div class="row editRow">
+                        <label class="col-sm-5 pdCodeTitleText">사전코드 상세내용</label>
+                        <input type="text" id="pdCodeDetail" class="col-sm-7" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-custom btn-save" id="savePdCodeDetail"></button>
+                    <button type="button" class="btn-custom btn-custom-cancel" data-dismiss="modal"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+    <script src="/javascripts/predefine/codeTreeView.js"></script>
+    <script src="/javascripts/predefine/code.js"></script>
+</body>
+</html>

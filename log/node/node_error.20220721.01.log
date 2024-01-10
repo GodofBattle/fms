@@ -1,0 +1,36 @@
+[2022/07/21 13:47:25.546] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:89:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2022/07/21 15:14:39.861] [ERROR] ReferenceError: /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/views/customizing/pss/dashboard/index.ejs:34
+    32| </head>
+    33| <body data="<%= type %>">
+ >> 34|     <%- include('./hvac', { object_id: 'hvac_1', left: '10px', top: '190px' }) %>
+    35|     <div class="i-widget i-hvac" id="hvac_2">
+    36|     </div>
+    37|     <div class="i-widget i-hvac" id="hvac_3">
+
+/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/views/customizing/pss/dashboard/hvac.ejs:1
+ >> 1| <div class="i-widget i-hvac" id="<% id %>">
+    2| </div>
+
+id is not defined
+    at eval (eval at compile (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:633:12), <anonymous>:10:8)
+    at returnedFn (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:668:17)
+    at include (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:666:39)
+    at eval (eval at compile (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:633:12), <anonymous>:17:17)
+    at returnedFn (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:668:17)
+    at tryHandleCache (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/application.js:640:10)
+    at Function.render (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/application.js:592:3) {
+  path: '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/views/customizing/pss/dashboard/index.ejs'
+}

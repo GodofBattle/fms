@@ -1,0 +1,365 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: "Malgun Gothic";
+    font-size: 12px;
+    height: 100%;
+}
+
+:focus {
+    outline: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20181213: Bootstrap Customising Start                                                              */
+/***************************************************************************************************************/
+.container-fluid {
+    padding: 8px 2px;
+    height: 100%;
+}
+
+.panel {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.panel-default {
+    border: 3px solid #172f51;
+}
+
+.panel-default > .panel-heading {
+    padding: 3px 6px;
+    height: 32px;
+    border-radius: 0px;
+    background: #172f51;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f3f3f3;
+}
+
+.panel-default > .panel-body {
+    padding: 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20181213: Bootstrap Customising End                                                                */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20181214: zTree style start                                                                        */
+/***************************************************************************************************************/
+.ztree * {
+    font-size: 14px;
+    font-family: "Malgun Gothic";
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #124b9a;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 3px 0px 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20181214: zTree style end                                                                          */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20181217: kendo customized style start                                                             */
+/***************************************************************************************************************/
+.k-grid-content table {
+    text-align: left;
+    color: #222222;
+    font-size: 0.88em;
+}
+
+.k-grid-header th.k-header,
+.k-grid-header th {	
+    border-color: #e5e5e5;
+    height: 18px;
+    border-width: 0 0 0px 1px;
+    font-weight: bold;
+	color: #333333;
+    padding: 0.5em 0.6em 0.4em 0.6em;
+    font-size: 0.9em;
+    vertical-align: middle;
+}
+
+.k-grid-content table td {
+    border-color: #e5e5e5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.k-grid {
+    border: 1px solid #c5c5c5;
+    border-radius: 0px;
+}
+
+.k-button {
+    padding: 4px 8px;
+}
+
+div.k-grid-footer,
+div.k-grid-header,
+.k-grid-header {
+    border-bottom: none;
+}
+
+.k-alt {
+    background-color: #fafafa;
+}
+
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+.k-state-selected {
+    background-color: #317be0;
+    border-color: #317be0;
+}
+
+.k-grid tr.k-state-focused:hover td {
+    background-color: #ebebeb;
+}
+
+.k-grid tr.k-state-selected:hover td {
+    background-color: #3379b5;
+}
+
+.k-state-focused,
+.k-state-focused.k-state-selected {
+    box-shadow: none;
+}
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+
+.k-item.k-state-selected.k-state-focused.k-state-hover {
+    box-shadow: none;
+}
+
+.k-pager-wrap {
+    font-size: 11px;
+}
+
+.k-grid-norecords {
+    height: 90%;
+}
+
+.k-header > .k-grid-filter,
+.k-i-filter {
+    font-size: 0.81em;
+    right: 6px;
+}
+
+.k-i-sort-asc-sm,
+.k-i-sort-desc-sm {
+    margin: 0px;    
+}
+
+/* by shkoh 20200715: kendo grid에서 loading 이미지를 보여주지 않는다 */
+#report-page .k-loading-image {
+    display: none;
+}
+
+.k-dropdown,
+.k-dropdown-wrap,
+.k-dropdown-wrap .k-input,
+.k-dropdown-wrap.k-state-border-down,
+.k-picker-wrap,
+.k-picker-wrap .k-input,
+.k-picker-wrap .k-select,
+.k-picker-wrap.k-state-border-down,
+.k-picker-wrap.k-state-border-down .k-input,
+.k-list-container.k-state-border-up,
+.k-popup .k-list .k-state-focused,
+.k-list .k-state-hover,
+.k-textbox,
+.k-button,
+.k-split-button {
+    border-radius: 0px;
+}
+
+.k-split-button:focus {
+    box-shadow: none;
+}
+
+.k-split-container .k-button:focus {
+    box-shadow: none;
+}
+
+.k-split-button .k-button:first-child,
+.k-button-group .k-button:first-child,
+.k-button-group .k-group-start {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.k-split-button .k-button:last-child,
+.k-button-group .k-button:last-child,
+.k-button-group .k-group-end {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 2px;
+}
+
+.k-grid .k-grid-toolbar > * {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.k-grid-toolbar:first-child {
+    border-radius: 0px;
+}
+
+.k-grid-toolbar {
+    padding: 3px 6px;
+}
+
+.k-toolbar > * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20181217: kendo customized style End                                                               */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20200625: custom tree style start                                                                  */
+/***************************************************************************************************************/
+.tree-panel {
+    padding-left: 8px;
+    padding-right: 5px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20200625: custom tree style end                                                                    */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20200710: custom content style start                                                               */
+/***************************************************************************************************************/
+.content-panel {
+    padding-left: 5px;
+    padding-right: 8px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20200710: custom content style end                                                                 */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20200625: custom data header style start                                                           */
+/***************************************************************************************************************/
+.panel-header {
+    margin-bottom: 10px;
+}
+
+.searching {
+    display: flex;
+    align-items: center;
+    padding: 18px 12px 4px 12px;
+}
+
+.searching .first {
+    flex: 2;
+}
+
+.searching .last {
+    align-items: center;
+}
+
+.searching .conditions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searching .conditions > .searching-label {
+    font-weight: bold;
+    padding-right: 12px;
+}
+
+.searching .conditions > .searching-icon { 
+    padding: 0px 10px;
+}
+
+.searching-notification {
+    text-align: right;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.custom-k-state-default:hover {
+    background-color: #ebebeb;
+    border-color: #aeaeae;
+}
+
+.custom-k-state-default:focus {
+    background-color: #ffffff;
+    border-color: #76abd9;
+    box-shadow: 0 0 7px 0 #76abd9;
+}
+
+.custom-k-input:hover {
+    background-color: #ffffff;
+}
+
+.custom-k-select:hover {
+    border-color: #aeaeae;
+}
+
+input.custom-date {
+    text-align: center;
+    text-indent: 0;
+}
+
+.custom-button {
+    margin-left: 10px;
+    padding: 5px 8px;
+}
+
+.custom-search-button {
+    width: 85px;
+    height: 30px;
+    border: none;
+    background-image: url('/img/report/btn_search_01.png');
+    background-repeat: no-repeat;
+    box-shadow: none;
+    margin: 0px 0px 0px 10px;
+    background-position: -9px 0px;
+}
+
+.custom-search-button:hover {
+    background-image: url('/img/report/btn_search_02.png');
+    background-repeat: no-repeat;
+    background-position: -9px 0px;
+}
+
+.custom-search-button:focus {
+    box-shadow: 0 0 3px 1px #76abd9;
+    background-color: #76abd9;
+}
+/***************************************************************************************************************/
+/* by shkoh 20200625: custom data header style end                                                             */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20200629: custom air datepicker style start                                                        */
+/***************************************************************************************************************/
+.datepicker {
+    border-radius: 0px;
+}
+
+.datepicker--nav-title i {
+    color: #4a4a4a;
+}
+/***************************************************************************************************************/
+/* by shkoh 20200629: custom air datepicker style end                                                          */
+/***************************************************************************************************************/

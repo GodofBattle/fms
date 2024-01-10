@@ -1,0 +1,19 @@
+[2023/09/07 09:10:34.426] [ERROR] SqlError: (conn=330454, no: 1064, SQLState: 42000) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY vca.occur_date DESC, vca.equip_name, vca.sensor_name' at line 1
+sql: SELECT vca.equip_id, vca.equip_name, (SELECT code_name FROM pd_code WHERE code_id = pe.equip_code) AS equip_kind, vca.sensor_id, vca.sensor_name, IFNULL((SELECT code_name FROM pd_code WHERE code_id = cs.sensor_code), '') AS sensor_kind, vca.`level` AS alar...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY vca.occur_date DESC, vca.equip_name, vca.sensor_name' at line 1",
+  sql: "SELECT vca.equip_id, vca.equip_name, (SELECT code_name FROM pd_code WHERE code_id = pe.equip_code) AS equip_kind, vca.sensor_id, vca.sensor_name, IFNULL((SELECT code_name FROM pd_code WHERE code_id = cs.sensor_code), '') AS sensor_kind, vca.`level` AS alar...",
+  fatal: false,
+  errno: 1064,
+  sqlState: '42000',
+  code: 'ER_PARSE_ERROR'
+}

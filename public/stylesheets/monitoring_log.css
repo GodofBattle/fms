@@ -1,0 +1,76 @@
+body {
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-family: "Malgun Gothic";
+}
+
+.container-fluid {
+    padding: 5px 5px 5px 5px;
+    height: 100%;
+}
+
+.panel {
+    border-radius: 0px;
+    height: 100%;
+	border: 3px solid #172f51;
+    margin-bottom: 0px;
+}
+
+.panel-primary > .panel-heading {
+    padding: 3px 6px;
+	height: 32px;
+	background: none;
+    background-color: #172f51;
+    border-radius: 0px;
+	border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.log-title {
+    padding-right: 25px;
+}
+
+/*********** refresh button style ***********/
+.btn-refresh {
+	background: url('/img/monitoring/tool_icon03.png') no-repeat;
+}
+
+button:hover {
+    background-color: #c5c5c5;
+}
+
+.btn:active,
+.btn:focus {
+    outline: none;
+}
+
+button span {
+    display: block;
+    width: 26px;
+    height: 26px;
+}
+
+.btn {
+    float: right;
+    border: none;
+    padding: 0px;
+    margin-bottom: 3px;
+    background-color: #ffffff;
+}
+/*********** refresh button style ***********/
+
+pre {
+    font-size: 13.5px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    white-space: pre-wrap;
+}
+
+.L4 {
+    color: #fe6102;
+}
+
+.L5 {
+    color: #de0303;
+}

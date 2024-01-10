@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- by shkoh 20200813: kendoui-bootstrap styles -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+
+    <!-- by shkoh 20200813: bootstrap styles -->
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+
+    <!-- by shkoh 20200814: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+
+    <!-- by shkoh 20200814: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20200819: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css"/>
+
+    <!-- by shkoh 20200813: ubiguard style -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css" />
+    <link rel="stylesheet" href="/stylesheets/reports.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <article class="col-sm-12 col-md-12 col-lg-12 content-panel-only">
+            <div class="panel panel-default panel-header">
+                <div class="panel-heading">검색조건</div>
+                <div class="panel-body">
+                    <div class="searching">
+                        <div class="first">
+                        </div>
+                        <div class="last">
+                            <div class="conditions">
+                                <input id="searching-date" class="custom-date" type="text"/>
+                                <input id="search-button" type="button" class="custom-search-button" title="우리FIS UPS일지(480KVA) 조회"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">UPS일지(480KVA)</div>
+                <div class="panel-body">
+                    <div id="report-toolbar"></div>
+                    <div id="report-page">
+                        <div id="report-content" class="r-report-content-landscape">
+                            <table class="r-table r-table-header">
+                                <tr>
+                                    <th rowspan="1" colspan="2" width="5%" data-type="stamp" class="r-border-left r-border-top">작 성</th>
+                                    <th rowspan="1" colspan="2" width="5%" data-type="stamp" class="r-border-left r-border-top">검 토</th>
+                                    <th rowspan="1" colspan="2" width="5%" data-type="stamp" class="r-border-left r-border-top r-border-right">승 인</th>
+                                    <th rowspan="2" colspan="25" data-type="stamp" class="r-font-title r-font-underline">U P S 일지 (480KVA)</th>
+                                    <th rowspan="1" colspan="2" width="5%" data-type="stamp" class="r-border-left r-border-top r-border-right">확 인</th>
+                                </tr>
+                                <tr height="50">
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom r-border-right"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom r-border-right"></td>
+                                </tr>
+                            </table>
+                            <table class="r-table r-table-info">
+                                <tr height="30">
+                                    <td rowspan="1" colspan="17" class="r-font-info r-align-left r-valign-bottom"><span id="report-date"></span></td>
+                                    <td rowspan="1" colspan="16" class=""></td>
+                                </tr>
+                            </table>
+                            <table class="r-table r-table-contents">
+                                <tr>
+                                    <td rowspan="4" class="r-border-left-bold r-border-top-bold">시간</td>
+                                    <td colspan="32" class="r-border-left-bold r-border-top-bold r-border-right-bold r-bk-gray">UPS 1조</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8" class="r-border-left-bold r-border-top r-border-right r-bk-gray">UPS 1호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right r-bk-gray">UPS 2호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right r-bk-gray">UPS 3호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right-bold r-bk-gray">UPS 4호기(480KVA)</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="r-border-left-bold r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right-bold">배터리</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-font-small r-border-left-bold r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right-bold">전류</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top-bold">07:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top-bold"><span id="UPS1-1_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-1_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-1_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-1_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-1_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-1_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-1_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-1_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-2_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-2_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-2_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-2_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-2_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-2_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-2_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-2_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-3_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-3_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-3_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-3_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-3_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-3_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-3_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-3_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-4_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-4_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-4_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-4_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-4_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-4_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS1-4_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold r-border-right-bold"><span id="UPS1-4_BC_07"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">11:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS1-1_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS1-4_BC_11"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">15:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS1-1_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS1-4_BC_15"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">19:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS1-1_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS1-4_BC_19"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">23:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS1-1_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS1-4_BC_23"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">03:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS1-1_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-1_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-2_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-3_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS1-4_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS1-4_BC_03"></span></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4" class="r-border-left-bold r-border-top-bold">시간</td>
+                                    <td colspan="32" class="r-border-left-bold r-border-top-bold r-border-right-bold r-bk-gray">UPS 2조</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8" class="r-border-left-bold r-border-top r-border-right r-bk-gray">UPS 1호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right r-bk-gray">UPS 2호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right r-bk-gray">UPS 3호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right-bold r-bk-gray">UPS 4호기(480KVA)</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="r-border-left-bold r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right-bold">배터리</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-font-small r-border-left-bold r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right-bold">전류</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top-bold">07:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top-bold"><span id="UPS2-1_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-1_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-1_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-1_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-1_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-1_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-1_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-1_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-2_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-2_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-2_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-2_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-2_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-2_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-2_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-2_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-3_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-3_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-3_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-3_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-3_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-3_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-3_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-3_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-4_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-4_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-4_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-4_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-4_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-4_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS2-4_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold r-border-right-bold"><span id="UPS2-4_BC_07"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">11:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS2-1_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS2-4_BC_11"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">15:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS2-1_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS2-4_BC_15"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">19:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS2-1_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS2-4_BC_19"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">23:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS2-1_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS2-4_BC_23"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">03:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS2-1_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-1_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-2_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-3_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS2-4_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS2-4_BC_03"></span></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4" class="r-border-left-bold r-border-top-bold">시간</td>
+                                    <td colspan="32" class="r-border-left-bold r-border-top-bold r-border-right-bold r-bk-gray">UPS 3조</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8" class="r-border-left-bold r-border-top r-border-right r-bk-gray">UPS 1호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right r-bk-gray">UPS 2호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right r-bk-gray">UPS 3호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right-bold r-bk-gray">UPS 4호기(480KVA)</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="r-border-left-bold r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right-bold">배터리</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-font-small r-border-left-bold r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right-bold">전류</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top-bold">07:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top-bold"><span id="UPS3-1_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-1_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-1_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-1_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-1_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-1_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-1_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-1_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-2_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-2_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-2_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-2_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-2_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-2_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-2_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-2_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-3_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-3_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-3_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-3_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-3_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-3_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-3_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-3_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-4_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-4_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-4_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-4_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-4_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-4_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS3-4_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold r-border-right-bold"><span id="UPS3-4_BC_07"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">11:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS3-1_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS3-4_BC_11"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">15:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS3-1_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS3-4_BC_15"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">19:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS3-1_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS3-4_BC_19"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">23:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS3-1_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS3-4_BC_23"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">03:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS3-1_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-1_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-2_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-3_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS3-4_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS3-4_BC_03"></span></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4" class="r-border-left-bold r-border-top-bold">시간</td>
+                                    <td colspan="32" class="r-border-left-bold r-border-top-bold r-border-right-bold r-bk-gray">UPS 4조</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8" class="r-border-left-bold r-border-top r-border-right r-bk-gray">UPS 1호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right r-bk-gray">UPS 2호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right r-bk-gray">UPS 3호기(480KVA)</td>
+                                    <td colspan="8" class="r-border-top r-border-right-bold r-bk-gray">UPS 4호기(480KVA)</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="r-border-left-bold r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right">배터리</td>
+                                    <td colspan="2" class="r-border-top r-border-right">입력</td>
+                                    <td colspan="4" class="r-border-top r-border-right">출력</td>
+                                    <td colspan="2" class="r-border-top r-border-right-bold">배터리</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-font-small r-border-left-bold r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right">전류</td>
+                                    <td class="r-font-small r-border-top r-border-right">주파수</td>
+                                    <td class="r-font-small r-border-top r-border-right">부하율</td>
+                                    <td class="r-font-small r-border-top r-border-right">전압</td>
+                                    <td class="r-font-small r-border-top r-border-right-bold">전류</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top-bold">07:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top-bold"><span id="UPS4-1_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-1_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-1_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-1_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-1_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-1_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-1_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-1_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-2_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-2_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-2_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-2_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-2_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-2_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-2_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-2_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-3_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-3_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-3_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-3_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-3_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-3_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-3_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-3_BC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-4_IV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-4_IC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-4_OV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-4_OC_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-4_OF_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-4_OL_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold"><span id="UPS4-4_BV_07"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top-bold r-border-right-bold"><span id="UPS4-4_BC_07"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">11:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS4-1_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_BC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_IV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_IC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OC_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OF_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OL_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_BV_11"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS4-4_BC_11"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">15:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS4-1_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_BC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_IV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_IC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OC_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OF_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OL_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_BV_15"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS4-4_BC_15"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">19:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS4-1_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_BC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_IV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_IC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OC_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OF_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OL_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_BV_19"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS4-4_BC_19"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">23:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS4-1_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_BC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_IV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_IC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OC_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OF_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OL_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_BV_23"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS4-4_BC_23"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="r-border-left-bold r-border-top">03:00</td>
+                                    <td class="r-font-small r-data-number r-border-left-bold r-border-top"><span id="UPS4-1_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-1_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-2_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-3_BC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_IV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_IC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OC_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OF_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_OL_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top"><span id="UPS4-4_BV_03"></span></td>
+                                    <td class="r-font-small r-data-number r-border-left r-border-top r-border-right-bold"><span id="UPS4-4_BC_03"></span></td>
+                                </tr>
+                                <tr height="30">
+                                    <td class="r-border-left-bold r-border-top-bold r-border-bottom-bold">비고</td>
+                                    <td colspan="32" class="r-border-left-bold r-border-top-bold r-border-right-bold r-border-bottom-bold"></td>
+                                </tr>
+                            </table>
+                            <table class="r-table r-table-bottom">
+                                <tr height="60">
+                                    <td rowspan="1" colspan="33" class="r-font-footer">(주)우리피앤에스</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- by shkoh 20200813: jquery -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+
+    <!-- by shkoh 20200813: bootstrap -->
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <!-- by shkoh 20200814: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20200813: kendoui -->
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/cultures/kendo.culture.ko.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/jszip.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/pako_deflate.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+    
+    <!-- by shkoh 20200814: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+
+    <!-- by shkoh 20200819: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+
+    <!-- by shkoh 20200824: export pdf -->
+    <script src="/component/jsPDF/jspdf.min.js"></script>
+    <script src="/component/jsPDF-autotable/jspdf.plugin.autotable.min.js"></script>
+    <script src="/fonts/MalgunGothic-normal.js"></script>
+    <script src="/fonts/MalgunGothic-bold.js"></script>
+    
+    <!-- by shkoh 20200813: reports javascripts -->
+    <script src="/javascripts/reports/datePicker.js"></script>
+    <script src="/javascripts/reports/exportUtil.js"></script>
+    <script src="/javascripts/reports/wrfis/ups_daily.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title><%= title %></title>
+
+        <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+        <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+        <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+        <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+        <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyleWhite/zTreeStyle.css">
+        <link rel="stylesheet" href="/stylesheets/setting_user.css"/>
+    </head>
+    <body>
+        <div class="container-fluid content">
+            <aside>
+                <div class="col-sm-4 col-md-4 col-lg-3" style="padding: 0px 4px 0px 8px">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">사용자</div>
+                        <div class="panel-body" style="padding: 15px 12px 15px 12px;">
+                            <div id="userList" data-toggle="buttons"></div>
+                            <div class="btn-group btn-group-justified" role="group" aria-lebel="...">
+                                <div class="btn-group" role="group">
+                                    <button type="submit" class="btn btn-sm btn-custom btn-info-custom btn-sm-custom" id="insertUser">Add</button>
+                                </div>
+                                <div class="btn-group" role="group">
+                                    <button type="submit" class="btn btn-sm btn-custom btn-warning-custom btn-sm-custom" id="deleteUser" disabled="disabled" setElementForUser>Delete</button>
+                                </div>
+                                <div class="btn-group" role="group">
+                                    <button type="submit" class="btn btn-sm btn-custom btn-success-custom btn-sm-custom" id="saveUserConfig" disabled="disabled" setElement>Save</button>
+                                </div>
+                                <div class="btn-group" role="group">
+                                    <button type="submit" class="btn btn-sm btn-custom btn-danger-custom btn-sm-custom" id="cancelUserConfig" disabled="disabled" setElement>Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <article>
+                <div class="col-sm-5 col-md-5 col-lg-6" style="padding: 0px 4px 0px 4px">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">사용자 기본정보</div>
+                        <div class="panel-body" style="padding: 15px 20px 15px 20px;">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="labeluserId" class="col-sm-2 col-md-3 col-lg-3 control-label">*ID / *PW</label>
+                                    <div class="col-sm-2 col-md-2 col-lg-3" style="padding-right: 4px;">
+                                        <input type="text" class="form-control" id="userId" placeholder="" autocomplete="username" disabled="disabled"/>
+                                    </div>
+                                    <div class="col-sm-2 col-md-2 col-lg-3" style="padding-left: 4px;">
+                                        <input type="password" class="form-control" id="userPw" disabled="disabled" autocomplete="new-password" maxlength="64" setElement/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="userName" class="col-sm-1 col-md-3 col-lg-3 control-label">*사용자명</label>
+                                    <div class="col-sm-4 col-md-4 col-lg-6">
+                                        <input type="text" class="form-control" id="userName" placeholder="" disabled="disabled" maxlength="32" setElement>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="labelUserLevel" class="col-sm-2 col-md-3 col-lg-3 control-label">*사용자권한</label>
+                                    <div class="col-sm-4 col-md-4 col-lg-6">
+                                        <select class="form-control" id="userLevel" style="padding:0px 0px 0px 8px;" disabled="disabled" setElementForUser></select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="labelUserLevel" class="col-sm-2 col-md-3 col-lg-3 control-label">*시작그룹</label>
+                                    <div class="col-sm-4 col-md-4 col-lg-6">
+                                        <div class="input-group">
+                                            <input id="userStartGroup" type="text" class="form-control" placeholder="해당 계정이 사용할 시작 그룹명" readonly style="user-select: none;" disabled="disabled" setElement>
+                                            <span class="input-group-btn">
+                                                <button id="userSelectButtonForStartGroup" class="btn btn-default" type="button" disabled="disabled" setElementForUser>...</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+<% if(site === 'pss') { %>
+                                    <label for="labelUserMobile" class="col-sm-2 col-md-3 col-lg-3 control-label">사번</label>
+<% } else { %>
+                                    <label for="labelUserMobile" class="col-sm-2 col-md-3 col-lg-3 control-label">모바일</label>
+<% } %>
+                                    <div class="col-sm-4 col-md-4 col-lg-6">
+                                        <input type="tel" class="form-control" id="userMobile" placeholder="" disabled="disabled" maxlength="16" setElement>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="labelUserEmail" class="col-sm-2 col-md-3 col-lg-3 control-label">이메일</label>
+                                    <div class="col-sm-4 col-md-4 col-lg-6">
+                                        <input type="email" class="form-control" id="userEmail" placeholder="someone@exapmle.com" disabled="disabled" maxlength="50" setElement>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="labelUserDept" class="col-sm-2 col-md-3 col-lg-3 control-label">부서</label>
+                                    <div class="col-sm-4 col-md-4 col-lg-6">
+                                        <input type="text" class="form-control" id="userDept" placeholder="" disabled="disabled" maxlength="50" setElement>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="labelUserMemo" class="col-sm-2 col-md-3 col-lg-3 control-label">메모</label>
+                                    <div class="col-sm-4 col-md-4 col-lg-8">
+                                        <textarea class="form-control" id="userMemo" placeholder="" rows="4" style="resize:none;" disabled="disabled" maxlength="512" setElement></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="basicAlarmInfo" class="panel panel-primary">
+                        <div class="panel-heading">알람 발생조건</div>
+                        <div class="panel-body">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-1 col-md-2 control-label">
+                                        <label id="alarm_type" for="AlarmType" class="alarm_setting_label" disabled="disabled" data-toggle="tooltip" data-placement="left" title="알람타입 전체 선택 / 해제">알람타입</label>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label id="AlarmTypePopup" class="btn btn-check alarmType" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> Popup </label>
+                                            <label id="AlarmTypeSMS" class="btn btn-check alarmType" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> SMS </label>
+                                            <label id="AlarmTypeEmail" class="btn btn-check alarmType" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> E-mail </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-1 col-md-2 control-label">
+                                        <label id="alarm_requirement" for="AlarmRequirement" class="alarm_setting_label" disabled="disabled" data-toggle="tooltip" data-placement="left" title="알람요건 전체 선택 / 해제">알람요건</label>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div id="alarm_threshold">
+                                            <div id="backmove-threshold">
+                                                <label class="btn btn-backmove" id="ThresholdBackMove"></label>
+                                            </div>
+                                            <div class="alarmRequirement" id="alarm-threshold">
+                                                <span class="btn alarm-legend" id="alarm-minor" disabled="disabled">주의</span>
+                                                <span class="btn alarm-legend" id="alarm-major" disabled="disabled">경고</span>
+                                                <span class="btn alarm-legend" id="alarm-critical" disabled="disabled">위험</span>
+                                            </div>
+                                            <div id="nextmove-threshold">
+                                                <label class="btn btn-nextmove" id="ThresholdNextMove"></label>
+                                            </div>
+                                        </div>
+                                        <div id="alarm_communication">
+                                            <div id="backmove-communication">
+                                                <label class="btn btn-backmove" id="CommunicationBackMove"></label>
+                                            </div>
+                                            <div class="alarmRequirement" id="alarm-communication">
+                                                <span class="btn alarm-legend" id="alarm-noresponse" disabled="disabled">응답없음</span>
+                                                <span class="btn alarm-legend" id="alarm-badcommunication" disabled="disabled">통신불량</span>
+                                            </div>
+                                            <div id="nextmove-communication">
+                                                <label class="btn btn-nextmove" id="CommunicationNextMove"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-1 col-md-2 control-label">
+                                        <label id="alarm_week" for="AlarmWeek" class="alarm_setting_label" disabled="disabled" data-toggle="tooltip" data-placement="left" title="알람요일 전체 선택 / 해제">알람요일</label>
+                                    </div>
+                                    <div class="col-sm-6 col-md-8">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label id="AlarmWeekMon" class="btn btn-check alarmWeek" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 월 </label>
+                                            <label id="AlarmWeekTue" class="btn btn-check alarmWeek" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 화 </label>
+                                            <label id="AlarmWeekWed" class="btn btn-check alarmWeek" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 수 </label>
+                                            <label id="AlarmWeekThu" class="btn btn-check alarmWeek" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 목 </label>
+                                            <label id="AlarmWeekFri" class="btn btn-check alarmWeek" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 금 </label>
+                                            <label id="AlarmWeekSat" class="btn btn-check alarmWeek" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 토 </label>
+                                            <label id="AlarmWeekSun" class="btn btn-check alarmWeek" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 일 </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-1 col-md-2 control-label">
+                                        <label id="alarm_hour" for="AlarmHour" class="alarm_setting_label" disabled="disabled" data-toggle="tooltip" data-placement="left" title="알람시간 전체 선택 / 해제">알람시간</label>
+                                    </div>
+                                    <div class="col-sm-8 col-md-9">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label id="AlarmHour0" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 00:00 </label>
+                                            <label id="AlarmHour1" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 01:00 </label>
+                                            <label id="AlarmHour2" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 02:00 </label>
+                                            <label id="AlarmHour3" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 03:00 </label>
+                                            <label id="AlarmHour4" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 04:00 </label>
+                                            <label id="AlarmHour5" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 05:00 </label>
+
+                                            <label id="AlarmHour6" class="btn btn-check alarmHour"  disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 06:00 </label>
+                                            <label id="AlarmHour7" class="btn btn-check alarmHour"  disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 07:00 </label>
+                                            <label id="AlarmHour8" class="btn btn-check alarmHour"  disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 08:00 </label>
+                                            <label id="AlarmHour9" class="btn btn-check alarmHour"  disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 09:00 </label>
+                                            <label id="AlarmHour10" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 10:00 </label>
+                                            <label id="AlarmHour11" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 11:00 </label>
+
+                                            <label id="AlarmHour12" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 12:00 </label>
+                                            <label id="AlarmHour13" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 13:00 </label>
+                                            <label id="AlarmHour14" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 14:00 </label>
+                                            <label id="AlarmHour15" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 15:00 </label>
+                                            <label id="AlarmHour16" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 16:00 </label>
+                                            <label id="AlarmHour17" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 17:00 </label>
+
+                                            <label id="AlarmHour18" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 18:00 </label>
+                                            <label id="AlarmHour19" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 19:00 </label>
+                                            <label id="AlarmHour20" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 20:00 </label>
+                                            <label id="AlarmHour21" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 21:00 </label>
+                                            <label id="AlarmHour22" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 22:00 </label>
+                                            <label id="AlarmHour23" class="btn btn-check alarmHour" disabled="disabled" setElement><input type="checkbox" autocomplete="off"> 23:00 </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-lg-3" style="padding: 0px 8px 0px 4px">
+                    <div id="alarmEquipTree" class="panel panel-primary">
+                        <div class="panel-heading">알람 발생설비</div>
+                        <div class="panel-body">
+                            <div id="group-equip-tree" class="ztree"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="modal fade" id="modalDialogTree" tabindex="-2" role="dialog" aria-labelledby="modalDialogTree">
+            <div class="modal-dialog" role="document" style="width:500px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 id="modalTreeTitle" class="modal-title" style="font-weight:700;">계정 시작 그룹 선택</h4>
+                    </div>
+                    <div class="modal-body" id="modalDialogTreeBody" style="height:500px;">
+                        <div id="modal-tree" class="ztree"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="btn-modal-tree-link">선택</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- by shkoh 20181115: 공통 js -->
+        <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+        <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+        <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+        <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+        <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+        
+        <!-- by shkoh 20180515: custom scrollbar -->
+        <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+        <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+        
+        <!-- by shkoh 20180515: zTree -->
+        <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+        <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+        <script src="/component/zTree_v3.5.23/js/jquery.ztree.exhide.min.js"></script>
+        
+        <!-- by shkoh 20180515: ubiGuard -->
+        <script type="text/javascript" src="/javascripts/user/groupTreeView.js"></script>
+        <script type="text/javascript" src="/javascripts/user/treeView.js"></script>
+        <script type="text/javascript" src="/javascripts/user/userView.js"></script>
+    </body>
+</html>

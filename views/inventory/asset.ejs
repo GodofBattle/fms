@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210209: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css"/>
+
+    <!-- by shkoh 20200810: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css"/>
+    
+    <!-- by shkoh 20210209: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+
+    <!-- by shkoh 20210303: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+    
+    <!-- by shkoh 20210209: ubiGuard style -->
+    <link rel="stylesheet" href="/stylesheets/inventory/popup.css"/>
+    <link rel="stylesheet" href="/stylesheets/inventory/inventory.css"/>
+</head>
+
+<body>
+    <div class="container-fluid content">
+        <aside class="col-xs-4 col-sm-3 col-md-2 col-lg-2 custom-content-panel" style="padding-left: 0px;">
+            <div class="custom-text-panel">
+                <div class="custom-text-left">자산목록</div>
+                <div class="custom-text-right">
+                    <button type="button" class="btn btn-add" id="add-asset" style="width: 65px;"></button>
+                </div>
+            </div>
+            <div class="custom-content">
+                <div id="asset-tree" class="ztree"></div>
+            </div>
+        </aside>
+        <article class="col-xs-4 col-sm-6 col-md-7 col-lg-7 custom-content-panel">
+            <div class="custom-text-panel">
+                <div class="custom-text-left">자산 운영정보</div>
+            </div>
+            <div class="custom-content">
+                <div id="asset-grid"></div>
+            </div>
+        </article>
+        <aside class="col-xs-4 col-sm-3 col-md-3 col-lg-3 custom-content-panel" style="padding-right: 0px;">
+            <div class="custom-text-panel">
+                <div class="custom-text-left">자산 상세정보</div>
+                <div class="custom-text-right">
+                    <button type="button" class="btn btn-update" id="update-asset" style="width: 65px;"></button>
+                    <button type="button" class="btn btn-delete" id="delete-asset" style="width: 65px;"></button>
+                </div>
+            </div>
+            <div id="asset-detail" class="custom-content">
+                <div id="asset-detail-content" class="asset-detail" hidden="hidden">
+                    <table class="table" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <th scope="row">자산구분</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-top: 4px; margin-bottom: 4px; height: 30px;">
+                                        <label class="custom-label" id="object_code_name"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">상위자산</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-top: 4px; margin-bottom: 4px;">
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" id="object_parent_name" class="form-control" style="box-sizing: border-box;" placeholder="상위 자산을 지정합니다" readonly style="user-select:none;"/>
+                                            <span class="input-group-btn">
+                                                <button id="popup-object-tree" class="btn custom-optional-btn" type="button">...</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">자산명</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-top: 4px; margin-bottom: 4px;">
+                                        <input type="text" id="object_name" class="form-control" style="box-sizing: border-box;" placeholder="자산명" maxlength="30"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="asset-item-option">
+                                <th scope="row">모델명</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-top: 4px; margin-bottom: 4px;">
+                                        <div id="asset-model" style="width: 100%;"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="asset-item-option">
+                                <th scope="row">설치일자</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-top: 4px; margin-bottom: 4px;">
+                                        <input id="inst_date" style="width: 100%;"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="asset-item-option">
+                                <th scope="row">운영 담당자</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-top: 4px; margin-bottom: 4px;">
+                                        <div id="asset-operator" style="width: 100%;"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="asset-item-option">
+                                <th scope="row">관리 담당자</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-top: 4px; margin-bottom: 4px;">
+                                        <div id="asset-manager" style="width: 100%;"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="asset-item-option">
+                                <th scope="row">협력업체</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-top: 4px; margin-bottom: 4px;">
+                                        <div id="asset-company" style="width: 100%;"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">이미지</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-top: 4px; margin-bottom: 4px;">
+                                        <div class="input-group input-group-sm">
+                                            <input id="object_image_name" style="width: 100%;"/>
+                                            <span class="input-group-btn">
+                                                <input id="apply_image" type="file" title="자산 아미지 추가"/>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom:0px;">
+                                        <img class="img-responsive" id="object_image" alt="등록된 이미지가 존재하지 않습니다" style="box-sizing:border-box; display: none;"/>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="modal fade" id="add-asset-popup" tabindex="-1" role="dialog" aria-labelledby="popupTitle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <h4 class="modal-title custom-modal-editor-title">자산관리 | 자산등록</h4>
+                </div>
+                <div class="modal-body custom-modal-editor-body asset-detail">
+                    <table class="table" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <th scope="row">자산구분*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <div id="popup-asset-type" style="width: 100%;"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">상위자산*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" id="popup-parent-name" class="form-control" style="box-sizing: border-box;" placeholder="상위 자산을 지정합니다" readonly style="user-select:none;"/>
+                                            <span class="input-group-btn">
+                                                <button id="popup-add-object-tree" class="btn btn-default custom-optional-btn" type="button">...</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">자산명*</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 8px;">
+                                        <input type="text" id="popup-object-name" class="form-control" style="box-sizing: border-box;" placeholder="" maxlength="30"/>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer custom-modal-editor-footer">
+                    <div class="custom-btn-control">
+                        <button id='btn-save-asset' type='button' class='btn custom-btn-save'>저장</button>
+                        <button id='btn-cancel-asset' type='button' class='btn custom-btn-cancel' data-dismiss='modal'>취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popup-asset-tree" tabindex="-2" rold="dialog">
+        <div class="modal-dialog" role="document" style="width: 450px;">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <h5 id="popup-title" class="modal-title custom-modal-editor-title" style="font-size: 1.1em;">상위 자산선택</h5>
+                </div>
+                <div class="modal-body custom-modal-editor-body" style="height: 500px;">
+                    <div id="modal-tree" class="ztree"></div>
+                </div>
+                <div class="modal-footer custom-modal-editor-footer">
+                    <div class="custom-btn-control">
+                        <button type="button" class="btn custom-btn-save" id="btn-link">등록</button>
+                        <button type="button" class="btn custom-btn-close" data-dismiss="modal">취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popup-asset-tree2" tabindex="-3" rold="dialog">
+        <div class="modal-dialog" role="document" style="width: 450px;">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <h5 id="popup-title2" class="modal-title custom-modal-editor-title" style="font-size: 1.1em;">상위 자산선택</h5>
+                </div>
+                <div class="modal-body custom-modal-editor-body" style="height: 500px;">
+                    <div id="modal-tree2" class="ztree"></div>
+                </div>
+                <div class="modal-footer custom-modal-editor-footer">
+                    <div class="custom-btn-control">
+                        <button type="button" class="btn custom-btn-save" id="btn-link2">등록</button>
+                        <button type="button" class="btn custom-btn-close" data-dismiss="modal">취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script id="asset-image-template" type="text/x-kendo-template">
+        <div class="custom-dropdown-template">
+            <img src="#: path #" alt="#: name #" class="custom-dropdown-image"></img>
+            <span class="custom-dropdown-text">#: name #</span>
+            <span class="custom-dropdown-icon"><i class="custom-close-icon" title="#: name # 이미지 삭제하기" data-name="#: name #"></i></span>
+        </div>
+    </script>
+    
+    <!-- by shkoh 20210209: 공통 js -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/cultures/kendo.culture.ko.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/jszip.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/pako_deflate.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20200810: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+
+    <!-- by shkoh 20210209: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20210303: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exhide.min.js"></script>
+
+    <script src="/javascripts/inventory/datePicker.js"></script>
+    <script src="/javascripts/inventory/asset.js"></script>
+    <script src="/javascripts/inventory/assetTree.js"></script>
+    <script src="/javascripts/inventory/deleteCheck.js"></script>
+    <script src="/javascripts/inventory/eventResult.js"></script>
+</body>
+</html>

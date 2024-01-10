@@ -1,0 +1,183 @@
+[2022/03/03 14:29:02.799] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 14:29:03.559] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 14:29:03.599] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 14:29:15.652] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:41:08.295] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:41:08.958] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:41:09.025] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:41:45.259] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:43:28.649] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:43:29.008] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:43:29.047] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:43:42.051] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:45:14.475] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:45:14.819] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:45:14.852] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:45:22.682] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:45:24.740] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:45:25.087] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:45:25.114] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:45:31.441] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:45:57.937] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:45:58.341] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:45:58.379] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:46:05.888] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:46:41.136] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:46:41.470] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:46:41.506] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:46:58.956] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:47:12.648] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:47:13.009] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:47:13.045] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:47:22.105] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:50:55.431] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:50:55.794] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:50:55.863] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:51:03.819] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:51:09.896] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:51:10.193] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:51:10.220] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:51:16.064] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:55:28.846] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:55:29.223] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:55:29.255] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:56:07.223] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:56:09.875] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:56:10.249] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:56:10.279] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:56:14.094] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:56:17.002] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:56:17.358] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:56:17.387] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:56:28.594] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:56:30.975] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:56:31.348] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:56:31.376] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:56:42.460] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:57:04.792] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:57:05.146] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:57:05.180] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:57:08.780] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:57:10.558] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:57:10.894] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:57:10.921] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:57:13.658] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:57:15.842] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:57:16.206] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:57:16.233] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:57:28.412] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:57:30.774] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:57:31.096] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:57:31.124] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:58:08.439] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:58:10.297] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:58:10.690] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:58:10.719] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:58:22.825] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:58:48.427] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:58:48.767] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:58:48.799] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:59:19.929] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 16:59:20.423] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 16:59:20.916] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 16:59:20.943] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:00:11.025] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:00:11.489] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:00:11.871] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:00:11.898] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:00:27.079] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:00:27.606] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:00:27.986] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:00:28.043] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:01:27.189] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:01:39.855] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:01:40.247] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:01:40.283] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:02:47.726] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:03:02.405] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:03:02.800] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:03:02.839] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:03:25.123] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:03:27.450] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:03:27.791] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:03:27.819] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:03:31.469] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:03:33.200] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:03:33.530] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:03:33.560] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:04:35.998] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:04:48.861] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:04:49.253] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:04:49.289] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:05:01.865] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:06:43.186] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:06:43.826] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:06:43.862] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:06:48.957] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:06:52.851] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:06:53.432] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:06:53.463] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:06:56.886] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:06:59.169] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:06:59.752] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:06:59.783] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:07:03.041] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:09:22.873] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:09:23.527] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:09:23.565] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:10:24.908] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:10:25.570] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:10:25.605] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:10:28.719] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:12:14.709] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:12:15.366] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:12:15.401] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:12:21.259] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:12:36.789] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:12:37.379] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:12:37.431] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:12:51.645] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:12:59.528] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:13:00.124] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:13:00.154] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:13:13.757] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:13:29.487] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:13:30.108] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:13:30.142] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:13:48.269] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:13:59.084] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:13:59.749] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:13:59.782] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:14:08.155] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:14:16.176] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:14:16.745] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:14:16.779] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:14:31.249] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:14:42.664] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:14:43.082] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:14:43.117] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:15:05.464] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:18:05.798] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:18:06.294] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:18:06.333] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:18:23.449] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:20:29.608] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:20:30.236] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:20:30.272] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:20:42.356] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:22:13.172] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:22:13.780] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:22:13.815] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:22:36.246] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:22:41.424] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:22:42.022] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:22:42.050] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:22:50.527] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:24:22.198] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:24:22.870] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:24:22.905] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:24:32.469] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:24:34.466] [INFO]  [CCTV - 10.10.20.204] RTSP Stream Start
+[2022/03/03 17:24:35.105] [INFO]  [CCTV - 10.10.20.204] CAMERA Stream Open: 60000
+[2022/03/03 17:24:35.138] [INFO]  [CCTV - 10.10.20.204] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1
+[2022/03/03 17:24:52.816] [INFO]  [CCTV - 10.10.20.204] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.204:554/onvif/media?profile=Profile1

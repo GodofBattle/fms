@@ -1,0 +1,28 @@
+[2023/12/22 15:06:32.038] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/12/22 15:09:59.746] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:65078
+[2023/12/22 15:09:59.754] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/12/22 15:12:16.324] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:65078
+[2023/12/22 15:12:16.517] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:49323
+[2023/12/22 15:12:16.525] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/12/22 15:45:21.291] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:49323
+[2023/12/22 15:45:21.786] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:57830
+[2023/12/22 15:45:21.787] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/12/22 16:10:35.502] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:57830
+[2023/12/22 16:10:35.724] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:64637
+[2023/12/22 16:10:35.738] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/12/22 16:42:39.647] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:64637
+[2023/12/22 16:42:40.010] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:56761
+[2023/12/22 16:42:40.012] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/12/22 16:51:21.483] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:56761
+[2023/12/22 16:51:21.973] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:59078
+[2023/12/22 16:51:21.973] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/12/22 17:03:01.681] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:59078
+[2023/12/22 17:03:02.167] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:62203
+[2023/12/22 17:03:02.168] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/12/22 17:07:01.218] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:62203
+[2023/12/22 17:07:05.349] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:63318
+[2023/12/22 17:07:05.351] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/12/22 17:07:07.634] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:63318
+[2023/12/22 17:07:08.026] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:63334
+[2023/12/22 17:07:08.032] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/12/22 17:43:14.352] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:63334

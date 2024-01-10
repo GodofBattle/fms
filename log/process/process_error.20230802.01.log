@@ -1,0 +1,285 @@
+[2023/08/02 10:50:03.571] [ERROR] /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/viewer.js:743
+        image: file_name.replace(/\\/g, '/');
+                                            ^
+
+SyntaxError: Unexpected token ';'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:59:14)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+[2023/08/02 15:44:13.390] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Array.logRequest (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/morgan/index.js:130:14)
+    at listener (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-finished/index.js:169:15)
+    at onFinish (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-finished/index.js:100:5) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.453] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.454] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.454] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.455] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.456] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.456] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.457] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.457] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.457] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.458] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.459] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.460] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.460] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.461] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.461] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.462] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[2023/08/02 15:44:13.462] [ERROR] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at console.value (node:internal/console/constructor:300:16)
+    at console.log (node:internal/console/constructor:377:26)
+    at processExitHandler (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/processLog.config.js:4:13) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}

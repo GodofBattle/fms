@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css">
+    
+    <link rel="stylesheet" href="/stylesheets/predefine_equipment.css"/>
+</head>
+
+<body>
+    <div class="container-fluid content">
+        <aside id="tree-panel" class="col-sm-3 col-md-3 col-lg-2" style="padding-left:4px; padding-right: 4px; height: 100%;">
+            <div class="panel panel-primary">
+                <div class="panel-heading">사전 설비/센서 목록</div>
+                <div id="EquipCodeTree">
+                    <div id="equip-setting-tree" class="ztree"></div>
+                </div>
+            </div>
+        </aside>
+        <article id="grid-panel" class="col-sm-9 col-md-9 col-lg-10" style="padding-left:4px; padding-right: 4px; height: 100%;">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div id="grid-title">
+                        <span id="grid-title-name"></span>
+                        <span id="grid-title-option"></span>
+                    </div>
+                    <div class="button-right" style="display: none;">
+                        <button type="submit" class="btn btn-add" id="add" style="width:65px;"></button>
+                        <button type="submit" class="btn btn-save" id="save" style="width:65px;"></button>
+                        <button type="button" class="btn btn-cancel" id="cancel" style="width:65px;"></button>
+                        <button type="button" class="btn btn-delete" id="delete" style="width:65px;"></button>
+                    </div>
+                </div>
+                <div class="panel-body" style="padding: 0px;">
+                    <div id="equip-grid" style="display:none;"></div>
+                    <div id="sensor-grid" style="display:none;"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sensorSettingInfo" tabindex="-1" role="dialog" aria-labelledby="sensorSettingLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="height: 100%;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 1;color:#ffffff;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="sensorSettingLabel">사전설비 센서항목 설정</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="ai-threshold-grid" style="display: none;"></div>
+                    <div id="di-threshold-grid" style="display: none;"></div>
+                    <div id="modbus-cmd-grid" style="display: none;height: 300px;"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-custom btn-custom-add" id="addRowForModal"></button>
+                    <button type="button" class="btn-custom btn-custom-save" id="saveRowForModal"></button>
+                    <button type="button" class="btn-custom btn-custom-delete" id="deleteRowForModal"></button>
+                    <button type="button" class="btn-custom btn-custom-cancel" data-dismiss="modal"></button>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+    
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+    
+    <script src="/javascripts/predefine/equipment.js"></script>
+    <script src="/javascripts/predefine/equipmentTreeview.js"></script>
+</body>
+
+</html>

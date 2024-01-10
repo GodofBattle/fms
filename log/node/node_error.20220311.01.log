@@ -1,0 +1,18 @@
+[2022/03/11 10:31:01.619] [ERROR] SqlError: (conn=757216, no: 1054, SQLState: 42S22) Unknown column 'ce.bUse' in 'field list'
+sql: SELECT ce.equip_id, ce.equip_name, cs.sensor_name, cs.current_value AS val, ce.bUse AS available_equip FROM cn_sensor cs JOIN cn_equipment ce ON cs.equip_id = ce.equip_id WHERE cs.sensor_id = ?; - parameters:['6914']
+    at Object.module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:55:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:523:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (events.js:376:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:188:23) {
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2022/03/11 10:31:01.649] [ERROR] [2022/03/11 10:31:01.668] [ERROR] [2022/03/11 10:31:01.696] [ERROR] [2022/03/11 10:31:01.725] [ERROR] 

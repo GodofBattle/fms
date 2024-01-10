@@ -1,0 +1,229 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: "Nanum Barun Gothic";
+    height: 100%;
+}
+
+/***************************************************************************************************************/
+/* by shkoh 20210405: bootstrap 3.x re-define start                                                            */
+/***************************************************************************************************************/
+.panel {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.panel-heading {
+    border-radius: 0px;
+}
+
+.panel-body {
+    padding: 4px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210405: bootstrap 3.x re-define end                                                              */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210405: ztree re-define start                                                                    */
+/***************************************************************************************************************/
+.ztree * {
+    font-size: 13px;
+    font-family: "Nanum Barun Gothic";
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #317be0;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 3px 0px 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210405: ztree re-define end                                                                      */
+/***************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210405: kendo ui customizing styles start                                                                                       */
+/**********************************************************************************************************************************************/
+.k-grid {
+    border: 1px solid #172f51;
+    border-radius: 0px;
+}
+
+.k-grid table,
+.k-grid-content table {
+    text-align: left;
+    color: #222222;
+    font-size: 0.88em;
+}
+
+.k-grid-header th.k-header,
+.k-grid-header th {
+    border-color: #e5e5e5;
+    height: 18px;
+    border-width: 0 0 0px 1px;
+    font-weight: bold;
+    color: #333333;
+    padding: 0.5em 0.6em 0.4em 0.6em;
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+
+.k-grid-header:first-child {
+    border-radius: 0px;
+}
+
+.k-grid-header th.k-state-focused {
+    box-shadow: none;
+}
+
+.k-grid-header-wrap {
+    border-color: transparent;
+}
+
+.k-grid tr td {
+    font-weight: bold;
+}
+
+.k-grid-content table td {
+    border-color: #e5e5e5;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+div.k-grid-header,
+div.k-grid-footer,
+.k-grid-header {
+    border-bottom: none;
+}
+
+.k-alt {
+    background-color: #fafafa;
+}
+
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+.k-state-selected {
+    background-color: #317be0;
+    border-color: #317be0;
+}
+
+.k-grid tr.k-state-focused:hover td {
+    background-color: #ebebeb;
+}
+
+.k-grid tr.k-state-selected:hover td {
+    background-color: #3379b5;
+}
+
+.k-state-selected td.k-state-focused,
+.k-state-focused,
+td.k-state-focused,
+.k-grid tr.k-state-selected:hover td.k-state-focused,
+.k-state-focused.k-state-selected {
+    box-shadow: none;
+}
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+
+.k-pager-wrap {
+    font-size: 11px;
+}
+
+.k-grid-norecords {
+    height: 90%;
+}
+
+.k-dropdown-wrap,
+.k-dropdown-wrap .k-input,
+.k-dropdown-wrap.k-state-border-down,
+.k-list-container.k-state-border-up,
+.k-popup .k-list .k-state-focused,
+.k-list .k-state-hover,
+.k-textbox,
+.k-button,
+.k-autocomplete,
+.k-autocomplete .k-input {
+    border-radius: 0px;
+}
+
+.k-item.k-state-selected.k-state-focused.k-state-hover,
+.k-split-button:focus,
+.k-split-container .k-button:focus,
+.k-popup .k-list .k-state-focused {
+    box-shadow: none;
+}
+
+.k-split-button .k-button:first-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.k-split-button .k-button:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 2px;
+}
+
+/* .k-grid .k-grid-toolbar > * {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+} */
+
+.k-grid-toolbar:first-child {
+    border-radius: 0px;
+}
+
+.k-grid-toolbar {
+    padding: 3px 6px;
+}
+
+.k-toolbar > * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.k-button {
+    padding: 4px 8px;
+}
+
+/* by shkoh 20200715: kendo grid에서 loading 이미지를 보여주지 않는다 */
+#grid-company .k-loading-image {
+    display: none;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210405: kendo ui customizing styles end                                                                                         */
+/**********************************************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210405: icomer customize style start                                                             */
+/***************************************************************************************************************/
+.content {
+    padding: 8px;
+    height: 100%;
+}
+
+.i-panel {
+    border: 3px solid #172f51;
+}
+
+.i-panel-heading {
+    padding: 3px 8px;
+    background-color: #172f51;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210405: icomer customize style end                                                               */
+/***************************************************************************************************************/

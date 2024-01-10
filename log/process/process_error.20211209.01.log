@@ -1,0 +1,136 @@
+[2021/12/09 10:05:06.857] [ERROR] TypeError: Cannot read property 'uri' of null
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/viewer.js:491:76)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/media.js:1127:15)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2021/12/09 15:19:26.383] [ERROR] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.json (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:264:10)
+    at ServerResponse.send (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:158:21)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:43:48)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:135:23)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:561:13)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+[2021/12/09 15:20:23.951] [ERROR] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.json (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:264:10)
+    at ServerResponse.send (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:158:21)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:43:48)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:135:23)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:561:13)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+[2021/12/09 15:22:10.833] [ERROR] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.json (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:264:10)
+    at ServerResponse.send (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:158:21)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:43:41)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:135:23)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:561:13)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+[2021/12/09 15:24:52.446] [ERROR] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.json (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:264:10)
+    at ServerResponse.send (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:158:21)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:39:41)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:135:23)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:561:13)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+[2021/12/09 15:26:18.541] [ERROR] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.json (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:264:10)
+    at ServerResponse.send (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:158:21)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:40:41)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:135:23)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:561:13)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+[2021/12/09 17:30:57.484] [ERROR] /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:62
+                    const blob = await (await fetch(stream.uri)).blob();
+                                        ^^^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:77:30)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+[2021/12/09 17:33:09.034] [ERROR] /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:62
+                    const blob = await (await fetch(stream.uri)).blob();
+                                        ^^^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:77:30)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+[2021/12/09 17:39:08.990] [ERROR] Error: getaddrinfo ENOTFOUND http://10.10.20.210:80/cgi-bin/webSetup.cgi?action=videoSnapshot&mode=1&streamIndex=1
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+    at GetAddrInfoReqWrap.callbackTrampoline (internal/async_hooks.js:134:14) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'http://10.10.20.210:80/cgi-bin/webSetup.cgi?action=videoSnapshot&mode=1&streamIndex=1'
+}
+[2021/12/09 17:41:48.268] [ERROR] Error: getaddrinfo ENOTFOUND http://10.10.20.210:80/cgi-bin/webSetup.cgi?action=videoSnapshot&mode=1&streamIndex=1
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+    at GetAddrInfoReqWrap.callbackTrampoline (internal/async_hooks.js:134:14) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'http://10.10.20.210:80/cgi-bin/webSetup.cgi?action=videoSnapshot&mode=1&streamIndex=1'
+}
+[2021/12/09 17:58:37.642] [ERROR] Error [ERR_REQUIRE_ESM]: Must use import to load ES Module: /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-fetch/src/index.js
+require() of ES modules is not supported.
+require() of /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-fetch/src/index.js from /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js is an ES module file as it is a .js file whose nearest parent package.json contains "type": "module" which defines all .js files in that package scope as ES modules.
+Instead rename index.js to end in .cjs, change the requiring code to use import(), or remove "type": "module" from /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-fetch/package.json.
+
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1085:13)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:9:15)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14) {
+  code: 'ERR_REQUIRE_ESM'
+}

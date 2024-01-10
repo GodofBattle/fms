@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20211224: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+
+    <!-- by shkoh 20211224: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+
+    <!-- by shkoh 20211224: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+    
+    <!-- by shkoh 20211224: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css" />
+    
+    <!-- by shkoh 20211224: ubiGuard css -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css" />
+    <link rel="stylesheet" href="/stylesheets/kepco/work_history.css" />
+</head>
+<body>
+    <div class="container-fluid i-content">
+        <aside class="col-sm-3 col-md-3 col-lg-2 i-tree-panel">
+            <div class="panel">
+                <div class="panel-heading">조회항목</div>
+                <div class="panel-body">
+                    <div id="tree-content"></div>
+                </div>
+            </div>
+        </aside>
+        <article class="col-sm-9 col-md-9 col-lg-10 i-content-panel">
+            <div class="panel i-panel-header">
+                <div class="panel-heading">검색조건</div>
+                <div class="panel-body">
+                    <div class="searching">
+                        <div class="first">
+                        </div>
+                        <div class="last">
+                            <div class="conditions">
+                                <span class="searching-label">조회기간: </span>
+                                <input id="start-date" class="custom-date" type="text"/>
+                                <span class="searching-icon"> ~ </span>
+                                <input id="end-date" class="custom-date" type="text"/>
+                                <button id="init-date" class="custom-button">기간 재설정</button>
+                                <input id="search-button" type="button" class="custom-search-button" title="기반설비 작업이력 검색"/> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading custom-heading">
+                    <div class="custom-first">작업이력</div>
+                    <div class="custom-last">
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div id="report-page"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="modal fade" id="modal-dialog-add-item" tabindex="-2" role="dialog" aria-labelledby="modalDdialogAddItem">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">작업이력 등록</div>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <colgroup>
+                            <col width="20%"/>
+                            <col width="80%"/>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>작업설비</th>
+                                <td id="equip_name"></td>
+                            </tr>
+                            <tr>
+                                <th>작업일자</th>
+                                <td>
+                                    <input id="working-date" class="custom-date" type="text" style="width: 100%"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>작업분류</th>
+                                <td>
+                                    <div id="working-type" style="text-align: left;"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>작업자</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 0px;">
+                                        <input type="text" id="worker-name" class="form-control" style="box-sizing:border-box;" placeholder="작업자 정보" maxLength="32"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>작업내용</th>
+                                <td>
+                                    <div class="form-group form-group-sm" style="margin-bottom: 0px;">
+                                        <textarea rows="10" maxlength="256" class="form-control" style="resize:none; box-sizing:border-box;" id="working-memo" placeholder="설비에 대한 작업내용을 작성합니다.&#13;&#10;띄어쓰기 포함 256자 이내"></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-btn btn btn-primary" id="btn-modal-add">등록</button>
+                    <button type="button" class="modal-btn btn btn-danger" data-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- by shkoh 20211224: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/cultures/kendo.culture.ko.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/jszip.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/pako_deflate.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20211224: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20211224: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exhide.min.js"></script>
+
+    <!-- by shkoh 20211224: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+
+    <script src="/component/jsPDF/jspdf.min.js"></script>
+    <script src="/component/jsPDF-autotable/jspdf.plugin.autotable.min.js"></script>
+    <script src="/fonts/MalgunGothic-normal.js"></script>
+    <script src="/fonts/MalgunGothic-bold.js"></script>
+
+    <!-- by shkoh 20211224: ubiguard -->
+    <script src="/javascripts/customizing/kepco/datePicker.js"></script>
+    <script src="/javascripts/customizing/kepco/treeContent.js"></script>
+    <script src="/javascripts/customizing/kepco/work/history/main.js"></script>
+</body>

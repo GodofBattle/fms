@@ -1,0 +1,6 @@
+[2023/09/25 13:50:30.854] [ERROR] TypeError: Assignment to constant variable.
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/customizing/didc/icomer.js:104:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023/09/25 13:52:10.563] [ERROR] TypeError: Assignment to constant variable.
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/customizing/didc/icomer.js:104:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

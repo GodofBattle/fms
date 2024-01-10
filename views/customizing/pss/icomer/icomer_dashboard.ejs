@@ -1,0 +1,112 @@
+<div class="custom-panel">
+    <div class="custom-panel-zone">
+        <ul class="list-group">
+            <li class="list-group-item custom-list-title">
+                <span>항온항습기(센서로 등록)</span>
+            </li>
+            <%- include('./item_li', { object_id: 'hvac_1', object_name: '항온항습기 1호기', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'hvac_2', object_name: '항온항습기 2호기', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'hvac_3', object_name: '항온항습기 3호기', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'hvac_4', object_name: '항온항습기 4호기', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'hvac_5', object_name: '항온항습기 5호기', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'hvac_6', object_name: '항온항습기 6호기', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+    </div>
+    <div class="custom-panel-zone">
+        <ul class="list-group">
+            <li class="list-group-item custom-list-title">
+                <span>온습도(해당 설비만 등록)</span>
+            </li>
+            <%- include('./item_li', { object_id: 'th_server', object_name: '서버룸구역', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'th_ups', object_name: 'UPS룸 구역', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'th_did', object_name: 'DID룸 구역', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+    </div>
+</div>
+<div class="custom-panel">
+    <div class="custom-panel-zone">
+        <ul class="list-group">
+            <li class="list-group-item custom-list-title">
+                <span>UPS #1(각각 해당하는 센서로 등록)</span>
+            </li>
+            <%- include('./item_li', { object_id: 'ups1_battery', object_name: '배터리 사용량', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups1_r', object_name: 'R전압', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups1_s', object_name: 'S전압', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups1_t', object_name: 'T전압', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups1_mode', object_name: 'UPS 모드', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+        <ul class="list-group">
+            <%- include('./item_li', { object_id: 'ups1_r_load', object_name: 'R 부하율', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups1_s_load', object_name: 'S 부하율', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups1_t_load', object_name: 'T 부하율', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+    </div>
+    <div class="custom-panel-zone">
+        <ul class="list-group">
+            <li class="list-group-item custom-list-title">
+                <span>UPS #2(각각 해당하는 센서로 등록)</span>
+            </li>
+            <%- include('./item_li', { object_id: 'ups2_battery', object_name: '배터리 사용량', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups2_r', object_name: 'R전압', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups2_s', object_name: 'S전압', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups2_t', object_name: 'T전압', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups2_mode', object_name: 'UPS 모드', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+        <ul class="list-group">
+            <%- include('./item_li', { object_id: 'ups2_r_load', object_name: 'R 부하율', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups2_s_load', object_name: 'S 부하율', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'ups2_t_load', object_name: 'T 부하율', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+    </div>
+    <div class="custom-panel-zone">
+        <ul class="list-group">
+            <li class="list-group-item custom-list-title">
+                <span>전력현황(각각 해당하는 센서로 등록)</span>
+            </li>
+            <%- include('./item_li', { object_id: 'kw_it', object_name: 'IT전력(kW)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'kw_hvac', object_name: '항온전력(kW)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+        <ul class="list-group">
+            <li class="list-group-item custom-list-title">
+                <span>전력사용량(각각 해당하는 센서로 등록)</span>
+            </li>
+            <%- include('./item_li', { object_id: 'kwh_it', object_name: 'IT전력(kWh)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'kwh_hvac', object_name: '항온전력(kWh)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+        <ul class="list-group">
+            <li class="list-group-item custom-list-title">
+                <span>온습도 정상범위(각각 해당하는 센서로 등록)</span>
+            </li>
+            <%- include('./item_li', { object_id: 'threshold_t', object_name: '온도정상범위', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'threshold_h', object_name: '습도정상범위', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+    </div>
+    <div class="custom-panel-zone">
+        <ul class="list-group">
+            <li class="list-group-item custom-list-title">
+                <span>FMS 분전반(각각 해당하는 센서로 등록)</span>
+            </li>
+            <%- include('./item_li', { object_id: 'panel_1', object_name: '항온항습기 분전반(좌)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'panel_2', object_name: 'UPS 2차분기 #1(좌)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'panel_3', object_name: 'UPS 2차분기 #2(좌)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'panel_4', object_name: 'UPS 2차분기 #3(좌)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'panel_5', object_name: '항온항습기 분전반(우)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'panel_6', object_name: 'UPS 2차분기 #1(우)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'panel_7', object_name: 'UPS 2차분기 #2(우)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'panel_8', object_name: 'UPS 2차분기 #3(우)', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+        <ul class="list-group">
+            <li class="list-group-item custom-list-title">
+                <span>FMS 온습도(각각 해당하는 센서로 등록)</span>
+            </li>
+            <%- include('./item_li', { object_id: 'th_1', object_name: '온습도 #1', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'th_2', object_name: '온습도 #2', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'th_3', object_name: '온습도 #3', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'th_4', object_name: '온습도 #4', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'th_5', object_name: '온습도 #5', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'th_6', object_name: '온습도 #6', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'th_7', object_name: '온습도 #7', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+            <%- include('./item_li', { object_id: 'th_8', object_name: '온습도 #8', link_text: '연결', clear_text: '해제', popup_text: '팝업', is_popup: 'POP' }) %>
+        </ul>
+    </div>
+</div>

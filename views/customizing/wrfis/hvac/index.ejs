@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210311: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css"/>
+
+    <!-- by shkoh 20210311: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20210311: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/wrfis/hvac.css"/>
+</head>
+<body>
+    <div class="container-fluid i-content">
+        <div class="panel i-panel header1">
+            <div class="panel-heading i-panel-heading">
+                <div class="panel-title i-panel-title">항온항습기 가동현황</div>
+            </div>
+            <div class="panel-body">
+                <table class="table table-condensed i-header-table">
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" class="i-header-title">가동률</td>
+                            <td rowspan="2" class="i-header-contents summary">
+                                <span class="i-header-value" id="hvac_ratio">0</span>
+                                <span class="i-header-value-unit">%</span>
+                            </td>
+                            <td rowspan="2" class="i-header-title">전체 설비현황</td>
+                            <td rowspan="2" class="i-header-contents summary">
+                                <span class="i-header-value" id="hvac_count">0</span>
+                                <span class="i-header-value-unit">대</span>
+                            </td>
+                            <td rowspan="2" class="i-header-title">가동현황</td>
+                            <td rowspan="2" class="i-header-contents summary">
+                                <span class="i-header-value" id="hvac_run_count">0</span>
+                                <span class="i-header-value-unit">대</span>
+                            </td>
+                            <td rowspan="2" class="i-header-title">정지현황</td>
+                            <td rowspan="2" class="i-header-contents summary">
+                                <span class="i-header-value" id="hvac_stop_count">0</span>
+                                <span class="i-header-value-unit">대</span>
+                            </td>
+                            <td rowspan="2" class="i-header-empty"></td>
+                            <td class="i-header-title i-header-outinfo-title">
+                                <span>외기온도</span>
+                            </td>
+                            <td class="i-header-outinfo-contents">
+                                <div class="i-header-outinfo">
+                                    <span class="i-header-outinfo-value" id="outer_temp">9.3</span>
+                                    <span class="i-header-outinfo-unit">℃</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="i-header-title i-header-outinfo-title">
+                                <span>외기습도</span>
+                            </td>
+                            <td class="i-header-outinfo-contents">
+                                <div class="i-header-outinfo">
+                                    <span class="i-header-outinfo-value" id="outer_humi">34.6</span>
+                                    <span class="i-header-outinfo-unit">%</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="panel i-panel header2">
+            <div class="panel-body">
+                <table class="table table-condensed i-header-table">
+                    <tbody>
+                        <tr>
+                            <th class="i-header-title">B5F</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b5f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b5f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">2F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_2f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_2f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">3F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_3f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_3f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">4F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_4f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_4f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">6F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_6f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_6f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">7F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_7f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_7f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">8F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_8f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_8f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title all">항온항습기 온도평균</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="avg_temp"> - </span><span class="unit">℃</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="i-header-title">1F</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="1f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="1f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">2F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_2f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_2f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">3F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_3f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_3f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">4F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_4f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_4f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">6F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_6f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_6f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">7F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_7f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_7f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">8F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_8f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_8f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title all">항온항습기 습도평균</th>
+                            <td class="i-header-contents">
+                                <span class="humi" id="avg_humi"> - </span><span class="unit">%</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="i-row">
+            <table class="table table-condensed i-table">
+                <thead>
+                    <tr>
+                        <th colspan="8" class="i-th-main">A구역</th>
+                        <th style="background-color: transparent; border: none;"></th>
+                        <th colspan="8" class="i-th-main">B구역</th>
+                    </tr>
+                    <tr>
+                        <th class="i-idx-text">1호기</th>
+                        <th class="i-idx-text">2호기</th>
+                        <th class="i-idx-text">3호기</th>
+                        <th class="i-idx-text">4호기</th>
+                        <th class="i-idx-text">5호기</th>
+                        <th class="i-idx-text">6호기</th>
+                        <th class="i-idx-text">7호기</th>
+                        <th class="i-idx-text">8호기</th>
+                        <th style="background-color: transparent; border: none;"></th>
+                        <th class="i-idx-text">1호기</th>
+                        <th class="i-idx-text">2호기</th>
+                        <th class="i-idx-text">3호기</th>
+                        <th class="i-idx-text">4호기</th>
+                        <th class="i-idx-text">5호기</th>
+                        <th class="i-idx-text">6호기</th>
+                        <th class="i-idx-text">7호기</th>
+                        <th class="i-idx-text">8호기</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_8_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_8_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_8_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_8_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_8_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_8_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_8_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_8_8' }) %></td>
+                        <td class="i-floor-text" id="floor_8"><h3><span class="label label-default">8F</span></h3></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_8_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_8_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_8_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_8_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_8_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_8_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_8_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_8_8' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_7_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_7_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_7_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_7_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_7_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_7_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_7_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_7_8' }) %></td>
+                        <td class="i-floor-text" id="floor_7"><h3><span class="label label-default">7F</span></h3></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_7_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_7_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_7_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_7_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_7_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_7_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_7_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_7_8' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_6_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_6_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_6_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_6_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_6_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_6_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_6_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_6_8' }) %></td>
+                        <td class="i-floor-text" id="floor_6"><h3><span class="label label-default">6F</span></h3></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_6_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_6_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_6_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_6_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_6_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_6_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_6_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_6_8' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_4_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_4_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_4_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_4_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_4_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_4_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_4_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_4_8' }) %></td>
+                        <td class="i-floor-text" id="floor_4"><h3><span class="label label-default">4F</span></h3></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_4_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_4_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_4_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_4_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_4_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_4_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_4_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_4_8' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_3_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_3_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_3_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_3_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_3_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_3_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_3_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_3_8' }) %></td>
+                        <td class="i-floor-text" id="floor_3"><h3><span class="label label-default">3F</span></h3></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_3_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_3_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_3_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_3_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_3_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_3_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_3_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_3_8' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_2_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_2_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_2_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_2_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_2_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_2_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_2_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_2_8' }) %></td>
+                        <td class="i-floor-text" id="floor_2"><h3><span class="label label-default">2F</span></h3></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_2_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_2_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_2_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_2_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_2_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_2_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_2_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_2_8' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_1_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_1_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_1_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_1_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_1_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_1_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_1_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_1_8' }) %></td>
+                        <td class="i-floor-text" id="floor_1"><h3><span class="label label-default">1F</span></h3></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_1_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_1_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_1_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_1_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_1_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_1_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_1_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_1_8' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_-5_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_-5_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_-5_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_-5_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_-5_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_-5_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_-5_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'a_-5_8' }) %></td>
+                        <td class="i-floor-text" id="floor_b5"><h3><span class="label label-default">B5F</span></h3></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_-5_1' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_-5_2' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_-5_3' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_-5_4' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_-5_5' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_-5_6' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_-5_7' }) %></td>
+                        <td class="i-hvac"><%- include('./hvac', { object_id: 'b_-5_8' }) %></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- by shkoh 20210311: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210311: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20210311: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+
+    <!-- by shkoh 20210311: ubiguard -->
+    <script src="/javascripts/customizing/wrfis/hvac/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+[2021/12/15 18:58:53.812] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}

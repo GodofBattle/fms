@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210222: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20210222: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
+    <!-- by shkoh 20210222: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css" />
+
+    <!-- by shkoh 20210510: cytoscape  -->
+    <link rel="stylesheet" href="/component/jquery-qtip-3.0.3/jquery.qtip.min.css" />
+
+    <!-- by shkoh 20210222: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css" />
+    <link rel="stylesheet" href="/stylesheets/diagram.css" />
+</head>
+<body>
+    <div id="map" data="<%= type %>">
+        <div id="cytoscape" tabindex="1"></div>
+        <div id="qtip-container"></div>
+<%if(type === 'CFD08') {%>
+        <div id="heatmap" style="width: 100%; height: 100%; display: block; position: absolute;"></div>
+<%}%>
+<%if(image != '') {%>
+        <div id="img" class="<%= type %>" style="background-image: url('<%=image%>');"></div>
+<%}%>
+<%if(type == 'dig01') {%>
+        <div id="legend">
+            <table>
+                <tr>
+                    <td style="padding-bottom: 4px;">
+                        <div class="alarm-grade">
+                            <div class="grade grade-normal2">정상</div>
+                            <div class="grade grade-warning">주의</div>
+                            <div class="grade grade-major">경고</div>
+                            <div class="grade grade-down">다운</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top: 4px;">
+                        <div class="icon-cell">
+                            항온항습기 운전상태
+                            <img src="/img/diagram/icon/constant_temperature_0.gif" class="table-icon">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="icon-cell">
+                            항온항습기 정지상태
+                            <img src="/img/diagram/icon/constant_temperature_0.png" class="table-icon">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="icon-cell">
+                            가습기 운전상태
+                            <img src="/img/diagram/icon/humidifier_0.gif" class="table-icon">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="icon-cell">
+                            가습기 정지상태
+                            <img src="/img/diagram/icon/humidifier_0.png" class="table-icon">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+<%}%>
+<%if(type == 'dig02' || type == 'dig03') {%>
+        <div id="legend">
+            <table>
+                <tr>
+                    <td>
+                        <div class="alarm-grade">
+                            <div class="grade grade-normal2">정상</div>
+                            <div class="grade grade-major">경고</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+<%}%>
+<%if(type == 'dig06' || type == 'dig07') {%>
+        <div id="legend">
+            <table>
+                <tr>
+                    <td>
+                        <div class="alarm-grade">
+                            <div class="grade grade-normal">정상</div>
+                            <div class="grade grade-major">경고</div>
+                            <div class="grade grade-down">다운</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+<%}%>
+<%if(type == 'dig08') {%>
+        <div id="legend">
+            <table>
+                <tr>
+                    <td>
+                        <div class="alarm-grade">
+                            <div class="grade grade-normal2">정상</div>
+                            <div class="grade grade-warning2">주의</div>
+                            <div class="grade grade-major2">경고</div>
+                            <div class="grade grade-down2">다운</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+<%}%>
+<%if(type == 'PMS04' || type == 'PMS07') {%>
+        <div class="pms-navigation">
+            <h1>
+                <span id="pms-navi" class="label label-default"><%= mapName %></span>
+                <span class="label label-primary"><%= floorName %></span>
+            </h1>
+        </div>
+<%}%>
+<%if(type == 'BMS01' || type == 'BMS02') {%>
+    <div class="bms-navigation">
+        <h1>
+            <span id="bms-navi" class="label label-default"><%= mapName %></span>
+            <span class="label label-primary"><%= typeName %></span>
+        </h1>
+    </div>
+<%}%>
+<%if(type == 'CFD08') {%>
+    <div class="cfd-navigation">
+        <h1>
+            <span class="label label-primary"><%= typeName %></span>
+        </h1>
+        <table class="cfd-table">
+            <tr>
+                <td class="cfd-text"><span class="cfd-max">26</span>℃</td>
+                <td class="cfd-tick">-</td>
+                <td class="cfd-legend" rowspan="3">
+                    <div class="cfd-legend-draw"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="cfd-text"><span class="cfd-normal">18</span>℃</td>
+                <td class="cfd-tick">-</td>
+            </tr>
+            <tr>
+                <td class="cfd-text"><span class="cfd-min">10</span>℃</td>
+                <td class="cfd-tick">-</td>
+            </tr>
+        </table>
+    </div>
+    <%if(grade == 'USR00') {%>
+    <div style="position: absolute; display: block; bottom: 8px; right: 8px; z-index: 100;">
+        <div>
+            <input class="opt" type="number" step="0.1" id="cfd-p" value="1.35" style="width: 100px;"/>
+            <input class="opt" type="number" step="0.1" id="cfd-opacity" value="0.6" style="width: 100px;"/>
+            <input class="opt" type="number" step="0.1" id="cfd-gamma" value="1.6" style="width: 100px;"/>
+            <input class="opt" type="number" step="0.1" id="cfd-range" value="0.00390625" style="width: 100px;"/>
+            <input class="opt" type="number" step="0.1" id="cfd-framebuffer" value="2.0" style="width: 100px;"/>
+        </div>
+    </div>
+    <%}%>
+<%}%>
+    </div>
+
+<%if(grade == 'USR00') {%>
+    <div id="ctrlButtons">
+        <input id="file-upload" name="files" type="file"/>
+        <div class="btn-group">
+            <button type="button" id="btn-icon-bk-remove">배경제거</button>
+            <button type="button" id="btn-icon-insert">추가</button>
+            <button type="button" id="btn-icon-delete">삭제</button>
+            <button type="button" id="btn-icon-modify">수정</button>
+            <button type="button" id="btn-icon-save">위치저장</button>
+            <button type="button" id="btn-icon-align-left" style="background: #333333; color:#ffffff" data="left">좌로 정렬</button>
+            <button type="button" id="btn-icon-align-right" style="background: #333333; color:#ffffff" data="right">우로 정렬</button>
+            <button type="button" id="btn-icon-align-top" style="background: #333333; color:#ffffff" data="top">위로 정렬</button>
+            <button type="button" id="btn-icon-align-bottom" style="background: #333333; color:#ffffff" data="bottom">아래로 정렬</button>
+            <!-- <button type="button" id="btn-icon-align-horizontal" style="background: #333333; color:#ffffff" data="horizontal">가로 균등 배치</button>
+            <button type="button" id="btn-icon-align-vertical" style="background: #333333; color:#ffffff" data="vertical">세로 균등 배치</button> -->
+        </div>
+    </div>
+<%}%>
+
+<%if(grade == 'USR00') {%>
+    <div class="modal fade" id="modalDialogIcon" tabindex="-1" role="dialog" aria-labelledby="modalDialogIcon">
+        <div class="modal-dialog" role="document" style="width: 400px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal-dialog-icon-title" style="font-weight:700;">PMS 아이콘 등록</h4>
+                </div>  
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="dropdownType">아이콘 타입</label>
+                            <select class="form-control" id="dropdownType">
+    <% if(type == 'PMS07' || type == 'PMS04') {%>
+                                <option value="wrfispms">PMS</option>
+    <%} else if(type == 'BMS01' || type == 'BMS02') {%>
+                                <option value="wrfisbms1">배터리(납)</option>
+                                <option value="wrfisbmsSys">배터리(리튬) - 시스템</option>
+                                <option value="wrfisbmsRack">배터리(리튬) - 랙</option>
+    <%} else if(type == 'CFD08') {%>
+                                <option value="wrfistemp">온도센서</option>
+    <%} else {%>
+                                <option value="default">기본설정(설비명)</option>
+                                <option value="icon">아이콘</option>
+                                <option value="hvacctrl">항온항습기(제어가능)</option>
+    <%}%>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="buttonlink">아이콘과 연결할 그룹/설비(혹은 수집항목) 설정</label>
+                            <p class="form-control-static" id="selected-item"></p>
+                        </div>
+                        <button type="button" class="btn" id="find-equip">항목 찾기</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-modal-footer-confirm">추가</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDialogTree" tabindex="-2" role="dialog" aria-labelledby="modalDialogTree">
+        <div class="modal-dialog" role="document" style="width:500px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight:700;">대시보드 연결 설비(센서) 트리</h4>
+                </div>
+                <div class="modal-body" id="modalDialogTreeBody" style="height:500px;">
+                    <div id="modal-tree" class="ztree"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-modal-tree-link">연결</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<%}%>
+    
+    <!-- by shkoh 20210222: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210222: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20210222: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+
+    <!-- by shkoh 20210222: cytoscape  -->
+    <script src="/component/jquery-qtip-3.0.3/jquery.qtip.min.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-qtip.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-cxtmenu.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-node-html-label.min.js"></script>
+
+<%if(type === 'CFD08') {%>
+    <!-- by shkoh 20210510: heatmap -->
+    <script src="/component/temperature-map-gl/temperature-map-gl.js"></script>
+<%}%>
+    
+    <!-- by shkoh 20210222: ubiGuard -->
+    <script src="/javascripts/diagram/items.js"></script>
+    <script src="/javascripts/diagram/tree.js"></script>
+    <script src="/javascripts/diagram/heatmap.js"></script>
+    <script src="/javascripts/diagram/wrfis/diagram.js"></script>
+
+<%if(grade != 'USR00') {%>
+    <script>
+        $(function() {
+            initTimeout();
+        });
+
+        function initTimeout() {
+            const timer = setInterval(function() {
+                loadItems();
+            }, 5000);
+        }
+    </script>
+<%}%>
+</body>
+</html>

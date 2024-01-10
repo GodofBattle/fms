@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <title><%= title %></title>
+
+        <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="/stylesheets/login.css"/>
+    </head>
+<%if(site) {%>
+    <body class="<%= site %>-login">
+<%} else {%>
+    <body>
+<%}%>
+
+<%if(site) {%>
+        <div class="background-icon background-icon-<%= site %>"></div>
+<%} else {%>
+        <div class="background-icon"></div>
+<%}%>
+
+<%if(site) {%>
+        <div class="background-logo background-logo-<%= site %>"></div>
+<%} else {%>
+        <div class="background-logo"></div>
+<%}%>
+
+        <div id="loginContent" class="container">
+<%if(site) {%>
+            <form class="form-signin form-signin-<%= site %>" method="post" action="./Login">
+<%} else {%>
+            <form class="form-signin" method="post" action="./Login">
+<%}%>
+                <input type="text" id="inputID" name="id" class="form-control image_id" autocomplete="username" placeholder="아이디" required="" autofocus="" />
+                <input type="password" id="inputPW" name="pw" class="form-control image_pw" autocomplete="current-password" placeholder="비밀번호" required="" />
+                <button id="btnLogin" class="btn-block image_login" type="submit" onClick="login()">로그인</button>
+                <div id="responseSignIn"></div>
+<%if(site) {%>
+                <label class="label1-<%= site %>">Copyright © UbiGuard LTD All rights reserved</label>
+<%} else {%>
+                <label class="label1">Copyright © 2021 UbiGuard. LTD All rights reserved</label>
+<%}%>
+            </form>
+        </div>
+
+        <script type="text/javascript" src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="/component/jquery-3.3.1/jquery.session.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                responseLogin();
+            });
+        
+            function login() {
+                var id = document.getElementById("inputID");
+                $.session.set("user-id", id.value);
+            }
+            
+            function responseLogin() {
+                var message = getParameter("msg");
+                var msg = '';
+
+                if(message != 'NO_ID') $("#inputID").val($.session.get("user-id"));
+
+                switch(message) {
+                    case '': msg = ''; break;
+                    case 'NO_ID': msg = '<div class="alert_msg" role="alert">아이디가 일치하지 않습니다.</div>'; break;
+                    case 'NO_PW': msg = '<div class="alert_msg" role="alert">비밀번호가 일치하지 않습니다.</div>'; break;
+                    case 'ER_BAD_DB_ERROR': msg = '<div class="alert_msg" role="alert" style="padding-left:20px;">알 수 없는 데이터베이스로 접근하였습니다.</div>'; break;
+                    case 'ENOTFOUND': msg = '<div class="alert_msg" role="alert">데이터베이스 HOST명을 확인하세요.</div>'; break;
+                    case 'PROTOCOL_SEQUENCE_TIMEOUT': msg = '<div class="alert_msg" role="alert">연결 가능 시간을 초과했습니다.</div>'; break;
+                    case 'ER_ACCESS_DENIED_ERROR': msg = '<div class="alert_msg" role="alert" style="padding-left:30px;">접근이 거부되었습니다. DB 계정을 확인하세요.</div>'; break;
+                    case 'ER_DBACCESS_DENIED_ERROR': msg = '<div class="alert_msg" role="alert" style="padding-left:30px;">접근이 거부되었습니다. 접속 DB를 확인하세요.</div>'; break;
+                    case 'ER_ABORTING_CONNECTION': msg = '<div class="alert_msg" role="alert" style="padding-left:30px;">연결이 중단되었습니다. 다시 시도해 주세요.</div>'; break;
+                    case 'ER_NEW_ABORTING_CONNECTION': msg = '<div class="alert_msg" role="alert" style="padding-left:30px;">새 연결이 중단되었습니다. 다시 시도해 주세요.</div>'; break;
+                    case 'ER_TOO_MANY_USER_CONNECTIONS': msg = '<div class="alert_msg" role="alert" style="padding-left:30px;">동시 접속자 수가 초과 되었습니다.</div>'; break;
+                    default: msg = '<div class="alert_msg" role="alert" style="padding-left:30px;">' + message + '</div>'; break;
+                }
+
+                $("#responseSignIn").wrapInner(msg);
+            }
+            
+            function getParameter(strParamName) {
+                var strURL = location.search;
+                var tmpParam = strURL.substring(1).split("&");
+                if (strURL.substring(1).length > 0) {
+                    var Params = new Array;
+                    for (i = 0; i < tmpParam.length; i++) {
+                        Params = tmpParam[i].split("=");
+                        if (strParamName == Params[0]) {
+                            return Params[1];
+                        }
+                    }
+                }
+                return "";
+            }
+        </script>
+    </body>
+</html>

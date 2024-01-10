@@ -1,0 +1,1120 @@
+body {
+    background: linear-gradient(to bottom, #2a4973, #091b33);
+    background-attachment: fixed;
+    padding-top: 8px;
+    overflow-x: hidden;
+    font-family: "Malgun Gothic";
+    perspective: 1000;  /* by shkoh 20180516: 크롬에서 grid stack을 사용할 경우 화면의 높이가 더 커질 경우 배경에 문제가 생겨 해당 css 추가 */
+}
+
+.container-fluid {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.bxslider {
+    padding-left: 0px;
+}
+
+/***************************************************************************************************************/
+/* by shkoh 20180516: Grid Stack 스타일 시작                                                                     */
+/***************************************************************************************************************/
+.grid-stack > .grid-stack-item > .grid-stack-item-content {
+    border-radius: 4px;
+    background-color: #ffffff;
+    left: 4px;
+    right: 4px;
+    overflow: hidden;
+}
+
+.grid-stack > .grid-stack-item > .grid-stack-item-content > .item-title {
+    cursor: move;
+    margin: 10px 10px 0px 10px;
+}
+
+.grid-stack > .grid-stack-item > .grid-stack-item-content > .item-title > h3 {
+    margin: 0px;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d5d5;
+    color: #12233d;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.panel_close_icon {
+    float: right;
+    width: 15px;
+    height: 15px;
+    background-image: url("/img/monitoring/widget_close.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.panel_close_icon:hover {
+    cursor: pointer;
+    background-image: url("/img/monitoring/widget_close_dark.png");
+}
+
+.grid-stack > .grid-stack-item > .grid-stack-item-content > .item-title-alarm {
+    cursor: move;
+    background-color: #de0303;
+}
+
+.grid-stack > .grid-stack-item > .grid-stack-item-content > .item-title-alarm > h3 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0px;
+}
+
+.grid-stack > .grid-stack-item > .grid-stack-item-content > .item-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180516: Grid Stack 스타일 끝                                                                      */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180515: 사이드바의 탑 스타일 시작                                                                  */
+/***************************************************************************************************************/
+#slider {
+    width: 128px;
+    top: 0px;
+    position: fixed;
+}
+
+#sidebar {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: #12233d;
+    top: 300px;
+}
+
+#sidebarOpen {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: #12233d;
+    top: 300px;
+}
+
+#sidebar-main {
+    width: 100px;
+    height: 1000px;
+    position: absolute;
+    right: 0;
+    padding: 6px;
+    background: rgba(18, 35, 61, 0.7);
+}
+
+.menu-icon-wrapper {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+}
+
+.menu-icon-wrapper svg {
+    top: -21px;
+    left: -21px;
+	-webkit-transform: scale(0.07);
+	-ms-transform: scale(0.07);
+	transform: scale(0.07);
+}
+
+.menu-icon-wrapper svg path {
+	stroke: #ffffff;
+    stroke-width: 40px;
+}
+
+.btn-check {
+    background-color: transparent;
+    color: #ffffff;
+    background-image: url('/img/user/check_02.png');
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding: 8px 4px 10px 24px
+}
+
+.btn-check.active, .btn-check:active {
+    background-image: url('/img/user/check_01.png');
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-check:hover,
+.btn-check:focus {
+    color: #ffffff;
+}
+
+.btn-check[disabled] {
+    color: #666666;
+    background-image: url('/img/user/check_02.png');
+}
+/***************************************************************************************************************/
+/* by shkoh 20180515: 사이드바의 탑 스타일 끝                                                                    */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180516: zTree 스타일 시작                                                                         */
+/***************************************************************************************************************/
+.ztree * {
+    font-size: 14px;
+    font-family: "Malgun Gothic";
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #124b9a;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 3px 0px 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180516: zTree 스타일 끝                                                                           */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180516: TreeView - Radio Button 스타일 시작                                                       */
+/***************************************************************************************************************/
+#radioTree,
+#radioAlarm {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btn-radio {
+    background-color: transparent;
+    color: #12233d;
+    background-image: url('/img/user/check_02.png');
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding: 2px 10px 5px 20px;
+}
+
+.btn-radio.active,
+.btn-radio:active {
+    background-image: url('/img/user/check_01.png');
+    box-shadow: none !important;
+    outline: none !important;
+    font-weight: bold;
+}
+
+.btn-radio:hover,
+.btn-radio:focus {
+    color: #12233d;
+}
+
+.btn-radio[disabled] {
+    color: #666666;
+    background-image: url('/img/user/check_02.png');
+}
+/***************************************************************************************************************/
+/* by shkoh 20180516: TreeView - Radio Button 스타일 끝                                                         */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180516: TreeView - Context Menu 스타일 시작                                                       */
+/***************************************************************************************************************/
+#treeContextMenu {
+    position: absolute;
+    visibility: hidden;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    border: 1px solid #c5c5c5;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    background-clip: padding-box;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#treeContextMenu > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: outside none none;
+    line-height: 20px;
+}
+
+#treeContextMenu > ul > hr {
+    margin: 0px 4px;
+    border-top-color: #cccccc;
+}
+
+#treeContextMenu > ul > li > a {
+    display: block;
+    padding: 3px 10px;
+    color: #333333;
+}
+
+#treeContextMenu > ul > li > a:hover,
+#treeContextMenu > ul > li > a:focus {
+    text-decoration: none;
+    background-color: #317be0;
+    color: #ffffff;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180516: TreeView - Context Menu 스타일 끝                                                         */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180529: Kendo Grid 스타일 시작                                                                    */
+/***************************************************************************************************************/
+.k-grid-content table {
+    text-align: left;
+    color: #222222;
+    font-size: 0.8em;
+}
+
+.k-grid-header th.k-header,
+.k-grid-header th {	
+    border-color: #e5e5e5;
+    height: 18px;
+    border-width: 0 0 0px 1px;
+    font-weight: bold;
+	color: #333333;
+    padding: 0.5em 0.6em 0.4em 0.6em;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+.k-grid-header:first-child,
+.k-grid-header:last-child {
+    border-radius: 0px;
+}
+
+.k-grid-content table td {
+    border-color: #e5e5e5;
+    font-weight: bold;
+}
+
+.k-grid-content table td.i-alarm-row {
+    cursor: pointer;
+}
+
+.k-grid {
+    border: 1px solid #c5c5c5;
+    border-radius: 0px;
+}
+
+.k-button {
+    padding: 4px 8px;
+}
+
+div.k-grid-footer,
+div.k-grid-header,
+.k-grid-header {
+    border-bottom: none;
+}
+
+.k-alt {
+    background-color: #fafafa;
+}
+
+.k-state-selected {
+    color: #ffffff;
+    background-color: #317be0;
+    border-color: #317be0;
+}
+
+.k-state-focused {
+    box-shadow: inset 0 0 3px 0 #172f51;
+    border-radius: 0px;
+}
+
+.k-pager-wrap {
+    font-size: 11px;
+}
+
+.k-grid-norecords {
+    height: 90%;
+}
+
+.k-header > .k-grid-filter,
+.k-i-filter {
+    font-size: 0.81em;
+    right: 6px;
+}
+
+.k-i-sort-asc-sm,
+.k-i-sort-desc-sm {
+    margin: 0px;    
+}
+
+.k-loading-image {
+    display: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180529: Kendo Grid 스타일 끝                                                                      */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180517: DetailView 스타일 시작                                                                    */
+/***************************************************************************************************************/
+#grid-detail-content .table {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+#detail-equip-table > tbody > tr > th {
+    vertical-align: middle;
+    border-top: none;
+    padding: 4px 1px 4px 4px;
+    color: #333333;
+    width: 25%;
+}
+
+#detail-equip-table > tbody > tr > td {
+    padding: 4px 4px 4px 1px;
+    border-top: none;
+    width: 75%;
+    text-align: right;
+    vertical-align: middle;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180517: DetailView 스타일 끝                                                                      */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180523: DetailView - 센서 그리드 스타일 시작                                                       */
+/***************************************************************************************************************/
+#grid-detail-content .detail-unit {
+    font-size: 0.5em;
+}
+
+#grid-detail-content .sensor-detail-level_0,
+#grid-detail-content .sensor-detail-level_1,
+#grid-detail-content .sensor-detail-level_2,
+#grid-detail-content .sensor-detail-level_3,
+#grid-detail-content .sensor-detail-level_4 {
+    padding: 0.3em 0.6em;
+    border-radius: 0.4em;
+    color: #f3f3f3;
+    text-shadow: 1px 1px #000000;
+}
+
+#grid-detail-content .sensor-detail-level_0 {
+    background: #0161b8;
+}
+
+#grid-detail-content .sensor-detail-level_1 {
+    background: #ff9c01;
+}
+
+#grid-detail-content .sensor-detail-level_2 {
+    background: #fe6102;
+}
+
+#grid-detail-content .sensor-detail-level_3 {
+    background: #de0303;
+}
+
+#grid-detail-content .sensor-detail-level_N {
+    color: #222222;
+    text-shadow: none;
+    background: none;
+}
+
+#grid-detail-content .sensor-detail-level_4 {
+    color: #a0a0a0;
+    text-shadow: none;
+    background: none;
+}
+
+#grid-detail-content .k-grid-content > table > tbody > tr:hover {
+    cursor: pointer;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180523: DetailView - 센서 그리드 스타일 끝                                                         */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180528: DetailView - 그룹 통계 스타일 시작                                                         */
+/***************************************************************************************************************/
+#alarmBarChart {
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180528: DetailView - 그룹 통계 스타일 끝                                                           */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180528: AlarmView 시작                                                                           */
+/***************************************************************************************************************/
+#grid-alarm-content {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#grid-alarm-content .level-img {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-size: 22px 22px;
+    background-position: center center;
+    vertical-align: middle;
+    line-height: 32px;
+    margin-left: 5px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180528: AlarmView 끝                                                                             */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180529: MapView - 설정 아이콘 시작                                                                */
+/***************************************************************************************************************/
+#btn-group-all {
+    height: 29px;
+    position: absolute;
+    right: 30px;
+    top: 5px;
+}
+
+#btn-group-all > button:first-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#btn-group-all > button:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#btn-group-all > button:hover {
+    background-color: #c5c5c5;
+}
+
+#btn-group-all > .btn:active,
+#btn-group-all > .btn:focus {
+    outline: none;
+}
+
+#btn-group-all > button span {
+    display: block;
+    width: 26px;
+    height: 26px;
+}
+
+#btn-group-all > button {
+    border: none;
+    margin-bottom: 3px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    background-color: #ffffff;
+}
+
+#btn_add_link,
+#btn_del_link {
+    background-color: #ffffff;
+}
+
+#btn_add_link:hover,
+#btn_del_link:hover {
+    background-color: #c5c5c5;
+}
+
+#btn_add_link:focus {
+    background-color: #e5e5e5;
+}
+
+.icon-add-dummy {
+    background: url('/img/monitoring/tool_icon01.png') no-repeat;
+}
+
+.icon-add-link {
+	background: url('/img/monitoring/tool_icon02.png') no-repeat;
+}
+
+.icon-layout {
+	background: url('/img/monitoring/tool_icon03.png') no-repeat;
+}
+
+.icon-swap {
+    background: url('/img/monitoring/tool_icon06.png') no-repeat;
+}
+
+.icon-save-position {
+	background: url('/img/monitoring/tool_icon04.png') no-repeat;
+}
+
+.icon-del-link {
+	background: url('/img/monitoring/tool_icon05.png') no-repeat;
+}
+
+/* by shkoh 20170711: 설정 아이템 추가 */
+.icon-setting {
+    background: url('/img/monitoring/setting_icon.png') no-repeat;
+}
+
+/* by shkoh 20190830: Zoom In, Zoom Out 아이콘 추가 */
+.icon-zoom-in {
+    background: url('/img/monitoring/zoom_in.png') no-repeat;
+}
+
+.icon-zoom-default {
+    background: url('/img/monitoring/zoom_default.png') no-repeat;
+}
+
+.icon-zoom-out {
+    background: url('/img/monitoring/zoom_out.png') no-repeat;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180529: MapView - 설정 아이콘 끝                                                                  */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180529: MapView - 시작                                                                           */
+/***************************************************************************************************************/
+#grid-map {
+    overflow: hidden;
+}
+
+.grid-map .item-title {
+    overflow: hidden;
+}
+
+#grid-map-content {
+    overflow: visible;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.link-map-title:hover {
+    cursor:  pointer;
+}
+
+#map-image {
+    background-repeat: no-repeat; 
+}
+
+#cytoscapeDiv {
+    position: absolute;
+}
+
+#cytoscapeDiv canvas {
+    display: block;
+}
+
+#map-image {
+    background-size: 100% 100%;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180529: MapView - 끝                                                                             */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180607: MapView - qTip Start                                                                     */
+/***************************************************************************************************************/
+.qtip-light {
+    border: 1px solid #173052;
+    border-radius: 0px;
+    background-color: #173052;
+}
+
+.qtip-titlebar {
+    padding: 5px 10px;
+}
+
+.qtip-title {
+    font-family: "Malgun Gothic";
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #173052 !important;
+    padding: 0px;
+    text-align: left;
+    max-width: 170px;
+}
+
+.qtip-content {
+    padding: 1px 4px;
+    font-size: 12px;
+    vertical-align: top;
+    border-bottom: none;
+}
+
+#tooltip .name {
+	font-family: "맑은고딕", MalgunGothic;
+    font-weight: bold;
+	color:	#ffffff;
+	padding: 3px 3px 3px 8px;
+}
+
+#tooltip .s_name {
+    color: #62aa2f;
+    text-shadow: 1px 1px #000000;
+}
+
+#tooltip .value {
+	color:	#eeeeee;
+    padding: 3px 8px 3px 3px;
+}
+
+#tooltip .equip_value {
+    color: #eeeeee;
+    border-radius: 3px;
+    padding: 1px 3px;
+}
+
+#tooltip .equip_value_0 {
+    background-color: #0161b8;
+    
+}
+
+#tooltip .equip_value_1 {
+    background-color: #ff9c01;
+}
+
+#tooltip .equip_value_2 {
+    background-color: #fe6102;
+}
+
+#tooltip .equip_value_3 {
+    background-color: #de0303;
+}
+
+#tooltip .equip_value_4 {
+    background-color: #511a81;
+}
+
+#tooltip .equip_value_5 {
+    background-color: #000000;
+}
+
+#tooltip .equip_value_6 {
+    background-color: #656565;
+}
+
+#tooltip .s_value_0 {
+    color: #71a1e8;
+    font-weight: 600;
+    text-shadow: 1px 1px #000000;
+}
+
+#tooltip .s_value_1 {
+    color: #ff9c01;
+    font-weight: 600;
+    text-shadow: 1px 1px #000000;
+}
+
+#tooltip .s_value_2 {
+    color: #fe6102;
+    font-weight: 600;
+    text-shadow: 1px 1px #000000;
+}
+
+#tooltip .s_value_3 {
+    color: #de0303;
+    font-weight: 600;
+    text-shadow: 1px 1px #000000;
+}
+
+#tooltip .s_value_4,
+#tooltip .s_value_5 {
+    color:	#a0a0a0;
+    font-weight: 600;
+    text-shadow: 1px 1px #000000;
+}
+/***************************************************************************************************************/
+/* by shkoh 20180607: MapView - qTip End                                                                     */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20180530: MapView - Animation 시작                                                                 */
+/***************************************************************************************************************/
+/* by shkoh 20170529: Animation Base Code Start */
+.animated {
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .animated.hinge {
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+  }
+  /* by shkoh 20170529: Animation Base Code End */
+  
+  /* by shkoh 20170529: Zoom Out Animation Start */
+  /*the animation definition*/
+  @-webkit-keyframes zoomOut {
+    0% {
+      opacity: 1
+    }
+    50% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3)
+    }
+    100% {
+      opacity: 0
+    }
+  }
+  @keyframes zoomOut {
+    0% {
+      opacity: 1
+    }
+    50% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      -ms-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3)
+    }
+    100% {
+      opacity: 0
+    }
+  }
+  .zoomOut {
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut
+  }
+  /* by shkoh 20170529: Zoom Out Animation End */
+  
+  /* by shkoh 20170529: Zoom In Animation Start */
+  /*the animation definition*/
+  @-webkit-keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3)
+    }
+    50% {
+      opacity: 1
+    }
+  }
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      -ms-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3)
+    }
+    50% {
+      opacity: 1
+    }
+  }
+  .zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn
+  }
+  /* by shkoh 20170529: Zoom In Animation End */
+/***************************************************************************************************************/
+/* by shkoh 20180530: MapView - Animation 끝                                                                   */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20190828: FMS Server View Start                                                                    */
+/***************************************************************************************************************/
+.server-usage {
+    flex: 3;
+    text-align: left;
+    /* padding-left: 1em; */
+}
+
+.server-usage-title {
+    padding-top: 0.4em;
+    font-size: 0.8em;
+}
+
+.server-usage-value {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.server-usage-unit {
+    font-size: 1.4rem;
+}
+
+.server-disk-unit {
+    font-size: 0.6em;
+}
+/***************************************************************************************************************/
+/* by shkoh 20190828: FMS Server View End                                                                      */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210323: WRFIS style start                                                                        */
+/***************************************************************************************************************/
+body.wrfis {
+    background: linear-gradient(to bottom, #303030, #110303);
+    color: #ffffff;
+}
+
+.grid-stack.wrfis > .grid-stack-item > .grid-stack-item-content  {
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px #333333;
+    background: linear-gradient(to bottom, rgba(128,128,128,0.1), rgba(255,255,255,0.1));
+}
+
+.grid-stack.wrfis .server-usage-title {
+    padding-top: 0.2em;
+    font-size: 1em;
+}
+
+.grid-stack.wrfis > .grid-stack-item > .grid-stack-item-content > .item-title > h3 {
+    color: #fefefe;
+    text-shadow: 1px 1px 1px #333333;
+}
+
+.grid-stack.wrfis .btn-radio {
+    color: #fefefe;
+}
+
+.grid-stack.wrfis .btn-radio.active,
+.grid-stack.wrfis .btn-radio:active {
+    font-weight: normal;
+}
+
+.grid-stack.wrfis .ztree li a {
+    color: #fefefe;
+}
+
+.grid-stack.wrfis .ztree li a.curSelectedNode {
+    background-color: #2a99da;
+}
+
+.grid-stack.wrfis .ztree li span.button {
+    background-image: url(/component/zTree_v3.5.23/css/zTreeStyleWhite/img/zTreeStandard.png);
+}
+
+.grid-stack.wrfis #btn-group-all > button {
+    background-color: transparent;
+}
+
+.grid-stack.wrfis .k-widget {
+    background-color: transparent;
+}
+
+.grid-stack.wrfis .k-header {
+    background: rgba(255,255,255,0.3);
+}
+
+.grid-stack.wrfis .k-grid-header th.k-header,
+.grid-stack.wrfis .k-grid-header th {
+    border: none;
+    font-weight: normal;
+}
+
+.grid-stack.wrfis .k-pager-wrap .k-link {
+    background-color: transparent;
+    color: #fefefe;
+}
+
+.grid-stack.wrfis .k-pager-wrap .k-link.k-state-selected {
+    border-color: #ffffff;
+    background-color: rgba(230,230,230,0.4);
+    color: #d1d1d1;
+}
+
+.grid-stack.wrfis .k-grid-content table {
+    color: #fefefe;
+}
+
+.grid-stack.wrfis .k-alt {
+    background-color: rgba(230,230,230,0.2);
+}
+
+.grid-stack.wrfis .k-grid tr:hover {
+    background-color: rgba(55,55,160,0.3);
+}
+
+.grid-stack.wrfis #detail-equip-table > tbody > tr > th {
+    color: #fefefe;
+}
+
+.grid-stack.wrfis #btn-group-all > button:hover {
+    background-color: #757575;
+}
+
+.grid-stack.wrfis .icon-layout {
+    background: url('/img/monitoring/tool_icon03_w.png') no-repeat;
+}
+
+.grid-stack.wrfis .icon-swap {
+    background: url('/img/monitoring/tool_icon06_w.png') no-repeat;
+}
+
+.grid-stack.wrfis .icon-save-position {
+	background: url('/img/monitoring/tool_icon04_w.png') no-repeat;
+}
+
+.grid-stack.wrfis .icon-zoom-in {
+    background: url('/img/monitoring/zoom_in_w.png') no-repeat;
+}
+
+.grid-stack.wrfis .icon-zoom-default {
+    background: url('/img/monitoring/zoom_default_w.png') no-repeat;
+}
+
+.grid-stack.wrfis .icon-zoom-out {
+    background: url('/img/monitoring/zoom_out_w.png') no-repeat;
+}
+
+.grid-stack.wrfis #grid-detail-content .sensor-detail-level_N {
+    color: #ffffff;
+    text-shadow: none;
+    background: none;
+}
+
+.grid-stack.wrfis #grid-detail-content .sensor-detail-level_4 {
+    color: #a0a0a0;
+    text-shadow: none;
+    background: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210323: WRFIS style end                                                                          */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20211202: KEPCO style start                                                                        */
+/***************************************************************************************************************/
+body.kepco {
+    background: linear-gradient(to bottom, #303030, #110303);
+    color: #ffffff;
+}
+
+.grid-stack.kepco > .grid-stack-item > .grid-stack-item-content  {
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px #333333;
+    background: linear-gradient(to bottom, rgba(128,128,128,0.1), rgba(255,255,255,0.1));
+}
+
+.grid-stack.kepco .server-usage-title {
+    padding-top: 0.2em;
+    font-size: 1em;
+}
+
+.grid-stack.kepco > .grid-stack-item > .grid-stack-item-content > .item-title > h3 {
+    color: #fefefe;
+    text-shadow: 1px 1px 1px #333333;
+}
+
+.grid-stack.kepco .btn-radio {
+    color: #fefefe;
+}
+
+.grid-stack.kepco .btn-radio.active,
+.grid-stack.kepco .btn-radio:active {
+    font-weight: normal;
+}
+
+.grid-stack.kepco .ztree li a {
+    color: #fefefe;
+}
+
+.grid-stack.kepco .ztree li a.curSelectedNode {
+    background-color: #2a99da;
+}
+
+.grid-stack.kepco .ztree li span.button {
+    background-image: url(/component/zTree_v3.5.23/css/zTreeStyleWhite/img/zTreeStandard.png);
+}
+
+.grid-stack.kepco #btn-group-all > button {
+    background-color: transparent;
+}
+
+.grid-stack.kepco .k-widget {
+    background-color: transparent;
+}
+
+.grid-stack.kepco .k-header {
+    background: rgba(255,255,255,0.3);
+}
+
+.grid-stack.kepco .k-grid-header th.k-header,
+.grid-stack.kepco .k-grid-header th {
+    border: none;
+    font-weight: normal;
+}
+
+.grid-stack.kepco .k-pager-wrap .k-link {
+    background-color: transparent;
+    color: #fefefe;
+}
+
+.grid-stack.kepco .k-pager-wrap .k-link.k-state-selected {
+    border-color: #ffffff;
+    background-color: rgba(230,230,230,0.4);
+    color: #d1d1d1;
+}
+
+.grid-stack.kepco .k-grid-content table {
+    color: #fefefe;
+}
+
+.grid-stack.kepco .k-alt {
+    background-color: rgba(230,230,230,0.2);
+}
+
+.grid-stack.kepco .k-grid tr:hover {
+    background-color: rgba(55,55,160,0.3);
+}
+
+.grid-stack.kepco #detail-equip-table > tbody > tr > th {
+    color: #fefefe;
+}
+
+.grid-stack.kepco #btn-group-all > button:hover {
+    background-color: #757575;
+}
+
+.grid-stack.kepco .icon-layout {
+    background: url('/img/monitoring/tool_icon03_w.png') no-repeat;
+}
+
+.grid-stack.kepco .icon-swap {
+    background: url('/img/monitoring/tool_icon06_w.png') no-repeat;
+}
+
+.grid-stack.kepco .icon-save-position {
+	background: url('/img/monitoring/tool_icon04_w.png') no-repeat;
+}
+
+.grid-stack.kepco .icon-zoom-in {
+    background: url('/img/monitoring/zoom_in_w.png') no-repeat;
+}
+
+.grid-stack.kepco .icon-zoom-default {
+    background: url('/img/monitoring/zoom_default_w.png') no-repeat;
+}
+
+.grid-stack.kepco .icon-zoom-out {
+    background: url('/img/monitoring/zoom_out_w.png') no-repeat;
+}
+
+.grid-stack.kepco #grid-detail-content .sensor-detail-level_N {
+    color: #ffffff;
+    text-shadow: none;
+    background: none;
+}
+
+.grid-stack.kepco #grid-detail-content .sensor-detail-level_4 {
+    color: #a0a0a0;
+    text-shadow: none;
+    background: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20211202: WRFIS style end                                                                          */
+/***************************************************************************************************************/

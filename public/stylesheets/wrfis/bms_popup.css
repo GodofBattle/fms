@@ -1,0 +1,259 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'KoPub Dotum';
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 12px;
+}
+
+:focus,
+:active:focus {
+    outline: none;
+}
+
+/********************************************************************************************/
+/* by shkoh 20210225: bootstrap 3.x re-define start                                         */
+/********************************************************************************************/
+.panel {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.panel-heading {
+    border-radius: 0px;
+    background-color: #172f51;
+    padding: 4px 15px;
+    border: none;
+}
+
+.panel-title {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.table > tbody > tr > th,
+.table > tbody > tr > td {
+    border-top: none;
+}
+/********************************************************************************************/
+/* by shkoh 20210225: bootstrap 3.x re-define end                                           */
+/********************************************************************************************/
+
+/********************************************************************************************/
+/* by shkoh 20210225: kendo ui custom style start                                           */
+/********************************************************************************************/
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+.k-state-selected {
+    background-color: #317be0;
+    border-color: #317be0;
+}
+
+.k-grid tr.k-state-focused:hover td {
+    background-color: #ebebeb;
+}
+
+.k-grid tr.k-state-selected:hover td {
+    background-color: #3379b5;
+}
+
+.k-state-focused,
+.k-state-focused.k-state-selected {
+    box-shadow: none;
+}
+
+.k-button-group .k-button.k-state-active {
+    color: #ffffff;
+    border-color: #285e8e;
+    background-color: #3276b1;
+    box-shadow: none;
+}
+
+.k-button-group .k-button.k-state-active:hover {
+    color: #ffffff;
+    border-color: #214f77;
+    background-color: #275d8d;
+}
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+
+.k-pager-wrap {
+    font-size: 11px;
+}
+
+.k-grid-norecords {
+    height: 90%;
+}
+
+.k-dropdown-wrap,
+.k-dropdown-wrap.k-state-border-down,
+.k-list-container.k-state-border-up,
+.k-popup .k-list .k-state-focused,
+.k-list .k-state-hover,
+.k-textbox,
+.k-button,
+.k-multiselect-wrap,
+.k-treeview .k-in,
+.k-checkbox,
+.k-grouping-header .k-group-indicator,
+.k-drag-clue {
+    border-radius: 0px;
+}
+
+.k-item.k-state-selected.k-state-focused.k-state-hover,
+.k-split-button:focus,
+.k-split-container .k-button:focus {
+    box-shadow: none;
+}
+
+.k-button-group .k-button:first-child,
+.k-split-button .k-button:first-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.k-button-group .k-button:last-child,
+.k-split-button .k-button:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.k-split-button .k-button:last-child {
+    padding: 2px;
+}
+
+.k-grid .k-grid-toolbar > * {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.k-grid-toolbar:first-child {
+    border-radius: 0px;
+}
+
+.k-grid-toolbar {
+    padding: 3px 6px;
+}
+
+.k-toolbar > * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.k-button {
+    padding: 4px 8px;
+}
+
+.k-dropdowntree .k-button .k-icon {
+    font-size: 10px;
+}
+
+.k-list-container.k-popup-dropdowntree .k-check-all {
+    margin: 8px 8px 0;
+}
+
+.k-list-container.k-popup-dropdowntree .k-treeview {
+    padding: 4px 8px;
+    color: #172f51;
+}
+
+.k-multiselect-wrap {
+    padding-right: 0px;
+}
+
+.k-multiselect-wrap li {
+    padding-right: 1.2em;
+    color: #ffffff;
+    background-color: #428bca;
+}
+
+.table-condensed {
+    margin-top: 4px;
+    box-shadow: 0px 2px 1px #dddddd;
+}
+/********************************************************************************************/
+/* by shkoh 20210225: kendo ui custom style end                                             */
+/********************************************************************************************/
+
+/********************************************************************************************/
+/* by shkoh 20210225: air-datepicker custom style start                                     */
+/********************************************************************************************/
+.datepicker {
+    border-radius: 0px;
+}
+
+.datepicker--nav-title i {
+    color: #4a4a4a;
+}
+/********************************************************************************************/
+/* by shkoh 20210225: air-datepicker custom style end                                       */
+/********************************************************************************************/
+
+/********************************************************************************************/
+/* by shkoh 20210225: custom style start                                                    */
+/********************************************************************************************/
+.content {
+    padding: 8px 16px;
+    height: 100%;
+}
+
+.custom-inline-heading {
+    display: flex;
+}
+
+.custom-inline-heading-title {
+    flex: 1;
+    align-self: center;
+}
+
+input.custom-date {
+    text-align: center;
+    text-indent: 0;
+}
+
+.custom-button {
+    padding: 5px 8px;
+}
+
+.custom-button.custom-searching {
+    background-color: #317be0;
+    color: #ffffff;
+    border-color: #3379b5;
+}
+
+.custom-table-title {
+    width: 150px;
+    font-size: 14px;
+}
+
+.table > tbody > tr > th.custom-table-title {
+    padding-left: 10px;
+}
+
+.custom-table-value {
+    font-size: 32px;
+    min-width: 150px;
+    max-width: 150px;
+    word-wrap: break-word;
+}
+
+.table > tbody > tr > th.custom-table-value {
+    padding-left: 30px;
+}
+
+.custom-unit {
+    padding-left: 4px;
+    font-size: 15px;
+}
+
+.custom-chart {
+    height: 90px;
+    width: 1206px;
+}
+/********************************************************************************************/
+/* by shkoh 20210225: custom style end                                                      */
+/********************************************************************************************/

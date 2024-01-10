@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- by shkoh 20210419: kendoui-bootstrap styles -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+
+    <!-- by shkoh 20210419: bootstrap styles -->
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+
+    <!-- by shkoh 20210419: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+
+    <!-- by shkoh 20210419: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20210419: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css"/>
+
+    <!-- by shkoh 20210419: ubiguard style -->
+    <link rel="stylesheet" href="/stylesheets/reports.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <aside class="col-sm-3 col-md-3 col-lg-2 tree-panel">
+            <div class="panel panel-default">
+                <div class="panel-heading">조회항목</div>
+                <div class="panel-body">
+                    <div class="tree-content">
+                        <div id="asset-tree" class="ztree"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <article class="col-sm-9 col-md-9 col-lg-10 content-panel-only">
+            <div class="panel panel-default panel-header">
+                <div class="panel-heading">검색조건</div>
+                <div class="panel-body">
+                    <div class="searching" style="padding: 18px 12px 4px 12px;">
+                        <div class="first">
+                        </div>
+                        <div class="last">
+                            <div class="conditions">
+                                <span class="searching-label">조회기간: </span>
+                                <input id="start-date" class="custom-date" type="text"/>
+                                <span class="searching-icon"> ~ </span>
+                                <input id="end-date" class="custom-date" type="text"/>
+                                <button id="init-date" class="custom-button" title="2009년 1월 1일부터 현재까지로 재설정">기간 재설정</button>
+                                <input id="search-button" type="button" class="custom-search-button" title="자산정보 검색"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searching-notification">* 최대 1,000건까지 조회</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">자산 수리내역 보고서</div>
+                <div class="panel-body">
+                    <div id="report-toolbar"></div>
+                    <div id="report-page">
+                        <div id="report-content" class="r-report-content-portrait">
+                            <table class="r-table r-table-header">
+                                <tr>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top">작 성</th>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top">검 토</th>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top r-border-right">승 인</th>
+                                    <th rowspan="2" colspan="17" data-type="stamp" class="r-font-title r-font-underline">자산 수리 내역 보고서</th>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top r-border-right">확 인</th>
+                                </tr>
+                                <tr height="50">
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom r-border-right"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom r-border-right"></td>
+                                </tr>
+                            </table>
+                            <table class="r-table r-table-info">
+                                <tr height="25">
+                                    <td rowspan="1" colspan="25" class=""></td>
+                                </tr>
+                                <tr height="25">
+                                    <td rowspan="1" colspan="25" class="r-border-left r-border-top r-border-right r-align-left r-font-info r-font-bold">보고서 요약</td>
+                                </tr>
+                                <tr height="25">
+                                    <td rowspan="1" colspan="4" class="r-border-left r-border-top r-bk-gray r-font-info r-font-bold">조회자산 수</td>
+                                    <td rowspan="1" colspan="21" class="r-border-left r-border-top r-border-right r-font-info r-align-left"><span id="report-asset-count"></span></td>
+                                </tr>
+                                <tr height="25">
+                                    <td rowspan="1" colspan="4" class="r-border-left r-border-top r-bk-gray r-font-info r-font-bold">자산 수리 건 수</td>
+                                    <td rowspan="1" colspan="21" class="r-border-left r-border-top r-border-right r-font-info r-align-left"><span id="report-asset-repair-count"></span></td>
+                                </tr>
+                                <tr height="25">
+                                    <td rowspan="1" colspan="4" class="r-border-left r-border-top r-bk-gray r-font-info r-font-bold">조회기간</td>
+                                    <td rowspan="1" colspan="21" class="r-border-left r-border-top r-border-right r-font-info r-align-left"><span id="report-period" data-sdate="" data-edate=""></span></td>
+                                </tr>
+                                <tr height="25">
+                                    <td rowspan="1" colspan="4" class="r-border-left r-border-top r-border-bottom r-bk-gray r-font-info r-font-bold">출력일자</td>
+                                    <td rowspan="1" colspan="9" class="r-border-left r-border-top r-border-bottom r-border-right r-font-info r-align-left"><span id="print-date"></span></td>
+                                    <td rowspan="1" colspan="4" class="r-border-left r-border-top r-border-bottom r-bk-gray r-font-info r-font-bold">출력자</td>
+                                    <td rowspan="1" colspan="8" class="r-border-left r-border-top r-border-bottom r-border-right r-font-info r-align-left"><span id="printer-name"></span></td>
+                                </tr>
+                            </table>
+                            <div id="contents-tables" style="padding-top: 10px;">
+                                <table class="r-table r-table-contents" noData="false">
+                                    <colgroup>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                        <col width="4%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr scope="row" height="25">
+                                            <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-font-bold r-bk-gray r-data-index">순번</td>
+                                            <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-font-bold r-bk-gray">수리일자</td>
+                                            <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-font-bold r-bk-gray">담당</td>
+                                            <td scope="col" rowspan="1" colspan="12" class="r-border-left r-border-top r-font-bold r-bk-gray">수리내용</td>
+                                            <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-right r-font-bold r-bk-gray">비고</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="asset-contents-body">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <table class="r-table r-table-bottom">
+                                <tfoot>
+                                    <tr height="40">
+                                        <td rowspan="1" colspan="25" class="r-border-top r-font-footer">UbiGuard FMS 5.6</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <script type="text/x-kendo-template" id="asset-change-template">
+        #if(data.header_row) {#
+            <tr scope="row" height="30">
+                <td scope="col" rowspan="1" colspan="21" class="r-border-left r-border-top r-border-bottom r-align-left r-font-bold" cellType="start">#: data.object_name #: #: data.repair_count # 건</td>
+                <td scope="col" rowspan="1" colspan="4" class="r-border-top #: (data.is_last_row) ? 'r-border-bottom' : '' # r-border-right r-font-bold r-align-right" cellType="last">도입일자: #: data.acquisition_date #</td>
+            </tr>
+        #} else {#
+            <tr scope="row" height="25" class="r-bk">
+                <td scope="col" rowspan="1" colspan="1" cellType="start" style="background: transparent;"></td>
+                <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top #: (data.is_last_row) ? 'r-border-bottom' : '' # r-data-index">#: data.index #</td>
+                <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top #: (data.is_last_row) ? 'r-border-bottom' : '' #">#: data.complete_date #</td>
+                <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top #: (data.is_last_row) ? 'r-border-bottom' : '' #">#: data.complete_worker_name #</td>
+                <td scope="col" rowspan="1" colspan="12" class="r-border-left r-border-top #: (data.is_last_row) ? 'r-border-bottom' : '' # r-align-left">#: data.complete_content #</td>
+                <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top #: (data.is_last_row) ? 'r-border-bottom' : '' # r-border-right" cellType="last"></td>
+            </tr>
+        #}#
+    </script>
+    
+    <!-- by shkoh 20210419: jquery -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+
+    <!-- by shkoh 20210419: bootstrap -->
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <!-- by shkoh 20210419: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20210419: kendoui -->
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/cultures/kendo.culture.ko.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/pako_deflate.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/jszip.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210419: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+
+    <!-- by shkoh 20200814: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+
+    <!-- by shkoh 20210419: export pdf -->
+    <script src="/component/jsPDF/jspdf.min.js"></script>
+    <script src="/component/jsPDF-autotable/jspdf.plugin.autotable.min.js"></script>
+    <script src="/fonts/MalgunGothic-normal.js"></script>
+    <script src="/fonts/MalgunGothic-bold.js"></script>
+
+    <!-- by shkoh 20210419: reports javascripts -->
+    <script src="/javascripts/reports/datePicker.js"></script>
+    <script src="/javascripts/reports/exportUtil.js"></script>
+    <script src="/javascripts/reports/wrfis/assetTree.js"></script>
+    <script src="/javascripts/reports/wrfis/asset_repair.js"></script>
+</body>
+</html>

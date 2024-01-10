@@ -1,0 +1,7 @@
+[2023/04/28 13:34:07.557] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:62358
+[2023/04/28 13:34:07.558] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/28 13:55:49.418] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/28 13:55:54.631] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:64560
+[2023/04/28 13:55:54.646] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/28 13:57:55.325] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:64560
+[2023/04/28 13:58:46.557] [INFO]  [UbiGuard FMS 5.6] WebSocket Start

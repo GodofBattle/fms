@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-04efa91c-4c0a-4aec-8e4a-029e9d276d78" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 38">
+  <g id="uuid-5b7aa078-3a8a-4125-aa4d-e2a642ec7907" data-name="icomer">
+    <g>
+      <rect width="40" height="38" style="fill: #999;"/>
+      <rect x=".94" y=".9" width="38.11" height="36.21" style="fill: #e6e6e5; stroke: #7f8080; stroke-dasharray: 0 .85; stroke-miterlimit: 10; stroke-width: .28px;"/>
+      <ellipse cx="32.83" cy="6.7" rx="2.69" ry="2.55" style="fill: #e2e0e0;"/>
+      <polygon points="20.35 31.01 7.77 6.69 7.14 6.99 19.72 31.31 20.35 31.01" style="fill: #999;"/>
+      <polygon points="19.61 31.01 32.19 6.69 32.83 6.99 20.24 31.31 19.61 31.01" style="fill: #999;"/>
+      <g>
+        <ellipse cx="7.3" cy="6.7" rx="2.69" ry="2.55" style="fill: #999;"/>
+        <ellipse cx="7.3" cy="6.7" rx="2.37" ry="2.25" style="fill: #c6c0c0;"/>
+      </g>
+      <g>
+        <ellipse cx="20" cy="31.53" rx="2.69" ry="2.55" style="fill: #e2e0e0;"/>
+        <g>
+          <ellipse cx="20" cy="31.53" rx="2.69" ry="2.55" style="fill: #999;"/>
+          <ellipse cx="20" cy="31.53" rx="2.37" ry="2.25" style="fill: #c6c0c0;"/>
+        </g>
+      </g>
+      <g>
+        <ellipse cx="32.83" cy="6.7" rx="2.69" ry="2.55" style="fill: #999;"/>
+        <ellipse cx="32.83" cy="6.7" rx="2.37" ry="2.25" style="fill: #c6c0c0;"/>
+      </g>
+    </g>
+  </g>
+</svg>

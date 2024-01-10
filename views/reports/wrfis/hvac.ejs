@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- by shkoh 20210428: kendoui-bootstrap styles -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+
+    <!-- by shkoh 20210428: bootstrap styles -->
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+
+    <!-- by shkoh 20210428: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+
+    <!-- by shkoh 20210428: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20210428: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css"/>
+
+    <!-- by shkoh 20210428: ubiguard style -->
+    <link rel="stylesheet" href="/stylesheets/reports.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <aside class="col-sm-3 col-md-3 col-lg-2 tree-panel">
+            <div class="panel panel-default">
+                <div class="panel-heading">조회항목</div>
+                <div class="panel-body">
+                    <div id="hvac-tree" class="tree-content"></div>
+                </div>
+            </div>
+        </aside>
+        <article class="col-sm-9 col-md-9 col-lg-10 content-panel">
+            <div class="panel panel-default panel-header">
+                <div class="panel-heading">검색조건</div>
+                <div class="panel-body">
+                    <div class="searching">
+                        <div class="first">
+                            <div class="conditions">
+                                <span class="searching-label">통계 데이터: </span>
+                                <input id="table-picker"/>
+                            </div>
+                        </div>
+                        <div class="last">
+                            <div class="conditions">
+                                <span class="searching-label">조회기간: </span>
+                                <input id="start-date" class="custom-date" type="text"/>
+                                <button id="init-date" class="custom-button">현재일로 초기화</button>
+                                <input id="search-button" type="button" class="custom-search-button" title="항온항습기 가동현황 검색"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">온습도 보고서</div>
+                <div class="panel-body">
+                    <div id="report-toolbar"></div>
+                    <div id="report-page">
+                        <div id="report-content" class="r-report-content-portrait">
+                            <table class="r-table r-table-header">
+                                <tr>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top">작 성</th>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top">검 토</th>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top r-border-right">승 인</th>
+                                    <th rowspan="2" colspan="16" data-type="stamp" class="r-font-title r-font-underline">항온항습기 가동현황 보고서</th>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top r-border-right">확 인</th>
+                                </tr>
+                                <tr height="50">
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom r-border-right"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom r-border-right"></td>
+                                </tr>
+                            </table>
+                            <table class="r-table r-table-info">
+                                <tr height="25">
+                                    <td rowspan="1" colspan="24" class=""></td>
+                                </tr>
+                                <tr height="25">
+                                    <td rowspan="1" colspan="24" class="r-border-left r-border-top r-border-right r-align-left r-font-info r-font-bold">보고서 요약</td>
+                                </tr>
+                                <tr height="25">
+                                    <td rowspan="1" colspan="3" class="r-border-left r-border-top r-bk-gray r-font-info r-font-bold">조회설비 수</td>
+                                    <td rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info r-align-left"><span id="report-equip"></span></td>
+                                    <td rowspan="1" colspan="3" class="r-border-left r-border-top r-bk-gray r-font-info r-font-bold">통계 데이터</td>
+                                    <td rowspan="1" colspan="9" class="r-border-left r-border-top r-border-right r-font-info r-align-left"><span id="report-table"></span></td>
+                                </tr>
+                                <tr height="25">
+                                    <td rowspan="1" colspan="3" class="r-border-left r-border-top r-bk-gray r-font-info r-font-bold">조회기간</td>
+                                    <td rowspan="1" colspan="21" class="r-border-left r-border-top r-border-right r-font-info r-align-left"><span id="report-period" data-sdate="" data-edate=""></span></td>
+                                </tr>
+                                <tr height="25">
+                                    <td rowspan="1" colspan="3" class="r-border-left r-border-top r-border-bottom r-bk-gray r-font-info r-font-bold">출력일자</td>
+                                    <td rowspan="1" colspan="9" class="r-border-left r-border-top r-border-bottom r-border-right r-font-info r-align-left"><span id="print-date"></span></td>
+                                    <td rowspan="1" colspan="3" class="r-border-left r-border-top r-border-bottom r-bk-gray r-font-info r-font-bold">출력자</td>
+                                    <td rowspan="1" colspan="9" class="r-border-left r-border-top r-border-bottom r-border-right r-font-info r-align-left"><span id="printer-name"></span></td>
+                                </tr>
+                            </table>
+                            <div id="contents-tables" style="padding-top: 10px;">
+                                <table class="r-table r-table-contents" noData="false">
+                                    <colgroup>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                        <col width="4.1667%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr scope="row" height="25">
+                                            <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-font-bold r-bk-gray r-data-index">기간</td>
+                                            <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-bold r-bk-gray">항온항습기</td>
+                                            <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-font-bold r-bk-gray">평균온도(℃)</td>
+                                            <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-font-bold r-bk-gray">평균습도(%)</td>
+                                            <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-right r-font-bold r-bk-gray">총 운전시간(시:분:초)</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="hvac-contents-body">
+                                    </tbody>
+                                    <tfoot>
+                                        <tr scope="row" height="25">
+                                            <td scope="col" rowspan="1" colspan="12" class="r-border-left r-border-top r-border-bottom r-font-bold r-bk-gray r-data-index">평균</td>
+                                            <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-bottom r-font-bold r-bk-gray r-data-number2" id="avg_temp"></td>
+                                            <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-bottom r-font-bold r-bk-gray r-data-number2" id="avg_humi"></td>
+                                            <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-bottom r-border-right r-font-bold r-bk-gray" id="sum_duration"></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <table class="r-table r-table-bottom">
+                                <tr height="40">
+                                    <td rowspan="1" colspan="24" class="r-border-top r-font-footer">UbiGuard FMS 5.6</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <script type="text/x-kendo-template" id="hvac-template">
+        <tr scope="row" height="25" class="r-bk">
+            <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top #: (data.is_last) ? 'r-border-bottom' : '' #" cellType="start">#: data.date #</td>
+            <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top #: (data.is_last) ? 'r-border-bottom' : '' #">#: data.equip_name #</td>
+            <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top #: (data.is_last) ? 'r-border-bottom' : '' # r-data-number2">#: kendo.toString(data.temp, 'n2') #</td>
+            <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top #: (data.is_last) ? 'r-border-bottom' : '' # r-data-number2">#: kendo.toString(data.humi, 'n2') #</td>
+            <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top #: (data.is_last) ? 'r-border-bottom' : '' # r-border-right" cellType="last">#: data.duration #</td>
+        </tr>
+    </script>
+    
+    <!-- by shkoh 20210428: jquery -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+
+    <!-- by shkoh 20210428: bootstrap -->
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <!-- by shkoh 20210428: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20210428: kendoui -->
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/cultures/kendo.culture.ko.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/pako_deflate.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/jszip.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210428: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+
+    <!-- by shkoh 20210428: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+
+    <!-- by shkoh 20210428: export pdf -->
+    <script src="/component/jsPDF/jspdf.min.js"></script>
+    <script src="/component/jsPDF-autotable/jspdf.plugin.autotable.min.js"></script>
+    <script src="/fonts/MalgunGothic-normal.js"></script>
+    <script src="/fonts/MalgunGothic-bold.js"></script>
+
+    <!-- by shkoh 20210428: reports javascripts -->
+    <script src="/javascripts/reports/datePicker.js"></script>
+    <script src="/javascripts/reports/treeContent.js"></script>
+    <script src="/javascripts/reports/exportUtil.js"></script>
+    <script src="/javascripts/reports/wrfis/hvac.js"></script>
+</body>

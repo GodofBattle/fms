@@ -1,0 +1,11 @@
+[2022/04/04 13:39:48.771] [ERROR] ReferenceError: door is not defined
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:763:59
+    at Array.forEach (<anonymous>)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:757:42
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mssql/lib/base/request.js:448:9
+    at Request.userCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mssql/lib/tedious/request.js:489:15)
+    at Request.callback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/tedious/lib/request.js:205:14)
+    at Parser.onEndOfMessage (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/tedious/lib/connection.js:2872:22)
+    at Object.onceWrapper (events.js:482:28)
+    at Parser.emit (events.js:376:20)
+    at Readable.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/tedious/lib/token/token-stream-parser.js:32:12)

@@ -1,0 +1,28 @@
+[2023/01/16 14:44:12.108] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] RTSP Stream Start
+[2023/01/16 14:44:12.373] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] CAMERA Stream Open: 60000
+[2023/01/16 14:44:13.146] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] New WebSocket Connection (1 total) - rtsp://admin:Icomer123!@10.10.20.53:554/channel1
+[2023/01/16 14:46:37.770] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] Disconnected WebSocket (0 total) - rtsp://admin:Icomer123!@10.10.20.53:554/channel1
+[2023/01/16 14:46:40.653] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] RTSP Stream Start
+[2023/01/16 14:46:47.421] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] RTSP Stream Start
+[2023/01/16 14:47:20.381] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] RTSP Stream Start
+[2023/01/16 14:48:19.817] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] RTSP Stream Start
+[2023/01/16 14:48:19.971] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] CAMERA Stream Open: 60000
+[2023/01/16 14:48:20.001] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.56:554/trackID=1
+[2023/01/16 14:48:23.475] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.56:554/trackID=1
+[2023/01/16 14:48:25.635] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] RTSP Stream Start
+[2023/01/16 14:48:25.823] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] CAMERA Stream Open: 60000
+[2023/01/16 14:48:25.878] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] New WebSocket Connection (1 total) - rtsp://admin:Icomer123!@10.10.20.53:554/channel1
+[2023/01/16 14:49:57.003] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] Disconnected WebSocket (0 total) - rtsp://admin:Icomer123!@10.10.20.53:554/channel1
+[2023/01/16 14:50:03.896] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] RTSP Stream Start
+[2023/01/16 14:50:16.046] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] RTSP Stream Start
+[2023/01/16 14:50:16.210] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] CAMERA Stream Open: 60000
+[2023/01/16 14:50:16.237] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] New WebSocket Connection (1 total) - rtsp://admin:icomerLab!@10.10.20.56:554/trackID=1
+[2023/01/16 14:50:18.868] [INFO]  [아이디스:CCTV_IDIS - 10.10.20.56] Disconnected WebSocket (0 total) - rtsp://admin:icomerLab!@10.10.20.56:554/trackID=1
+[2023/01/16 14:50:23.860] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] RTSP Stream Start
+[2023/01/16 14:50:24.020] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] CAMERA Stream Open: 60000
+[2023/01/16 14:50:24.066] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] New WebSocket Connection (1 total) - rtsp://admin:Icomer123!@10.10.20.53:554/channel1
+[2023/01/16 14:50:35.937] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] Disconnected WebSocket (0 total) - rtsp://admin:Icomer123!@10.10.20.53:554/channel1
+[2023/01/16 14:51:19.010] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] RTSP Stream Start
+[2023/01/16 14:51:19.215] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] CAMERA Stream Open: 60000
+[2023/01/16 14:51:19.243] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] New WebSocket Connection (1 total) - rtsp://admin:Icomer123!@10.10.20.53:554/channel1
+[2023/01/16 14:52:07.457] [INFO]  [에스카 카메라:CCTV_ESCA - 10.10.20.53] Disconnected WebSocket (0 total) - rtsp://admin:Icomer123!@10.10.20.53:554/channel1

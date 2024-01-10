@@ -1,0 +1,265 @@
+[2021/12/13 10:32:07.359] [ERROR] Error: ONVIF SOAP Fault: Sender not authorized
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:62:27)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:135:23)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:561:13)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2021/12/13 10:35:19.115] [ERROR] TypeError: createError(...).status is not a function
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:63:71)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:135:23)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:561:13)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2021/12/13 10:38:00.409] [ERROR] ClientError [BadRequestError]: ONVIF SOAP Fault: Sender not authorized
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:63:27)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:135:23)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:561:13)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2021/12/13 11:31:41.404] [ERROR] TypeError: Cannot read property 'uri' of null
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:60:40)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/media.js:1079:15)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2021/12/13 11:33:21.081] [ERROR] TypeError: Cannot read property '0' of undefined
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:62:27)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/media.js:1079:15)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2021/12/13 11:36:17.861] [ERROR] TypeError: Cannot read property '0' of undefined
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:64:27)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/media.js:1079:15)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2021/12/13 13:15:11.449] [ERROR] TypeError: Cannot read property 'prototype' of undefined
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:51:10)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:15:19)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+[2021/12/13 13:15:26.245] [ERROR] TypeError: Cannot set property 'getStreamUri' of undefined
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:51:33)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:15:19)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+[2021/12/13 14:21:32.992] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2021/12/13 14:25:58.641] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2021/12/13 14:45:58.854] [ERROR] TypeError: Cannot read property 'size' of undefined
+    at WebSocket.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:76:39)
+    at WebSocket.emit (events.js:388:22)
+    at WebSocket.emitClose (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket.js:191:10)
+    at Socket.socketOnClose (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket.js:858:15)
+    at Socket.emit (events.js:376:20)
+    at TCP.<anonymous> (net.js:673:12)
+    at TCP.callbackTrampoline (internal/async_hooks.js:134:14)
+[2021/12/13 14:48:24.855] [ERROR] Error: listen EADDRINUSE: address already in use :::9999
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at new WebSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket-server.js:74:20)
+    at VideoStream.pipeStreamToSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:91:19)
+    at new VideoStream (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:23:8)
+    at Object.createRtspStream (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:61:16)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:100:40
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 9999
+}
+[2021/12/13 15:17:39.319] [ERROR] ReferenceError: a is not defined
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:14:64)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:77:30)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+[2021/12/13 15:20:43.388] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2021/12/13 15:54:40.793] [ERROR] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+    at ServerResponse.writeHead (_http_server.js:259:11)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse.writeHead (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/on-headers/index.js:44:26)
+    at ServerResponse._implicitHeader (_http_server.js:250:8)
+    at write_ (_http_outgoing.js:711:9)
+    at ServerResponse.end (_http_outgoing.js:825:5)
+    at writeend (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:262:22)
+    at Immediate.onsave [as _onImmediate] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express-session/index.js:336:11)
+    at processImmediate (internal/timers.js:462:21)
+    at process.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2021/12/13 16:47:04.118] [ERROR] TypeError: Cannot read property 'wsServer' of undefined
+    at WebSocket.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:98:25)
+    at WebSocket.emit (events.js:388:22)
+    at WebSocket.emitClose (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket.js:191:10)
+    at Socket.socketOnClose (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket.js:858:15)
+    at Socket.emit (events.js:376:20)
+    at TCP.<anonymous> (net.js:673:12)
+    at TCP.callbackTrampoline (internal/async_hooks.js:134:14)
+[2021/12/13 16:58:10.324] [ERROR] TypeError: Cannot read property 'wsServer' of undefined
+    at WebSocket.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:98:25)
+    at WebSocket.emit (events.js:388:22)
+    at WebSocket.emitClose (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket.js:191:10)
+    at Socket.socketOnClose (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket.js:858:15)
+    at Socket.emit (events.js:376:20)
+    at TCP.<anonymous> (net.js:673:12)
+    at TCP.callbackTrampoline (internal/async_hooks.js:134:14)
+[2021/12/13 17:28:08.252] [ERROR] TypeError: Cannot read property 'wsServer' of undefined
+    at WebSocket.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:98:25)
+    at WebSocket.emit (events.js:388:22)
+    at WebSocket.emitClose (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket.js:191:10)
+    at Socket.socketOnClose (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket.js:858:15)
+    at Socket.emit (events.js:376:20)
+    at TCP.<anonymous> (net.js:673:12)
+    at TCP.callbackTrampoline (internal/async_hooks.js:134:14)
+[2021/12/13 18:13:11.933] [ERROR] TypeError: Cannot set property 'CreateCamera' of undefined
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:18:35)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:10:20)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+[2021/12/13 18:20:02.024] [ERROR] TypeError: Cannot read property 'profileToken' of undefined
+    at Cam.getStreamUri (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/media.js:1094:68)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:31:18)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:129:20)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:361:14)
+    at ClientRequest.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:272:4)
+    at ClientRequest.emit (events.js:376:20)
+    at Socket.socketErrorListener (_http_client.js:475:9)
+    at Socket.emit (events.js:376:20)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+[2021/12/13 18:21:48.808] [ERROR] TypeError: Cannot read property 'profileToken' of undefined
+    at Cam.getStreamUri (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/media.js:1094:68)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:31:18)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:129:20)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:361:14)
+    at ClientRequest.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:272:4)
+    at ClientRequest.emit (events.js:376:20)
+    at Socket.socketErrorListener (_http_client.js:475:9)
+    at Socket.emit (events.js:376:20)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+[2021/12/13 18:34:12.707] [ERROR] TypeError: Cannot read property 'profileToken' of undefined
+    at Cam.getStreamUri (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/media.js:1094:68)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:28:22)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:135:23)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:561:13)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2021/12/13 18:36:01.156] [ERROR] TypeError: Cannot read property 'profileToken' of undefined
+    at Cam.getStreamUri (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/media.js:1094:68)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:28:22)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:135:23)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:561:13)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2021/12/13 18:36:25.762] [ERROR] TypeError: Cannot read property 'profileToken' of undefined
+    at Cam.getStreamUri (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/media.js:1094:68)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:28:22)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:135:23)
+    at Cam.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:561:13)
+    at parseSOAPString (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/utils.js:108:3)
+    at IncomingMessage.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/onvif/lib/cam.js:246:4)
+    at IncomingMessage.emit (events.js:388:22)
+    at endReadableNT (internal/streams/readable.js:1336:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[2021/12/13 19:06:47.385] [ERROR] Error: listen EADDRINUSE: address already in use :::9999
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at new WebSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/ws/lib/websocket-server.js:74:20)
+    at VideoStream.pipeStreamToSocketServer (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:91:19)
+    at new VideoStream (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/node-rtsp-stream/videoStream.js:23:8)
+    at startStreaming (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:53:20)
+    at Object.StartStreaming (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:70:57)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:41:31
+    at runMicrotasks (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 9999
+}

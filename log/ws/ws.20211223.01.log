@@ -1,0 +1,26 @@
+[2021/12/23 13:13:21.243] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/23 13:13:49.006] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:56655
+[2021/12/23 13:13:49.011] [INFO]  [2021/12/23 13:16:45.944] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.250:6989
+[2021/12/23 13:48:49.885] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.250:6989
+[2021/12/23 15:15:21.268] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:56655
+[2021/12/23 15:15:22.111] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:58832
+[2021/12/23 15:23:19.358] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/23 15:23:25.458] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:59010
+[2021/12/23 17:51:38.976] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/23 17:51:44.997] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:64590
+[2021/12/23 18:05:49.634] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:64590
+[2021/12/23 18:05:49.980] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:50562
+[2021/12/23 18:24:26.159] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/23 18:24:30.044] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:50999
+[2021/12/23 18:31:15.268] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/23 18:31:22.145] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:52590
+[2021/12/23 18:41:58.068] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:52590
+[2021/12/23 18:41:58.752] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:53464
+[2021/12/23 18:42:47.561] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:53464
+[2021/12/23 18:42:48.110] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:53682
+[2021/12/23 18:43:28.786] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/23 18:43:33.159] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:53911
+[2021/12/23 18:43:51.345] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/23 18:43:55.008] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:54032
+[2021/12/23 18:43:55.020] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2021/12/23 18:59:24.821] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:54032

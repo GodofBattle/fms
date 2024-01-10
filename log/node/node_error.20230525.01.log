@@ -1,0 +1,76 @@
+[2023/05/25 13:03:13.110] [ERROR] SqlError: (conn=18057, no: 1292, SQLState: 22007) Truncated incorrect DECIMAL value: '6b1a4da4-58df-4c48-b2ef-a5e9e2af72ba'
+sql: UPDATE cn_rack_diagram SET ? WHERE ?; - parameters:[{"pos_x":0.405,"pos_y":0.336},{"index":"6b1a4da4-58df-4c48-b2ef-a5e9e2af72ba"}]
+    at Object.module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Truncated incorrect DECIMAL value: '6b1a4da4-58df-4c48-b2ef-a5e9e2af72ba'",
+  sql: 'UPDATE cn_rack_diagram SET ? WHERE ?; - parameters:[{"pos_x":0.405,"pos_y":0.336},{"index":"6b1a4da4-58df-4c48-b2ef-a5e9e2af72ba"}]',
+  fatal: false,
+  errno: 1292,
+  sqlState: '22007',
+  code: 'ER_TRUNCATED_WRONG_VALUE'
+}
+[2023/05/25 13:03:23.290] [ERROR] SqlError: (conn=18056, no: 1292, SQLState: 22007) Truncated incorrect DECIMAL value: '8b619d92-4669-431f-8eed-f761e7a96418'
+sql: UPDATE cn_rack_diagram SET ? WHERE ?; - parameters:[{"pos_x":0.661,"pos_y":0.103},{"index":"8b619d92-4669-431f-8eed-f761e7a96418"}]
+    at Object.module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Truncated incorrect DECIMAL value: '8b619d92-4669-431f-8eed-f761e7a96418'",
+  sql: 'UPDATE cn_rack_diagram SET ? WHERE ?; - parameters:[{"pos_x":0.661,"pos_y":0.103},{"index":"8b619d92-4669-431f-8eed-f761e7a96418"}]',
+  fatal: false,
+  errno: 1292,
+  sqlState: '22007',
+  code: 'ER_TRUNCATED_WRONG_VALUE'
+}
+[2023/05/25 13:04:21.759] [ERROR] SqlError: (conn=18055, no: 1292, SQLState: 22007) Truncated incorrect DECIMAL value: '8b619d92-4669-431f-8eed-f761e7a96418'
+sql: UPDATE cn_rack_diagram SET ? WHERE ?; - parameters:[{"pos_x":0.661,"pos_y":0.103},{"index":"8b619d92-4669-431f-8eed-f761e7a96418"}]
+    at Object.module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Truncated incorrect DECIMAL value: '8b619d92-4669-431f-8eed-f761e7a96418'",
+  sql: 'UPDATE cn_rack_diagram SET ? WHERE ?; - parameters:[{"pos_x":0.661,"pos_y":0.103},{"index":"8b619d92-4669-431f-8eed-f761e7a96418"}]',
+  fatal: false,
+  errno: 1292,
+  sqlState: '22007',
+  code: 'ER_TRUNCATED_WRONG_VALUE'
+}
+[2023/05/25 13:04:41.989] [ERROR] SqlError: (conn=18054, no: 1292, SQLState: 22007) Truncated incorrect DECIMAL value: '8b619d92-4669-431f-8eed-f761e7a96418'
+sql: UPDATE cn_rack_diagram SET ? WHERE ?; - parameters:[{"pos_x":0.661,"pos_y":0.103},{"index":"8b619d92-4669-431f-8eed-f761e7a96418"}]
+    at Object.module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Truncated incorrect DECIMAL value: '8b619d92-4669-431f-8eed-f761e7a96418'",
+  sql: 'UPDATE cn_rack_diagram SET ? WHERE ?; - parameters:[{"pos_x":0.661,"pos_y":0.103},{"index":"8b619d92-4669-431f-8eed-f761e7a96418"}]',
+  fatal: false,
+  errno: 1292,
+  sqlState: '22007',
+  code: 'ER_TRUNCATED_WRONG_VALUE'
+}

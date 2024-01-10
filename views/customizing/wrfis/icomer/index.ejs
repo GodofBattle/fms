@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210303: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20210303: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+
+    <!-- by shkoh 20210303: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20210303: ubiGuard style -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/wrfis/icomer_setting.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="tab-panel">
+            <ul>
+                <li class="k-state-active" id="i_hvac">항온항습기 가동현황</li>
+                <li id="i_th">온습도 가동현황</li>
+                <li id="i_pue">PUE 모니터링</li>
+                <li id="i_pue_extra">PUE 모니터링(냉수포함)</li>
+                <li id="i_r_ups">[보고서] UPS 전력사용현황</li>
+                <li id="i_r_pue">[보고서] PUE 보고서</li>
+            </ul>
+            <!-- page: 아이커머: 항온항습기 가동현황 -->
+            <div class="custom-tabstrip-panel" style="font-size: 12px;">
+                <% include ./icomer_hvac %>
+            </div>
+            <!-- page: 아이커머: 온습도 가동현황 -->
+            <div class="custom-tabstrip-panel" style="font-size: 5px;">
+                <% include ./icomer_th %>
+            </div>
+            <!-- page: 아이커머: PUE 모니터링 -->
+            <div class="custom-tabstrip-panel" style="font-size: 12px;">
+                <% include ./icomer_pue %>
+            </div>
+            <!-- page: 아이커머: PUE 모니터링 -->
+	        <div class="custom-tabstrip-panel" style="font-size: 12px;">
+                <% include ./icomer_pue_extra %>
+            </div>
+            <!-- page: 아이커머: [보고서] UPS 전력사용현황 -->
+            <div class="custom-tabstrip-panel" style="font-size: 12px;">
+                <% include ./icomer_report_ups %>
+            </div>
+            <!-- page: 아이커머: [보고서] PUE 보고서 -->
+            <div class="custom-tabstrip-panel" style="font-size: 12px;">
+                <% include ./icomer_report_pue %>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDialogTree" tabindex="-2" role="dialog" aria-labelledby="modalDialogTree">
+        <div class="modal-dialog" role="document" style="width:450px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modalTreeTitle" class="modal-title" style="font-weight:600;">ICOMER 연결 설비 선택</h5>
+                </div>
+                <div class="modal-body modal-tree-body" id="modalDialogTreeBody" style="height:500px;">
+                    <div id="modal-tree" class="ztree"></div>
+                </div>
+                <div class="modal-footer custom-modal-footer">
+                    <input class="filter-text" type="search" name="search" placeholder="필터링"/>
+                    <button type="button" class="btn btn-primary" id="btn-modal-tree-link">등록</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-popup-setting" tabindex="-3" role="dialog" aria-labelledby="modal-popup-setting">
+        <div class="modal-dialog" role="document" style="width:450px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modalTreeTitle" class="modal-title" style="font-weight:600;">ICOMER 팝업 설비 선택</h5>
+                </div>
+                <div class="modal-body modal-tree-body" style="height:500px;">
+                    <div id="modal-tree-popup" class="ztree"></div>
+                </div>
+                <div class="modal-footer custom-modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-modal-popup-set">팝업등록</button>
+                    <button type="button" class="btn btn-default" id="btn-modal-popup-clear">팝업해제</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- by shkoh 20210303: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210303: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20210303: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exhide.min.js"></script>
+
+    <script src="/javascripts/customizing/wrfis/icomer/treeContent.js"></script>
+    <script src="/javascripts/customizing/wrfis/icomer/main.js"></script>
+</body>
+</html>

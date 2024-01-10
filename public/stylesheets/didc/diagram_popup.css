@@ -1,0 +1,196 @@
+:root {
+    --body-padding-height: 12px;
+    --panel-heading-height: 36px;
+    --border-width: 6px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Malgun Gothic';
+    font-size: 12px;
+    height: 100vh;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    user-select: none;
+}
+
+.btn:active:focus, .btn:focus,
+:focus {
+    outline: none;
+}
+
+/***************************************************************************************************************/
+/* by shkoh 20211230: bootstrap 3.x re-define start                                                            */
+/***************************************************************************************************************/
+hr {
+    margin: 8px;
+}
+
+.container-fluid {
+    padding: 6px;
+    height: 100vh;
+}
+
+.panel {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    border: 3px solid #172f51;
+}
+
+.panel-heading {
+    padding: 0px 0.8rem;
+    height: var(--panel-heading-height);
+    border-radius: 0px;
+    background-color: #172f51;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f3f3f3;
+}
+
+.panel-heading .i-header {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.panel-heading .i-header.i-right {
+    justify-content: flex-end;
+}
+
+.panel-body {
+    padding: 0px;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+.table > tbody > tr > th,
+.table > tbody > tr > td {
+    padding: 4px 8px;
+    vertical-align: middle;
+}
+
+.table > tbody > tr > th.i-no-border,
+.table > tbody > tr > td.i-no-border {
+    border: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20211230: bootstrap 3.x re-define end                                                              */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20211231: ztree custom start                                                                       */
+/***************************************************************************************************************/
+.ztree * {
+    font-size: 12px;
+    font-family: 'Malgun Gothic';
+}
+
+.ztree li {
+    margin: 2px 1px;
+}
+
+.ztree li ul {
+    margin: 0px;
+}
+
+.ztree li a {
+    color: #000000;
+    font-weight: 400;
+    line-height: 0;
+    height: 18px;
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #124b9a;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 1px 1px 0px;
+}
+
+.ztree li span {
+    vertical-align: middle;
+}
+
+.ztree li span.button.icon-nouse_ico_open,
+.ztree li span.button.icon-nouse_ico_close,
+.ztree li span.button.icon-nouse_ico_docu {
+    cursor: default;
+}
+/***************************************************************************************************************/
+/* by shkoh 20211231: ztree custom end                                                                         */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20220103: kendo ui custom style start                                                              */
+/***************************************************************************************************************/
+.k-autocomplete,
+.k-block,
+.k-calendar-container,
+.k-colorpicker,
+.k-combobox,
+.k-datepicker,
+.k-datetimepicker,
+.k-drag-clue,
+.k-dropdown,
+.k-dropdown-wrap,
+.k-editor-inline,
+.k-grid
+.k-filter-options,
+.k-grouping-header .k-group-indicator,
+.k-inline-block,
+.k-list-container,
+.k-multiselect,
+.k-numeric-wrap,
+.k-numerictextbox,
+.k-picker-wrap,
+.k-slider-selection,
+.k-slider-track,
+.k-textbox,
+.k-timepicker,
+.k-touch-scrollbar,
+.k-treeview .k-in,
+.k-upload {
+    border-radius: 0px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20220103: kendo ui custom style end                                                                */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20211230: custom style start                                                                       */
+/***************************************************************************************************************/
+.save-button {
+    background-image: url("/img/setting/btn_save_01.png");
+    background-color: #172f51;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    height: 30px;
+}
+
+.save-button:hover {
+    background-image: url("/img/setting/btn_save_02.png");
+}
+
+.save-button:active, .save-button:hover:active, .save-button:focus {
+    outline: none;
+}
+
+.i-tree-content,
+.i-info-content {
+    height: calc(100vh - var(--body-padding-height) - var(--panel-heading-height) - var(--border-width));
+}
+/***************************************************************************************************************/
+/* by shkoh 20211230: custom style end                                                                         */
+/***************************************************************************************************************/

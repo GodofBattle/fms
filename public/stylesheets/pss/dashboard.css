@@ -1,0 +1,674 @@
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Malgun Gothic';
+    font-size: 12px;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    background-image: url(/img/customizing/pss/ds_background.png);
+    background-repeat: no-repeat;
+}
+
+.i-widget {
+    position: fixed;
+}
+
+.i-iso {
+    background-image: url(/img/customizing/pss/pss_iso.png);
+    background-repeat: no-repeat;
+    width: 938px;
+    height: 470px;
+}
+
+.lvl0 {
+    text-shadow: 1px 1px 2px #111111;
+}
+
+.lvl1 {
+    color: rgb(255, 255, 12) !important; 
+    fill: rgb(255, 255, 12) !important;
+    text-shadow: 1px 1px 2px #111111;
+}
+
+.lvl2 {
+    color: rgb(243, 128, 25) !important;    
+    fill: #f38019 !important;
+    text-shadow: 1px 1px 2px #111111;
+}
+
+.lvl3 {
+    color: rgb(252, 0, 8) !important;    
+    fill: rgb(252, 0, 8) !important;
+    text-shadow: 1px 1px 2px #111111;
+}
+
+/*************************************************************************************************************/
+/* by shkoh 20221215: Title Start                                                                            */
+/*************************************************************************************************************/
+.i-title-header {
+    color: #ffffff;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: 1px 1px #333333;
+    letter-spacing: -0.2rem;
+}
+
+.i-title-panel {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 140px;
+    text-align: left;
+    text-shadow: 1px 1px #333333;
+    letter-spacing: -0.2rem;
+}
+
+.i-title-panel.unit {
+    text-align: right;
+    letter-spacing: -0.1rem;
+}
+
+.i-title-threshold {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 20vw;
+    text-align: left;
+    text-shadow: 1px 1px #333333;
+}
+
+.i-title-threshold-unit {
+    font-size: 1.2rem;
+    padding-left: 0.2rem;
+}
+
+.i-title-hvac {
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #dedede88;
+    border-radius: 3px;
+}
+/*************************************************************************************************************/
+/* by shkoh 20221215: Title End                                                                              */
+/*************************************************************************************************************/
+
+/*************************************************************************************************************/
+/* by shkoh 20220721: HVAC Component Start                                                                   */
+/*************************************************************************************************************/
+.i-hvac {
+    background-image: url(/img/customizing/pss/bar_hvac.png);
+    background-repeat: no-repeat;
+    width: 438px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5px;
+    background-size: cover;
+}
+
+.i-hvac .i-header {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    flex: 1;
+    text-align: right;
+}
+
+.i-hvac .i-run-state {
+    flex: 1.2;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.i-hvac .i-run-state.on {
+    background-image: url(/img/customizing/pss/hvac_on.png);
+}
+
+.i-hvac .i-run-state.off {
+    background-image: url(/img/customizing/pss/hvac_off.png);
+}
+
+.i-hvac .i-text {
+    color: #ffffff;
+    line-height: 28px;
+}
+
+.i-hvac .i-text.i-title {
+    flex: 1;
+    font-size: 1.6rem;
+}
+
+.i-hvac .i-text.i-value {
+    flex: 1.2;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 1px 1px #111111;
+}
+
+.i-hvac .i-text .i-unit {
+    font-size: 1rem;
+}
+/*************************************************************************************************************/
+/* by shkoh 20220721: HVAC Component End                                                                     */
+/*************************************************************************************************************/
+
+/*************************************************************************************************************/
+/* by shkoh 20220721: Temperature Humidity Gauge Start                                                       */
+/*************************************************************************************************************/
+.liquidFillGaugeText {
+    font-family: 'Malgun Gothic';
+    font-weight: bold;
+}
+
+.i-gauge {
+    width: 240px;
+    height: 240px;
+    display: flex;
+    margin: 0 auto 0 auto;
+}
+
+.i-gauge .i-gauge-panel {
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+}
+
+.i-sub-panel {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.i-gauge .i-gauge-panel .i-max-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #eeeeee;
+    flex: 1;
+    align-self: center;
+}
+
+.k-arcgauge-label {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3.8rem;
+}
+
+.i-unit {
+    font-size: 1rem;
+}
+
+.i-gauge .i-gauge-panel.temp-gauge {
+    width: calc(100% + 12px);
+    height: 100%;
+    transform: translate(-6px, calc(100% / -4));
+}
+
+.i-temp-value {
+    color: #ffffff;
+}
+/*************************************************************************************************************/
+/* by shkoh 20220721: Temperature Humidity Gauge End                                                         */
+/*************************************************************************************************************/
+
+/*************************************************************************************************************/
+/* by shkoh 20220721: UPS Start                                                                              */
+/*************************************************************************************************************/
+.i-ups-battery {
+    width: 40px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.i-ups-battery .i-battery-value {
+    color: #ffffff;
+    font-size: 2rem;
+    padding-top: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.i-ups-battery .i-battery-img {
+    width: 40px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/customizing/pss/battery_0.png);
+    animation: aniBattery0 2s infinite both;
+    animation-play-state: paused;
+}
+
+.i-ups-battery .i-battery-img.c20 {
+    background-image: url(/img/customizing/pss/battery_20.png);
+    animation-name: aniBattery20;
+    animation-play-state: running;
+}
+
+.i-ups-battery .i-battery-img.c40 {
+    background-image: url(/img/customizing/pss/battery_40.png);
+    animation-name: aniBattery40;
+    animation-play-state: running;
+}
+
+.i-ups-battery .i-battery-img.c60 {
+    background-image: url(/img/customizing/pss/battery_60.png);
+    animation-name: aniBattery60;
+    animation-play-state: running;
+}
+
+.i-ups-battery .i-battery-img.c80 {
+    background-image: url(/img/customizing/pss/battery_80.png);
+    animation-name: aniBattery80;
+    animation-play-state: running;
+}
+
+.i-ups-battery .i-battery-img.c100 {
+    background-image: url(/img/customizing/pss/battery_100_y.png);
+    animation: none;
+}
+
+@keyframes aniBattery0 {
+    0% {
+        background-image: url(/img/customizing/pss/battery_0.png);
+    }
+    50% {
+        background-image: url(/img/customizing/pss/battery_0_y.png);
+    }
+    100% {
+        background-image: url(/img/customizing/pss/battery_0.png);
+    }
+}
+
+@keyframes aniBattery20 {
+    0% {
+        background-image: url(/img/customizing/pss/battery_20.png);
+    }
+    50% {
+        background-image: url(/img/customizing/pss/battery_20_y.png);
+    }
+    100% {
+        background-image: url(/img/customizing/pss/battery_20.png);
+    }
+}
+
+@keyframes aniBattery40 {
+    0% {
+        background-image: url(/img/customizing/pss/battery_40.png);
+    }
+    50% {
+        background-image: url(/img/customizing/pss/battery_40_y.png);
+    }
+    100% {
+        background-image: url(/img/customizing/pss/battery_40.png);
+    }
+}
+
+@keyframes aniBattery60 {
+    0% {
+        background-image: url(/img/customizing/pss/battery_60.png);
+    }
+    50% {
+        background-image: url(/img/customizing/pss/battery_60_y.png);
+    }
+    100% {
+        background-image: url(/img/customizing/pss/battery_60.png);
+    }
+}
+
+@keyframes aniBattery80 {
+    0% {
+        background-image: url(/img/customizing/pss/battery_80.png);
+    }
+    50% {
+        background-image: url(/img/customizing/pss/battery_80_y.png);
+    }
+    100% {
+        background-image: url(/img/customizing/pss/battery_80.png);
+    }
+}
+
+.i-ups-text {
+    color: #ffffff;
+    font-size: 1.56rem;
+    width: 60px;
+    text-align: right;
+    text-shadow: 1px 1px #333333;
+}
+
+.i-ups-text-mode {
+    color: #ffffff;
+    font-size: 1.56rem;
+    width: 100px;
+    text-align: center;
+    text-shadow: 1px 1px #333333;
+}
+/*************************************************************************************************************/
+/* by shkoh 20220721: UPS End                                                                                */
+/*************************************************************************************************************/
+
+/*************************************************************************************************************/
+/* by shkoh 20220721: Power Start                                                                            */
+/*************************************************************************************************************/
+.i-kw-text {
+    color: #66ffff;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 140px;
+    text-align: right;
+    text-shadow: 1px 1px #333333;
+}
+/*************************************************************************************************************/
+/* by shkoh 20220721: Power End                                                                              */
+/*************************************************************************************************************/
+
+/*************************************************************************************************************/
+/* by shkoh 20220722: Power Chart Start                                                                      */
+/*************************************************************************************************************/
+.i-power-chart {
+    width: 344px;
+    height: 310px;
+    margin: auto;
+}
+
+.i-power-chart .i-bar-chart {
+    width: 100%;
+    height: 100%;
+}
+/*************************************************************************************************************/
+/* by shkoh 20220722: Power Chart End                                                                        */
+/*************************************************************************************************************/
+
+/*************************************************************************************************************/
+/* by shkoh 20220722: Temperature Humidity Icon Start                                                        */
+/*************************************************************************************************************/
+.i-th-icon {
+    background-color: #33333380;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px 1px #33333360;
+    padding: 0 0.5rem;
+}
+
+.i-th-icon .i-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.i-th-icon .i-panel .i-field {
+    display: inline-flex;
+    padding: 0.1rem 0;
+}
+
+.i-th-text {
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+    text-shadow: 1px 1px #111111;
+    background-color: #4d4d4ddd;
+    border-radius: 3px;
+}
+
+.i-th-icon .i-th-icon-text {
+    padding: 0 0.25rem;
+    color: #00ff00;
+    font-size: 1.7rem;
+}
+
+.i-th-icon .i-th-icon-text .i-unit {
+    font-size: 1rem;
+}
+/*************************************************************************************************************/
+/* by shkoh 20220722: Temperature Humidity Icon End                                                          */
+/*************************************************************************************************************/
+
+/*************************************************************************************************************/
+/* by shkoh 20220722: Panel Icon Start                                                                       */
+/*************************************************************************************************************/
+.i-panel-icon {
+    background-color: #333333a0;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px 1px #33333360;
+    padding: 0 0.5rem;
+}
+
+.i-panel-icon .i-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.i-panel-icon .i-panel .i-field {
+    display: inline-flex;
+    font-size: 1.4rem;
+    padding: 0.2rem 0;
+    color: #fefefe;
+    width: 100%;
+}
+
+.i-panel-text {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    text-shadow: 1px 1px #111111;
+    background-color: #4d4d4ddd;
+    border-radius: 3px;
+}
+
+.i-panel-icon .i-panel-icon-text {
+    padding: 0 0.5rem 0 1rem;
+    text-align: right;
+    flex: 1;
+}
+
+.i-panel-icon .i-panel-icon-text .i-unit {
+    font-size: 1rem;
+}
+
+/* by shkoh 20220829: 대통령경호처 실제 현장에서 분전반 - [UPS 2차분기 #1(우)]가 사용되지 않기 때문에 대시보드의 크기가 작음으로 강제로 넓이를 지정함 */
+#panel_6 {
+    width: 75px;
+}
+/*************************************************************************************************************/
+/* by shkoh 20220722: Panel Icon End                                                                         */
+/*************************************************************************************************************/
+
+/*************************************************************************************************************/
+/* by shkoh 20220722: Load Factor Icon Start                                                                 */
+/*************************************************************************************************************/
+.i-load-factor {
+    width: 196px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.i-load-field {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i-load-field.r {
+    background-image: url(/img/customizing/pss/load_r_bk.png);
+}
+
+.i-load-field.s {
+    background-image: url(/img/customizing/pss/load_s_bk.png);
+}
+
+.i-load-field.t {
+    background-image: url(/img/customizing/pss/load_t_bk.png);
+}
+
+.i-load-icon {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i-load-icon.r {
+    background-image: url(/img/customizing/pss/load_r_icon.png);
+}
+
+.i-load-icon.s {
+    background-image: url(/img/customizing/pss/load_s_icon.png);
+}
+
+.i-load-icon.t {
+    background-image: url(/img/customizing/pss/load_t_icon.png);
+}
+
+.i-load-gauge {
+    position: absolute;
+    background-image: url(/img/customizing/pss/bar_gauge.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    left: 20px;
+    background-position: -170px 4px;
+}
+
+.i-load-text {
+    color: #ffffff;
+    text-shadow: 1px 1px #333333;
+    position: absolute;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+}
+/*************************************************************************************************************/
+/* by shkoh 20220722: Load Factor Icon End                                                                   */
+/*************************************************************************************************************/
+
+/*************************************************************************************************************/
+/* by shkoh 20220726: Alarm List Start                                                                       */
+/*************************************************************************************************************/
+.i-alarm {
+    width: 1330px;
+    height: 67px;
+    padding: 0 1rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.i-alarm-list {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 1330px;
+}
+
+.i-alarm-item {
+    display: flex;
+    align-self: center;
+    margin-right: 4rem;
+    flex-shrink: 0;
+}
+
+.i-alarm-no-item {
+    display: flex;
+    align-self: center;
+    flex-shrink: 0;
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 1px 1px #333333;
+}
+
+/* .i-alarm-item:hover {
+    cursor: pointer;
+}
+
+.i-alarm-item:hover .i-alarm-text {
+    color: #66ffff;
+} */
+
+.i-alarm-icon {
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.i-alarm-icon.lvl1 {
+    background-image: url(/img/customizing/pss/icon_alarm_1.png);
+}
+
+.i-alarm-icon.lvl2 {
+    background-image: url(/img/customizing/pss/icon_alarm_2.png);
+}
+
+.i-alarm-icon.lvl3 {
+    background-image: url(/img/customizing/pss/icon_alarm_3.png);
+}
+
+.i-alarm-text {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-right: 2rem;
+    font-weight: bold;
+}
+/*************************************************************************************************************/
+/* by shkoh 20220726: Alarm List End                                                                         */
+/*************************************************************************************************************/
+
+/*************************************************************************************************************/
+/* by shkoh 20220726: Server Time Start                                                                      */
+/*************************************************************************************************************/
+.i-server-time {
+    width: 250px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.i-server-time .i-icon {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 0.5rem;
+}
+
+.i-server-time .i-icon.date {
+    background-image: url(/img/customizing/pss/icon_calendar.png);
+}
+
+.i-server-time .i-icon.time {
+    background-image: url(/img/customizing/pss/icon_watch.png);
+}
+
+.i-server-time .i-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.i-server-time .i-text.date {
+    margin-right: 0.25rem;
+}
+
+.i-server-time .i-text.column {
+    width: 8px;
+}
+/*************************************************************************************************************/
+/* by shkoh 20220726: Server Time End                                                                        */
+/*************************************************************************************************************/

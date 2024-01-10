@@ -1,0 +1,2 @@
+[2023/11/06 14:03:18.376] [ERROR] [UbiGuard FMS 5.6] WebSocket Server Error: Error: listen EADDRINUSE: address already in use :::3000
+[2023/11/06 14:03:41.565] [ERROR] [UbiGuard FMS 5.6] WebSocket Server Error: Error: listen EADDRINUSE: address already in use :::3000

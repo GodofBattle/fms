@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- by shkoh 20181213: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2018.1.221/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2018.1.221/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2018.1.221/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css"/>
+
+    <!-- by shkoh 20181217: DateTimePicker -->
+    <link rel="stylesheet" href="/component/jQuery-2.1.4/jquery.datetimepicker.css" />
+
+    <!-- by shkoh 20181213: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+
+    <!-- by shkoh 20181213: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20181213: ubiGuard style -->
+    <link rel="stylesheet" href="/stylesheets/history.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <aside class="col-sm-3 col-md-3 col-lg-2" style="padding: 0px 4px; height: 100%;">
+            <div class="panel panel-default">
+                <div class="panel-heading">조회내역</div>
+                <div class="panel-body">
+                    <div id="searching-conditions">
+                        <div class="form-group">
+                            <label for="start-date">From:</label>
+                            <input type="text" id="start-date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="end-date">To:</label>
+                            <input type="text" id="end-date" class="form-control">
+                        </div>
+                        <div class="form-group" style="flex-direction: column;">
+                            <label for="alarm-conditions" style="margin-bottom: 6px;">조회 장애등급</label>
+                            <div class="btn-group" data-toggle="buttons" style="padding: 0px 8px; display: inline-flex; flex-direction: column;">
+                                <label id="alarm-warning" alarm-level="1" class="btn btn-check"><input type="checkbox" autocomplete="off">주의</label>
+                                <label id="alarm-major" alarm-level="2" class="btn btn-check"><input type="checkbox" autocomplete="off">경고</label>
+                                <label id="alarm-critical" alarm-level="3" class="btn btn-check"><input type="checkbox" autocomplete="off">위험</label>                            
+                                <label id="alarm-timeout" alarm-level="4" class="btn btn-check"><input type="checkbox" autocomplete="off">응답없음</label>
+                                <label id="alarm-disconnect" alarm-level="5" class="btn btn-check"><input type="checkbox" autocomplete="off">통신불량</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tree-content"></div>
+                </div>
+            </div>
+        </aside>
+        <article class="col-sm-9 col-md-9 col-lg-10" style="padding: 0px 4px; height: 100%;">
+            <div class="panel panel-default">
+                <div class="panel-heading">장애이력</div>
+                <div class="panel-body report-body">
+                    <div id="report-page"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- by shkoh 20180515: 공통 js -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="/component/kendoui-2018.1.221/js/kendo.all.min.js"></script>
+    <script src="/component/kendoui-2018.1.221/js/cultures/kendo.culture.ko.min.js"></script>
+    <script src="/component/kendoui-2018.1.221/js/jszip.min.js"></script>
+    <script src="/component/kendoui-2018.1.221/js/pako_deflate.min.js"></script>
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20181217: DateTimePicker -->
+    <script src="/component/jQuery-2.1.4/jquery.datetimepicker.js"></script>
+
+    <!-- by shkoh 20180515: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20180515: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+
+    <script src="/javascripts/history/treeContent.js"></script>
+    <script src="/javascripts/history/alarm_nps.js"></script>
+</body>
+</html>

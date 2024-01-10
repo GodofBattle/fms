@@ -1,0 +1,378 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'KoPub Dotum';
+    height: 100%;
+    overflow: hidden;
+    background-color: #3dbdf0;
+}
+
+.logo {
+    position: absolute;
+    width: 400px;
+    height: 55px;
+    top: 100px;
+    left: 80px;
+    background: url('/img/customizing/wrfis/wrfis_logo.png');
+    background-repeat: no-repeat;
+}
+
+.button_panel {
+    border-top: 4px solid #202020;
+    border-bottom: 4px solid #202020;
+    
+    width: 100%;
+    height: 150px;
+    
+    padding: 50px;
+    background-color: rgba(0, 86, 157, 0.7);
+    
+    position: absolute;
+    display: block;
+    bottom: 20px;
+}
+
+.btn-wrfis {
+    border: 2px solid #202020;
+    border-radius: 0px;
+    font-weight: bold;
+}
+
+.btn-wrfis:hover,
+.btn-wrfis:focus,
+.btn-wrfis:active:focus {
+    border: 2px solid #333333;
+    outline: none;
+}
+
+.wrfis-main {
+    height: 100%;
+    display: flex;
+}
+
+.wrfis-panel {
+    flex: 1;
+    color: #ffffff;
+    background-blend-mode: difference;
+    background-size: 100% 100%;
+}
+
+.wrfis-panel.fms {
+    background-image: url('/img/customizing/wrfis/main_fms_4.jpg');
+}
+
+.wrfis-panel.pms {
+    background-image: url('/img/customizing/wrfis/main_pms_1.jpg');
+    background-position: 50vw 0vh;
+}
+
+.wrfis-panel.bms {
+    background-image: url('/img/customizing/wrfis/main_bms_1.jpg');
+}
+
+.wrfis-panel.fms:hover {
+    animation: bkLoaderAnimFMS 1.8s both;
+}
+
+.wrfis-panel.pms:hover {
+    animation: bkLoaderAnimPMS 1.8s both;
+}
+
+.wrfis-panel.bms:hover {
+    animation: bkLoaderAnimBMS 1.8s both;
+}
+
+.wrfis-menu {
+    height: 100vh;
+    transform: translateY(50vh);
+    display: block;
+    z-index: 100;
+    text-align: center;
+}
+
+.wrfis-menu-title {
+    flex: 1;
+    font-size: 56px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #202020;
+    background-color: rgba(23, 47, 81, 0.3);
+}
+
+.wrfis-menu-btn {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #202020;
+    color: #ffffff;
+    cursor: default;
+    opacity: 0;
+}
+
+.link-wrfis {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link-wrfis:hover {
+    color: #3dbdf0;
+}
+
+.wrfis-menu-hover {
+    animation-timing-function: ease-out;
+}
+
+.wrfis-menu-leave {
+    animation-timing-function: ease-in;
+}
+
+.pms > .wrfis-menu-hover {
+    animation: wrfisMenuPms 1.5s both;
+}
+
+.pms > .wrfis-menu-leave {
+    animation: wrfisMenuLeavePms 1.2s both;
+}
+
+.wrfis-menu > .ani-step-1 {
+    animation: wrfisMenuBtnOpacity 1.5s both;
+}
+
+.wrfis-menu > .ani-step-2 {
+    animation: wrfisMenuBtnOpacity 1.5s both;
+    animation-delay: 0.2s;
+}
+
+.wrfis-menu > .ani-step-3 {
+    animation: wrfisMenuBtnOpacity 1.5s both;
+    animation-delay: 0.4s;
+}
+
+.wrfis-menu > .ani-step-4 {
+    animation: wrfisMenuBtnOpacity 1.5s both;
+    animation-delay: 0.6s;
+}
+
+.wrfis-menu > .ani-step-5 {
+    animation: wrfisMenuBtnOpacity 1.5s both;
+    animation-delay: 0.8s;
+}
+
+.wrfis-menu > .ani-step-6 {
+    animation: wrfisMenuBtnOpacity 1.5s both;
+    animation-delay: 1.0s;
+}
+
+.wrfis-menu > .ani-step-7 {
+    animation: wrfisMenuBtnOpacity 1.5s both;
+    animation-delay: 1.2s;
+}
+
+.wrfis-menu > .ani-step-8 {
+    animation: wrfisMenuBtnOpacity 1.5s both;
+    animation-delay: 1.4s;
+}
+
+.bms > .wrfis-menu-hover {
+    animation: wrfisMenuBms 1.5s both;
+}
+
+.bms > .wrfis-menu-leave {
+    animation: wrfisMenuLeaveBms 1.2s both;
+}
+
+@keyframes wrfisMenuPms {
+    from {
+        transform: translateY(50vh);
+    }
+    to {
+        transform: translateY(20vh);
+    }
+}
+
+@keyframes wrfisMenuLeavePms {
+    from {
+        transform: translateY(20vh);
+    }
+    to {
+        transform: translateY(50vh);
+    }
+}
+
+@keyframes wrfisMenuBtnOpacity {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes wrfisMenuBms {
+    from {
+        transform: translateY(50vh);
+    }
+    to {
+        transform: translateY(35vh);
+    }
+}
+
+@keyframes wrfisMenuLeaveBms {
+    from {
+        transform: translateY(35vh);
+    }
+    to {
+        transform: translateY(50vh);
+    }
+}
+
+@keyframes bkLoaderAnimFMS {
+    from {
+        opacity: 0.6;
+        background-size: 108% 110%;
+    }
+    to {
+        opacity: 1;
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes bkLoaderAnimPMS {
+    from {
+        opacity: 0.6;
+        background-size: 100% 120%;
+    }
+    to {
+        opacity: 1;
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes bkLoaderAnimBMS {
+    from {
+        opacity: 0.6;
+        background-size: 105% 120%;
+    }
+    to {
+        opacity: 1;
+        background-size: 100% 100%;
+    }
+}
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210222: WOORI FIS - PMS start                                                                                                   */
+/**********************************************************************************************************************************************/
+body.pms {
+    font-family: 'KoPub Dotum';
+    background: url('/img/customizing/wrfis/wrfis_pms_background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    user-select: none;
+}
+
+.container-fluid.pms {
+    margin-top: 5%;
+}
+
+.pms-row {
+    margin-bottom: 1.4%;
+}
+
+.pms-column {
+    padding: 0px 50px;
+}
+
+.pms-text {
+    color: #f0f0f0;
+    text-shadow: 2px 2px #303030;
+    border: 1px solid #c5c5c5;
+    text-align: center;
+    line-height: 60px;
+    background: linear-gradient(to right, #172f51, rgba(18,35,61,.7));
+}
+
+.pms-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.pms-floor {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pms-button {
+    cursor: pointer;
+}
+
+.pms-button:hover {
+    background: linear-gradient(to right, rgba(49,123,224,.8), rgba(49,123,224,.8));
+}
+
+.pms-button:active {
+    background: linear-gradient(to right, rgb(30, 74, 136), rgba(20, 50, 92, 0.8));
+    border-color: #909090;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210222: WOORI FIS - PMS end                                                                                                     */
+/**********************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210223: WOORI FIS - BMS start                                                                                                   */
+/**********************************************************************************************************************************************/
+body.bms {
+    font-family: 'KoPub Dotum';
+    background: url('/img/customizing/wrfis/wrfis_bms_background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    user-select: none;
+}
+
+.container-fluid.bms {
+    margin-top: 18%;
+}
+
+.bms-row {
+    margin-bottom: 1.4%;
+}
+
+.bms-column {
+    padding: 0px 50px;
+}
+
+.bms-text {
+    color: #f0f0f0;
+    text-shadow: 2px 2px #303030;
+    border: 1px solid #c5c5c5;
+    text-align: center;
+    line-height: 60px;
+    background: linear-gradient(to right, #172f51, rgba(18,35,61,.7));
+}
+
+.bms-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.bms-floor {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bms-button {
+    cursor: pointer;
+}
+
+.bms-button:hover {
+    background: linear-gradient(to right, rgba(49,123,224,.8), rgba(49,123,224,.8));
+}
+
+.bms-button:active {
+    background: linear-gradient(to right, rgb(30, 74, 136), rgba(20, 50, 92, 0.8));
+    border-color: #909090;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210223: WOORI FIS - BMS end                                                                                                     */
+/**********************************************************************************************************************************************/

@@ -1,0 +1,14 @@
+[2022/08/29 08:43:01.439] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2022/08/29 08:43:21.062] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:61402
+[2022/08/29 08:43:21.073] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/08/29 08:45:20.726] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:61402
+[2022/08/29 08:45:21.329] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:61709
+[2022/08/29 08:45:21.332] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/08/29 08:45:42.283] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:61709
+[2022/08/29 08:45:42.756] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:61802
+[2022/08/29 08:56:50.818] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:61802
+[2022/08/29 08:56:51.338] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:64667
+[2022/08/29 08:56:51.360] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/08/29 08:57:19.620] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:64667
+[2022/08/29 08:57:20.077] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:64799
+[2022/08/29 08:57:20.080] [INFO]  

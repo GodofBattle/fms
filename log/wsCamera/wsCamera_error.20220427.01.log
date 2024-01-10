@@ -1,0 +1,7 @@
+[2022/04/27 11:17:06.681] [ERROR] [new_equip_1987 - 10.10.20.204] connect ECONNREFUSED 10.10.20.204:80
+[2022/04/27 11:17:43.761] [ERROR] [new_equip_1987 - 10.10.20.204] read ECONNRESET
+[2022/04/27 11:18:25.562] [ERROR] [new_equip_1987 - 10.10.20.204] read ECONNRESET
+[2022/04/27 11:19:05.885] [ERROR] [new_equip_1987 - 10.10.20.204] self signed certificate
+[2022/04/27 11:46:40.861] [ERROR] [new_equip_1987 - 10.10.20.204] connect ECONNREFUSED 10.10.20.204:443
+[2022/04/27 13:06:48.472] [ERROR] [new_equip_1987 - 10.10.20.204] Wrong ONVIF SOAP response
+[2022/04/27 13:19:35.276] [ERROR] [new_equip_1987 - 10.10.20.204] ONVIF SOAP Fault: Specification of StreamType or Transport part in StreamSetup causes conflict with other streams.

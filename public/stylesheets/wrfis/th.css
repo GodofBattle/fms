@@ -1,0 +1,348 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'KoPub Dotum';
+    height: 100%;
+    overflow: hidden;
+}
+
+:focus {
+    outline: none;
+}
+
+/***************************************************************************************************************/
+/* by shkoh 20210315: bootstrap 3.x re-define start                                                            */
+/***************************************************************************************************************/
+.panel {
+    border-radius: 0px;
+    margin-bottom: 4px;
+}
+
+.panel-heading {
+    border-radius: 0px;
+}
+
+.panel-body {
+    padding: 4px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210315: bootstrap 3.x re-define end                                                              */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210315: icomer - panel style start                                                               */
+/***************************************************************************************************************/
+.i-content {
+    padding: 8px 16px;
+    height: 100%;
+}
+
+.i-panel {
+    border: 3px solid #172f51;
+}
+
+.i-panel-heading {
+    padding: 1px 8px;
+    height: 24px;
+    background-color: #172f51;
+    border: none;
+    color: #ffffff;
+}
+
+.i-panel-title {
+    font-weight: bold;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210315: icomer - panel style end                                                                 */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210315: icomer - table style start                                                               */
+/***************************************************************************************************************/
+.i-table {
+    margin-bottom: 0px;
+    height: 100%;
+}
+
+.i-table > thead > tr > th {
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px 4px;
+}
+
+.i-table > tbody > tr > td {
+    padding: 1px 0px;
+    border: 1px solid #172f51;
+    vertical-align: middle;
+}
+
+.i-table > thead > tr > th:first-child {
+    border-left: 1px solid #172f51;
+}
+
+.i-table > thead > tr > th:last-child {
+    border-right: 1px solid #172f51;
+}
+
+.i-table > thead > tr > th.i-idx-zone {
+    border-right: 1px solid #172f51;
+    background-color: #172f51;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.i-table > thead > tr > th.i-idx-text {
+    width: 60px;
+    font-size: 12px;
+    background-color: #197499;
+    border-right: 1px solid #172f51;
+}
+
+.i-table > thead > tr > th.i-idx-text:last-child {
+    border-right: 1px solid #172f51;
+}
+
+.i-table > tbody > tr > td.i-floor {
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.i-table > tbody > tr .i-floor {
+    user-select: none;
+}
+
+.i-table > tbody > tr .i-floor span {
+    cursor: pointer;
+}
+
+.i-table > tbody > tr .i-floor span:hover {
+    background-color: #2b63b1;
+}
+
+.i-table > tbody > tr .i-floor span:active:hover {
+    box-shadow: 0 0 7px 0 #76abd9, inset 0 3px 5px rgb(0 0 0 / 13%);
+    border-color: #69ace6;
+}
+
+.i-table > tbody > tr:nth-child(2n - 1) > td {
+    border-bottom: none;
+}
+
+.i-table > tbody > tr:nth-child(2n) > td {
+    border-top: none;
+}
+
+.i-table > tbody > tr:nth-child(4n) > td,
+.i-table > tbody > tr:nth-child(4n-1) > td {
+    background-color: #ebebeb;
+}
+
+.i-table > tbody > tr > td.i-th {
+    width: 3%;
+    /* padding-left: 4px; */
+    padding: 0px 4px;
+}
+
+.i-table > tbody > tr > td.i-inner {
+    border-left: none;
+    border-right: none;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210315: icomer - table style end                                                                 */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210317: icomer - th header-table style start                                                     */
+/***************************************************************************************************************/
+.i-header-table {
+    margin-bottom: 0px;
+}
+
+.i-header-table > tbody > tr > th,
+.i-header-table > tbody > tr > td {
+    padding: 2px 5px;
+    vertical-align: middle;
+}
+
+.i-header-table > tbody > tr > td,
+.i-header-table > tbody > tr:first-child > th,
+.i-header-table > tbody > tr:first-child > td {
+    border-top: none;
+}
+
+.i-header-table > tbody > tr > td {
+    border-right: 1px solid #cccccc;
+}
+
+.i-header-table > tbody > tr > td:last-child {
+    border-right: none;
+}
+
+.i-header-table > tbody > tr > th.i-header-title {
+    text-align: center;
+    background-color: #197499;
+    color: #ffffff;
+}
+
+.i-header-table > tbody > tr > th.i-header-title.all {
+    background-color: #0161b8;
+    text-shadow: 1px 1px 2px #333333;
+    max-width: 120px;
+    min-width: 120px;
+    width: 120px;
+}
+
+.i-header-table > tbody > tr > td.i-header-contents {
+    text-align: left;
+    padding-left: 8px;
+}
+
+.i-header-table > tbody > tr > td.i-header-contents > span.unit {
+    padding-left: 2px;
+    font-size: 10px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210317: icomer - th header-table style end                                                       */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210317: icomer - th inner-table style start                                                      */
+/***************************************************************************************************************/
+.i-inner-table {
+    margin-bottom: 0px;
+    font-size: 11px;
+}
+
+.i-inner-table > tbody > tr > th {
+    padding: 2px 4px;
+    min-width: 64px;
+    width: 64px;
+    max-width: 64px;
+}
+
+.i-inner-table > tbody > tr > td {
+    padding: 4px 2px 4px 16px;
+}
+
+.i-inner-table > tbody > tr > td.i-inner-th,
+.i-inner-table > tbody > tr > td.i-inner-th-avg {
+    border: 1px solid #172f51;
+}
+
+.i-inner-table > tbody > tr > th.i-floor {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.i-inner-table > tbody > tr > th.i-inner-header,
+.i-inner-table > tbody > tr > th.i-inner-header-avg {
+    background-color: #197499;
+    color: #ffffff;
+    border: 1px solid #172f51;
+    text-align: center;
+    padding: 2px 1px 2px 4px;
+}
+
+.i-inner-table > tbody > tr > td.i-inner-th-avg > span.unit {
+    font-size: 10px;
+    padding-left: 2px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210317: icomer - th inner-table style end                                                        */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210315: icomer - th panel-table style start                                                      */
+/***************************************************************************************************************/
+.th-panel {
+    font-size: 0.9em;
+    display: none;
+}
+
+.th-table {
+    margin: auto;
+}
+
+.th-table > tbody > tr > td {
+    font-weight: bold;
+}
+
+.th-table > tbody > tr.th-row {
+    user-select: none;
+
+}
+
+.th-table > tbody > tr.th-row.hidden {
+    display: none;
+}
+
+.th-table > tbody > tr > td.th-col {
+    border-radius: 4px;
+    text-align: center;
+}
+
+.th-table > tbody > tr > .th-col:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.th-col.lvl0 {
+    background-color: #0161b8;
+    color: #ffffff;
+    text-shadow: 0px 0px 1px #333333;
+}
+
+.th-col.lvl1 {
+    background-color: #ff9c01;
+    color: #ffffff;
+    text-shadow: 0px 0px 1px #333333;
+}
+
+.th-col.lvl2 {
+    background-color: #fe6102;
+    color: #ffffff;
+    text-shadow: 0px 0px 1px #333333;
+}
+
+.th-col.lvl3 {
+    background-color: #de0303;
+    color: #ffffff;
+    text-shadow: 0px 0px 1px #333333;
+}
+
+.th-col.lvl4 {
+    background-color: #511a81;
+    color: #ffffff;
+    text-shadow: 0px 0px 1px #333333;
+}
+
+.th-col.lvl5 {
+    background-color: #000000;
+    color: #ffffff;
+    text-shadow: 0px 0px 1px #333333;
+}
+
+.th-col.lvl6 {
+    background-color: #656565;
+    color: #ffffff;
+    text-shadow: 0px 0px 1px #333333;
+}
+
+.th-value {
+    padding-left: 4px;
+}
+
+.th-unit {
+    font-size: 0.6em;
+    padding-left: 2px;
+    padding-right: 4px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210315: icomer - th panel-table style end                                                        */
+/***************************************************************************************************************/

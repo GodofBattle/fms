@@ -1,0 +1,799 @@
+[2023/09/06 09:33:44.121] [ERROR] SqlError: (conn=328202, no: 1064, SQLState: 42000) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10' at line 1
+sql: SELECT vca.equip_id, vca.equip_name, (SELECT code_name FROM pd_code WHERE code_id = pe.equip_code) AS equip_kind, vca.sensor_id, vca.sensor_name, IFNULL((SELECT code_name FROM pd_code WHERE code_id = cs.sensor_code), '') AS sensor_kind, vca.`level` AS alar...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10' at line 1",
+  sql: "SELECT vca.equip_id, vca.equip_name, (SELECT code_name FROM pd_code WHERE code_id = pe.equip_code) AS equip_kind, vca.sensor_id, vca.sensor_name, IFNULL((SELECT code_name FROM pd_code WHERE code_id = cs.sensor_code), '') AS sensor_kind, vca.`level` AS alar...",
+  fatal: false,
+  errno: 1064,
+  sqlState: '42000',
+  code: 'ER_PARSE_ERROR'
+}
+[2023/09/06 13:18:08.193] [ERROR] SqlError: Parameter at position 1 is undefined
+SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(...
+sql: SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at Query.throwNewError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/command.js:63:16)
+    at Query.validateParameters (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:179:14)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:53:17)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.getDidcTempHumi (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_icomer_mapping.js:349:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  text: 'Parameter at position 1 is undefined\n' +
+    "SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(...",
+  sql: "SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(...",
+  fatal: false,
+  errno: 45017,
+  sqlState: 'HY000',
+  code: 'ER_PARAMETER_UNDEFINED'
+}
+[2023/09/06 13:18:18.208] [ERROR] SqlError: (conn=330360, no: 1054, SQLState: 42S22) Unknown column 'i' in 'where clause'
+sql: SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'i' in 'where clause'",
+  sql: "SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/09/06 13:18:28.210] [ERROR] SqlError: (conn=330366, no: 1054, SQLState: 42S22) Unknown column 'i' in 'where clause'
+sql: SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'i' in 'where clause'",
+  sql: "SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/09/06 13:19:27.187] [ERROR] SqlError: (conn=330367, no: 1054, SQLState: 42S22) Unknown column 'i' in 'where clause'
+sql: SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'i' in 'where clause'",
+  sql: "SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/09/06 13:19:27.205] [ERROR] SqlError: (conn=330361, no: 1054, SQLState: 42S22) Unknown column 'i' in 'where clause'
+sql: SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'i' in 'where clause'",
+  sql: "SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/09/06 13:19:27.208] [ERROR] SqlError: (conn=330359, no: 1054, SQLState: 42S22) Unknown column 'i' in 'where clause'
+sql: SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'i' in 'where clause'",
+  sql: "SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/09/06 13:19:27.212] [ERROR] SqlError: (conn=330358, no: 1054, SQLState: 42S22) Unknown column 'i' in 'where clause'
+sql: SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'i' in 'where clause'",
+  sql: "SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/09/06 13:19:27.225] [ERROR] SqlError: (conn=330360, no: 1054, SQLState: 42S22) Unknown column 'i' in 'where clause'
+sql: SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'i' in 'where clause'",
+  sql: "SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/09/06 13:19:28.200] [ERROR] SqlError: (conn=330360, no: 1054, SQLState: 42S22) Unknown column 'i' in 'where clause'
+sql: SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'i' in 'where clause'",
+  sql: "SELECT cim.object_name AS id, cim.description AS title, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_value ELSE NULL END), 1) AS temp, TRUNCATE(AVG(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_value ELSE NULL END), 1) AS humi, MAX(CASE WHEN cs.sensor_code = 'S0001' THEN cs.current_level ELSE NULL END) AS temp_lvl, MAX(CASE WHEN cs.sensor_code = 'S0002' THEN cs.current_level ELSE NULL END) AS humi_lvl FROM cn_icomer_mapping cim JOIN cn_equipment ce ON FIND_IN_SET(ce.equip_id, cim.equip_ids) AND ce.b_use = 'Y' AND ce.b_delete = 'N' JOIN cn_sensor cs ON cs.equip_id = ce.equip_id AND cs.b_use = 'Y' AND cs.b_delete = 'N' AND cs.sensor_code IN ('S0001', 'S0002') WHERE cim.page_name = 'i_dashboard' AND cim.object_name IN (i-temphumi-1,i-temphumi-2,i-temphumi-3,i-temphumi-4,i-temphumi-5) GROUP BY cim.object_name; - parameters:[]",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/09/06 13:29:30.277] [ERROR] TypeError: Cannot read properties of undefined (reading 'replace')
+    at Object.getDidcTempHumi (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_icomer_mapping.js:350:84)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/customizing/didc/icomer.js:66:23
+[2023/09/06 13:29:40.282] [ERROR] TypeError: Cannot read properties of undefined (reading 'replace')
+    at Object.getDidcTempHumi (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_icomer_mapping.js:350:84)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/customizing/didc/icomer.js:66:23
+[2023/09/06 13:29:50.283] [ERROR] TypeError: Cannot read properties of undefined (reading 'replace')
+    at Object.getDidcTempHumi (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_icomer_mapping.js:350:84)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/customizing/didc/icomer.js:66:23
+[2023/09/06 13:30:00.279] [ERROR] TypeError: Cannot read properties of undefined (reading 'replace')
+    at Object.getDidcTempHumi (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_icomer_mapping.js:350:84)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/customizing/didc/icomer.js:66:23
+[2023/09/06 13:30:10.280] [ERROR] TypeError: Cannot read properties of undefined (reading 'replace')
+    at Object.getDidcTempHumi (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_icomer_mapping.js:350:84)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/customizing/didc/icomer.js:66:23
+[2023/09/06 13:30:20.282] [ERROR] TypeError: Cannot read properties of undefined (reading 'replace')
+    at Object.getDidcTempHumi (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_icomer_mapping.js:350:84)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/customizing/didc/icomer.js:66:23
+[2023/09/06 14:16:23.220] [ERROR] SqlError: retrieve connection from pool timeout after 10001ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10001ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:23.223] [ERROR] SqlError: retrieve connection from pool timeout after 10003ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10003ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:23.465] [ERROR] SqlError: retrieve connection from pool timeout after 10000ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10000ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:23.467] [ERROR] SqlError: retrieve connection from pool timeout after 10002ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10002ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:33.232] [ERROR] SqlError: retrieve connection from pool timeout after 10002ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10002ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:33.377] [ERROR] SqlError: retrieve connection from pool timeout after 10001ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10001ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:33.474] [ERROR] SqlError: retrieve connection from pool timeout after 10001ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10001ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:33.478] [ERROR] SqlError: retrieve connection from pool timeout after 10003ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10003ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:43.046] [ERROR] Error: connect ENETUNREACH 211.53.225.69:3306 - Local (0.0.0.0:49207)
+    at internalConnect (node:net:1066:16)
+    at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+    at node:net:1250:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+ From event:
+    at _registerHandshakeCmd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:745:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:57:11
+    at new Promise (<anonymous>)
+    at Connection.connect (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:56:16)
+    at createConnectionPoolPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-promise.js:31:8)
+    at creationTryout (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:373:9)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7) {
+  errno: -51,
+  code: 'ENETUNREACH',
+  syscall: 'connect',
+  address: '211.53.225.69',
+  port: 3306,
+  fatal: true
+}
+[2023/09/06 14:16:43.392] [ERROR] SqlError: retrieve connection from pool timeout after 10000ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10000ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:43.487] [ERROR] SqlError: retrieve connection from pool timeout after 10002ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10002ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:43.490] [ERROR] SqlError: retrieve connection from pool timeout after 10004ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10004ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:53.055] [ERROR] SqlError: retrieve connection from pool timeout after 10002ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10002ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:53.398] [ERROR] SqlError: retrieve connection from pool timeout after 10000ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10000ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:53.497] [ERROR] SqlError: retrieve connection from pool timeout after 10001ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10001ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:16:53.500] [ERROR] SqlError: retrieve connection from pool timeout after 10002ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10002ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:17:03.062] [ERROR] SqlError: retrieve connection from pool timeout after 10000ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10000ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:17:03.404] [ERROR] SqlError: retrieve connection from pool timeout after 10000ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10000ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:17:03.506] [ERROR] SqlError: retrieve connection from pool timeout after 10001ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10001ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:17:03.509] [ERROR] SqlError: retrieve connection from pool timeout after 10001ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10001ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:17:13.069] [ERROR] SqlError: retrieve connection from pool timeout after 10001ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10001ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:17:13.412] [ERROR] SqlError: retrieve connection from pool timeout after 10002ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10002ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:17:13.514] [ERROR] SqlError: retrieve connection from pool timeout after 10000ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10000ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:17:13.517] [ERROR] SqlError: retrieve connection from pool timeout after 10001ms
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at timeoutTask (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:319:16)
+    at Timeout.rejectAndResetTimeout [as _onTimeout] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:342:5)
+    at listOnTimeout (node:internal/timers:571:11)
+    at process.processTimers (node:internal/timers:512:7) {
+  text: 'retrieve connection from pool timeout after 10001ms',
+  sql: null,
+  fatal: false,
+  errno: 45028,
+  sqlState: 'HY000',
+  code: 'ER_GET_CONNECTION_TIMEOUT'
+}
+[2023/09/06 14:17:13.626] [ERROR] Error: connect ENETUNREACH 211.53.225.69:3306 - Local (0.0.0.0:49399)
+    at internalConnect (node:net:1066:16)
+    at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+    at node:net:1250:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+ From event:
+    at _registerHandshakeCmd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:745:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:57:11
+    at new Promise (<anonymous>)
+    at Connection.connect (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:56:16)
+    at createConnectionPoolPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-promise.js:31:8)
+    at creationTryout (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/pool-base.js:373:9)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7) {
+  errno: -51,
+  code: 'ENETUNREACH',
+  syscall: 'connect',
+  address: '211.53.225.69',
+  port: 3306,
+  fatal: true
+}
+[2023/09/06 15:12:23.631] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:12:26.460] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:12:27.660] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:12:29.026] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:12:30.592] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:12:31.725] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:25:59.815] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:31:01.003] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:31:01.007] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:32:50.606] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:32:51.737] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:33:01.215] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:36:06.497] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:36:15.219] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:39:06.516] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:40:09.863] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:40:33.833] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:41:04.781] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:41:06.261] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:41:07.048] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:41:10.198] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/09/06 15:42:18.629] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)

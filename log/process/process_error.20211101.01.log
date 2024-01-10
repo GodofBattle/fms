@@ -1,0 +1,27 @@
+[2021/11/01 15:03:20.848] [ERROR] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:267:15)
+    at ServerResponse.send (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/response.js:158:21)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:468:25
+    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:73:3)
+    at FSReqCallback.callbackTrampoline (internal/async_hooks.js:134:14) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+[2021/11/01 16:06:19.803] [ERROR] ReferenceError: files is not defined
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:452:38
+    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:73:3)
+    at FSReqCallback.callbackTrampoline (internal/async_hooks.js:134:14)
+[2021/11/01 16:21:24.117] [ERROR] TypeError: items.findIndex is not a function
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:537:47
+    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:73:3)
+    at FSReqCallback.callbackTrampoline (internal/async_hooks.js:134:14)
+[2021/11/01 16:24:23.843] [ERROR] TypeError: items.findIndex is not a function
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:537:47
+    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:73:3)
+    at FSReqCallback.callbackTrampoline (internal/async_hooks.js:134:14)
+[2021/11/01 16:31:04.236] [ERROR] TypeError: items.findIndex is not a function
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/diagram.js:538:47
+    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:73:3)
+    at FSReqCallback.callbackTrampoline (internal/async_hooks.js:134:14)

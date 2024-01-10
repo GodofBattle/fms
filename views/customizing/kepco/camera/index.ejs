@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=EmulateIE9'>
+    <TITLE> Web Watch </TITLE>
+</HEAD>
+<script language='javascript'>
+    function LoadDefault()
+    {
+        WatSearCtrl.setLayout(0);
+        WatSearCtrl.setCameraMap(0, 0, 'Web Watch', '10.10.20.210', 0,'anonymous', '', 8016, false, false, false, '', 0, 0);
+        WatSearCtrl.connect();
+    }
+    
+    function setCameraStream()
+    {
+        WatSearCtrl.setCameraStream(0 ,0);
+    }
+    
+    function connectedWatch(hostId)
+    {
+        window.setTimeout(setCameraStream, 500);
+    }
+</script>
+<script language='javascript' for='WatSearCtrl' event='ConnectedWatch(hostId)'>
+    connectedWatch(hostId);
+</script>
+
+<BODY onLoad='window.setTimeout("LoadDefault()",  500)' onUnload='WatSearCtrl.finalize()'>
+    <OBJECT id='WatSearCtrl' codebase='http://10.10.20.210:80/WatSearCtrl.cab#Version=2,8,3,91' classid='clsid:ED4850BF-32D8-4e73-A231-52560EE27A5E' standby='Downloading the ActiveX Control...' width=352 height=240 align=center hspace=0 vspace=0>
+        <PARAM name='RBTN' value='false'>
+    </OBJECT>
+</BODY>
+</HTML>

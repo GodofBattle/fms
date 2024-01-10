@@ -1,0 +1,330 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Malgun Gothic';
+    font-size: 12px;
+    height: 100%;
+    overflow: hidden;
+}
+
+:focus {
+    outline: none;
+}
+
+/***********************************************************************************************************************/
+/* by shkoh 20211222: bootstrap customizing start                                                                      */
+/***********************************************************************************************************************/
+.container-fluid {
+    padding: 6px;
+    height: 100%;
+}
+
+.panel {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    border: 3px solid #172f51;
+}
+
+.panel > .panel-heading {
+    padding: 0px;
+    height: 36px;
+    border-radius: 0px;
+    background-color: #172f51;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f3f3f3;
+}
+
+.panel > .panel-body {
+    padding: 0px;
+}
+
+/* by shkoh 20211222: modal custom style */
+.modal {
+    z-index: 200;
+}
+
+.modal-backdrop {
+    z-index: 190;
+}
+
+.modal-dialog {
+    width: 450px;
+    height: calc(100vh - 60px);
+}
+
+.modal-content {
+    border-radius: 0px;
+}
+
+.modal-header {
+    padding: 0px;
+    height: 36px;
+    background-color: #172f51;
+    border: none;
+    color: #f3f3f3;
+}
+
+.modal-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 6px 12px;
+}
+
+.modal-body {
+    padding: 6px;
+}
+
+.modal-footer {
+    padding: 10px;
+    height: 50px;
+    background-color: #172f51;
+    border: none;
+}
+
+/* by shkoh 20211222: table custom style */
+.table {
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.table > tbody > tr > th {
+    color: #444444;
+    border-top: none;
+    padding: 1rem 0.2rem 1rem 1rem;
+    vertical-align: top;
+}
+
+.table > tbody > tr > td {
+    padding: 3px 6px 3px 2px;
+    border-top: none;
+    vertical-align: middle;
+}
+
+.table > tbody > tr > td .form-control {
+    border-radius: 0px;
+    font-size: 11px;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20211222: bootstrap customizing end                                                                        */
+/***********************************************************************************************************************/
+
+/***********************************************************************************************************************/
+/* by shkoh 20211222: kendo ui customizing start                                                                       */
+/***********************************************************************************************************************/
+.k-grid {
+    border: none;
+    border-radius: 0px;
+}
+
+.k-grid table,
+.k-grid-content table {
+    text-align: left;
+    color: #222222;
+    font-size: 0.88em;
+}
+
+.k-grid-header th.k-header,
+.k-grid-header th {
+    border-color: #e5e5e5;
+    height: 18px;
+    border-width: 0 0 0px 1px;
+    font-weight: bold;
+    color: #333333;
+    padding: 0.5em 0.6em 0.4em 0.6em;
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+
+.k-grid-header th.k-state-focused {
+    box-shadow: none;
+}
+
+.k-grid tr td {
+    font-weight: bold;
+}
+
+.k-grid-content table td {
+    border-color: #e5e5e5;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+div.k-grid-header,
+div.k-grid-footer,
+.k-grid-header {
+    border-bottom: none;
+}
+
+.k-alt {
+    background-color: #fafafa;
+}
+
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+.k-state-selected {
+    background-color: #317be0;
+    border-color: #317be0;
+}
+
+.k-grid tr.k-state-focused:hover td {
+    background-color: #ebebeb;
+}
+
+.k-grid tr.k-state-selected:hover td {
+    background-color: #3379b5;
+}
+
+.k-state-selected td.k-state-focused,
+.k-state-focused,
+td.k-state-focused,
+.k-grid tr.k-state-selected:hover td.k-state-focused,
+.k-state-focused.k-state-selected {
+    box-shadow: none;
+}
+/* by shkoh 20200715: focus되고 selected 됐을 때 특별하게 배경색과 그림자를 제거함 */
+
+/* by shkoh 20211222: grid pager style */
+.k-grid-header-wrap {
+    border-color: transparent;
+}
+
+.k-pager-wrap {
+    font-size: 0.8em;
+}
+
+.k-pager-nav {
+    padding: 0px;
+}
+
+.k-toolbar > * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.k-button {
+    padding: 4px 8px;
+}
+
+.k-filtercell>span>.k-button {
+    padding: 0px;
+    height: 100%;
+}
+
+/* by shkoh 20211222: all kendo ui border-radius set 0px in this page */
+.k-grid-header:first-child,
+.k-grid-pager,
+.k-pager-wrap .k-pager-first,
+.k-pager-wrap .k-pager-last,
+.k-textbox,
+.k-dropdown,
+.k-dropdown-wrap,
+.k-dropdown-wrap .k-input,
+.k-dropdown-wrap.k-state-border-down .k-input,
+.k-dropdown-wrap .k-select,
+.k-dropdown-wrap.k-state-border-down,
+.k-list-container.k-state-border-up,
+.k-popup .k-list .k-state-focused,
+.k-list .k-state-hover,
+.k-button,
+.k-autocomplete,
+.k-autocomplete .k-input,
+.k-autocomplete.k-state-border-down,
+.k-autocomplete.k-state-border-down .k-input,
+.k-list-optionlabel,
+.k-textarea {
+    border-radius: 0px;
+}
+
+.k-item.k-state-selected.k-state-focused.k-state-hover,
+.k-split-button:focus,
+.k-split-container .k-button:focus,
+.k-popup .k-list .k-state-focused {
+    box-shadow: none;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20211222: kendo ui customizing end                                                                         */
+/***********************************************************************************************************************/
+
+
+/***********************************************************************************************************************/
+/* by shkoh 20211222: air-datepicker customizing styles start                                                          */
+/***********************************************************************************************************************/
+.datepicker {
+    border-radius: 0px;
+}
+
+.datepicker--nav-title i {
+    color: #4a4a4a;
+}
+
+input.custom-date {
+    text-align: left;
+    text-indent: 0;
+    padding: 5px 10px;
+    color: #555555;
+}
+
+/* by shkoh 20211222: modal 창에서 datepicker 보이도록 조치 */
+.modal-open .datepickers-container {
+    z-index: 300;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20211222: air-datepicker customizing styles end                                                            */
+/***********************************************************************************************************************/
+
+/***********************************************************************************************************************/
+/* by shkoh 20211222: icomer customizing start                                                                         */
+/***********************************************************************************************************************/
+.custom-heading-left {
+    float: left;
+    padding: 6px;
+}
+
+.custom-heading-right {
+    float: right;
+    padding: 3px 6px;
+}
+
+.custom-grid {
+    height: calc(100vh - 6px - 6px - 3px - 3px - 36px);
+}
+
+.btn {
+    height: 30px;
+    padding: 0px 1px 0px 1px;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.btn:active,
+.modal-btn:active {
+    box-shadow: none;
+}
+
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.btn-add,
+.btn-add:focus {
+    background: url('/img/inventory/button/btn_add_01.png');
+}
+
+.btn-add:hover,
+.btn-add:active {
+    background: url('/img/inventory/button/btn_add_02.png') no-repeat 0px;
+}
+
+.modal-btn {
+    height: 30px;
+    padding: 3px 12px;
+    border-radius: 0px;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20211222: icomer customizing end                                                                           */
+/***********************************************************************************************************************/

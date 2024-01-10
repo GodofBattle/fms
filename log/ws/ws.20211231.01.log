@@ -1,0 +1,6 @@
+[2021/12/31 09:55:37.394] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:49252
+[2021/12/31 09:55:37.910] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:56218
+[2021/12/31 10:27:41.546] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:56218
+[2021/12/31 10:27:41.955] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:56922
+[2021/12/31 10:27:41.972] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2021/12/31 13:39:34.316] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:56922

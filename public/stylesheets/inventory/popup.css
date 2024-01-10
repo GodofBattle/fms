@@ -1,0 +1,155 @@
+/**********************************************************************************************************************************************/
+/* by shkoh 20210215: icomer customizing styles start                                                                                         */
+/**********************************************************************************************************************************************/
+.modal-dialog {
+	width: 400px;
+}
+
+.modal-content {
+	border-radius: 0px;
+	box-shadow: 3px 3px 9px #333333;
+}
+
+.custom-modal-header {
+	background-color: #173052;
+	color: #ffffff;
+	text-shadow: 1px 1px #333333;
+	border: none;
+	padding: 0px;
+}
+
+.custom-modal-title {
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 25px;
+	border: none;
+}
+
+.custom-modal-editor-title {
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.custom-modal-body {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+}
+
+.custom-modal-editor-body {
+	padding: 8px;
+}
+
+.custom-modal-editor-body > .table {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 13px;
+}
+
+.custom-modal-editor-body > .table > tbody > tr > th {
+	color: #333333;
+	border-top: none;
+	padding: 3px 2px 3px 12px;
+	width: 32%;
+	vertical-align: middle;
+}
+
+.custom-modal-editor-body > .table > tbody > tr > td {
+	padding: 3px 12px 3px 12px;
+	border-top: none;
+	width: 68%;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.custom-modal-editor-body > .table > tbody > tr > td .k-input {
+	font-size: 12px;
+}
+
+.form-group-sm .form-control {
+	border-radius: 0px;
+	font-size: 12px;
+}
+
+.custom-modal-footer {
+	border: 3px solid #173052;
+	border-radius: 0px;
+}
+
+.custom-modal-editor-footer {
+	border: none;
+	padding: 12px 10px;
+}
+
+.custom-btn-control {
+	text-align: center;
+}
+
+.btn.custom-btn-save {
+	width: 120px;
+	font-size: 1.02em;
+	background: #173052;
+	color: #ffffff;
+	white-space: nowrap;
+	border-radius: 0px;
+	border: 1px solid #999999;
+}
+
+.btn.custom-btn-save:hover,
+.btn.custom-btn-save:focus {
+	background: #0a1c36;
+	color: #ffffff;
+}
+
+.btn.custom-btn-close,
+.btn.custom-btn-cancel {
+	width: 120px;
+	font-size: 1.02em;
+	background: transparent;
+	color: #333333;
+	white-space: nowrap;
+	border-radius: 0px;
+	border: 1px solid #999999;
+}
+
+.btn.custom-btn-close:hover,
+.btn.custom-btn-close:focus {
+	background: #173052;
+	color: #ffffff;
+}
+
+.btn.custom-btn-cancel:hover,
+.btn.custom-btn-cancel:focus {
+	background: #f1f1f1;
+}
+
+.btn.custom-btn-delete {
+	width: 120px;
+	font-size: 1.02em;
+	background: #c72222;
+	color: #ffffff;
+	white-space: nowrap;
+	border-radius: 0px;
+	border: none;
+}
+
+.btn.custom-btn-delete:hover,
+.btn.custom-btn-delete:focus {
+	background: #db0505;
+	color: #ffffff;
+}
+
+#popup-img {
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	border: 0px;
+	background-color: #173052;
+	margin: 0px 8px 4px 0px;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210215: icomer customizing styles end                                                                                           */
+/**********************************************************************************************************************************************/

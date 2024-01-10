@@ -1,0 +1,47 @@
+[2022/05/13 15:08:46.474] [ERROR] TypeError: RtspStream is not a constructor
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:65:26
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022/05/13 15:13:30.112] [ERROR] TypeError: RtspStream is not a constructor
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:65:26
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022/05/13 15:14:32.102] [ERROR] TypeError: RtspStream is not a constructor
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:65:26
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022/05/13 15:15:29.074] [ERROR] TypeError: RtspStream is not a constructor
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:65:26
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022/05/13 15:19:12.123] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_TCPIP - 150.218.13.21] CCTV_TCPIP은 카메라 서비스가 지원 불가능한 모델입니다
+[2022/05/13 15:29:48.847] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_TCPIP - 150.218.13.21] CCTV_TCPIP은 카메라 서비스가 지원 불가능한 모델입니다
+[2022/05/13 16:52:20.214] [ERROR] ReferenceError: Cam is not defined
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:26:13
+    at new Promise (<anonymous>)
+    at createCameraUri (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:25:16)
+    at Object.CreateCameraUri (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:105:58)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:68:36
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022/05/13 16:53:09.062] [ERROR] ReferenceError: Cam is not defined
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:26:13
+    at new Promise (<anonymous>)
+    at createCameraUri (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:25:16)
+    at Object.CreateCameraUri (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:105:58)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:68:36
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022/05/13 16:55:12.067] [ERROR] ReferenceError: Cam is not defined
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:26:13
+    at new Promise (<anonymous>)
+    at createCameraUri (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:25:16)
+    at Object.CreateCameraUri (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/config/rtspStream.js:105:58)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:68:36
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022/05/13 16:58:18.702] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] connect ETIMEDOUT 150.218.13.21:80
+[2022/05/13 16:58:32.716] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] connect ETIMEDOUT 150.218.13.21:80
+[2022/05/13 16:59:17.837] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 150.218.13.21] Network timeout
+[2022/05/13 17:00:12.521] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Cannot read property '0' of undefined
+[2022/05/13 17:00:26.820] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Cannot read property '0' of undefined
+[2022/05/13 17:01:13.014] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Cannot read property '0' of undefined
+[2022/05/13 17:05:59.051] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Cannot read property '0' of undefined
+[2022/05/13 17:06:27.647] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Cannot read property '0' of undefined
+[2022/05/13 17:06:40.826] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Cannot read property '0' of undefined
+[2022/05/13 17:09:25.728] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Cannot read property '0' of undefined
+[2022/05/13 17:10:16.106] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Cannot read property '0' of undefined
+[2022/05/13 17:10:51.524] [ERROR] [CAM 101 1F항온실#1-2(서):CCTV_IDIS - 10.10.10.105] Cannot read property '0' of undefined

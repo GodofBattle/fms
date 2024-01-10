@@ -1,0 +1,17 @@
+<div class="i-widget i-gauge" id="<%= object_id %>" style="left: <%= left %>; top: <%= top %>">
+    <div class="i-gauge-panel">
+        <svg id="<%= object_id %>_humi-gauge" width="95%" height="100%" style="transform: translate(calc(2.5%), 0);">
+        </svg>
+    </div>
+    <div class="i-gauge-panel temp-gauge"></div>
+    <div class="i-gauge-panel i-sub-panel">
+        <span class="i-max-text i-max-temp-panel">
+            MAX.
+            <span class="i-max-temp-value"> - </span><span class="i-unit">℃</span>
+        </span>
+        <span class="i-max-text i-max-humi-panel">
+            MAX.
+            <span class="i-max-humi-value"> - </span><span class="i-unit">%</span>
+        </span>
+    </div>
+</div>

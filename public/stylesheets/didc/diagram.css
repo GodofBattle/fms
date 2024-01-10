@@ -1,0 +1,1402 @@
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Malgun Gothic';
+    font-size: 14px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(247, 249, 250), rgba(245, 249, 250, 0.2));
+    overflow: hidden;
+    user-select: none;
+}
+
+@media screen and (max-width: 1600px) {
+    body {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 7px;
+    }
+}  
+  
+@media screen and (max-height: 960px) {
+    body {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    body {
+        font-size: 7px;
+    }
+}
+
+/*******************************************************************************************************/
+/* by shkoh 20211228: dashboard style start                                                            */
+/*******************************************************************************************************/
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+#img {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: block;
+    z-index: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#i-edge-setting-mode {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+#i-edge-setting-mode .i-text {
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    background-color: #232526;
+    color: #efefef;
+    padding: 0.5rem 1rem;
+}
+/*******************************************************************************************************/
+/* by shkoh 20211228: dashboard style end                                                              */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20211228: cytoscape style start                                                            */
+/*******************************************************************************************************/
+#cytoscape {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: block;
+    z-index: 50;
+}
+
+#cytoscape canvas {
+    width: inherit;
+    height: inherit;
+    display: block;
+}
+
+/* by shkoh 20231025: qtip custom style */
+#qtip-container .qtip-tipsy {
+    font-size: 1.2em;
+}
+/* by shkoh 20231025: qtip custom style */
+/*******************************************************************************************************/
+/* by shkoh 20211228: cytoscape style end                                                              */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20211229: custom style start                                                               */
+/*******************************************************************************************************/
+html .k-upload {
+    display: none;
+}
+
+.k-fab.k-pos-fixed {
+    z-index: 999999;
+}
+
+.i-fab-align .k-fab-item-icon {
+    background-color: #edcc6a;
+}
+
+.i-fab-align.k-state-hover .k-fab-item-icon {
+    background-color: #a38c48;
+}
+
+.i-fab-image .k-fab-item-icon {
+    background-color: #459cca;
+}
+
+.i-fab-image.k-state-hover .k-fab-item-icon {
+    background-color: #317092;
+}
+
+.i-fab-set-edge .k-fab-item-icon {
+    background-color: #bebebe;
+}
+
+.i-fab-set-edge.k-state-hover .k-fab-item-icon {
+    background-color: #525252;
+}
+
+.i-fab-set-edge.enabled .k-fab-item-icon {
+    background-color: #b77116;
+}
+
+.i-fab-set-edge.enabled.k-state-hover .k-fab-item-icon {
+    background-color: #68410d;
+}
+
+/* by shkoh 20220104: 온습도 아이템 */
+.i-th-item {
+    background-color: rgba(245, 245, 245, 0.75);
+    border: 4px solid #333333;
+    padding: 0.2em 0.4em;
+    border-radius: 20px;
+}
+
+.i-th-item-type-thtop {
+    border-top-right-radius: 0px;
+}
+
+.i-th-item-type-thbottom {
+    border-bottom-right-radius: 0px;
+}
+
+.i-th-item-lvl-0 {
+    border-color: #317be0;
+}
+
+.i-th-item-lvl-1 {
+    border-color: #f7bc2d;
+}
+
+.i-th-item-lvl-2 {
+    border-color: #f48d3b;
+}
+
+.i-th-item-lvl-3 {
+    border-color: #fc285e;
+}
+
+.i-th-item-lvl-4 {
+    border-color: #c030d3;
+}
+
+.i-th-item-lvl-5 {
+    border-color: #111111;
+}
+
+.i-th-item-lvl-6 {
+    border-color: #656565;
+}
+
+.i-th-icon-img {
+    width: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.i-th-icon-text {
+    min-width: 46px;
+    text-align: center;
+    font-size: 0.98em;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #111111;
+    padding: 0px 2px;
+}
+
+.i-th-icon-text-unit {
+    font-size: 0.55em;
+    padding-left: 3px;
+}
+
+.i-diagram-title {
+    position: fixed;
+    display: block;
+}
+
+.i-light-panel {
+    width: 24px;
+    height: 24px;
+    border-radius: 25%;
+}
+
+.i-light-panel-grab {
+    outline: 3px solid #26ace0;
+}
+
+.i-light-panel-grab-select {
+    outline: 3px solid #2ce21b;
+}
+
+.i-light-item {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(50,50,50,0.5);
+    border-radius: 50%;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+.i-light-item-on {
+    box-shadow: inset 0px 0px 6px 8px #feeb3c, 0px 0px 10px 6px #feeb3c;
+    background-color: transparent;
+}
+
+.i-light-item-text {
+    font-size: 9px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 24px;
+}
+
+.i-light-item-on > .i-light-item-text {
+    color: #333333;
+}
+
+.i-power-table-panel {
+    width: 120px;
+    height: 80px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+    padding: 0px 6px;
+    background-color: rgba(242, 242, 242, 0.7);
+    outline: 1px solid #c2c2c2;
+    box-shadow: inset 0 0 3px 1px #a0a0a0;
+    border: 1px solid #f2f2f2;
+    transform: scale(0.9);
+}
+
+.i-power-table-panel > .i-equip-name {
+    font-size: 12px !important;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+.i-sensor {
+    display: flex;
+    border: 1px solid #757575;
+    margin-bottom: 2px;
+}
+
+.i-power-table-panel > .i-sensor > .i-sensor-key {
+    flex: 1;
+    flex-basis: 42%;
+    font-size: 9px !important;
+    color: #ffffff;
+    background-color: #757575;
+    padding: 0px 2px;
+}
+
+.i-power-table-panel > .i-sensor > .i-sensor-value {
+    flex: 2;
+    flex-basis: 36%;
+    background-color: #ffffff;
+    font-size: 9px !important;
+    color:rgba(0, 0, 255, 0.8);
+    text-align: right;
+}
+
+.i-power-table-panel > .i-sensor > .i-sensor-unit {
+    flex: 1;
+    flex-basis: 18%;
+    background-color: #ffffff;
+    padding-left: 2px;
+    font-size: 8px !important;
+    color: #111111;
+    align-self: flex-end;
+}
+/*******************************************************************************************************/
+/* by shkoh 20211229: custom style end                                                                 */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20220105: customizing navigator style start                                                */
+/*******************************************************************************************************/
+.navigation {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    padding: 1px 2px;
+    z-index: 60;
+}
+
+.navigation .label {
+    display: block;
+    border-radius: 0px;
+    font-size: 1.8em;
+}
+
+.navigation .label-default {
+    background-color: rgba(119, 119, 119, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.navigation .label-primary {
+    background-color: rgba(51, 122, 183, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+/*******************************************************************************************************/
+/* by shkoh 20220105: customizing navigator style start                                                */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20220105: customizing heat map style start                                                 */
+/*******************************************************************************************************/
+.cfd-navigation {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    padding: 1px 2px;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.cfd-navigation .label {
+    display: block;
+    border-radius: 0px;
+    font-size: 1.8em;
+}
+
+.cfd-navigation .label-default {
+    background-color: rgba(119, 119, 119, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.cfd-navigation .label-primary {
+    background-color: rgba(51, 122, 183, 0.4);
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.cfd-table {
+    margin-top: 0.5em;
+    background-color: rgba(51, 122, 183, 0.4);
+}
+
+.cfd-text {
+    text-align: right;
+    vertical-align: middle;
+    font-size: 9px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #333333;
+    padding-left: 8px;
+}
+
+.cfd-tick {
+    width: 5px;
+    text-align: right;
+    vertical-align: middle;
+    font-size: 9px;
+    color: #ffffff;
+    padding: 0px 0px 0px 6px;
+}
+
+.cfd-legend {
+    width: 36px;
+    padding: 2px 10px 2px 4px;
+}
+
+.cfd-legend-draw {
+    width: 100%;
+    height: 100px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    background: linear-gradient(to bottom, hsl(0, 100%, 50%) 0%, hsl(30, 100%, 50%) 15%, hsl(60, 100%, 50%) 35%, hsl(120, 100%, 50%) 50%, hsl(180, 100%, 50%) 65%, hsl(210, 100%, 50%) 85%, hsl(240, 100%, 50%) 100%);
+}
+
+.i-rack-checker {
+    z-index: 999;
+    pointer-events: none;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0.5vh;
+    border-radius: 0.5em;
+    background-color: rgba(31, 37, 43, 0.6);
+    padding: 0.5em 1.2em;
+    color: #ffffff;
+}
+
+.i-rack-checker .k-checkbox-item {
+    pointer-events: auto;
+}
+
+.i-rack-checker .k-checkbox-item > .k-checkbox {
+    margin-top: 0;
+}
+
+.i-rack-checker .k-checkbox-item > .k-checkbox-label {
+    text-shadow: 1px 1px #333333;
+}
+/*******************************************************************************************************/
+/* by shkoh 20220105: customizing heat map style end                                                   */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20230523: cytoscape icon start                                                             */
+/*******************************************************************************************************/
+body.containment {
+    background: linear-gradient(to right, #414345, #232526);
+}
+
+.i-rack-item {
+    width: 3.85vw;
+    height: 14.4vh;
+    background-image: url(/img/customizing/didc/rack_f.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    filter: drop-shadow(0px 5px 6px #555555);   
+}
+
+.i-rack-item.back {
+    background-image: url(/img/customizing/didc/rack_f.png);
+}
+
+.i-rack-item .i-rack-item-name {
+    display: block;
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    bottom: -1.65em;
+    left: 0;
+    right: 0;
+    text-shadow: 2px 2px 2px #111111;
+    white-space: nowrap;
+}
+
+.i-rack-item .i-rack-item-temp {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px #333333;
+    border-radius: 0.3em;
+    background-color: transparent;
+    box-shadow: 0 0 10px 2px #000000;
+}
+
+.i-rack-item .i-rack-item-temp.lvl-0 {
+    background: linear-gradient(0deg, rgba(22,9,240,1) 0%, rgba(49,110,244,1) 100%);
+}
+
+.i-rack-item .i-rack-item-temp.lvl-1 {
+    background: linear-gradient(0deg, #fdc303 0%, #ffdf77 100%);
+    color: black;
+    text-shadow: none;
+}
+
+.i-rack-item .i-rack-item-temp.lvl-2 {
+    background: linear-gradient(0deg, #d3550d 0%, #fd9356 100%);
+}
+
+.i-rack-item .i-rack-item-temp.lvl-3 {
+    background: linear-gradient(0deg, #de0303 0%, #fd4141 100%);
+}
+
+.i-rack-item .i-rack-item-temp.lvl-4 {
+    background: linear-gradient(0deg, #bb03d3 0%, #ea75fa 100%);
+}
+
+.i-rack-item .i-rack-item-temp.lvl-5 {
+    background: linear-gradient(0deg, #111111 0%, #707070 100%);
+}
+
+.i-rack-item .i-rack-item-temp.lvl-6 {
+    background: linear-gradient(0deg, #656565 0%, #bdbdbd 100%);
+}
+
+.i-rack-item .i-rack-item-temp.rackT {
+    top: 0.4em;
+}
+
+.i-rack-item .i-rack-item-temp.rackM {
+    top: calc(12.4vh / 2);
+}
+
+.i-rack-item .i-rack-item-temp.rackB {
+    bottom: 0.4em;
+}
+
+.i-rack-item .i-rack-item-pdu {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 0.2em;
+    left: 0;
+    right: 0;
+    top: -3.5em;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    box-shadow: 0px 6px 8px 3px #33333388;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #d7e8ff 100%);
+}
+
+.i-rack-item .i-rack-item-pdu .i-rack-item-pud-line {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 0.1em;
+}
+
+.i-rack-item .i-rack-item-pdu .i-rack-item-pud-line .i-rack-item-pdu-key {
+    font-size: 0.7em;
+    align-self: center;
+}
+/*******************************************************************************************************/
+/* by shkoh 20230523: cytoscape icon end                                                               */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20230807: cytoscape power diagram custom start                                             */
+/*******************************************************************************************************/
+.i-power-node {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.i-power-kepco {
+    width: 72px;
+    height: 58px;
+    background-image: url(/img/customizing/didc/power_icon_kepco.svg);
+}
+
+.i-power-sv > .i-icon {
+    width: 70px;
+    height: 35px;
+    background-image: url(/img/customizing/didc/power_icon_sv.svg);
+}
+
+.i-power-sv > .i-icon.lvl-1 {
+    background-image: url(/img/customizing/didc/power_icon_sv.1.svg);
+}
+
+.i-power-sv > .i-icon.lvl-2 {
+    background-image: url(/img/customizing/didc/power_icon_sv.2.svg);
+}
+
+.i-power-sv > .i-icon.lvl-3 {
+    background-image: url(/img/customizing/didc/power_icon_sv.3.svg);
+}
+
+.i-power-sv > .i-icon.no-power {
+    opacity: 0.4;
+}
+
+.i-power-tr > .i-icon {
+    width: 60px;
+    height: 50px;
+    background-image: url(/img/customizing/didc/power_icon_tr.svg);
+}
+
+.i-power-tr > .i-icon.lvl-1 {
+    background-image: url(/img/customizing/didc/power_icon_tr.1.svg);
+}
+
+.i-power-tr > .i-icon.lvl-2 {
+    background-image: url(/img/customizing/didc/power_icon_tr.2.svg);
+}
+
+.i-power-tr > .i-icon.lvl-3 {
+    background-image: url(/img/customizing/didc/power_icon_tr.3.svg);
+}
+
+.i-power-tr > .i-icon.no-power {
+    opacity: 0.5;
+}
+
+.i-power-acb > .i-icon {
+    width: 60px;
+    height: 20px;
+    background-image: url(/img/customizing/didc/power_icon_acb.svg);
+}
+
+.i-power-acb > .i-icon.no-power {
+    background-image: url(/img/customizing/didc/power_icon_acb_no_power.svg);
+    opacity: 0.5;
+}
+
+.i-power-ats > .i-icon {
+    width: 40px;
+    height: 38px;
+    background-image: url(/img/customizing/didc/power_icon_ats.svg);
+}
+
+.i-power-ats > .i-icon.lvl-1 {
+    background-image: url(/img/customizing/didc/power_icon_ats.1.svg);
+}
+
+.i-power-ats > .i-icon.lvl-2 {
+    background-image: url(/img/customizing/didc/power_icon_ats.2.svg);
+}
+
+.i-power-ats > .i-icon.lvl-3 {
+    background-image: url(/img/customizing/didc/power_icon_ats.3.svg);
+}
+
+.i-power-gen > .i-icon {
+    width: 70px;
+    height: 60px;
+    background-image: url(/img/customizing/didc/power_icon_gen.svg);
+}
+
+.i-power-gen-start > .i-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.i-power-gen-start > .i-icon.a {
+    background-image: url(/img/customizing/didc/power_icon_gen_s_a.svg);
+}
+
+.i-power-gen-start > .i-icon.b {
+    background-image: url(/img/customizing/didc/power_icon_gen_s_b.svg);
+}
+
+.i-power-gen-start > .i-icon.c {
+    background-image: url(/img/customizing/didc/power_icon_gen_s_c.svg);
+}
+
+.i-power-gen-start > .i-icon.d {
+    background-image: url(/img/customizing/didc/power_icon_gen_s_d.svg);
+}
+
+.i-power-gen-start > .i-icon.e {
+    background-image: url(/img/customizing/didc/power_icon_gen_s_e.svg);
+}
+
+.i-power-gen-start > .i-icon.f {
+    background-image: url(/img/customizing/didc/power_icon_gen_s_f.svg);
+}
+
+.i-power-gen-start > .i-icon.g {
+    background-image: url(/img/customizing/didc/power_icon_gen_s_g.svg);
+}
+
+.i-power-lv > .i-icon {
+    width: 60px;
+    height: 50px;
+    background-image: url(/img/customizing/didc/power_icon_lv.svg);
+}
+
+.i-power-lv > .i-icon.lvl-1 {
+    background-image: url(/img/customizing/didc/power_icon_lv.1.svg);
+}
+
+.i-power-lv > .i-icon.lvl-2 {
+    background-image: url(/img/customizing/didc/power_icon_lv.2.svg);
+}
+
+.i-power-lv > .i-icon.lvl-3 {
+    background-image: url(/img/customizing/didc/power_icon_lv.3.svg);
+}
+
+.i-power-lv > .i-icon.no-power {
+    opacity: 0.5;
+}
+
+#i-modal-panel-info div,
+#i-modal-tr-info div {
+    display: flex;
+}
+
+#i-modal-panel-info {
+    display: none;
+    top: 15vh;
+    left: 4vw;
+    position: absolute;
+    box-shadow: 3px 3px 8px 3px #888888;
+    padding: 0.3em;
+    background-color: #ffffffaa;
+    min-width: 18vw;
+}
+
+#i-modal-panel-info > .i-header {
+    background-color: #317be0;
+    color: #ffffff;
+    flex-direction: row;
+    padding: 0.2em 0.5em;
+    align-items: center;
+}
+
+#i-modal-panel-info > .i-header > .i-title {
+    font-size: 2em;
+    text-shadow: 1px 1px #333333;
+    flex: 1;
+    margin-right: 2em;
+}
+
+#i-modal-panel-info > .i-header > .i-update-time {
+    font-size: 0.7em;
+    flex: 0;
+    flex-basis: auto;
+    align-self: flex-end;
+}
+
+#i-modal-panel-info > .i-body {
+    flex-direction: row;
+    padding: 0.5em 0;
+}
+
+#i-modal-panel-info > .i-body > .i-line-voltages,
+#i-modal-panel-info > .i-body > .i-amperes {
+    flex: 1;
+    flex-direction: column;
+    flex-basis: content;
+    align-items: center;
+}
+
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-voltage,
+#i-modal-panel-info > .i-body > .i-amperes > .i-ampere {
+    margin: 0.2em 0;
+    align-items: center;
+}
+
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-voltage > .i-header,
+#i-modal-panel-info > .i-body > .i-amperes > .i-ampere > .i-header {
+    font-size: 1em;
+    padding: 0em 0.5em;
+    border-radius: 0.2em;
+    color: #ffffff;
+    margin-right: 0.4em;
+}
+
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-voltage > .i-header.r,
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-ampere > .i-header.r {
+    background-color: #459cca;
+}
+
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-voltage > .i-header.s,
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-ampere > .i-header.s {
+    background-color: #18b425;
+}
+
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-voltage > .i-header.t,
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-ampere > .i-header.t {
+    background-color: #a51750;
+}
+
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-voltage > .i-value,
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-ampere > .i-value {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: table;
+}
+
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-voltage > .i-value > .i-unit,
+#i-modal-panel-info > .i-body > .i-line-voltages > .i-line-ampere > .i-value > .i-unit {
+    font-weight: normal;
+    font-size: 0.6em;
+}
+
+#i-modal-panel-info > .i-body > .i-seperator {
+    flex: 0;
+    flex-basis: 2px;
+    height: auto;
+    background-color: #33333388;
+}
+    
+#i-modal-panel-info > .i-body > .i-digits {
+    flex: 1;
+    flex-direction: column;
+    flex-basis: content;
+    align-items: center;
+}
+    
+#i-modal-panel-info > .i-body > .i-digits > .i-digit {
+    flex: 1;
+    align-items: center;
+    font-weight: bold;
+}
+
+#i-modal-panel-info > .i-body > .i-digits > .i-digit > .i-mode {
+    padding: 0 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid #333333;
+    background-color: #dedede;
+}
+
+#i-modal-panel-info > .i-body > .i-digits > .i-digit > .i-ocr {
+    padding: 0.1em 0.5em;
+    border-radius: 0.5em;
+}
+                    
+#i-modal-panel-info > .i-body > .i-digits > .i-digit > .i-ocr.lvl-1 {
+    background-color: #fdc303;
+}
+
+#i-modal-panel-info > .i-body > .i-digits > .i-digit > .i-ocr.lvl-2 {
+    color: #ffffff;
+    background-color: #f48d3b;
+}
+
+#i-modal-panel-info > .i-body > .i-digits > .i-digit > .i-ocr.lvl-3 {
+    color: #ffffff;
+    text-shadow: 1px 1px #333333;
+    background-color: #fc285e;
+}
+
+
+#i-modal-panel-info > .i-bottom {
+    flex-direction: row;
+}
+
+#i-modal-panel-info > .i-bottom > .i-contents {
+    flex: 1;
+    justify-content: center;
+}
+
+#i-modal-panel-info > .i-bottom > .i-contents > .i-value {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: table;
+}
+
+#i-modal-panel-info > .i-bottom > .i-contents > .i-value > .i-unit {
+    font-weight: normal;
+    font-size: 0.6em;
+}
+
+#i-modal-tr-info {
+    display: none;
+    top: 15vh;
+    left: 4vw;
+    position: absolute;
+    box-shadow: 3px 3px 8px 3px #888888;
+    padding: 0.3em;
+    background-color: #ffffffaa;
+}
+
+#i-modal-tr-info > .i-header {
+    background-color: #317be0;
+    color: #ffffff;
+    flex-direction: row;
+    padding: 0.2em 0.5em;
+    align-items: center;
+}
+
+#i-modal-tr-info > .i-header > .i-title {
+    font-size: 1.5em;
+    text-shadow: 1px 1px #333333;
+    flex: 1;
+    margin-right: 1em;
+}
+
+#i-modal-tr-info > .i-header > .i-update-time {
+    font-size: 0.7em;
+    flex: 0;
+    flex-basis: auto;
+    align-self: flex-end;
+}
+
+#i-modal-tr-info > .i-body {
+    flex-direction: row;
+    padding: 0.5em 0;
+}
+
+#i-modal-tr-info > .i-body > .i-temperature > .i-value {
+    border-radius: 0.5em;
+    padding: 0em 0.5em;
+    display: table;
+}
+
+#i-modal-tr-info > .i-body > .i-temperature > .i-value .i-val {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#i-modal-tr-info > .i-body > .i-temperature > .i-value .i-unit {
+    font-size: 0.8em;
+}
+
+#i-modal-tr-info > .i-body > .i-temperature > .i-value.lvl-1 {
+    background-color: #fdc303;
+}
+
+#i-modal-tr-info > .i-body > .i-temperature > .i-value.lvl-2 {
+    color: #ffffff;
+    background-color: #f48d3b;
+}
+
+#i-modal-tr-info > .i-body > .i-temperature > .i-value.lvl-3 {
+    color: #ffffff;
+    text-shadow: 1px 1px #333333;
+    background-color: #fc285e;
+}
+/*******************************************************************************************************/
+/* by shkoh 20230807: cytoscape power diagram custom end                                               */
+/*******************************************************************************************************/
+
+/*******************************************************************************************************/
+/* by shkoh 20230817: cytoscape air diagram custom start                                               */
+/*******************************************************************************************************/
+.i-d-air-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.i-d-air-icon > .i-src {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.i-d-air-icon > .i-mask {
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+
+    mix-blend-mode: color;
+}
+
+.i-d-air-icon > .i-d-a-fan-cw {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-image: url(/img/customizing/didc/air_icon_fan_cw.png);
+}
+
+.i-d-air-icon > .i-d-a-fan-cw.i-d-a-fan-l {
+    background-size: 45%;
+    background-position: 30%;
+}
+
+.i-d-air-icon > .i-d-a-fan-cw.i-d-a-fan-r {
+    background-size: 60%;
+    background-position: center 70%;
+}
+
+.i-d-air-icon > .i-d-a-fms.i-src {
+    background-image: url(/img/customizing/didc/air_icon_fms.png);
+}
+    
+.i-d-air-icon > .i-d-a-fms.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_fms.png);
+    mask-image: url(/img/customizing/didc/air_icon_fms.png);
+}
+
+.i-d-air-icon > .i-d-a-b-damper.i-src {
+    background-image: url(/img/customizing/didc/air_icon_bottom_damper.png);
+}
+    
+.i-d-air-icon > .i-d-a-b-damper.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_bottom_damper.png);
+    mask-image: url(/img/customizing/didc/air_icon_bottom_damper.png);
+}
+
+.i-d-air-icon > .i-d-a-damper.i-src {
+    background-image: url(/img/customizing/didc/air_icon_damper.png);
+}
+    
+.i-d-air-icon > .i-d-a-damper.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_damper.png);
+    mask-image: url(/img/customizing/didc/air_icon_damper.png);
+}
+
+.i-d-air-icon > .i-d-a-dps.i-src {
+    background-image: url(/img/customizing/didc/air_icon_dps.png);
+}
+    
+.i-d-air-icon > .i-d-a-dps.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_dps.png);
+    mask-image: url(/img/customizing/didc/air_icon_dps.png);
+}
+
+.i-d-air-icon > .i-d-a-h-filter.i-src {
+    background-image: url(/img/customizing/didc/air_icon_humidity_filter.png);
+}
+    
+.i-d-air-icon > .i-d-a-h-filter.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_humidity_filter.png);
+    mask-image: url(/img/customizing/didc/air_icon_humidity_filter.png);
+}
+
+.i-d-air-icon > .i-d-a-outdoor-unit.i-src {
+    background-image: url(/img/customizing/didc/air_icon_outdoor_unit.png);
+}
+    
+.i-d-air-icon > .i-d-a-outdoor-unit.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_outdoor_unit.png);
+    mask-image: url(/img/customizing/didc/air_icon_outdoor_unit.png);
+}
+
+.i-d-air-icon > .i-d-a-fan-l.i-src {
+    background-image: url(/img/customizing/didc/air_icon_fan_left.png);
+}
+
+.i-d-air-icon > .i-d-a-fan-l.i-d-a-fan-cw.i-d-a-fan-cw-start {
+    background-image: url(/img/customizing/didc/air_icon_fan_cw.gif);
+}
+
+.i-d-air-icon > .i-d-a-fan-l.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_fan_left.png);
+    mask-image: url(/img/customizing/didc/air_icon_fan_left.png);
+}
+
+.i-d-air-icon > .i-d-a-fan-r.i-src {
+    background-image: url(/img/customizing/didc/air_icon_fan_right.png);
+}
+    
+.i-d-air-icon > .i-d-a-fan-r.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_fan_right.png);
+    mask-image: url(/img/customizing/didc/air_icon_fan_right.png);
+}
+
+.i-d-air-icon > .i-d-a-fan-r.i-d-a-fan-cw.i-d-a-fan-cw-start {
+    background-image: url(/img/customizing/didc/air_icon_fan_cw.gif);
+}
+
+.i-d-air-icon > .i-d-a-p-temp.i-src {
+    background-image: url(/img/customizing/didc/air_icon_probe_temp.png);
+}
+    
+.i-d-air-icon > .i-d-a-p-temp.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_probe_temp.png);
+    mask-image: url(/img/customizing/didc/air_icon_probe_temp.png);
+}
+
+.i-d-air-icon > .i-d-a-p-humi.i-src {
+    background-image: url(/img/customizing/didc/air_icon_probe_humi.png);
+}
+    
+.i-d-air-icon > .i-d-a-p-humi.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_probe_humi.png);
+    mask-image: url(/img/customizing/didc/air_icon_probe_humi.png);
+}
+
+.i-d-air-icon > .i-d-a-p-co2.i-src {
+    background-image: url(/img/customizing/didc/air_icon_probe_co2.png);
+}
+    
+.i-d-air-icon > .i-d-a-p-co2.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_probe_co2.png);
+    mask-image: url(/img/customizing/didc/air_icon_probe_co2.png);
+}
+
+.i-d-air-icon > .i-d-a-p-pres.i-src {
+    background-image: url(/img/customizing/didc/air_icon_probe_pres.png);
+}
+    
+.i-d-air-icon > .i-d-a-p-pres.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_probe_pres.png);
+    mask-image: url(/img/customizing/didc/air_icon_probe_pres.png);
+}
+
+.i-d-air-icon > .i-d-a-p-smoke.i-src {
+    background-image: url(/img/customizing/didc/air_icon_probe_smoke.png);
+}
+    
+.i-d-air-icon > .i-d-a-p-smoke.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_probe_smoke.png);
+    mask-image: url(/img/customizing/didc/air_icon_probe_smoke.png);
+}
+
+.i-d-air-icon > .i-d-a-p-temp-b.i-src {
+    background-image: url(/img/customizing/didc/air_icon_probe_temp_b.png);
+}
+    
+.i-d-air-icon > .i-d-a-p-temp-b.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_probe_temp_b.png);
+    mask-image: url(/img/customizing/didc/air_icon_probe_temp_b.png);
+}
+
+.i-d-air-icon > .i-d-a-p-heat-b.i-src {
+    background-image: url(/img/customizing/didc/air_icon_probe_heat_b.png);
+}
+    
+.i-d-air-icon > .i-d-a-p-heat-b.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_probe_heat_b.png);
+    mask-image: url(/img/customizing/didc/air_icon_probe_heat_b.png);
+}
+
+.i-d-air-icon > .i-d-a-text {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    font-weight: bold;
+}
+
+.i-d-air-icon > .i-d-a-text .i-d-a-name {
+    font-size: 1em;
+}
+
+.i-d-air-icon > .i-d-a-text .i-d-a-value {
+    margin-left: 0.3em;
+    color: #1058bd;
+    font-size: 1.2em;
+}
+
+.i-d-air-icon > .i-d-a-text .i-d-a-unit {
+    font-size: 0.8em;
+}
+
+.i-d-air-icon > .i-d-a-text.left {
+    left: 105%;
+    align-items: center;
+}
+
+.i-d-air-icon > .i-d-a-text.bottom {
+    width: max-content;
+    height: fit-content;
+    text-align: center;
+    top: 105%;
+}
+
+.i-d-air-icon > .i-d-a-text.bottom.i-not-value {
+    left: 0%;
+}
+
+.i-d-air-icon > .i-d-a-text.bottom.i-not-value {
+    left: 0%;
+}
+
+.i-d-air-icon > .i-d-a-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* by shkoh 20231012: 냉동기 Style **************************************************************/
+.i-d-air-icon > .i-d-a-chiller.i-src {
+    background-image: url(/img/customizing/didc/air_icon_chiller.png);
+}
+
+.i-d-air-icon > .i-d-a-chiller.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_chiller.png);
+    mask-image: url(/img/customizing/didc/air_icon_chiller.png);
+}
+
+.i-d-air-icon > .i-d-a-text.i-d-a-chiller {
+    justify-content: center;
+    top: 5%;
+    font-size: 1.2em;
+    color: #fefefe;
+    text-shadow: 1px 1px #111111;
+}
+/* by shkoh 20231012: 냉동기 Style **************************************************************/
+
+/* by shkoh 20231012: Pump Style **************************************************************/
+.i-d-air-icon > .i-d-a-pump-cw.i-src,
+.i-d-air-icon > .i-d-a-pump-ccw.i-src {
+    background-image: url(/img/customizing/didc/air_icon_pump.png);
+}
+
+.i-d-air-icon > .i-d-a-pump-cw.i-mask,
+.i-d-air-icon > .i-d-a-pump-ccw.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_pump.png);
+    mask-image: url(/img/customizing/didc/air_icon_pump.png);
+}
+
+.i-d-air-icon > .i-d-a-pump-fan {
+    width: 70%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.i-d-air-icon > .i-d-a-pump-fan.i-d-a-pump-cw {
+    background-image: url(/img/customizing/didc/air_icon_pump_cw.png);
+}
+
+.i-d-air-icon > .i-d-a-pump-fan.i-d-a-pump-cw.i-d-a-pump-start {
+    background-image: url(/img/customizing/didc/air_icon_pump_cw.gif);
+}
+
+.i-d-air-icon > .i-d-a-pump-fan.i-d-a-pump-ccw {
+    background-image: url(/img/customizing/didc/air_icon_pump_ccw.png);
+}
+
+.i-d-air-icon > .i-d-a-pump-fan.i-d-a-pump-ccw.i-d-a-pump-start {
+    background-image: url(/img/customizing/didc/air_icon_pump_ccw.gif);
+}
+/* by shkoh 20231012: Pump Style **************************************************************/
+
+/* by shkoh 20231023: Cooling Tower On/Off Style **********************************************/
+.i-d-air-icon > .i-d-a-ct-cw.i-src {
+    background-image: url(/img/customizing/didc/air_icon_ct_cw.png);
+}
+
+.i-d-air-icon > .i-d-a-ct-cw.i-mask {
+    -webkit-mask-image: url(/img/customizing/didc/air_icon_ct_cw.png);
+    mask-image: url(/img/customizing/didc/air_icon_ct_cw.png);
+}
+
+.i-d-air-icon > .i-d-a-ct-fan {
+    width: 70%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    z-index: 1;
+}
+
+.i-d-air-icon > .i-d-a-ct-fan.i-d-a-ct-cw {
+    background-image: url(/img/customizing/didc/air_icon_pump_cw.png);
+}
+
+.i-d-air-icon > .i-d-a-ct-fan.i-d-a-ct-cw.i-d-a-ct-start {
+    background-image: url(/img/customizing/didc/air_icon_pump_cw.gif);
+}
+/* by shkoh 20231023: Cooling Tower On/Off Style **********************************************/
+
+.i-d-air-text {
+    display: flex;
+    align-items: center;
+}
+
+.i-d-air-text > .i-d-a-text-wrap {
+    font-weight: bold;
+}
+
+.i-d-air-text.d-a-text-title > .i-d-a-text-wrap,
+.i-d-air-text.d-a-text-title-l > .i-d-a-text-wrap,
+.i-d-air-text.d-a-text-title-s > .i-d-a-text-wrap {
+    background: #dddddd33;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.i-d-air-text.d-a-text-temp-v > .i-d-a-text-wrap {
+    color: #ffffff;
+    background: #6a816faa;
+    padding: 0.2em 0.2em;
+    border-radius: 0.5em;
+    text-align: center;
+    text-shadow: 1px 1px #111111;
+}
+
+.i-d-air-text.d-a-ai-label > .i-d-a-text-wrap {
+    padding: 0.1em 0.5em;
+    border-radius: 0.5em;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px #111111;
+}
+
+.i-d-air-text.d-a-ai-label > .i-d-a-text-wrap.i-lvl-1 {
+    color: #333333;
+    text-shadow: none;
+}
+
+.i-d-air-text.d-a-di-label > .i-d-a-text-wrap {
+    background: #1a1a1a55;
+    padding: 0.2em 1em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.i-d-air-text > .i-d-a-text-wrap > .i-d-a-name {
+    font-size: 1em;
+}
+
+.i-d-air-text.d-a-text-title-l > .i-d-a-text-wrap > .i-d-a-name {
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 1px 1px #333333, -1px -1px #333333, -1px 1px #333333, 1px -1px #333333;
+}
+
+.i-d-air-text.d-a-text-title > .i-d-a-text-wrap > .i-d-a-name {
+    font-size: 1.5em;
+}
+
+.i-d-air-text.d-a-text-title-s > .i-d-a-text-wrap > .i-d-a-name {
+    font-size: 1.2em;
+}
+
+.i-d-air-text.d-a-di-label > .i-d-a-text-wrap > .i-d-a-name {
+    font-size: 1.3em;
+    color: #ffffff;
+    text-shadow: 1px 1px #111111;
+}
+
+.i-d-air-text.d-a-text-temp-v > .i-d-a-text-wrap .i-d-a-value {
+    color: #1770ec;
+}
+
+.i-d-air-text.d-a-ai-label > .i-d-a-text-wrap .i-d-a-value {
+    color: #ffffff;
+    margin-right: 0.1em;
+}
+
+.i-d-air-text.d-a-ai-label > .i-d-a-text-wrap.i-lvl-1 .i-d-a-value {
+    color: #333333;
+}
+
+.i-d-air-text > .i-d-a-text-wrap .i-d-a-value {
+    margin-left: 0.3em;
+    color: #1058bd;
+    font-size: 1.2em;
+}
+
+.i-d-air-text > .i-d-a-text-wrap .i-d-a-unit {
+    font-size: 0.8em;
+}
+
+.i-lvl-0 {
+    background: linear-gradient(134deg, #2f37dd, #63b1ff);
+}
+
+.i-lvl-1 {
+    background: linear-gradient(134deg, #ffe601, #ffc363);
+}
+
+.i-lvl-2 {
+    background: linear-gradient(134deg, #ff5900e6, #ff8238);
+}
+
+.i-lvl-3 {
+    background: linear-gradient(134deg, #ff0000, #ff3f3f);
+}
+
+.i-lvl-5 {
+    background: linear-gradient(134deg, #262626, #6f6f6f);
+}
+
+.i-mask.i-twinkling {
+    animation-name: twinkling;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes twinkling {
+    0% {
+        backdrop-filter: brightness(1);
+    }
+
+    50% {
+        backdrop-filter: brightness(0.5);
+    }
+
+    100% {
+        backdrop-filter: brightness(1);
+    }
+}
+/*******************************************************************************************************/
+/* by shkoh 20230817: cytoscape air diagram custom end                                                 */
+/*******************************************************************************************************/

@@ -1,0 +1,22 @@
+[2021/12/16 09:55:32.175] [ERROR] Error: Cannot find module './fileLogger'
+Require stack:
+- /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js
+- /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js
+- /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/bin/www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:885:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:730:27)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js:13:20)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/popupCamera.js',
+    '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js',
+    '/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/bin/www'
+  ]
+}

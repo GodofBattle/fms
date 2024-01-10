@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+@font-face
+{
+	font-family: 'Yoon 윤고딕Display';
+	src: url('../fonts/YoonDisplay.eot');
+	src: url('../fonts/YoonDisplay.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/YoonDisplay.woff') format('woff'), 
+		 url('../fonts/YoonDisplay.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Nanum Barun Gothic';
+	font-style: normal;
+	font-weight: 200;
+	src: url('/fonts/NanumBarunGothicUltraLight.eot');
+	src: local('Nanum Barun Gothic UltraLight'),
+		 local('NanumBarunGothicUltraLight'),
+		 url('/fonts/NanumBarunGothicUltraLight.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/NanumBarunGothicUltraLight.woff2') format('woff2'),
+		 url('/fonts/NanumBarunGothicUltraLight.woff') format('woff'), 
+		 url('/fonts/NanumBarunGothicUltraLight.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Nanum Barun Gothic';
+	font-style: normal;
+	font-weight: 300;
+	src: url('/fonts/NanumBarunGothicLight.eot');
+	src: local('Nanum Barun Gothic Light'),
+		 local('NanumBarunGothicLight'),
+		 url('/fonts/NanumBarunGothicLight.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/NanumBarunGothicLight.woff2') format('woff2'),
+		 url('/fonts/NanumBarunGothicLight.woff') format('woff'), 
+		 url('/fonts/NanumBarunGothicLight.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Nanum Barun Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/NanumBarunGothic.eot');
+	src: local('Nanum Barun Gothic'),
+		 local('NanumBarunGothic'),
+		 url('/fonts/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/NanumBarunGothic.woff2') format('woff2'),
+		 url('/fonts/NanumBarunGothic.woff') format('woff'), 
+		 url('/fonts/NanumBarunGothic.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Nanum Barun Gothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/NanumBarunGothicBold.eot');
+	src: local('Nanum Barun Gothic Bold'),
+		 local('NanumBarunGothicBold'),
+		 url('/fonts/NanumBarunGothicBold.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/NanumBarunGothicBold.woff2') format('woff2'),
+		 url('/fonts/NanumBarunGothicBold.woff') format('woff'),
+		 url('/fonts/NanumBarunGothicBold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Malgun Gothic';
+	font-style: normal;
+	font-weight: 300;
+	src: url('/fonts/malgunsl.ttf') format('truetype');
+	src: local('Malgun Gothic Light'),
+		 local('MalgunGothicLight');		 
+}
+
+@font-face
+{
+	font-family: 'Malgun Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/malgun.ttf');
+	src: local('Malgun Gothic'),
+		 local('MalgunGothic'),
+		 url('/fonts/malgun.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Malgun Gothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/malgunbf.ttf');
+	src: local('Malgun Gothic Bold'),
+		 local('MalgunGothicBold'),
+		 url('/fonts/malgunbd.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'DSDIGI';
+	src: url('/fonts/DSDIGI.eot');
+	src: local('DSDIGI'),
+		 url('/fonts/DSDIGI.woff') format('woff'),
+		 url('/fonts/DSDIGI.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/NotoSansKR-WEB/NotoSansKR-Regular.woff');
+	src: local('Noto Sans KR'),
+		 local('NotoSansKR'),
+		 url('/fonts/NotoSansKR-WEB/NotoSansKR-Regular.woff2') format('woff2'),
+		 url('/fonts/NotoSansKR-WEB/NotoSansKR-Regular.woff') format('woff'), 
+		 url('/fonts/NotoSansKR-WEB/NotoSansKR-Regular.otf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 800;
+	src: url('/fonts/NotoSansKR-WEB/NotoSansKR-Bold.woff');
+	src: local('Noto Sans KR'),
+		 local('NotoSansKR'),
+		 url('/fonts/NotoSansKR-WEB/NotoSansKR-Bold.woff2') format('woff2'),
+		 url('/fonts/NotoSansKR-WEB/NotoSansKR-Bold.woff') format('woff'),
+		 url('/fonts/NotoSansKR-WEB/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 1000;
+	src: url('/fonts/NotoSansKR-WEB/NotoSansKR-Black.woff');
+	src: local('Noto Sans KR'),
+		 local('NotoSansKR'),
+		 url('/fonts/NotoSansKR-WEB/NotoSansKR-Black.woff2') format('woff2'),
+		 url('/fonts/NotoSansKR-WEB/NotoSansKR-Black.woff') format('woff'),
+		 url('/fonts/NotoSansKR-WEB/NotoSansKR-Black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Hack';
+	src: url('/fonts/hack-regular.woff2?sha=3114f1256') format('woff2'), url('/fonts/hack-regular.woff?sha=3114f1256') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+  
+@font-face {
+	font-family: 'Hack';
+	src: url('/fonts/hack-bold.woff2?sha=3114f1256') format('woff2'), url('/fonts/hack-bold.woff?sha=3114f1256') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+  
+@font-face {
+	font-family: 'Hack';
+	src: url('/fonts/hack-italic.woff2?sha=3114f1256') format('woff2'), url('/fonts/hack-italic.woff?sha=3114f1256') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+  
+@font-face {
+	font-family: 'Hack';
+	src: url('/fonts/hack-bolditalic.woff2?sha=3114f1256') format('woff2'), url('/fonts/hack-bolditalic.woff?sha=3114f1256') format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'KoPub Dotum';
+	font-weight: 300;
+	font-style: normal;
+	src: url('/fonts/KoPubDotum/KoPubDotumLight.eot');
+	src: url('/fonts/KoPubDotum/KoPubDotumLight.woff2') format('woff2'),
+		 url('/fonts/KoPubDotum/KoPubDotumLight.woff') format('woff'),
+		 url('/fonts/KoPubDotum/KoPubDotumLight.ttf') format('truetype'),
+		 url('/fonts/KoPubDotum/KoPubDotumLight.svg#KoPubDotumLight') format('svg'),
+		 url('/fonts/KoPubDotum/KoPubDotumLight.eot?#iefix') format('embedded-opentype');
+  }
+  
+  @font-face {
+	font-family: 'KoPub Dotum';
+	font-weight: 400;
+	font-style: normal;
+	src: url('/fonts/KoPubDotum/KoPubDotumMedium.eot');
+	src: url('/fonts/KoPubDotum/KoPubDotumMedium.woff2') format('woff2'),
+		 url('/fonts/KoPubDotum/KoPubDotumMedium.woff') format('woff'),
+		 url('/fonts/KoPubDotum/KoPubDotumMedium.ttf') format('truetype'),
+		 url('/fonts/KoPubDotum/KoPubDotumMedium.svg#KoPubDotumMedium') format('svg'),
+		 url('/fonts/KoPubDotum/KoPubDotumMedium.eot?#iefix') format('embedded-opentype');
+  }
+  
+  @font-face {
+	font-family: 'KoPub Dotum';
+	font-weight: 600;
+	font-style: normal;
+	src: url('/fonts/KoPubDotum/KoPubDotumBold.eot');
+	src: url('/fonts/KoPubDotum/KoPubDotumBold.woff2') format('woff2'),
+		 url('/fonts/KoPubDotum/KoPubDotumBold.woff') format('woff'),
+		 url('/fonts/KoPubDotum/KoPubDotumBold.ttf') format('truetype'),
+		 url('/fonts/KoPubDotum/KoPubDotumBold.svg#KoPubDotumBold') format('svg'),
+		 url('/fonts/KoPubDotum/KoPubDotumBold.eot?#iefix') format('embedded-opentype');
+  }

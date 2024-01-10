@@ -1,0 +1,105 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+require('../config/processLog.config');
+
+const app = require('../app');
+const debug = require('debug')('ubiguard-fms-5.6:server');
+const http = require('http');
+
+const fileLogger = require('../config/fileLogger');
+
+/**
+ * Get port from environment and store in Express.
+ */
+const port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+const server = http.createServer(app);
+
+/**
+ * by shkoh 20200513
+ * WebSocket 서버 시작
+ */
+const node_web_socket = require('../config/ws');
+node_web_socket.ubiGuardWebSocketOpen(server);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+function normalizePort(val) {
+    const port = parseInt(val, 10);
+
+    if (isNaN(port)) {
+        // named pipe
+        return val;
+    }
+
+    if (port >= 0) {
+        // port number
+        return port;
+    }
+
+    return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+function onError(error) {
+    if (error.syscall !== 'listen') {
+        throw error;
+    }
+
+    const bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
+
+    // handle specific listen errors with friendly messages
+    switch (error.code) {
+        case 'EACCES':
+            console.error(bind + ' requires elevated privileges');
+            
+            fileLogger.process.error(`[UbiGuard FMS 5.6] ${bind} 사용은 더 높은 권한이 요구됩니다`);
+            
+            setTimeout(() => {
+                process.exit(1);
+            }, 1000).unref();
+            break;
+        case 'EADDRINUSE':
+            console.error(bind + ' is already in use');
+            
+            fileLogger.process.error(`[UbiGuard FMS 5.6] ${bind}는 이미 사용 중입니다`);
+            
+            setTimeout(() => {
+                process.exit(1);
+            }, 1000).unref();
+            break;
+        default:
+            throw error;
+    }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+function onListening() {
+    const addr = server.address();
+    const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
+
+    const server_listening_msg = `[UbiGuard FMS 5.6] ${bind} 시작`;
+    console.info(server_listening_msg)
+    fileLogger.process.info(server_listening_msg);
+
+    debug('Listening on ' + bind);
+}

@@ -1,0 +1,60 @@
+[2023/08/31 15:32:59.637] [ERROR] SqlError: (conn=288677, no: 1366, SQLState: 22007) Incorrect integer value: '' for column `ug56_db`.`cn_sensor_threshold`.`d_value_1_level` at row 1
+sql: UPDATE cn_sensor_threshold SET ? WHERE ?; - parameters:[{"d_value_0_label":"운전","d_value_0_level":"0","d_value_1_label":"","d_value_1_level":"","d_value_2_label":"","d_value_2_level":"","d_value_3_label":"","d_value_3_level":"","d_value_4_label":"","d_valu...]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Incorrect integer value: '' for column `ug56_db`.`cn_sensor_threshold`.`d_value_1_level` at row 1",
+  sql: 'UPDATE cn_sensor_threshold SET ? WHERE ?; - parameters:[{"d_value_0_label":"운전","d_value_0_level":"0","d_value_1_label":"","d_value_1_level":"","d_value_2_label":"","d_value_2_level":"","d_value_3_label":"","d_value_3_level":"","d_value_4_label":"","d_valu...]',
+  fatal: false,
+  errno: 1366,
+  sqlState: '22007',
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD'
+}
+[2023/08/31 15:34:07.740] [ERROR] SqlError: (conn=288671, no: 1366, SQLState: 22007) Incorrect integer value: '' for column `ug56_db`.`cn_sensor_threshold`.`d_value_1_level` at row 1
+sql: UPDATE cn_sensor_threshold SET ? WHERE ?; - parameters:[{"d_value_0_label":"운전","d_value_0_level":"0","d_value_1_label":"","d_value_1_level":"","d_value_2_label":"","d_value_2_level":"","d_value_3_label":"","d_value_3_level":"","d_value_4_label":"","d_valu...]
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Incorrect integer value: '' for column `ug56_db`.`cn_sensor_threshold`.`d_value_1_level` at row 1",
+  sql: 'UPDATE cn_sensor_threshold SET ? WHERE ?; - parameters:[{"d_value_0_label":"운전","d_value_0_level":"0","d_value_1_label":"","d_value_1_level":"","d_value_2_label":"","d_value_2_level":"","d_value_3_label":"","d_value_3_level":"","d_value_4_label":"","d_valu...]',
+  fatal: false,
+  errno: 1366,
+  sqlState: '22007',
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD'
+}
+[2023/08/31 15:37:53.474] [ERROR] TypeError: Cannot read properties of undefined (reading 'length')
+    at PacketOutputStream.writeUtf8StringEscapeQuote (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-output-stream.js:190:29)
+    at Query.writeParam (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/common-text-cmd.js:170:13)
+    at Query.writeParam (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/common-text-cmd.js:160:22)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:102:14)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.updateThresholdInfo (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor_threshold.js:54:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023/08/31 15:38:47.243] [ERROR] TypeError: Cannot read properties of undefined (reading 'length')
+    at PacketOutputStream.writeUtf8StringEscapeQuote (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-output-stream.js:190:29)
+    at Query.writeParam (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/common-text-cmd.js:170:13)
+    at Query.writeParam (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/common-text-cmd.js:160:22)
+    at Query.start (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/query.js:102:14)
+    at _addCommandEnablePipeline (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:1245:11)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:177:7
+    at new Promise (<anonymous>)
+    at Connection._queryPromise (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/connection.js:174:12)
+    at Object.updateThresholdInfo (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/database/cn_sensor_threshold.js:54:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

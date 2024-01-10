@@ -1,0 +1,335 @@
+html {
+    height: 100%;
+}
+
+body {
+	background-color: #f3f3f3;
+    font-family: "Malgun Gothic";
+    height: 100%;
+}
+
+:focus {
+    outline: none;
+}
+
+.content {
+    padding: 8px 2px 8px 2px;
+    height: 100%;
+}
+
+/* by shkoh 20180425: Tab Panel 스타일 시작 */
+.k-tabstrip-wrapper:focus {
+    outline: none;
+}
+
+.k-tabstrip {
+    border: 3px solid #172f51;
+}
+
+.k-tabstrip:focus {
+    box-shadow: none;
+}
+
+.k-tabstrip > .k-content {
+    border: 3px solid #172f51;
+    padding: 0px;
+}
+
+.k-tabstrip .k-tabstrip-items {
+    margin-top: -3px;
+}
+
+.k-tabstrip-items .k-item.k-state-active {
+    border-left: 3px solid #172f51;
+    border-right: 3px solid #172f51;
+    border-bottom: 3px solid #172f51;
+}
+
+.k-tabstrip-items {
+    font-weight: bold;
+}
+
+.k-tabstrip-bottom > .k-tabstrip-items .k-item,
+.k-tabstrip-bottom > .k-tabstrip-items .k-state-active {
+    border-radius: 0px;
+}
+/* by shkoh 20180425: Tab Panel 스타일 끝 */
+
+.panel {
+    border-radius: 0;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.panel-primary {
+	border: 3px solid #172f51;
+}
+
+.panel-heading {
+	border-radius: 0;
+}
+
+.panel-primary > .panel-heading {
+    padding: 3px 6px;
+	height: 32px;
+	background: none;
+	background-color: #172f51;
+	border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.panel-footer {
+	background-color: #ffffff;
+	border: none;
+}
+
+.custom-text-panel {
+    width: 100%;
+    background: none;
+    background-color: #172f51;
+    display: inline-block;
+    border-bottom: 3px solid #172f51;
+}
+
+.custom-text-right {
+    padding: 0px;
+    float: right;
+}
+
+.btn {
+	height: 30px;
+	padding: 0px 1px 0px 1px;
+	border: none;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn:active:focus, .btn:focus {
+    outline: none;
+}
+
+.btn-info,
+.btn-info:focus {
+	background: url("/img/setting/btn_save03_01.png") no-repeat 0px;	
+}
+
+.btn-warning,
+.btn-warning:focus {
+	background: url("/img/setting/btn_save02_01.png") no-repeat 0px;
+}
+
+.btn-success,
+.btn-success:focus {
+	background: url("/img/setting/btn_save_01.png") no-repeat 0px;
+}
+
+.btn-danger,
+.btn-danger:focus {
+	background: url("/img/setting/btn_cancel_01.png") no-repeat 0px;
+}
+
+.btn-info:hover,
+.btn-info:active {
+	background: url("/img/setting/btn_save03_02.png") no-repeat 0px;
+	background-color: transparent !important;
+}
+
+.btn-warning:hover,
+.btn-warning:active {
+	background: url("/img/setting/btn_save02_02.png") no-repeat 0px;
+	background-color: transparent !important;
+}
+
+.btn-success:hover,
+.btn-success:active {
+	background: url("/img/setting/btn_save_02.png") no-repeat 0px;
+	background-color: transparent !important;
+}
+
+.btn-danger:hover,
+.btn-danger:active {
+	background: url("/img/setting/btn_cancel_02.png") no-repeat 0px;
+	background-color: transparent !important;
+	/*margin-right:15px !important;*/
+}
+
+/* by shkoh 20160407: kendo UI의 grid 스타일 시작 */
+#basicSensorGrid,
+#AISensorThresholdGrid,
+#DISensorThresholdGrid {
+    margin-top: -3px;
+}
+
+.k-grid {
+    border-radius: 0px;
+    border: none;
+}
+
+.k-grid-toolbar {
+    background-color: #224777;
+    padding: 4px 8px;
+}
+
+.k-grid-toolbar:first-child {
+    border-radius: 0px;
+    border: none;
+}
+
+.k-grid > .k-grouping-header {
+    border-radius: 0px;
+    padding: 6px;
+}
+
+.k-grid-header th.k-with-icon .k-link {
+    font-weight: bold;
+}
+
+.k-grid tr td {
+    border-top-color: #eeeeee;
+    border-left-color: #e6e6e6;
+}
+
+.k-alt {
+    background-color: #f7f7f7;
+}
+
+.k-alt.k-state-selected {
+    background-color: #4267ac;
+}
+
+.k-state-focused {
+    box-shadow: inset 0 0 3px 0 #172f51;
+}
+
+.k-grid table {
+    font-size: 12px;
+}
+
+td.k-state-selected.k-edit-cell {
+    padding: 0px;
+}
+
+.k-popup .k-list .k-state-focused {
+    border-radius: 0px;
+}
+
+.k-item.k-state-selected.k-state-focused.k-state-hover {
+    box-shadow: none;
+}
+
+.k-grid .k-dropdown-wrap {
+    border-radius: 0px;
+}
+
+.k-grid .k-textbox {
+    border-radius: 0px;
+    border: none;
+}
+
+.k-grid-norecords {
+    height: 90%;
+}
+/* by shkoh 20160407: kendo UI의 grid 스타일 끝 */
+
+/* by shkoh 20160407: bootstrap 모달 스타일 시작 */
+.modal-content {
+    border-radius: 0px;
+    border: 3px solid #172f51;
+}
+
+.modal-dialog {
+	width: 780px;
+}
+
+.modal-header {
+    background-color: #172f51;
+    padding: 5px 15px;
+}
+
+.modal-title {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.modal-body {
+    padding-bottom: 5px;
+}
+
+.modal-body .form-group {
+    margin-bottom: 8px;
+}
+
+.modal-footer {
+    margin: 0px 15px;
+    padding: 10px 0px;
+    border-top: 1px solid #d5d5d5;
+}
+
+.btn-custom {
+    width: 65px;
+    height: 30px;
+    border: none;
+}
+
+.btn-custom:focus {
+    outline: none;
+}
+
+.btn-custom-cancel {
+    background: url('/img/setting/btn_close_01.png') no-repeat 0px;
+}
+
+.btn-custom-cancel:hover {
+    background: url('/img/setting/btn_close_02.png') no-repeat 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-custom-add {
+    background: url('/img/setting/btn_add_01.png') no-repeat 0px;
+}
+
+.btn-custom-add:hover {
+    background: url('/img/setting/btn_add_02.png') no-repeat 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-custom-delete {
+    background: url('/img/setting/btn_delete_01.png') no-repeat 0px;
+}
+
+.btn-custom-delete:hover {
+    background: url('/img/setting/btn_delete_02.png') no-repeat 0px;
+    border: none;
+    box-shadow: none;
+}
+/* by shkoh 20160407: bootstrap 모달 스타일 끝 */
+
+/* by shkoh 20180416: zTree 스타일 시작 */
+.ztree * {
+    font-size: 14px;
+    font-family: "Malgun Gothic";
+}
+
+.ztree li a {
+    color: #000000;
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #124b9a;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 3px 0px 0px;
+}
+/* by shkoh 20180416: zTree 스타일 끝 */

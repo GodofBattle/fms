@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210222: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20210222: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/wrfis/index.css"/>
+</head>
+<body class="pms">
+    <div class="container-fluid pms">
+        <div class="row pms-row">
+            <div class="col-xs-offset-7 col-xs-2 pms-column">
+                <div class="pms-text pms-title">PMS</div>
+            </div>
+            <div class="col-xs-2 pms-column">
+                <div class="pms-text pms-floor">10층</div>
+            </div>
+        </div>
+        <div class="row pms-row">
+            <div class="col-xs-offset-9 col-xs-2 pms-column">
+                <div class="pms-text pms-floor">8층</div>
+            </div>
+        </div>
+        <div class="row pms-row">
+            <div class="col-xs-offset-9 col-xs-2 pms-column">
+                <div class="pms-text pms-floor pms-button" pms-url="wrfis_pms_7f">7층</div>
+            </div>
+        </div>
+        <div class="row pms-row">
+            <div class="col-xs-offset-9 col-xs-2 pms-column">
+                <div class="pms-text pms-floor">6층</div>
+            </div>
+        </div>
+        <div class="row pms-row">
+            <div class="col-xs-offset-9 col-xs-2 pms-column">
+                <div class="pms-text pms-floor pms-button" pms-url="wrfis_pms_4f">4층</div>
+            </div>
+        </div>
+        <div class="row pms-row">
+            <div class="col-xs-offset-9 col-xs-2 pms-column">
+                <div class="pms-text pms-floor">3층</div>
+            </div>
+        </div>
+        <div class="row pms-row">
+            <div class="col-xs-offset-9 col-xs-2 pms-column">
+                <div class="pms-text pms-floor">2층</div>
+            </div>
+        </div>
+        <div class="row pms-row">
+            <div class="col-xs-offset-9 col-xs-2 pms-column">
+                <div class="pms-text pms-floor">1층</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- by shkoh 20210222: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <script>
+        $('.pms-button').on('click', function() {
+            const url = $(this).attr('pms-url');
+
+            if(parent) {
+                parent.onSelectViewer(url, 'PMS', '');
+            }
+        });
+    </script>
+</body>
+</html>

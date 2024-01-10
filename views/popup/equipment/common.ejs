@@ -1,0 +1,220 @@
+<style>
+    /* 전체 style */
+    .content-container {
+        padding: 8px 6px 0px 6px;
+    }
+
+    .panel-heading {
+        color: #fff;
+        background-color: #172f51;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .panel-title {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    section,
+    aside {
+        float: left;
+    }
+
+    /* 탭 style */
+    .k-tabstrip-wrapper:focus {
+        outline: none;
+    }
+
+    .k-tabstrip {
+        border: 3px solid #172f51;
+    }
+
+    .k-tabstrip:focus {
+        box-shadow: none;
+    }
+
+    .k-tabstrip > .k-content {
+        border: 3px solid #172f51;
+        padding: 0px;
+    }
+
+    .k-tabstrip .k-tabstrip-items {
+        margin-top: -3px;
+    }
+
+    .k-tabstrip-items .k-item.k-state-active {
+        border-left: 3px solid #172f51;
+        border-right: 3px solid #172f51;
+        border-bottom: 3px solid #172f51;
+    }
+
+    .k-tabstrip-items {
+        font-weight: bold;
+    }
+
+    .k-loading-image {
+        display: none;
+    }
+
+
+    #sensor_title {
+        height: 30px; 
+        background: none;
+        background-color: #224777;                                  
+        margin: -3px 0px 0px -3px;
+        padding: 0px 8px;
+        border-top: 3px solid #172f51;
+    }
+
+    .grid_title {
+        padding: 4px 5px;
+        color: #ffffff;	
+        float: left;
+        font-size: 12px;
+    }
+
+    #search {
+        text-align: right;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .formInput {
+        width: 100px;
+        height: 25px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #btn-search {
+        height: 25px;
+        width: 90px;
+        border: none;
+        background-color: #ffffff;
+        background-image: url('/img/report/btn_search_03.png');
+        box-shadow: none;
+        vertical-align: top;
+    }
+
+    #btn-search:hover {
+        background-image: url('/img/report/btn_search_04.png');
+        background-color: #ffffff;
+        border: none;
+        outline: none;
+    }
+
+    #btn-search:focus {
+        background-color: #ffffff;
+        border: none;
+        outline: none;
+    }
+
+
+
+    .custom-tabstrip-panel {
+        text-align: center;
+        font-size: 11px;
+        z-index: 1;
+        border: 3px solid #172f51;
+        border-top: none;
+        background: #fff;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    #DISensorGridPanel {
+        text-align: center;
+        font-size: 11px;
+        z-index: 1;
+        background: #fff;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    /* 그래프 불러오는 버튼 style */
+    .btn-chart {
+        height: 14px;
+        width: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 1px solid;
+        float: right;
+        margin-left: 1px;
+        background: url("/img/monitoring/chart_icon.png") no-repeat 0px;
+    }
+
+    /* 그리드 불러오는 버튼 style */
+    .btn-grid {
+        height: 14px;
+        width: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 1px solid;
+        float: right;
+        margin-left: 1px;
+        background: url("/img/monitoring/list_icon.png") no-repeat 0px;
+    }
+
+    /* 그래프 닫는 버튼 style */
+    #btn-close {
+        height: 22px;
+        width: 22px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #172f51;
+        border: none;
+        z-index: 2;
+        position: relative;
+        float: right;
+        top: 2px;
+        right: -5px;
+    }
+</style>
+
+<div class="content-container">
+    <!--타이틀 부분-->
+    <div class="panel-heading">
+        <h4 class="panel-title"><%= groupEquipName %></h4>
+    </div>
+
+    <!--탭 부분-->
+    <section id="section-panel">
+        <div id="tab-panel">
+            <ul>
+                <li class="k-state-active">
+                    Analog Values
+                </li>
+                <li>
+                    Digital Values
+                </li>
+            </ul>
+            <div class="custom-tabstrip-panel" id="analogValuesInfo">
+                <div class="tabpanel-body">
+                    <div id="AnalogValuesGrid"></div>
+                </div>
+            </div>
+            <div class="custom-tabstrip-panel" id="digitalValuesInfo">
+                <div class="tabpanel-body">
+                    <div id="DigitalValuesGrid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 그래프 부분 -->
+    <aside id="aside-panel">
+        <div id="sensor_title">
+            <label class="grid_title"></label>
+            <button id="btn-close" type="button">X</button>
+        </div>
+        <div id="search">
+            <input type="text" class="formInput" id="start_date" />
+            <label style="margin-right: 4px; margin-left: 4px;">~</label>
+            <input type="text" class="formInput" id="end_date" />
+            <input type="button" id="btn-search" />
+        </div>
+        <div id="AISensorChartPanel"></div>
+        <div id="DISensorGridPanel"></div>
+    </aside>
+</div>

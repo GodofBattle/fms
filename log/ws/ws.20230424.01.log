@@ -1,0 +1,35 @@
+[2023/04/24 16:44:27.315] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 16:48:09.817] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 16:51:12.619] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 16:51:39.743] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:53372
+[2023/04/24 16:51:39.766] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/24 16:52:20.849] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 16:52:29.758] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:53417
+[2023/04/24 16:52:29.759] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/24 17:23:40.691] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 17:24:08.103] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:53604
+[2023/04/24 17:24:08.105] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/24 17:25:08.991] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 17:25:32.844] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 17:25:41.492] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:53674
+[2023/04/24 17:25:41.509] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/24 17:26:14.896] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 17:26:20.254] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:53710
+[2023/04/24 17:26:20.280] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/24 17:27:07.175] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 17:27:11.780] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:53755
+[2023/04/24 17:27:11.780] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/24 17:30:38.045] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 17:30:45.000] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:53803
+[2023/04/24 17:30:45.017] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/24 17:31:15.210] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 17:31:26.869] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 17:31:32.617] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:53854
+[2023/04/24 17:31:32.634] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/24 17:32:06.830] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 17:32:12.342] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:53889
+[2023/04/24 17:32:12.358] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/24 17:32:35.233] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/04/24 17:32:40.587] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:53921
+[2023/04/24 17:32:40.611] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/04/24 17:33:15.240] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.31:53921

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20180515: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+    
+    <!-- by shkoh 20180515: grid stack -->
+    <link rel="stylesheet" href="/component/gridstack/gridstack.css" />
+    <link rel="stylesheet" href="/component/gridstack/gridstack-extra.custom.css" />
+    
+    <!-- by shkoh 20180515: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
+    <!-- by shkoh 20180515: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css" />
+    
+    <!-- by shkoh 20180515: jQuery side bar -->
+    <link rel="stylesheet" href="/component/svg/normalize.css" />
+    <link rel="stylesheet" href="/component/svg/component.css" />
+    <link rel="stylesheet" href="/component/bxslider/jquery.bxslider.min.css" />
+
+    <!-- by shkoh 20180529: cytoscape  -->
+    <link rel="stylesheet" href="/component/jquery-qtip-3.0.3/jquery.qtip.min.css" />
+    
+    <!-- by shkoh 20180515: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/monitoring.css" />
+</head>
+
+<body class="<%= site %>" oncontextmenu="return false" data-asset="<%= is_asset === true ? '1' : '0' %>" data-link-id="<%= is_link_id %>">
+    <div class="container-fluid <%= site %>">
+        <div id="mapboardDiv" class="grid-stack grid-stack-16 <%= site %>">
+        </div>
+        <div id="tooltipBox"></div>
+    </div>
+    
+    <div id="sidebar_panel">
+        <div id="slider" style="right:-100px">
+            <div id="sidebar">
+                <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                    <svg width="1000px" height="1000px">
+                        <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                        <path id="pathB" d="M 300 500 L 700 500"></path>
+                        <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                    </svg>
+                    <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                </div>
+            </div>
+            <div id="sidebar-main">
+                <div class="btn-group" data-toggle="buttons">
+                    <label id="btn-toggle-grid-tree" class="btn btn-check"><input type="checkbox" autocomplete="off"> 리스트 </label>
+                    <label id="btn-toggle-grid-map" class="btn btn-check"><input type="checkbox" autocomplete="off"> 2D Map </label>
+                    <label id="btn-toggle-grid-detail" class="btn btn-check"><input type="checkbox" autocomplete="off"> 상세보기 </label>
+                    <label id="btn-toggle-grid-alarm" class="btn btn-check"><input type="checkbox" autocomplete="off"> 장애목록 </label>
+                    <label id="btn-toggle-grid-server" class="btn btn-check"><input type="checkbox" autocomplete="off"> 서버현황 </label>
+                    <!-- <label id="btn-toggle-grid-power" class="btn btn-check"><input type="checkbox" autocomplete="off"> 전력 </label>
+                    <label id="btn-toggle-grid-pue" class="btn btn-check"><input type="checkbox" autocomplete="off"> PUE </label>
+                    <label id="btn-toggle-grid-t-h" class="btn btn-check"><input type="checkbox" autocomplete="off"> 평균온습도 </label> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="treeContextMenu" oncontextmenu="return false" style="visibility: hidden;">
+        <ul>
+            <li><a id="menu_modify_group">그룹설정</a></li>
+            <li><a id="menu_add_group">그룹추가</a></li>
+            <li><a id="menu_del_group">그룹삭제</a></li>
+            <hr id="menu_group_hr">
+            <li><a id="menu_modify_equip">설비설정</a></li>
+            <li><a id="menu_add_equip">설비추가</a></li>
+            <li><a id="menu_del_equip">설비삭제</a></li>
+            <hr id="menu_equip_hr">
+            <li><a id="menu_set_sensor">센서설정</a></li>
+            <hr id="menu_sensor_hr">
+            <li><a id="menu_working">작업이력</a></li>
+            <li><a id="menu_fault">장애이력조회</a></li>
+            <hr id="menu_fault_hr">
+            <li><a id="menu_communication_log">통신로그보기</a></li>
+        </ul>
+    </div>
+    
+    <!-- by shkoh 20180515: 공통 js -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20180515: Grid Stack -->
+    <script src="/component/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="/component/lodash/lodash.js"></script>
+    <script src="/component/gridstack/gridstack.js"></script>
+    <script src="/component/gridstack/gridstack.jQueryUI.js"></script>
+
+    <!-- by shkoh 20180515: jQuery sidebar -->
+    <script src="/component/jquery-sidebar-3.3.2/jquery.sidebar.min.js"></script>
+    <script src="/component/svg/segment.min.js"></script>
+    <script src="/component/svg/ease.min.js"></script>
+    
+    <script src="/component/bxslider/jquery.bxslider.min.js"></script>
+    
+    <!-- by shkoh 20180515: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+    
+    <!-- by shkoh 20180515: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+
+    <!-- by shkoh 20180529: cytoscape  -->
+    <script src="/component/jquery-qtip-3.0.3/jquery.qtip.min.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-qtip.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-cxtmenu.js"></script>
+    <script src="/component/cytoscape-3.2.12/cytoscape-node-html-label.min.js"></script>
+
+    <!-- by shkoh 20180515: ubiGuard -->
+    <script src="/javascripts/monitoring/sidebarCtrl.js"></script>
+    <script src="/javascripts/monitoring/treeContextMenu.js"></script>
+    <script src="/javascripts/monitoring/FMSServerContent.js"></script>
+    <script src="/javascripts/monitoring/treeContent.js"></script>
+    <script src="/javascripts/monitoring/detailContent.js"></script>
+    <script src="/javascripts/monitoring/alarmContent.js"></script>
+    <script src="/javascripts/monitoring/mapContent.js"></script>
+    <script src="/javascripts/monitoring/monitoring.js"></script>
+</body>
+</html>

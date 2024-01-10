@@ -1,0 +1,4 @@
+[2022/08/22 14:16:23.027] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2022/08/22 14:16:34.221] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:61721
+[2022/08/22 14:16:34.225] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2022/08/22 14:22:03.205] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:61721

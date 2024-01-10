@@ -1,0 +1,335 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: "Malgun Gothic";
+    font-size: 12px;
+    height: 100%;
+}
+
+:focus {
+    outline: none;
+}
+
+/********************************************************************************************************************************/
+/* by shkoh 20231109: bootstrap customizing start                                                                               */
+/********************************************************************************************************************************/
+.container-fluid {
+    padding: 10px;
+    height: 100%;
+}
+
+.panel {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.panel-default {
+    border: 3px solid #172f51;
+}
+
+.panel-default > .panel-heading {
+    padding: 3px 6px;
+    height: 32px;
+    border-radius: 0px;
+    background: #172f51;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f3f3f3;
+}
+
+.panel-default > .panel-body {
+    padding: 0px;
+}
+/********************************************************************************************************************************/
+/* by shkoh 20231109: bootstrap customizing end                                                                                 */
+/********************************************************************************************************************************/
+
+/********************************************************************************************************************************/
+/* by shkoh 20231109: kendo customizing style start                                                                             */
+/********************************************************************************************************************************/
+.k-grid-content table {
+    text-align: left;
+    color: #222222;
+    font-size: 1em;
+}
+
+.k-grid-header th.k-header,
+.k-grid-header th {
+    border-color: #e5e5e5;
+    height: 18px;
+    border-width: 0 0 0 1px;
+    font-weight: bold;
+    color: #333333;
+    padding: 0.5em 0.6em 0.4em 0.6em;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+.k-grid-header th > .k-filtercell .k-button-icon {
+    font-size: 0.9em;
+    padding: 1px;
+}
+
+.k-grid-content table td {
+    border-color: #e5e5e5;
+}
+
+.k-grid {
+    border: 1px solid #c5c5c5;
+}
+
+.k-button {
+    padding: 4px 8px;
+}
+
+div.k-grid-footer,
+div.k-grid-header,
+.k-grid-header {
+    border-bottom: none;
+}
+
+/* by shkoh 20231109: Kendo Grid 내 Toolbar style */
+.k-grid .k-grid-toolbar > * {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.k-grid-toolbar {
+    padding: 3px 6px;
+}
+
+.k-toolbar > * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* by shkoh 20231109: split-button style */
+.k-split-button:focus {
+    box-shadow: none;
+}
+
+.k-split-button .k-button:first-child,
+.k-button-group .k-button:first-child,
+.k-button-group .k-group-start {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.k-split-button .k-button:last-child,
+.k-button-group .k-button:last-child,
+.k-button-group .k-group-end {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 2px;
+}
+
+/* by shkoh 20231109: pager style */
+.k-pager-wrap {
+    font-size: 0.8em;
+}
+
+.k-grid-norecords {
+    height: 90%;
+}
+
+.k-header > .k-grid-filter,
+.k-i-filter {
+    font-size: 0.81em;
+    right: 6px;
+}
+
+.k-i-sort-asc-sm,
+.k-i-sort-desc-sm {
+    margin: 0px;
+}
+
+/* by shkoh 20231109: focus 및 select 됐을 때 배경색과 그림자를 제거함 */
+.k-state-selected {
+    background-color: #317be0;
+    border-color: #317be0;
+}
+
+.k-grid tr.k-state-focused:hover td {
+    background-color: #ebebeb;
+}
+
+.k-grid tr.k-state-selected:hover td {
+    background-color: #3379b5;
+}
+
+.k-state-focused,
+.k-state-focused.k-state-selected {
+    box-shadow: none;
+}
+
+.k-item.k-state-selected.k-state-focused.k-state-hover {
+    box-shadow: none;
+}
+
+.k-popup .k-list .k-state-focused {
+    box-shadow: none;
+}
+
+/* by shkoh 20231109: Kendo에서는 각진 border를 사용 */
+.k-grid,
+.k-grid-toolbar:first-child,
+.k-button,
+.k-split-button,
+.k-textbox,
+.k-autocomplete,
+.k-autocomplete .k-input,
+.k-dropdown,
+.k-dropdown-wrap,
+.k-dropdown-wrap .k-input,
+.k-dropdown-wrap.k-state-border-down,
+.k-dropdown-wrap.k-state-focused .k-input,
+.k-dropdown-wrap .k-select,
+.k-list-container,
+.k-list-container.k-state-border-up,
+.k-list-optionlabel,
+.k-popup .k-list .k-state-focused,
+.k-list .k-state-selected,
+.k-list .k-state-hover,
+.k-grid-pager,
+.k-pager-wrap .k-pager-first,
+.k-pager-wrap .k-pager-last {
+    border-radius: 0px;
+}
+
+/* by shkoh 20231109: kendo grid에서 loading 이미지를 보여주지 않는다 */
+#log-page .k-loading-image {
+    display: none;
+}
+/********************************************************************************************************************************/
+/* by shkoh 20231109: kendo customizing style end                                                                               */
+/********************************************************************************************************************************/
+
+/********************************************************************************************************************************/
+/* by shkoh 20231109: custom data header style start                                                                            */
+/********************************************************************************************************************************/
+.panel-body.i-log-grid {
+    height: calc(100vh - 177px);
+}
+
+.content-panel {
+    padding: 0px;
+}
+
+.panel-header {
+    margin-bottom: 10px;
+}
+
+.searching {
+    display: flex;
+    align-items: center;
+    padding: 18px 12px 4px 12px;
+}
+
+.searching .first {
+    flex: 2;
+}
+
+.searching .last {
+    align-items: center;
+}
+
+.searching .conditions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searching .conditions > .searching-label {
+    font-weight: bold;
+    padding-right: 12px;
+}
+
+.searching .conditions > .searching-icon { 
+    padding: 0px 10px;
+}
+
+.searching-notification {
+    text-align: right;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.custom-k-state-default:hover {
+    background-color: #ebebeb;
+    border-color: #aeaeae;
+}
+
+.custom-k-state-default:focus {
+    background-color: #ffffff;
+    border-color: #76abd9;
+    box-shadow: 0 0 7px 0 #76abd9;
+}
+
+.custom-k-input:hover {
+    background-color: #ffffff;
+}
+
+.custom-k-select:hover {
+    border-color: #aeaeae;
+}
+
+input.custom-date {
+    text-align: center;
+    text-indent: 0;
+}
+
+.custom-button {
+    margin-left: 10px;
+    padding: 5px 8px;
+}
+
+.custom-search-button {
+    width: 85px;
+    height: 30px;
+    border: none;
+    background-image: url('/img/report/btn_search_01.png');
+    background-repeat: no-repeat;
+    box-shadow: none;
+    margin: 0px 0px 0px 10px;
+    background-position: -9px 0px;
+}
+
+.custom-search-button:hover {
+    background-image: url('/img/report/btn_search_02.png');
+    background-repeat: no-repeat;
+    background-position: -9px 0px;
+}
+
+.custom-search-button:focus {
+    box-shadow: 0 0 3px 1px #76abd9;
+    background-color: #76abd9;
+}
+
+#log-page {
+    height: 100%;
+}
+/********************************************************************************************************************************/
+/* by shkoh 20231109: custom data header style end                                                                              */
+/********************************************************************************************************************************/
+
+/********************************************************************************************************************************/
+/* by shkoh 20231109: custom air datepicker style start                                                                         */
+/********************************************************************************************************************************/
+.datepicker {
+    border-radius: 0px;
+}
+
+.datepicker--nav-title i {
+    color: #4a4a4a;
+}
+/********************************************************************************************************************************/
+/* by shkoh 20231109: custom air datepicker style end                                                                           */
+/********************************************************************************************************************************/

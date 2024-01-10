@@ -1,0 +1,35 @@
+<div id="didc-battery" class="i-widget i-alert-items" style="left: <%= left %>; top: <%= top %>; width: <%= width %>; height: <%= height %>">
+    <div class="i-title">
+        배터리
+    </div>
+    <div class="i-contents">
+        <div class="i-status">
+<% for(let idx = 0; idx < aa_column; idx++) {%>
+    <% if(idx < aa_length) {%>
+            <div id="i-battery-aa-<%= idx + 1 %>" class="i-item">
+                <div class="i-mark">
+                    <span class="i-block"></span>
+                </div>
+                <div class="i-mark-name"></div>
+            </div>
+    <%} else {%>
+            <div id="i-leak-b1f-<%= idx + 1 %>" class="i-no-item"></div>
+    <%}%>
+<%}%>
+        </div>
+        <div class="i-status">
+<% for(let idx = 0; idx < bb_column; idx++) {%>
+    <% if(idx < bb_length) {%>
+            <div id="i-battery-bb-<%= idx + 1 %>" class="i-item">
+                <div class="i-mark">
+                    <span class="i-block"></span>
+                </div>
+                <div class="i-mark-name"></div>
+            </div>
+    <%} else {%>
+            <div id="i-leak-b1f-<%= idx + 1 %>" class="i-no-item"></div>
+    <%}%>
+<%}%>
+        </div>
+    </div>
+</div>

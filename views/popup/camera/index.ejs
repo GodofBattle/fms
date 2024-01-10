@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+
+    <link rel="stylesheet" href="/stylesheets/popup_camera.css" />
+</head>
+
+<body equipId="<%= info.equipId %>">
+    <div class="container-fluid">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span style="margin-right: 1rem;"><%= info.name %></span>
+                <span style="margin-right: 1rem;">IP: <%= info.ip %></span>
+            </div>
+            <div class="panel-body">
+                <div id="error-panel" style="display: none; padding: 0.5em 1em;">
+                    <h5 id="error-message" style="white-space: pre; line-height: 2em;"></h5>
+                </div>
+                <div id="viewer">
+                    <!-- <img id="imageViewer" class="image-viewer" /> -->
+                    <canvas id="imageViewer" class="image-viewer"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jsmpeg/jsmpeg.min.js"></script>
+    
+    <script src="/javascripts/popup/camera/main.js"></script>
+</body>
+</html>

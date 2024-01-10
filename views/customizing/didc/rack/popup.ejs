@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= '설비세부정보' %></title>
+    
+    <!--by MJ 2023.11.21 : 웹 페이지가 모든 브라우저에서 일관되게 표시되도록 도와주는 CSS프레임워크-->
+    <link rel="stylesheet" href="/component/normalize/normalize.css" />
+
+    <!-- by MJ 2023.08.29 : 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+    
+    <!-- by MJ 2023.08.29 : custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
+    <!-- by MJ 2023.08.29 : ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/didc/popup.css"/>
+</head>
+<body>
+    <div class="i-popup">
+        <div id="detail-rack-container">
+            <h4 id="i-rack-data-name"></h4>
+            <div class="i-popup-Info-Box">
+                <ul>
+                    <li>연계 설비: </li>
+                    <li id="i-rack-equip-name"></li>
+                </ul>
+                <ul>
+                    <li>갱신 시간: </li>
+                    <li id="i-rack-equip-updatetime"></li>
+                </ul>
+            </div>
+            <div id="detail-rack-container-table"></div>
+        </div>
+    </div>
+    
+    <!-- by MJ 2023.08.29 : 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <!-- by MJ 2023.09.13 : scroll 문제로 변경 -->
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by MJ 2023.08.29 : custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by MJ 2023.08.29 : main -->
+    <script src="/javascripts/customizing/didc/rack/popup.js"></script>
+</body>
+</html>

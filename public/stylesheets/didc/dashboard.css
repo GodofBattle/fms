@@ -1,0 +1,1246 @@
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Malgun Gothic';
+    font-size: 12px;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    background-image: url(/img/customizing/didc/ds_bk.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    body {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    body {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-height: 960px) {
+    body {
+        font-size: 9px;
+    }
+}
+
+.i-widget {
+    position: fixed;
+}
+
+.i-line-vertical {
+    border-left: 2px solid #aaaaaa;
+    margin: 0rem 0.5rem;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20230720: Main Dashboard - TempHumi Style Start                                                            */
+/***********************************************************************************************************************/
+.i-temphumi-panel {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    background-image: url(/img/customizing/didc/ds_panel_bk.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.i-temphumi {
+    flex: 1;
+    padding: 0 1em;
+}
+
+.i-temphumi-content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 0.5em;
+}
+
+.i-temphumi-content:hover {
+    cursor: pointer;
+    background-color: #88888822;
+    transition: 0.7s;
+}
+
+.i-temphumi-content:hover:active {
+    outline: 1px solid #333333;
+}
+
+.i-temphumi .i-temphumi-content .i-title {
+    color: #eeeeee;
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+.i-temphumi .i-temphumi-content .i-content {
+    color: #ffffff;
+    text-shadow: 1px 1px #333333;
+    display: inline-flex;
+    padding: 0.5em 0em;
+}
+
+.i-temphumi .i-temphumi-content .i-content .i-temphumi-icon {
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: auto 2.6em;
+}
+
+.i-temphumi .i-temphumi-content .i-content .i-temphumi-icon.i-temp {
+    background-image: url(/img/customizing/didc/ds_icon_temp.png);
+    background-position: 45% center;
+}
+
+.i-temphumi .i-temphumi-content .i-content .i-temphumi-icon.i-humi {
+    background-image: url(/img/customizing/didc/ds_icon_humi.png);
+    background-position: center center;
+}
+
+.i-temphumi .i-temphumi-content .i-content .i-value {
+    flex: 2;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.i-temphumi .i-temphumi-content .i-content .i-value .i-unit {
+    font-size: 0.75em;
+    padding-left: 0.1em;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20230720: Main Dashboard - TempHumi Style End                                                              */
+/***********************************************************************************************************************/
+
+/***********************************************************************************************************************/
+/* by shkoh 20230724: Main Dashboard - Containment Style Start                                                         */
+/***********************************************************************************************************************/
+.i-containment {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    background-image: url(/img/customizing/didc/ds_panel_bk.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.i-containment > .i-step {
+    flex: 1;
+    height: 100%;
+    display: flex;
+}
+
+.i-containment > .i-step.i-step-disabled {
+    opacity: 0.3;
+    background: #666666;
+}
+
+.i-containment > .i-step.i-step-disabled > .i-step-button:hover {
+    cursor: default;
+    filter: none;
+}
+
+.i-containment > .i-step.i-step-disabled > .i-step-button:hover:active {
+    filter: none;
+}
+
+.i-containment > .i-step > .i-step-button {
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.i-containment > .i-step > .i-step-button:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+}
+
+.i-containment > .i-step > .i-step-button:hover:active {
+    filter: drop-shadow(0px 0px 4px #333333);
+}
+
+.i-containment > .i-step > .i-step-button.i-left {
+    background-image: url(/img/customizing/didc/ds_button_left.png);
+}
+
+.i-containment > .i-step > .i-step-button.i-right {
+    background-image: url(/img/customizing/didc/ds_button_right.png);
+}
+
+.i-containment > .i-containment-content {
+    flex: 22;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5em 0em;
+}
+
+.i-containment > .i-containment-content > .i-containment-title {
+    display: flex;
+}
+
+.i-containment > .i-containment-content > .i-containment-title > .i-title {
+    flex: 1;
+    text-align: left;
+    color: #eeeeee;
+    text-indent: 1em;
+    border-radius: 0.5em;
+    outline: 1px solid transparent;
+}
+
+.i-containment > .i-containment-content > .i-containment-title > .i-title:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #88888822;
+}
+
+.i-containment > .i-containment-content > .i-containment-title > .i-title:hover:active {
+    outline: 1px solid #333333;
+}
+
+.i-containment > .i-containment-content > .i-containment-title > .i-title > .i-containment-name {
+    font-size: 2em;
+    text-shadow: 1px 1px #333333;
+    font-weight: bold;
+}
+
+.i-containment > .i-containment-content > .i-containment-title > .i-title > .i-rack-max {
+    font-size: 1.4em;
+    color: #dddddd;
+}
+
+.i-containment > .i-containment-content > .i-containment-title > .i-title > .i-rack-max > .i-rack-name-max {
+    margin: 0rem 0.5rem;
+    padding: 0rem 0.5rem;
+    color: #ffffff;
+    background-color: #68b9f3;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.i-containment > .i-containment-content > .i-containment-title > .i-title-set {
+    flex-basis: content;
+    margin-left: 1em;
+}
+
+.i-containment > .i-containment-content > .i-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-shadow: 1px 1px #333333;
+    align-self: center;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-info > .i-info-content {
+    display: flex;
+    padding: 0.5rem 1rem;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-info > .i-info-content > .i-title {
+    flex: 1;
+    padding-right: 0.5rem;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-info > .i-info-content > .i-value-content {
+    flex: 3;
+    text-align: right;
+    font-weight: bold;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-info > .i-avg {
+    flex: 0;
+    align-items: center;
+    color: #60c160;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-info > .i-avg > .i-value-content > .i-value {
+    font-size: 2.5em;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-info > .i-avg > .i-value-content > .i-unit {
+    font-size: 0.5em;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-info > .i-max {
+    flex: 0;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: #68b9f3;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-info > .i-max > .i-value-content > .i-value {
+    font-size: 1.8em;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-info > .i-max > .i-value-content > .i-unit {
+    font-size: 0.5em;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-graph {
+    flex: 4.5;
+}
+
+.i-containment > .i-containment-content > .i-content > .i-graph > .i-containment-chart {
+    width: 100%;
+    height: 12vh;
+}
+
+#i-containment-set-button,
+#i-containment-set-control
+ {
+    background: #88888811;
+    color: #dddddd;
+    border: none;
+}
+
+#i-containment-set-button:hover,
+#i-containment-set-control:hover {
+    background: #88888844;
+}
+
+#i-containment-set-button:hover:active,
+#i-containment-set-control:hover:active {
+    outline: 1px solid #333333;
+}
+
+#i-containment-set-button:focus,
+#i-containment-set-control:focus {
+    box-shadow: none;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20230724: Main Dashboard - Containment Style End                                                           */
+/***********************************************************************************************************************/
+
+/***********************************************************************************************************************/
+/* by shkoh 20230725: Main Dashboard - Clock Style Start                                                               */
+/***********************************************************************************************************************/
+#didc-server-time.i-header {
+    display: flex;
+    flex-direction: row;
+}
+
+#didc-server-time.i-header > .i-logo {
+    flex: 2;
+    background-image: url(/img/customizing/didc/didc_logo_only.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#didc-server-time.i-header > .i-clock {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#didc-server-time.i-header > .i-clock > .i-clock-date {
+    flex: 2;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.3em;
+    color: #ffffff;
+    text-indent: 0.6rem;
+    padding-bottom: 1rem;
+}
+
+#didc-server-time.i-header > .i-clock > .i-clock-time {
+    flex: 3;
+    font-size: 4em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px #333333;
+    display: flex;
+    width: 100%;
+}
+
+#didc-server-time.i-header > .i-clock > .i-clock-time > .i-clock-time-info {
+    padding: 0rem 0.1rem;
+}
+
+#didc-server-time.i-header > .i-clock > .i-clock-time > .i-clock-time-info.i-hour {
+    flex: 0;
+    text-align: left;
+    margin-top: -1.5rem;
+}
+
+#didc-server-time.i-header > .i-clock > .i-clock-time > .i-clock-time-info.i-minute {
+    flex: 2;
+    text-align: left;
+    margin-top: -1.5rem;
+}
+
+#didc-server-time.i-header > .i-clock > .i-clock-time > .i-clock-time-info.i-seperator {
+    flex: 0;
+    flex-basis: 20px;
+    text-align: center;
+    margin-top: -2rem;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20230725: Main Dashboard - Clock Style End                                                                 */
+/***********************************************************************************************************************/
+
+/***********************************************************************************************************************/
+/* by shkoh 20230725: Main Dashboard - HVAC Run State & Power Value Style Start                                        */
+/***********************************************************************************************************************/
+.i-hvac-run-state,
+.i-power {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 1px solid #b8b8b8;
+}
+
+.i-hvac-run-state > .i-title,
+.i-power > .i-title {
+    flex: 0;
+    flex-basis: 36px;
+    background-color: #33333322;
+    font-size: 1.5em;
+    color: #ffffff;
+    padding: 0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    text-indent: 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.i-hvac-run-state > .i-contents,
+.i-power > .i-contents {
+    flex: 4;
+    background: linear-gradient(90deg, #ffffff00, #b3b3b333);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.i-hvac-run-state > .i-contents > .i-panel,
+.i-power > .i-contents > .i-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.i-hvac-run-state > .i-contents > .i-panel:hover,
+.i-power > .i-contents > .i-panel:hover {
+    cursor: pointer;
+    background-color: #88888822;
+    transition: 0.5s;
+}
+
+.i-hvac-run-state > .i-contents > .i-panel:hover:active,
+.i-power > .i-contents > .i-panel:hover:active {
+    outline: 1px solid #333333;
+}
+
+.i-hvac-run-state > .i-contents > .i-panel > .i-panel-title,
+.i-power > .i-contents > .i-panel > .i-panel-title {
+    color: #eeeeee;
+    font-size: 1.2em;
+    text-indent: 2rem;
+}
+
+.i-hvac-run-state > .i-contents > .i-panel > .i-panel-body,
+.i-power > .i-contents > .i-panel > .i-panel-body {
+    color: #ffffff;
+    text-shadow: 1px 1px #333333;
+    margin-right: 2rem;
+}
+
+.i-hvac-run-state > .i-contents > .i-panel > .i-panel-body > .i-hvac-run,
+.i-power > .i-contents > .i-panel > .i-panel-body > .i-value {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 0rem 0.4rem;
+}
+
+.i-hvac-run-state > .i-contents > .i-panel > .i-panel-body > .i-hvac-total,
+.i-power > .i-contents > .i-panel > .i-panel-body > .i-unit {
+    font-size: 1em;
+}
+
+/* by shkoh 20230725: KendoUI - slider custom */
+.i-panel-body > .k-state-disabled .k-slider-wrap {
+    opacity: 1;
+}
+
+.i-panel-body > .k-slider-horizontal .k-slider-bottomright .k-tick {
+    background: none;
+}
+
+.i-panel-body > .k-slider-horizontal .k-label {
+    bottom: -0.8rem;
+    color: #ffffff;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20230725: Main Dashboard - HVAC Run State & Power Value Style End                                          */
+/***********************************************************************************************************************/
+
+/***********************************************************************************************************************/
+/* by shkoh 20230725: Main Dashboard - PUE Style Start                                                                 */
+/***********************************************************************************************************************/
+.i-pue {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 1px solid #b8b8b8;
+}
+
+.i-pue > .i-title {
+    flex: 0;
+    flex-basis: 36px;
+    background-color: #33333322;
+    font-size: 1.8em;
+    color: #ffffff;
+    padding: 0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    text-indent: 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.i-pue > .i-contents {
+    flex: 4;
+    background: linear-gradient(90deg, #ffffff00, #b3b3b333);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#didc-pue .k-arcgauge-label {
+    color: #ffffff;
+    text-shadow: 1px 1px #333333;
+    font-size: 4em;
+}
+
+#i-pue:hover {
+    cursor: pointer;
+    background-color: #88888822;
+    transition: 0.5s;
+}
+
+#i-pue:hover:active {
+    filter: opacity(0.5);
+}
+/***********************************************************************************************************************/
+/* by shkoh 20230725: Main Dashboard - PUE Style End                                                                   */
+/***********************************************************************************************************************/
+
+/***********************************************************************************************************************/
+/* by shkoh 20230725: Main Dashboard - Alert Style Start                                                               */
+/***********************************************************************************************************************/
+.i-alert {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/img/customizing/didc/ds_panel_bk3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.i-alert > .i-header {
+    flex: 1;
+    background-color: #33333322;
+    color: #ffffff;
+    padding: 1rem 0rem 0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.i-alert > .i-header > .i-title {
+    flex: 10;
+    font-size: 1.8em;
+    text-indent: 2rem;
+}
+
+.i-alert > .i-header > .i-legend {
+    flex: 1;
+    flex-basis: auto;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.i-alert > .i-header > .i-legend > .i-mark {
+    flex: 1;
+    flex-basis: auto;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    outline: 1px solid transparent;
+}
+
+.i-alert > .i-header > .i-legend > .i-mark.i-popup:hover {
+    cursor: pointer;
+    filter: opacity(0.8);
+    transition: 0.5s;
+}
+
+.i-alert > .i-header > .i-legend > .i-mark.i-popup:hover:active {
+    filter: opacity(0.5);
+    outline: 1px solid #333333;
+}
+
+.i-alert > .i-header > .i-legend > .i-mark > .i-mark-circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.i-alert > .i-header > .i-legend > .i-mark > .i-mark-name {
+    flex: 1;
+}
+
+.i-alert > .i-header > .i-legend > .i-mark.i-lvl-1 > .i-mark-name {
+    color: #000000;
+}
+
+.i-alert > .i-header > .i-legend > .i-mark > .i-mark-value {
+    padding: 0rem 1rem;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 1rem;
+    background-color: #ffffff;
+}
+
+.i-alert > .i-header > .i-legend > .i-mark > .i-mark-value2 {
+    background-color: transparent;
+    border-radius: 0.5rem;
+}
+
+.i-alert > .i-contents {
+    border-radius: 1rem;
+    background: linear-gradient(90deg, #ffffff00, #b3b3b333);
+    flex: 4;
+    color: #ffffff;
+    text-shadow: 2px 2px #333333;
+    font-size: 3.2em;
+    text-indent: 1rem;
+    overflow-y: auto;
+    margin: 0.6rem 1rem 1.2rem 1rem;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+
+.i-alert > .i-contents > .i-alert-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.i-alert > .i-contents > .i-alert-no-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.i-alert > .i-contents > .i-alert-item .i-alert-item-occur {
+    font-size: 0.5em;
+}
+
+.i-alert > .i-contents > .i-alert-item .i-alert-item-panel {
+    font-size: 0.9em;
+}
+
+.i-alert > .i-contents > .i-alert-item .i-alert-item-panel .i-alert-item-lvl {
+    padding: 0rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.i-alert > .i-contents::-webkit-scrollbar {
+    display: none;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20230725: Main Dashboard - Alert Style End                                                                 */
+/***********************************************************************************************************************/
+
+/***********************************************************************************************************************/
+/* by shkoh 20230726: Main Dashboard - Alert Items Style Start                                                         */
+/***********************************************************************************************************************/
+.i-alert-items {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, #33333322, #88888822);
+}
+
+.i-alert-items > .i-title {
+    flex: 0;
+    flex-basis: 36px;
+    color: #eeeeee;
+    font-size: 1.8em;
+    padding: 0.5rem 0;
+    text-indent: 2rem;
+}
+
+.i-alert-items > .i-contents {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.i-alert-items > .i-contents > .i-status {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.i-alert-items > .i-contents > .i-status > .i-info {
+    flex: 0;
+    color: #aaaaaa;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.i-alert-items > .i-contents > .i-status > .i-no-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.i-alert-items > .i-contents > .i-status > .i-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.i-alert-items > .i-contents > .i-status > .i-item:hover {
+    cursor: pointer;
+    background-color: #88888822;
+    transition: 0.7s;
+}
+
+.i-alert-items > .i-contents > .i-status > .i-item:hover:active {
+    outline: 1px solid #333333;
+}
+
+.i-alert-items > .i-contents > .i-status > .i-item > .i-mark {
+    flex: 0;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    display: flex;
+    align-items: center;
+}
+
+.i-alert-items > .i-contents > .i-status > .i-item > .i-mark > .i-block {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1px 1px #333333;
+}
+
+.i-alert-items > .i-contents > .i-status > .i-item > .i-mark-name {
+    flex: 1;
+    color: #ffffff;
+    font-size: 1.2em;
+    text-shadow: 1px 1px #333333;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20230726: Main Dashboard - Alert Items Style End                                                           */
+/***********************************************************************************************************************/
+
+/***********************************************************************************************************************/
+/* by shkoh 20230726: Main Dashboard - Icon Image Style Start                                                          */
+/***********************************************************************************************************************/
+.i-icon {
+    display: flex;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, #33333322, #88888822);
+}
+
+.i-icon > .i-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.i-icon > .i-panel:hover {
+    cursor: pointer;
+    background-color: #88888822;
+    transition: 0.7s;
+}
+
+.i-icon > .i-panel:hover:active {
+    outline: 1px solid #333333;
+}
+
+.i-icon > .i-panel > .i-text {
+    position: absolute;
+    color: #ffffff;
+    text-shadow: 3px 3px #333333;
+    font-weight: bold;
+    display: flex;
+}
+
+.i-icon > .i-panel > .i-img-mask.i-twinkling {
+    animation-name: twinkling;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes twinkling {
+    0% {
+        backdrop-filter: brightness(1);
+    }
+
+    50% {
+        backdrop-filter: brightness(0.5);
+    }
+
+    100% {
+        backdrop-filter: brightness(1);
+    }
+}
+
+/* by shkoh 20230728: 공조시스템 메인 아이콘 */
+#didc-ac.i-icon > .i-panel > .i-img {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    height: 80%;
+}
+
+#didc-ac.i-icon > .i-panel > .i-img.i-img-src {
+    background-image: url(/img/customizing/didc/ds_icon_ac.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    transform: scaleX(-1);
+}
+
+#didc-ac.i-icon > .i-panel > .i-img.i-img-mask {
+    -webkit-mask-image: url(/img/customizing/didc/ds_icon_ac.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+
+    mask-image: url(/img/customizing/didc/ds_icon_ac.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+    transform: scaleX(-1);
+
+    mix-blend-mode: color;
+}
+
+#didc-ac.i-icon > .i-panel > .i-text {
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+/* by shkoh 20230728: 전력시스템 메인 아이콘 */
+#didc-elec.i-icon > .i-panel > .i-img {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 90%;
+}
+
+#didc-elec.i-icon > .i-panel > .i-img.i-img-src {
+    background-image: url(/img/customizing/didc/ds_icon_elec.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#didc-elec.i-icon > .i-panel > .i-img.i-img-mask {
+    -webkit-mask-image: url(/img/customizing/didc/ds_icon_elec.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+
+    mask-image: url(/img/customizing/didc/ds_icon_elec.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+
+    mix-blend-mode: color;
+}
+
+#didc-elec.i-icon > .i-panel > .i-text { 
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+/* by shkoh 20230728: 소방 메인 아이콘 */
+#didc-fire.i-icon {
+    flex-direction: row;
+}
+
+#didc-fire.i-icon > .i-panel {
+    padding: 0 0.5rem;
+}
+
+#didc-fire.i-icon > .i-panel > .i-img {
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    top: 5%;
+}
+
+#didc-fire.i-icon > .i-panel > .i-img.i-img-src {
+    background-image: url(/img/customizing/didc/ds_icon_fire.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#didc-fire.i-icon > .i-panel > .i-img.i-img-mask {
+    -webkit-mask-image: url(/img/customizing/didc/ds_icon_fire.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+
+    mask-image: url(/img/customizing/didc/ds_icon_fire.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+
+    mix-blend-mode: multiply;
+}
+
+#didc-fire.i-icon > .i-panel > .i-text {
+    width: 50%;
+    height: 100%;
+    font-size: 3.5em;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+/* by shkoh 20230728: 항온항습기 메인 아이콘 */
+#didc-hvac.i-icon > .i-panel > .i-img {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    height: 70%;
+}
+
+#didc-hvac.i-icon > .i-panel > .i-img.i-img-src {
+    background-image: url(/img/customizing/didc/ds_icon_hvac.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#didc-hvac.i-icon > .i-panel > .i-img.i-img-mask {
+    -webkit-mask-image: url(/img/customizing/didc/ds_icon_hvac.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+
+    mask-image: url(/img/customizing/didc/ds_icon_hvac.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+
+    mix-blend-mode: color;
+}
+
+#didc-hvac.i-icon > .i-panel > .i-text {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    font-weight: normal;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-indent: 2rem;
+    padding-top: 0.5rem;
+}
+
+/* by shkoh 20230728: 온습도 메인 아이콘 */
+#didc-temphumi.i-icon > .i-panel > .i-img {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    width: 80%;
+    height: 75%;
+}
+
+#didc-temphumi.i-icon > .i-panel > .i-img.i-img-src {
+    background-image: url(/img/customizing/didc/ds_icon_temphumi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#didc-temphumi.i-icon > .i-panel > .i-img.i-img-mask {
+    -webkit-mask-image: url(/img/customizing/didc/ds_icon_temphumi.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+
+    mask-image: url(/img/customizing/didc/ds_icon_temphumi.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+
+    mix-blend-mode: color;
+}
+
+#didc-temphumi.i-icon > .i-panel > .i-text {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    font-weight: normal;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-indent: 2rem;
+    padding-top: 0.5rem;
+
+}
+
+/* by shkoh 20230728: 풍속 메인 아이콘 */
+#didc-wind {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    border: 1px solid #b8b8b8;
+}
+
+#didc-wind.i-icon > .i-title {
+    flex: 0;
+    flex-basis: 36px;
+    background-color: #33333322;
+    font-size: 1.8em;
+    color: #ffffff;
+    padding: 0.1em 0em;
+    display: flex;
+    align-items: center;
+    text-indent: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+#didc-wind.i-icon > .i-panel > .i-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0em 0.5em 0.5em 0.5em;
+    height: 100%;
+}
+
+#didc-wind.i-icon > .i-panel > .i-contents > .i-row {
+    width: 55%;
+    flex: 1;
+    color: #ffffff;
+    text-shadow: 1px 1px #333333;
+    display: flex;
+}
+
+#didc-wind.i-icon > .i-panel > .i-contents > .i-row > .i-row-title {
+    flex: 1;
+    font-size: 0.9em;
+    align-self: center;
+    text-align: right;
+}
+
+#didc-wind.i-icon > .i-panel > .i-contents > .i-row > .i-row-content {
+    flex: 3;
+    align-self: center;
+    text-align: right;
+}
+
+#didc-wind.i-icon > .i-panel > .i-contents > .i-row > .i-row-content > .i-row-value {
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+#didc-wind.i-icon > .i-panel > .i-contents > .i-row > .i-row-content > .i-row-unit {
+    font-size: 1em;
+}
+
+#didc-wind.i-icon > .i-panel > .i-img {
+    position: absolute;
+    left: 1%;
+    top: 35%;
+    width: 45%;
+    height: 50%;
+}
+
+#didc-wind.i-icon > .i-panel > .i-img.i-img-src {
+    background-image: url(/img/customizing/didc/ds_icon_wind.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#didc-wind.i-icon > .i-panel > .i-img.i-img-mask {
+    -webkit-mask-image: url(/img/customizing/didc/ds_icon_wind.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+
+    mask-image: url(/img/customizing/didc/ds_icon_wind.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+
+    mix-blend-mode: color;
+}
+
+/* by shkoh 20230728: 랙 메인 아이콘 */
+#didc-rack.i-icon > .i-panel > .i-img {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    width: 80%;
+    height: 75%;
+}
+
+#didc-rack.i-icon > .i-panel > .i-img.i-img-src {
+    background-image: url(/img/customizing/didc/ds_icon_rack.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#didc-rack.i-icon > .i-panel > .i-img.i-img-mask {
+    -webkit-mask-image: url(/img/customizing/didc/ds_icon_rack.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+
+    mask-image: url(/img/customizing/didc/ds_icon_rack.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+
+    mix-blend-mode: color;
+}
+
+#didc-rack.i-icon > .i-panel > .i-text {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    font-weight: normal;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-indent: 2rem;
+    padding-top: 0.5rem;
+}
+
+/* by shkoh 20230728: 분전반 메인 아이콘 */
+#didc-distribute-panel.i-icon > .i-panel > .i-img {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    width: 70%;
+    height: 70%;
+}
+
+#didc-distribute-panel.i-icon > .i-panel > .i-img.i-img-src {
+    background-image: url(/img/customizing/didc/ds_icon_distribute_panel.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#didc-distribute-panel.i-icon > .i-panel > .i-img.i-img-mask {
+    -webkit-mask-image: url(/img/customizing/didc/ds_icon_distribute_panel.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+
+    mask-image: url(/img/customizing/didc/ds_icon_distribute_panel.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+
+    mix-blend-mode: color;
+}
+
+#didc-distribute-panel.i-icon > .i-panel > .i-text {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    font-weight: normal;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+/***********************************************************************************************************************/
+/* by shkoh 20230726: Main Dashboard - Icon Image Style End                                                            */
+/***********************************************************************************************************************/
+
+.i-normal,
+.i-lvl-0 {
+    background: linear-gradient(134deg, #0161b8, #0086ff);
+}
+
+.i-warning,
+.i-lvl-1 {
+    background: linear-gradient(134deg, #ffe601, #ffc363);
+}
+
+.i-major,
+.i-lvl-2 {
+    background: linear-gradient(134deg, #ff5900e6, #ff8238);
+}
+
+.i-critical,
+.i-lvl-3 {
+    background: linear-gradient(134deg, #ff0000, #ff3f3f);
+}
+
+.i-connection-down,
+.i-lvl-5 {
+    background: linear-gradient(134deg, #262626, #6f6f6f);
+}

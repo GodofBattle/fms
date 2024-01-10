@@ -1,0 +1,48 @@
+<style>
+    .curtain {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background:rgba(0,0,0,.8);
+        text-align:center;
+        padding-top: 5%;
+        color:#ffffff;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        z-index: 2;
+    }
+</style>
+
+    <div id="curtain" class="curtain">
+        <h1></h1>
+    </div>
+    
+<script type="text/javascript">
+    function isRunning() {
+        $.ajax({
+            async: true,
+            type: "GET",
+            url: "/equipment/equipStatus/" + g_equipId,
+            dataType: "json"
+        }).done(function(data){
+            if(data == null) {
+                console.log("Not Found Equipment Name: <%= data.name %>");
+                return;
+            }
+            if(data.currentStatus < 4) {
+                $("#curtain").attr("hidden", "hidden");
+            } else {
+                $("#curtain").removeAttr("hidden");
+                $("#curtain > h1").text(data.statusName);
+            }
+        }).fail(function(xhr, errMsg) {
+            let nowDate = new Date();
+            console.log("[" + nowDate.toLocaleString() + "] Error to check a running status: " + errMsg);
+        });
+    }
+
+    isRunning();
+    setInterval(isRunning, 10000);
+</script>

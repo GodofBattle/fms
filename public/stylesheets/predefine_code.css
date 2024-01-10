@@ -1,0 +1,299 @@
+html {
+    height: 100%;
+}
+
+body {
+	background-color: #f3f3f3;
+    font-family: "Malgun Gothic";
+    height: 100%;
+}
+
+.content {
+    padding: 8px 2px 8px 2px;
+    height: 100%;
+}
+
+.panel {
+    border-radius: 0;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.panel-primary {
+	border: 3px solid #172f51;
+}
+
+.panel-primary > .panel-heading {
+    padding: 3px 6px;
+	height: 32px;
+	background: none;
+	background-color: #172f51;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#grid-title {
+    padding: 3px 6px;
+	color: #ffffff;	
+	float: left;
+	font-size: 13px;
+}
+
+/* kdh 20180517 zTree 스타일 */
+.ztree * {
+    font-size: 13px;
+    font-family: "Malgun Gothic";
+}
+
+.ztree li a:hover {
+    text-decoration: none;
+    color: #317be0;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+    border: none;
+    background-color: #317be0;
+    color: #ffffff;
+    opacity: 1.0;
+    padding: 1px 3px 0px 0px;
+}
+/* kdh 20180517 zTree 스타일 */
+
+/* kdh 20180517 트리 rMenu 스타일 */
+#rMenu {
+    position: absolute;
+    visibility: hidden;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    border: 1px solid #c5c5c5;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    background-clip: padding-box;
+    font-size: 13px;
+}
+
+#rMenu > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: outside none none;
+    line-height: 20px;
+}
+
+#rMenu > ul > li > a {
+    display: block;
+    padding: 3px 10px;
+    color: #333333;
+}
+
+#rMenu > ul > li > a:hover, #rMenu > ul > li > a:focus {
+    text-decoration: none;
+    background-color: #317be0;
+    color: #ffffff;
+}
+/* kdh 20180517 트리 rMenu 스타일 */
+
+/* kdh 20180523 bootstrap Modal 스타일 */
+.modal-content {
+    height: 100%;
+    border-radius: 0px;
+    border: 3px solid #172f51;
+}
+
+.modal-header {
+    background-color: #172f51;
+    padding: 5px 15px;
+}
+
+.modal-title {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.modal-footer {
+    margin: 0px 15px;
+    padding: 5px 0px;
+    border-top: 1px solid #d5d5d5;
+}
+
+.pdCodeTitleText {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.editRow {
+	margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+.btn-custom {
+    width: 65px;
+    height: 30px;
+    border: none;
+}
+
+.btn-custom:focus {
+    outline: none;
+}
+
+.btn-custom-cancel {
+    background: url('/img/setting/btn_close_01.png') no-repeat 0px;
+}
+
+.btn-custom-cancel:hover {
+    background: url('/img/setting/btn_close_02.png') no-repeat 0px;
+    border: none;
+    box-shadow: none;
+}
+/* kdh 20180523 bootstrap Modal 스타일 */
+
+.custom-panel-heading {
+    width: 100%;
+    background: none;
+    background-color: #172f51;
+    display: inline-block;
+    border-bottom: 3px solid #172f51;
+}
+
+.button-right {
+    padding: 0px;
+    float: right;
+}
+
+.btn {
+	height: 30px;
+	padding: 0px 1px 0px 1px;
+    border: none;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn:active:focus, .btn:focus {
+    outline: none;
+}
+
+.btn-add,
+.btn-add:focus {
+	background: url("/img/setting/btn_add_01.png") no-repeat 0px;	
+}
+
+.btn-add:hover,
+.btn-add:active {
+	background: url("/img/setting/btn_add_02.png") no-repeat 0px;
+	background-color: transparent !important;
+}
+
+.btn-save,
+.btn-save:focus {
+	background: url("/img/setting/btn_save_01.png") no-repeat 0px;
+}
+
+.btn-save:hover,
+.btn-save:active {
+	background: url("/img/setting/btn_save_02.png") no-repeat 0px;
+	background-color: transparent !important;
+}
+
+.btn-cancel,
+.btn-cancel:focus {
+	background: url("/img/setting/btn_cancel_01.png") no-repeat 0px;
+}
+
+.btn-cancel:hover,
+.btn-cancel:active {
+	background: url("/img/setting/btn_cancel_02.png") no-repeat 0px;
+	background-color: transparent !important;
+}
+
+.btn-delete,
+.btn-delete:focus {
+	background: url("/img/setting/btn_delete_01.png") no-repeat 0px;
+}
+.btn-delete:hover,
+.btn-delete:active {
+	background: url("/img/setting/btn_delete_02.png") no-repeat 0px;
+	background-color: transparent !important;
+}
+
+/* kdh 20180518 Table grid 스타일 */
+#pdCodeGrid {
+    margin-top: -5px;
+}
+
+.k-grid {
+    border-radius: 0px;
+    border: none;
+}
+
+.k-grid-header th.k-with-icon .k-link {
+    font-weight: bold;
+}
+
+.k-grid tr td {
+    border-top-color: #eeeeee;
+    border-left-color: #e6e6e6;
+}
+
+.k-state-focused {
+    /* box-shadow: 0 0 3px 0 #172f51; */
+    background-color: #428bca;
+    color: white;
+}
+
+.k-grid table {
+    font-size: 12px;
+}
+
+td.k-state-selected.k-edit-cell {
+    padding: 0px;
+}
+
+.k-popup .k-list .k-state-focused {
+    border-radius: 0px;
+}
+
+.k-item.k-state-selected.k-state-focused.k-state-hover {
+    box-shadow: none;
+}
+
+.k-grid .k-dropdown-wrap {
+    border-radius: 0px;
+}
+
+.k-grid .k-textbox {
+    border-radius: 0px;
+    border: none;
+}
+
+.k-grid table tr:hover.k-state-focused td {
+    background: #428bca;
+}
+
+.k-grid-norecords {
+    height: 90%;
+}
+
+/* kdh 20181107 Table grid DropDownList 스타일 */
+.k-item > span {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.k-item > span:first-child {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/* kdh 20181107 Table grid DropDownList 스타일 */
+/* kdh 20180518 Table grid 스타일 */

@@ -1,0 +1,1928 @@
+[2023/04/28 13:34:08.272] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:92:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/04/28 13:45:42.792] [ERROR] ClientError [NotFoundError]: Not Found
+    at isAuthorized (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/external/index.js:29:14)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+[2023/04/28 13:45:52.858] [ERROR] ClientError [NotFoundError]: Not Found
+    at isAuthorized (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/external/index.js:29:14)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+[2023/04/28 13:45:53.460] [ERROR] ClientError [NotFoundError]: Not Found
+    at isAuthorized (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/external/index.js:29:14)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+[2023/04/28 13:45:53.710] [ERROR] ClientError [NotFoundError]: Not Found
+    at isAuthorized (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/external/index.js:29:14)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+[2023/04/28 13:45:53.960] [ERROR] ClientError [NotFoundError]: Not Found
+    at isAuthorized (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/external/index.js:29:14)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+[2023/04/28 13:46:37.904] [ERROR] ClientError [NotFoundError]: Not Found
+    at isAuthorized (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/api/external/index.js:29:14)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+[2023/04/28 13:47:04.285] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:47:14.700] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:47:15.447] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:47:15.915] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:47:41.625] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:48:59.981] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:23.256] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:24.101] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:24.402] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:24.636] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:24.852] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:25.034] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:25.503] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:43.426] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:44.141] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:44.325] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:44.507] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:49:44.672] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:50:41.058] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:50:41.406] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:50:41.624] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:50:41.823] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:50:42.022] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:50:42.223] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:50:47.192] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:50:47.943] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:50:48.374] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:51:15.721] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:51:16.451] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:51:16.684] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:51:16.882] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:51:17.349] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:51:17.584] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:52:27.187] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:52:27.752] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:52:28.019] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:54:28.504] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:55:55.346] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:92:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/04/28 13:56:00.198] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:01.998] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:02.564] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:07.599] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:08.196] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:08.480] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:08.781] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:24.726] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:25.287] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:25.753] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:25.936] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:26.318] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:26.720] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:33.722] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:34.256] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:34.488] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:34.722] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:35.176] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:35.372] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:56:35.639] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:57:09.368] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:57:56.921] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:57:57.653] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:57:58.119] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:57:58.486] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:57:58.686] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:57:59.153] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:03.253] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:03.786] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:03.986] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:04.153] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:04.352] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:04.552] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:50.133] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:51.487] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:51.985] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:52.319] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:52.551] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:53.016] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:53.151] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:53.384] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:53.785] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:58:53.984] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:10.119] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:14.222] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:14.818] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:15.050] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:15.216] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:15.617] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:15.851] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:16.084] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:40.884] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:50.588] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:51.415] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:51.782] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:52.014] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 13:59:52.216] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:07.154] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:07.817] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:08.151] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:08.416] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:08.649] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:08.884] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:09.115] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:09.349] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:09.550] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:20.488] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:21.182] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:21.450] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:21.681] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:21.918] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:22.116] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:22.316] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:22.479] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:22.682] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:22.848] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:23.049] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}
+[2023/04/28 14:00:23.182] [ERROR] SyntaxError: Unexpected token i in JSON at position 6
+    at JSON.parse (<anonymous>)
+    at parse (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:224:16)
+    at done (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\n    id: "icomer",\n    pw: "icomer"\n}',
+  type: 'entity.parse.failed'
+}

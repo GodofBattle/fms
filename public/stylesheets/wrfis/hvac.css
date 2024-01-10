@@ -1,0 +1,533 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'KoPub Dotum';
+    height: 100%;
+    overflow: hidden;
+}
+
+:focus {
+    outline: none;
+}
+
+/***************************************************************************************************************/
+/* by shkoh 20210311: bootstrap 3.x re-define start                                                            */
+/***************************************************************************************************************/
+.panel {
+    border-radius: 0px;
+    margin-bottom: 4px;
+}
+
+.panel-heading {
+    border-radius: 0px;
+}
+
+.panel-body {
+    padding: 4px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210311: bootstrap 3.x re-define end                                                              */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210311: icomer style start                                                                       */
+/***************************************************************************************************************/
+.i-content {
+    padding: 8px 16px;
+    height: 100%;
+}
+
+.i-panel {
+    border: 3px solid #172f51;
+}
+
+.i-panel-heading {
+    padding: 1px 8px;
+    height: 24px;
+    background-color: #172f51;
+    border: none;
+    color: #ffffff;
+}
+
+.i-panel-title {
+    font-weight: bold;
+}
+
+.i-row {
+    display: flex;
+}
+
+.i-table {
+    margin-bottom: 0px;
+    height: 100%;
+}
+
+.i-table > thead > tr > th {
+    height: 24px;
+    vertical-align: middle;
+    padding-left: 10px;
+    color: #ffffff;
+    border: 1px solid #172f51;
+}
+
+.i-table > thead > tr > th.i-th-main {
+    vertical-align: bottom;
+    background-color: #172f51;
+}
+
+.i-table > thead > tr > th.i-idx-text {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    background-color: #2b63b1;
+    font-size: 12px;
+}
+
+.i-table > tbody > tr > td {
+    border: 1px solid #172f51;
+}
+
+.i-table > tbody > tr:nth-child(2n) {
+    background-color: #ebebeb;
+}
+
+.i-table > tbody > tr > td.i-floor-text {
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 80px;
+    user-select: none;
+}
+
+.i-table > tbody > tr > td.i-floor-text > h3 > span {
+    cursor: pointer;
+}
+
+.i-table > tbody > tr > td.i-floor-text > h3 > span:hover {
+    background-color: #2b63b1;
+}
+
+.i-table > tbody > tr > td.i-floor-text > h3 > span:active:hover {
+    box-shadow: 0 0 7px 0 #76abd9, inset 0 3px 5px rgb(0 0 0 / 13%);
+    border-color: #69ace6;
+}
+
+.i-table > tbody > tr > td.i-hvac {
+    width: 6%;
+    vertical-align: middle;
+    padding: 0px 4px 0px 10px;
+    line-height: 15px;
+}
+
+/* by shkoh 20210311: 항온항습기 가동현황 >> 헤더 스타일 시작 */
+.i-header-table {
+    margin-bottom: 0px;
+}
+
+.i-header-table > tbody > tr > td {
+    border-top: none;
+    vertical-align: middle;
+    padding: 2px 5px;
+    line-height: 1;
+}
+
+.i-header-summary {
+    width: 8%;
+}
+
+.i-header-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666666;
+}
+
+.i-header-contents {
+    text-align: left;
+}
+
+.i-header-contents.summary {
+    border-right: 1px solid #cccccc;
+    text-align: center;
+}
+
+.i-header-value {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.i-header-value-unit {
+    font-size: 10px;
+}
+
+.i-header-empty {
+    width: 50%;
+}
+
+.i-header-outinfo {
+    text-align: right;
+    border-radius: 4px;
+    padding: 2px 10px 2px 0px;
+}
+
+.i-header-outinfo.lvl0 {
+    background-color: #0161b8;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.i-header-outinfo.lvl1 {
+    background-color: #ff9c01;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.i-header-outinfo.lvl2 {
+    background-color: #fe6102;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.i-header-outinfo.lvl3 {
+    background-color: #de0303;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.i-header-outinfo.lvl4 {
+    background-color: #511a81;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.i-header-outinfo.lvl5 {
+    background-color: #000000;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.i-header-outinfo.lvl6 {
+    background-color: #656565;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #333333;
+}
+/* by shkoh 20210311: 항온항습기 가동현황 >> 헤더 스타일 끝 */
+
+/* by shkoh 20210311: 항온항습기 가동현황 >> 외기 정보 스타일 시작 */
+.i-header-outinfo-title {
+    width: 5%;
+    text-align: right;
+}
+
+.i-header-outinfo-contents {
+    width: 5%;
+}
+
+.i-header-table > tbody > tr > td.i-header-title {
+    text-align: center;
+}
+
+.i-header-table > tbody > tr > td.i-header-outinfo-title {
+    vertical-align: middle;
+}
+
+.i-header-table > tbody > tr > td.i-header-outinfo-contents {
+    padding-left: 15px;
+    vertical-align: middle;
+}
+
+.i-header-outinfo-value {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.i-header-outinfo-unit {
+    font-size: 12px;
+}
+/* by shkoh 20210311: 항온항습기 가동현황 >> 외기 정보 스타일 끝 */
+
+/***************************************************************************************************************/
+/* by shkoh 20210311: icomer style end                                                                         */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210311: hvac icon style start                                                                    */
+/***************************************************************************************************************/
+.hvac-panel {
+    margin: auto;
+    display: none;
+}
+
+.hvac-icon {
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    width: 31px;
+    height: 31px;
+}
+
+.i-table > tbody > tr:nth-child(2n) > td > div > table > tbody > tr > td.hvac-icon {
+    background-color: #ebebeb;
+}
+
+.hvac-icon.run0 {
+    background-image: url(/img/diagram/icon/constant_temperature_0.gif);
+}
+
+.hvac-icon.run1 {
+    background-image: url(/img/diagram/icon/constant_temperature_1.gif);
+}
+
+.hvac-icon.run2 {
+    background-image: url(/img/diagram/icon/constant_temperature_2.gif);
+}
+
+.hvac-icon.run3 {
+    background-image: url(/img/diagram/icon/constant_temperature_3.gif);
+}
+
+.hvac-icon.stop0 {
+    background-image: url(/img/diagram/icon/constant_temperature_0.png);
+}
+
+.hvac-icon.stop1 {
+    background-image: url(/img/diagram/icon/constant_temperature_1.png);
+}
+
+.hvac-icon.stop2 {
+    background-image: url(/img/diagram/icon/constant_temperature_2.png);
+}
+
+.hvac-icon.stop3 {
+    background-image: url(/img/diagram/icon/constant_temperature_3.png);
+}
+
+.hvac-icon.stop4 {
+    background-image: url(/img/diagram/icon/constant_temperature_4.png);
+    cursor: default;
+}
+
+.hvac-icon.stop5 {
+    background-image: url(/img/diagram/icon/constant_temperature_5.png);
+    cursor: default;
+}
+
+.hvac-icon.stop6 {
+    background-image: url(/img/diagram/icon/constant_temperature_6.png);
+    cursor: default;
+}
+
+.hvac-icon.run0:hover,
+.hvac-icon.run1:hover,
+.hvac-icon.run2:hover,
+.hvac-icon.run3:hover,
+.hvac-icon.stop0:hover,
+.hvac-icon.stop1:hover,
+.hvac-icon.stop2:hover,
+.hvac-icon.stop3:hover {
+    cursor: pointer;
+    background-blend-mode: luminosity;
+}
+
+.hvac-icon.run0:hover:active,
+.hvac-icon.run1:hover:active,
+.hvac-icon.run2:hover:active,
+.hvac-icon.run3:hover:active,
+.hvac-icon.stop0:hover:active,
+.hvac-icon.stop1:hover:active,
+.hvac-icon.stop2:hover:active,
+.hvac-icon.stop3:hover:active {
+    background-blend-mode: darken;
+}
+
+.hvac-icon.run4:hover,
+.hvac-icon.run5:hover,
+.hvac-icon.run6:hover,
+.hvac-icon.stop4:hover,
+.hvac-icon.stop5:hover,
+.hvac-icon.stop6:hover {
+    cursor: default;
+}
+
+.th-icon-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.02em;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.th-icon-img.temp.lvl0 {
+    background-image: url(/img/diagram/icon/temperature_0.png);
+}
+
+.th-icon-img.temp.lvl1 {
+    background-image: url(/img/diagram/icon/temperature_1.png);
+}
+
+.th-icon-img.temp.lvl2 {
+    background-image: url(/img/diagram/icon/temperature_2.png);
+}
+
+.th-icon-img.temp.lvl3 {
+    background-image: url(/img/diagram/icon/temperature_3.png);
+}
+
+.th-icon-img.temp.lvl4 {
+    background-image: url(/img/diagram/icon/temperature_4.png);
+}
+
+.th-icon-img.temp.lvl5 {
+    background-image: url(/img/diagram/icon/temperature_5.png);
+}
+
+.th-icon-img.temp.lvl6,
+.th-icon-img.temp.lvl-1 {
+    background-image: url(/img/diagram/icon/temperature_6.png);
+}
+
+.th-icon-img.humi.lvl0 {
+    background-image: url(/img/diagram/icon/humid_0.png);
+}
+
+.th-icon-img.humi.lvl1 {
+    background-image: url(/img/diagram/icon/humid_1.png);
+}
+
+.th-icon-img.humi.lvl2 {
+    background-image: url(/img/diagram/icon/humid_2.png);
+}
+
+.th-icon-img.humi.lvl3 {
+    background-image: url(/img/diagram/icon/humid_3.png);
+}
+
+.th-icon-img.humi.lvl4 {
+    background-image: url(/img/diagram/icon/humid_4.png);
+}
+
+.th-icon-img.humi.lvl5 {
+    background-image: url(/img/diagram/icon/humid_5.png);
+}
+
+.th-icon-img.humi.lvl6,
+.th-icon-img.humi.lvl-1 {
+    background-image: url(/img/diagram/icon/humid_6.png);
+}
+
+.th-icon-text {
+    text-shadow: 0px 0px 1px #111111;
+    font-weight: bold;
+    padding: 2px 2px 0px 4px;
+    font-size: 1.08em;
+    text-align: center;
+    width: 30px;
+    border-radius: 4px;
+}
+
+.th-icon-text.lvl0 {
+    background-color: #0161b8;
+    color: #ffffff;
+}
+
+.th-icon-text.lvl1 {
+    background-color: #ff9c01;
+    color: #ffffff;
+}
+
+.th-icon-text.lvl2 {
+    background-color: #fe6102;
+    color: #ffffff;
+}
+
+.th-icon-text.lvl3 {
+    background-color: #de0303;
+    color: #ffffff;
+}
+
+.th-icon-text.lvl4 {
+    background-color: #511a81;
+    color: #ffffff;
+}
+
+.th-icon-text.lvl5 {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.th-icon-text.lvl6 {
+    background-color: #656565;
+    color: #ffffff;
+}
+
+.th-icon-text-unit {
+    padding-left: 2px;
+    font-size: 0.50em;
+    font-weight: normal;
+}
+
+.th-popup {
+    user-select: none;
+}
+
+.hvac-panel > table > tbody > tr > td.th-popup:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210311: hvac icon style end                                                                      */
+/***************************************************************************************************************/
+
+/***************************************************************************************************************/
+/* by shkoh 20210325: icomer - avg header-table style start                                                    */
+/***************************************************************************************************************/
+.i-header-table {
+    margin-bottom: 0px;
+}
+
+.i-header-table > tbody > tr > th,
+.i-header-table > tbody > tr > td {
+    padding: 2px 5px;
+    vertical-align: middle;
+}
+
+.i-header-table > tbody > tr > td,
+.i-header-table > tbody > tr:first-child > th,
+.i-header-table > tbody > tr:first-child > td {
+    border-top: none;
+}
+
+.i-header-table > tbody > tr > td:last-child {
+    border-right: none;
+}
+
+.i-header-table > tbody > tr > th.i-header-title {
+    text-align: center;
+    background-color: #197499;
+    color: #ffffff;
+}
+
+.i-header-table > tbody > tr > th.i-header-title.all {
+    background-color: #0161b8;
+    text-shadow: 1px 1px 2px #333333;
+    max-width: 120px;
+    min-width: 120px;
+    width: 120px;
+}
+
+.i-header-table > tbody > tr > td.i-header-contents {
+    text-align: left;
+    padding-left: 8px;
+}
+
+.i-header-table > tbody > tr > td.i-header-contents > span.unit {
+    padding-left: 2px;
+    font-size: 10px;
+}
+/***************************************************************************************************************/
+/* by shkoh 20210325: icomer - avg header-table style end                                                      */
+/***************************************************************************************************************/

@@ -1,0 +1,12 @@
+[2023/10/10 09:42:04.622] [ERROR] TypeError: Property description must be an object: true
+    at Function.defineProperties (<anonymous>)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/login.js:48:12
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023/10/10 09:42:44.369] [ERROR] TypeError: Property description must be an object: true
+    at Function.defineProperties (<anonymous>)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/login.js:48:12
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023/10/10 09:44:13.657] [ERROR] TypeError: Property description must be an object: true
+    at Function.defineProperties (<anonymous>)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/routes/login.js:48:12
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

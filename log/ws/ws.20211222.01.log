@@ -1,0 +1,25 @@
+[2021/12/22 10:15:23.128] [INFO]  [Client Connecting(1 -> 2)] ::ffff:10.10.20.250:2801
+[2021/12/22 10:15:23.141] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2021/12/22 10:52:06.765] [INFO]  [Client Closed(2 -> 1)] ::ffff:10.10.20.250:2801
+[2021/12/22 13:03:25.257] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:58429
+[2021/12/22 13:03:25.820] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:55658
+[2021/12/22 13:14:04.737] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/22 13:14:09.031] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:55821
+[2021/12/22 15:31:05.750] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:55821
+[2021/12/22 15:31:06.139] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:55962
+[2021/12/22 15:31:19.397] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/22 15:31:24.625] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:55986
+[2021/12/22 17:04:36.264] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/22 17:06:08.293] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:49719
+[2021/12/22 17:15:45.127] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:49719
+[2021/12/22 17:15:45.539] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:52142
+[2021/12/22 18:05:51.774] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/22 18:05:57.772] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:65334
+[2021/12/22 18:09:04.117] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/22 18:09:09.159] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:49766
+[2021/12/22 18:11:20.529] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/22 18:11:25.328] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:50328
+[2021/12/22 18:30:49.093] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/22 18:30:56.419] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.29:55066
+[2021/12/22 18:30:56.424] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2021/12/22 19:10:43.317] [INFO]  [Client Closed(1 -> 0)] ::ffff:10.10.20.29:55066

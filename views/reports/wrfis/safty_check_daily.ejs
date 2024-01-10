@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- by shkoh 20200813: kendoui-bootstrap styles -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+
+    <!-- by shkoh 20200813: bootstrap styles -->
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+
+    <!-- by shkoh 20200814: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
+
+    <!-- by shkoh 20200814: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20200819: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css"/>
+
+    <!-- by shkoh 20200813: ubiguard style -->
+    <link rel="stylesheet" href="/stylesheets/reports.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <article class="col-sm-12 col-md-12 col-lg-12 content-panel-only">
+            <div class="panel panel-default panel-header">
+                <div class="panel-heading">검색조건</div>
+                <div class="panel-body">
+                    <div class="searching">
+                        <div class="first">
+                        </div>
+                        <div class="last">
+                            <div class="conditions">
+                                <input id="searching-date" class="custom-date" type="text"/>
+                                <input id="search-button" type="button" class="custom-search-button" title="우리FIS 위험물 일일 점검표 조회"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">위험물 일일 점검표</div>
+                <div class="panel-body">
+                    <div id="report-toolbar"></div>
+                    <div id="report-page">
+                        <div id="report-content" class="r-report-content-portrait">
+                            <table class="r-table r-table-header">
+                                <tr>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top">작 성</th>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top">검 토</th>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top r-border-right">승 인</th>
+                                    <th rowspan="2" colspan="22" data-type="stamp" class="r-font-title r-font-underline">위험물 일일 점검표</th>
+                                    <th rowspan="1" colspan="2" width="8%" data-type="stamp" class="r-border-left r-border-top r-border-right">확 인</th>
+                                </tr>
+                                <tr height="50">
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom r-border-right"></td>
+                                    <td rowspan="1" colspan="2" data-type="stamp" class="r-border-left r-border-top r-border-bottom r-border-right"></td>
+                                </tr>
+                            </table>
+                            <table class="r-table r-table-info">
+                                <tr height="32">
+                                    <td rowspan="1" colspan="15" width="50%" class="r-font-info r-align-left r-valign-bottom"><span id="report-date"></span></td>
+                                    <td rowspan="1" colspan="15" width="50%" class="r-font-info r-align-right r-valign-bottom">점검결과 ( 양호: O&nbsp;&nbsp;불량: X&nbsp;&nbsp;요정비: △ )</td>
+                                </tr>
+                            </table>
+                            <table class="r-table r-table-contents">
+                                <colgroup>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                    <col width="3.3%"/>
+                                </colgroup>
+                                <thead>
+                                    <tr height="30">
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray"></td>
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">점 검 사 항</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info r-font-bold r-bk-gray">결과</td>
+                                        <td scope="col" rowspan="1" colspan="7" class="r-border-left r-border-top r-border-right r-font-info r-font-bold r-bk-gray">비&nbsp;&nbsp;고</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="7" colspan="3" class="r-border-left r-border-top r-font-info">저장실</td>
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">1. 저장실의 안전한 장소 설치와 내화구조 여부</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="2" colspan="7" class="r-border-left r-border-top r-border-right r-font-info r-font-bold r-valign-middle">DATA 발전기축</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">2. 환기, 통풍, 통기공장치 설치여부</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">3. 주위에 가연물 및 화기방치 여부</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-font-info">온도</td>
+                                        <td scope="col" rowspan="1" colspan="4" class="r-border-right r-font-info">℃</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">4. 누유개소 유무</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-font-info">습도</td>
+                                        <td scope="col" rowspan="1" colspan="4" class="r-border-right r-font-info">%</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">5. 출입통제 표시판 설치 여부</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="2" colspan="7" class="r-border-left r-border-top r-border-right r-font-info r-font-bold r-valign-middle">BPR 발전기축</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">6. 방유제, 유분리장치 이상 유무</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">7. 출입문 방화문 구조 여부</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-font-info">온도</td>
+                                        <td scope="col" rowspan="1" colspan="4" class="r-border-right r-font-info">℃</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="8" colspan="3" class="r-border-left r-border-top r-font-info">취급장소<br><br>(발전기실)</td>
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">8. 배관, 밸브부분 누유여부</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-font-info">습도</td>
+                                        <td scope="col" rowspan="1" colspan="4" class="r-border-right r-font-info">%</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">9. 등기구, 환기설비 적정여부</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="7" class="r-border-left r-border-top r-border-right r-font-info r-font-bold r-bk-gray">써비스 탱크 잔량(ℓ)</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">10. 용기, 배관의 충격, 전도, 가열우려</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-font-info">DATA</td>
+                                        <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">11. 전기, 스파크 방지 조치 여부, 전선, 방폭등 개폐기</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-font-info">BPR</td>
+                                        <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">12. 소화기등 소방시설 작동이상 유무</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="7" class="r-border-left r-border-top r-border-right r-font-info r-font-bold r-bk-gray">메인 탱크 잔량(ℓ)</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">13. 불필요한 가연물 방치 여부</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-font-info">1번탱크</td>
+                                        <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">14. 외인출입 통제여부</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-font-info">2번탱크</td>
+                                        <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info r-align-left">15. 위험물 취급 시 입회하에 취급 여부</td>
+                                        <td scope="col" rowspan="1" colspan="2" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-font-info">합계</td>
+                                        <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td scope="col" rowspan="10" colspan="3" class="r-border-left r-border-top r-border-bottom r-font-info">기&nbsp;&nbsp;타</td>
+                                        <td scope="col" rowspan="6" colspan="18" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="10" colspan="2" class="r-border-left r-border-top r-border-bottom r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="7" class="r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="7" class="r-border-left r-border-top r-border-right r-font-info r-font-bold r-bk-gray">경유 총 잔량(ℓ)</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="7" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="7" class="r-border-left r-border-top r-border-right r-font-info r-font-bold r-bk-gray">금일 경유사용량(ℓ)</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="7" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="175">
+                                        <td scope="col" rowspan="1" colspan="7" class="r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="18" class="r-border-left r-border-top r-font-info">점 검 시 간</td>
+                                        <td scope="col" rowspan="1" colspan="7" class="r-border-left r-border-top r-border-right r-font-info r-font-bold r-bk-gray">써비스 탱크</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top-bold r-font-info">오 전</td>
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top-bold r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="7" class="r-border-left r-border-right r-font-info r-font-bold r-bk-gray">메년 보충누적량(ℓ)</td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info">오 후</td>
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-border-right r-font-info">DATA</td>
+                                        <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-right r-font-info"></td>
+                                    </tr>
+                                    <tr height="25">
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-border-bottom r-font-info">점 검 자</td>
+                                        <td scope="col" rowspan="1" colspan="9" class="r-border-left r-border-top r-border-bottom r-font-info"></td>
+                                        <td scope="col" rowspan="1" colspan="3" class="r-border-left r-border-top r-border-bottom r-border-right r-font-info">BPR</td>
+                                        <td scope="col" rowspan="1" colspan="4" class="r-border-left r-border-top r-border-bottom r-border-right r-font-info"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="r-table r-table-bottom">
+                                <tr height="60">
+                                    <td colspan="30" class="r-font-footer">(주)우리피앤에스</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- by shkoh 20200813: jquery -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+
+    <!-- by shkoh 20200813: bootstrap -->
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <!-- by shkoh 20200814: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20200813: kendoui -->
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/cultures/kendo.culture.ko.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/jszip.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/pako_deflate.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+    
+    <!-- by shkoh 20200814: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.exedit.min.js"></script>
+
+    <!-- by shkoh 20200819: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+
+    <!-- by shkoh 20200824: export pdf -->
+    <script src="/component/jsPDF/jspdf.min.js"></script>
+    <script src="/component/jsPDF-autotable/jspdf.plugin.autotable.min.js"></script>
+    <script src="/fonts/MalgunGothic-normal.js"></script>
+    <script src="/fonts/MalgunGothic-bold.js"></script>
+    
+    <!-- by shkoh 20200813: reports javascripts -->
+    <script src="/javascripts/reports/datePicker.js"></script>
+    <script src="/javascripts/reports/exportUtil.js"></script>
+    <script src="/javascripts/reports/wrfis/safty_check_daily.js"></script>
+</body>
+</html>

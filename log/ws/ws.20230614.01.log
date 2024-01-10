@@ -1,0 +1,6 @@
+[2023/06/14 15:53:49.893] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/06/14 15:54:05.592] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:63211
+[2023/06/14 15:54:05.604] [INFO]  {"command":"login","user_id":"icomer","type":"client"}
+[2023/06/14 15:54:51.297] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2023/06/14 15:54:56.774] [INFO]  [Client Connecting(0 -> 1)] ::ffff:10.10.20.31:63457
+[2023/06/14 15:54:56.775] [INFO]  {"command":"login","user_id":"icomer","type":"client"}

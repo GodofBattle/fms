@@ -1,0 +1,24 @@
+[2022/01/06 11:21:13.237] [INFO]  [카메라1 - 10.10.20.210] RTSP Stream Start
+[2022/01/06 11:21:13.805] [INFO]  [카메라1 - 10.10.20.210] CAMERA Stream Open: 60000
+[2022/01/06 11:21:13.987] [INFO]  [카메라1 - 10.10.20.210] New WebSocket Connection (1 total)
+[2022/01/06 11:21:25.477] [INFO]  [카메라1 - 10.10.20.210] Disconnected WebSocket (0 total)
+[2022/01/06 11:54:31.728] [INFO]  [카메라1 - 10.10.20.210] RTSP Stream Start
+[2022/01/06 11:54:32.076] [INFO]  [카메라1 - 10.10.20.210] CAMERA Stream Open: 60000
+[2022/01/06 11:54:32.105] [INFO]  [카메라1 - 10.10.20.210] New WebSocket Connection (1 total)
+[2022/01/06 11:54:36.940] [INFO]  [카메라1 - 10.10.20.210] Disconnected WebSocket (0 total)
+[2022/01/06 15:23:38.711] [INFO]  [카메라1 - 10.10.20.210] RTSP Stream Start
+[2022/01/06 15:23:39.065] [INFO]  [카메라1 - 10.10.20.210] CAMERA Stream Open: 60000
+[2022/01/06 15:23:39.105] [INFO]  [카메라1 - 10.10.20.210] New WebSocket Connection (1 total)
+[2022/01/06 15:23:44.006] [INFO]  [카메라1 - 10.10.20.210] Disconnected WebSocket (0 total)
+[2022/01/06 15:30:55.804] [INFO]  [카메라1 - 10.10.20.210] RTSP Stream Start
+[2022/01/06 15:30:56.103] [INFO]  [카메라1 - 10.10.20.210] CAMERA Stream Open: 60000
+[2022/01/06 15:30:56.138] [INFO]  [카메라1 - 10.10.20.210] New WebSocket Connection (1 total)
+[2022/01/06 15:30:59.651] [INFO]  [카메라1 - 10.10.20.210] Disconnected WebSocket (0 total)
+[2022/01/06 15:30:59.932] [INFO]  [카메라1 - 10.10.20.210] RTSP Stream Start
+[2022/01/06 15:31:00.318] [INFO]  [카메라1 - 10.10.20.210] CAMERA Stream Open: 60000
+[2022/01/06 15:31:00.373] [INFO]  [카메라1 - 10.10.20.210] New WebSocket Connection (1 total)
+[2022/01/06 15:31:04.883] [INFO]  [카메라1 - 10.10.20.210] Disconnected WebSocket (0 total)
+[2022/01/06 15:31:05.071] [INFO]  [카메라1 - 10.10.20.210] RTSP Stream Start
+[2022/01/06 15:31:05.501] [INFO]  [카메라1 - 10.10.20.210] CAMERA Stream Open: 60000
+[2022/01/06 15:31:05.533] [INFO]  [카메라1 - 10.10.20.210] New WebSocket Connection (1 total)
+[2022/01/06 15:31:11.378] [INFO]  [카메라1 - 10.10.20.210] Disconnected WebSocket (0 total)

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= title %></title>
+
+    <!-- by shkoh 20230824: style normalize -->
+    <link rel="stylesheet" href="/component/normalize/normalize.css"/>
+    
+    <!-- by shkoh 20230504: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20230504: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
+    <!-- by shkoh 20230504: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css" />
+
+    <!-- by shkoh 20230825: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/didc/popup.css"/>
+</head>
+<body>
+    <div class="i-popup">
+        <div id="i-popup-set" class="i-tree" style="display:none;">
+<% if(type === 'temphumi' || type === 'alert' || type === 'hvacrun' || type === 'power') {%>
+            <div class="i-popup-set-content" style="width: max-content;">
+                <input id="i-popup-title" style="width: fit-content;" maxlength="32"/>
+                <button id="i-popup-title-set"></button>
+            </div>
+            <hr class="i-popup-hr">
+<%}%>
+            <div style="height: 100%;">
+                <div id="i-popup-tree"></div>
+                <button id="i-popup-tree-set">적용</button>
+            </div>
+        </div>
+        <div class="i-list"></div>
+        <div class="i-info" style="display:none">
+            <div class="i-equipment-info">
+                <div class="i-equipment-info-row">
+                    <div class="i-equipment-info-row-key">네트워크 정보:</div>
+                    <div class="i-equipment-info-row-value">
+                        <span id="i-network-value"></span>
+                    </div>
+                </div>
+                <div class="i-equipment-info-row">
+                    <div class="i-equipment-info-row-key">갱신시간:</div>
+                    <div class="i-equipment-info-row-value">
+                        <span id="i-updatetime-value"></span>
+                    </div>
+                </div>
+                <div class="i-equipment-info-row">
+                    <div class="i-equipment-info-row-key">장애등급:</div>
+                    <div class="i-equipment-info-row-value">
+                        <span id="i-level-value" class="i-equipment-info-lvl"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="i-sensor-list"></div>
+        </div>
+    </div>
+
+    <script type="text/x-kendo-template" id="i-threshold">
+        <div class="i-threshold-panel">
+            # if(data.sensor_type === 'AI') {#
+            <div class="i-threshold-content">
+                <div class="i-threshold-c-row lvl-3">
+                    <input class="i-threshold-ai-input i-threshold-ai-0"/>
+                </div>
+                <div class="i-threshold-c-row lvl-2">
+                    <input class="i-threshold-ai-input i-threshold-ai-1"/>
+                </div>
+                <div class="i-threshold-c-row lvl-1">
+                    <input class="i-threshold-ai-input i-threshold-ai-2"/>
+                </div>
+                <div class="i-threshold-c-row lvl-1">
+                    <input class="i-threshold-ai-input i-threshold-ai-3"/>
+                </div>
+                <div class="i-threshold-c-row lvl-2">
+                    <input class="i-threshold-ai-input i-threshold-ai-4"/>
+                </div>
+                <div class="i-threshold-c-row lvl-3">
+                    <input class="i-threshold-ai-input i-threshold-ai-5"/>
+                </div>
+            </div>
+            #} else if(data.sensor_type === 'DI') {#
+            <div class="i-threshold-content">
+                <div class="i-threshold-c-row i-threshold-di i-threshold-di-0">
+                    <input class="i-threshold-di-label" />
+                    <div class="i-threshold-di-level" />
+                </div>
+                <div class="i-threshold-c-row i-threshold-di i-threshold-di-1">
+                    <input class="i-threshold-di-label" />
+                    <div class="i-threshold-di-level"></div>
+                </div>
+                <div class="i-threshold-c-row i-threshold-di i-threshold-di-2">
+                    <input class="i-threshold-di-label" />
+                    <div class="i-threshold-di-level"></div>
+                </div>
+                <div class="i-threshold-c-row i-threshold-di i-threshold-di-3">
+                    <input class="i-threshold-di-label" />
+                    <div class="i-threshold-di-level"></div>
+                </div>
+                <div class="i-threshold-c-row i-threshold-di i-threshold-di-4">
+                    <input class="i-threshold-di-label" />
+                    <div class="i-threshold-di-level"></div>
+                </div>
+                <div class="i-threshold-c-row i-threshold-di i-threshold-di-5">
+                    <input class="i-threshold-di-label" />
+                    <div class="i-threshold-di-level"></div>
+                </div>
+                <div class="i-threshold-c-row i-threshold-di i-threshold-di-6">
+                    <input class="i-threshold-di-label" />
+                    <div class="i-threshold-di-level"></div>
+                </div>
+                <div class="i-threshold-c-row i-threshold-di i-threshold-di-7">
+                    <input class="i-threshold-di-label" />
+                    <div class="i-threshold-di-level"></div>
+                </div>
+            </div>
+            #}#
+            <button class="i-threshold-set" style="padding: 6px 8px;margin: 0.5em 0 0 0;">적용</button>
+        </div>
+    </script>
+    
+    <!-- by shkoh 20230504: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20230504: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20230504: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+
+    <!-- by shkoh 20230824: main -->
+    <script src="/javascripts/customizing/didc/dashboard/tree.js"></script>
+    <script src="/javascripts/customizing/didc/dashboard/popup.js"></script>
+</body>
+</html>

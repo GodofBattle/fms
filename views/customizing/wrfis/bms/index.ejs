@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210222: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20210222: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/wrfis/index.css"/>
+</head>
+<body class="bms">
+    <div class="container-fluid bms">
+        <div class="row bms-row">
+            <div class="col-xs-offset-4 col-xs-2 bms-column">
+                <div class="bms-text bms-floor bms-button" bms-url="wrfis_bms_lead">BMS (납)</div>
+            </div>
+            <div class="col-xs-2 bms-column">
+                <div class="bms-text bms-floor bms-button" bms-url="wrfis_bms_lithium">BMS (리튬)</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- by shkoh 20210222: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <script>
+        $('.bms-button').on('click', function() {
+            const url = $(this).attr('bms-url');
+
+            if(parent) {
+                parent.onSelectViewer(url, 'BMS', '');
+            }
+        });
+    </script>
+</body>
+</html>

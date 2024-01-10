@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210311: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css"/>
+
+    <!-- by shkoh 20210311: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20210311: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/wrfis/th.css"/>
+</head>
+<body>
+    <div class="container-fluid i-content">
+        <div class="panel i-panel">
+            <div class="panel-heading i-panel-heading">
+                <div class="panel-title i-panel-title">온습도 가동현황(각 구역 평균)</div>
+            </div>
+            <div class="panel-body">
+                <table class="table table-condensed i-header-table">
+                    <tbody>
+                        <tr>
+                            <th class="i-header-title">2F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_2f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_2f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">3F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_3f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_3f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">4F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_4f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_4f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">6F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_6f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_6f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">7F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_7f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_7f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">8F-A</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="a_8f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="a_8f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title all">전산실 온도평균</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="avg_temp"> - </span><span class="unit">℃</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="i-header-title">2F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_2f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_2f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">3F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_3f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_3f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">4F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_4f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_4f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">6F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_6f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_6f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">7F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_7f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_7f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title">8F-B</th>
+                            <td class="i-header-contents">
+                                <span class="temp" id="b_8f_temp"> - </span><span class="unit">℃</span> / <span class="humi" id="b_8f_humi"> - </span><span class="unit">%</span>
+                            </td>
+                            <th class="i-header-title all">전산실 습도평균</th>
+                            <td class="i-header-contents">
+                                <span class="humi" id="avg_humi"> - </span><span class="unit">%</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="i-row">
+            <table class="table table-condensed i-table">
+                <thead>
+                    <tr>
+                        <th colspan="16" class="i-idx-zone">A구역(열)</th>
+                        <th rowspan="3" style="min-width: 50px; background-color: transparent; border-bottom: none;"></th>
+                        <th colspan="16" class="i-idx-zone">B구역(열)</th>
+                    </tr>
+                    <tr>
+                        <th class="i-idx-text">01</th>
+                        <th class="i-idx-text">02</th>
+                        <th class="i-idx-text">03</th>
+                        <th class="i-idx-text">04</th>
+                        <th class="i-idx-text">05</th>
+                        <th class="i-idx-text">06</th>
+                        <th class="i-idx-text">07</th>
+                        <th class="i-idx-text">08</th>
+                        <th class="i-idx-text">09</th>
+                        <th class="i-idx-text">10</th>
+                        <th class="i-idx-text">11</th>
+                        <th class="i-idx-text">12</th>
+                        <th class="i-idx-text">13</th>
+                        <th class="i-idx-text">14</th>
+                        <th class="i-idx-text">15</th>
+                        <th class="i-idx-text">16</th>
+                        <th class="i-idx-text">01</th>
+                        <th class="i-idx-text">02</th>
+                        <th class="i-idx-text">03</th>
+                        <th class="i-idx-text">04</th>
+                        <th class="i-idx-text">05</th>
+                        <th class="i-idx-text">06</th>
+                        <th class="i-idx-text">07</th>
+                        <th class="i-idx-text">08</th>
+                        <th class="i-idx-text">09</th>
+                        <th class="i-idx-text">10</th>
+                        <th class="i-idx-text">11</th>
+                        <th class="i-idx-text">12</th>
+                        <th class="i-idx-text">13</th>
+                        <th class="i-idx-text">14</th>
+                        <th class="i-idx-text">15</th>
+                        <th class="i-idx-text">16</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_16_u' }) %></td>
+                        <td rowspan="2" class="i-floor" id="floor_8"><h4><span class="label label-default">8F</span></h4></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_16_u' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_8_16_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_8_16_d' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_16_u' }) %></td>
+                        <td rowspan="2" class="i-floor" id="floor_7"><h4><span class="label label-default">7F</span></h4></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_16_u' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_7_16_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_7_16_d' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_16_u' }) %></td>
+                        <td rowspan="2" class="i-floor" id="floor_6"><h4><span class="label label-default">6F</span></h4></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_16_u' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_6_16_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_6_16_d' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_16_u' }) %></td>
+                        <td rowspan="2" class="i-floor" id="floor_4"><h4><span class="label label-default">4F</span></h4></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_16_u' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_4_16_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_4_16_d' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_16_u' }) %></td>
+                        <td rowspan="2" class="i-floor" id="floor_3"><h4><span class="label label-default">3F</span></h4></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_16_u' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_3_16_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_3_16_d' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_16_u' }) %></td>
+                        <td rowspan="2" class="i-floor"  id="floor_2"><h4><span class="label label-default">2F</span></h4></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_01_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_02_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_03_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_04_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_05_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_06_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_07_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_08_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_09_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_10_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_11_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_12_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_13_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_14_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_15_u' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_16_u' }) %></td>
+                    </tr>
+                    <tr>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'a_2_16_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_01_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_02_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_03_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_04_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_05_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_06_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_07_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_08_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_09_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_10_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_11_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_12_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_13_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_14_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_15_d' }) %></td>
+                        <td class="i-th"><%- include('./th', { object_id: 'b_2_16_d' }) %></td>
+                    </tr>
+                    <tr>
+                        <td colspan="16" class="i-inner">
+                            <table class="i-inner-table">
+                                <tbody>
+                                    <tr>
+                                        <th rowspan="2" class="i-floor" id="floor_1"><h4><span class="label label-default">1F</span></h4></th>
+                                        <th class="i-inner-header-avg">avg.</th>
+                                        <th class="i-inner-header" obj-id="1_01">01</th>
+                                        <th class="i-inner-header" obj-id="1_02">02</th>
+                                        <th class="i-inner-header" obj-id="1_03">03</th>
+                                        <th class="i-inner-header" obj-id="1_04">04</th>
+                                        <th class="i-inner-header" obj-id="1_05">05</th>
+                                        <th class="i-inner-header" obj-id="1_06">06</th>
+                                        <th class="i-inner-header" obj-id="1_07">07</th>
+                                        <th class="i-inner-header" obj-id="1_08">08</th>
+                                        <th class="i-inner-header" obj-id="1_09">09</th>
+                                        <th class="i-inner-header" obj-id="1_10">10</th>
+                                        <th class="i-inner-header" obj-id="1_11">11</th>
+                                        <th class="i-inner-header" obj-id="1_12">12</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="i-inner-th-avg">
+                                            <span class="temp" id="1f_temp"> - </span><span class="unit">℃</span><br><span class="humi" id="1f_humi"> - </span><span class="unit">%</span>
+                                        </td>
+                                        <td class="i-inner-th" obj-id="1_01"><%- include('./th', { object_id: '1_01' }) %></td>
+                                        <td class="i-inner-th" obj-id="1_02"><%- include('./th', { object_id: '1_02' }) %></td>
+                                        <td class="i-inner-th" obj-id="1_03"><%- include('./th', { object_id: '1_03' }) %></td>
+                                        <td class="i-inner-th" obj-id="1_04"><%- include('./th', { object_id: '1_04' }) %></td>
+                                        <td class="i-inner-th" obj-id="1_05"><%- include('./th', { object_id: '1_05' }) %></td>
+                                        <td class="i-inner-th" obj-id="1_06"><%- include('./th', { object_id: '1_06' }) %></td>
+                                        <td class="i-inner-th" obj-id="1_07"><%- include('./th', { object_id: '1_07' }) %></td>
+                                        <td class="i-inner-th" obj-id="1_08"><%- include('./th', { object_id: '1_08' }) %></td>
+                                        <td class="i-inner-th" obj-id="1_09"><%- include('./th', { object_id: '1_09' }) %></td>
+                                        <td class="i-inner-th" obj-id="1_10"><%- include('./th', { object_id: '1_10' }) %></td>
+                                        <td class="i-inner-th" obj-id="1_11"><%- include('./th', { object_id: '1_11' }) %></td>
+                                        <td class="i-inner-th" obj-id="1_12"><%- include('./th', { object_id: '1_12' }) %></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="i-floor"></td>
+                        <td colspan="16" class="i-inner">
+                            <table class="i-inner-table">
+                                <tbody>
+                                    <tr>
+                                        <th rowspan="2" class="i-floor" id="floor_b5"><h4><span class="label label-default">B5F</span></h4></th>
+                                        <th class="i-inner-header-avg">avg.</th>
+                                        <th class="i-inner-header" obj-id="b5_01">01</th>
+                                        <th class="i-inner-header" obj-id="b5_02">02</th>
+                                        <th class="i-inner-header" obj-id="b5_03">03</th>
+                                        <th class="i-inner-header" obj-id="b5_04">04</th>
+                                        <th class="i-inner-header" obj-id="b5_05">05</th>
+                                        <th class="i-inner-header" obj-id="b5_06">06</th>
+                                        <th class="i-inner-header" obj-id="b5_07">07</th>
+                                        <th class="i-inner-header" obj-id="b5_08">08</th>
+                                        <th class="i-inner-header" obj-id="b5_09">09</th>
+                                        <th class="i-inner-header" obj-id="b5_10">10</th>
+                                        <th class="i-inner-header" obj-id="b5_11">11</th>
+                                        <th class="i-inner-header" obj-id="b5_12">12</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="i-inner-th-avg">
+                                            <span class="temp" id="b5f_temp"> - </span><span class="unit">℃</span><br><span class="humi" id="b5f_humi"> - </span><span class="unit">%</span>
+                                        </td>
+                                        <td class="i-inner-th" obj-id="b5_01"><%- include('./th', { object_id: 'b5_01' }) %></td>
+                                        <td class="i-inner-th" obj-id="b5_02"><%- include('./th', { object_id: 'b5_02' }) %></td>
+                                        <td class="i-inner-th" obj-id="b5_03"><%- include('./th', { object_id: 'b5_03' }) %></td>
+                                        <td class="i-inner-th" obj-id="b5_04"><%- include('./th', { object_id: 'b5_04' }) %></td>
+                                        <td class="i-inner-th" obj-id="b5_05"><%- include('./th', { object_id: 'b5_05' }) %></td>
+                                        <td class="i-inner-th" obj-id="b5_06"><%- include('./th', { object_id: 'b5_06' }) %></td>
+                                        <td class="i-inner-th" obj-id="b5_07"><%- include('./th', { object_id: 'b5_07' }) %></td>
+                                        <td class="i-inner-th" obj-id="b5_08"><%- include('./th', { object_id: 'b5_08' }) %></td>
+                                        <td class="i-inner-th" obj-id="b5_09"><%- include('./th', { object_id: 'b5_09' }) %></td>
+                                        <td class="i-inner-th" obj-id="b5_10"><%- include('./th', { object_id: 'b5_10' }) %></td>
+                                        <td class="i-inner-th" obj-id="b5_11"><%- include('./th', { object_id: 'b5_11' }) %></td>
+                                        <td class="i-inner-th" obj-id="b5_12"><%- include('./th', { object_id: 'b5_12' }) %></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- by shkoh 20210311: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210311: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20210311: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+
+    <!-- by shkoh 20210311: ubiguard -->
+    <script src="/javascripts/customizing/wrfis/th/main.js"></script>
+</body>
+</html>

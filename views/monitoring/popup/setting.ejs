@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title><%= title %></title>
+
+    <!-- by shkoh 20180806: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+    <!-- by shkoh 20211221: DateTimePicker -->
+    <link rel="stylesheet" href="/component/air-datepicker/css/datepicker.css"/>
+
+    <!-- by shkoh 20180806: custom scrollber -->
+    <link rel="stylesheet" href="/component/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    
+    <!-- by shkoh 20180806: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css" />
+
+    <!-- by shkoh 20180806: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/monitoring_popup_setting.css" />
+</head>
+<body data-asset="<%= is_asset === true ? '1' : '0' %>">
+    <div class="container-fluid content">
+        <aside class="col-xs-4 col-sm-4 col-md-4 col-lg-3" style="padding-left:4px; padding-right:4px; height: 100%;">
+            <div class="panel panel-primary">
+                <div class="panel-heading">설비/그룹 트리</div>
+                <div id="treeContent" class="panel-body" style="padding: 5px;">
+                    <div id="treeViewer"></div>
+                </div>
+            </div>
+        </aside>
+        <article class="col-xs-8 col-sm-8 col-md-8 col-lg-9" style="padding-left: 4px; padding-right: 4px; height: 100%;">
+            <div class="panel panel-primary">
+                <div id="panelContentName" class="panel-heading">
+                    설정
+                    <div class="custom-text-right">
+                        <button type="button" class="btn btn-success" id="saveSetting" style="width:65px;"></button>
+                    </div>
+                </div>
+                <div id="panelContent" class="panel-body" style="padding: 5px;">
+                    <div id="viewer"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="modal fade" id="modalDialogTree" tabindex="-2" role="dialog" aria-labelledby="modalDialogTree">
+        <div class="modal-dialog" role="document" style="width:450px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modalTreeTitle" class="modal-title" style="font-weight:600;">상위그룹 선택</h5>
+                </div>
+                <div class="modal-body" id="modalDialogTreeBody" style="height:400px;">
+                    <div id="modal-tree" class="ztree"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-modal-tree-link">선택</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDialogImageViewer" tabindex="-2" role="dialog" aria-labelledby="modalDialogImageViewer">
+        <div class="modal-dialog" role="document" style="width:80%; height: 90%;">
+            <div class="modal-content" style="width:100%; height: 100%;">
+                <img id="modalImage" class="img-responsive" alt="asset image" style="box-sizing: border-box; margin: auto; height: 100%;"/>
+            </div>
+        </div>
+    </div>
+    
+    <div id="treeContextMenu" oncontextmenu="return false;" style="visibility: hidden;">
+        <ul>
+            <li><a id="menuCopy">항목복사</a></li>
+            <li><a id="menuPaste">항목붙여넣기</a></li>
+            <li><a id="menuClear">복사항목 취소</a></li>
+        </ul>
+    </div>
+
+    <!-- by shkoh 20180806: 공통 js -->
+    <script src="/component/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20211221: DateTimePicker -->
+    <script src="/component/air-datepicker/js/datepicker.min.js"></script>
+    <script src="/component/air-datepicker/js/i18n/datepicker.kr.js"></script>
+
+    <!-- by shkoh 20180806: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+    
+    <!-- by shkoh 20180806: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+
+    <!-- by shkoh 20180806: ubiGuard -->
+    <script src="/javascripts/monitoring/popup/setting.js"></script>
+    <script src="/javascripts/monitoring/popup/setting_treeContextMenu.js"></script>
+    <script src="/javascripts/monitoring/popup/setting_treeContent.js"></script>
+    <script src="/javascripts/monitoring/popup/setting_groupContent.js"></script>
+<%if(is_asset) {%>
+    <script src="/javascripts/monitoring/popup/setting_equipmentContentWithAsset.js"></script>
+<%} else {%>
+    <script src="/javascripts/monitoring/popup/setting_equipmentContent.js"></script>
+<%}%>
+    <script src="/javascripts/monitoring/popup/datePicker.js"></script>
+    <script src="/javascripts/monitoring/popup/groupTreeView.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+[2021/12/06 15:53:09.884] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/06 15:55:55.897] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/06 15:56:07.991] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:58555
+[2021/12/06 15:56:07.996] [INFO]  {"command":"login","user_id":"admin","type":"client"}
+[2021/12/06 16:00:40.975] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:58555
+[2021/12/06 16:00:41.541] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:59411
+[2021/12/06 16:00:41.581] [INFO]  {"command":"login","user_id":"admin","type":"client"}
+[2021/12/06 16:02:58.098] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:59411
+[2021/12/06 16:02:58.623] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:59971
+[2021/12/06 16:02:58.633] [INFO]  {"command":"login","user_id":"admin","type":"client"}
+[2021/12/06 16:05:06.176] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:59971
+[2021/12/06 16:05:06.701] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:60543
+[2021/12/06 16:05:06.704] [INFO]  [2021/12/06 16:20:39.655] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:60543
+[2021/12/06 16:20:40.181] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:64400
+[2021/12/06 17:05:49.869] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:64400

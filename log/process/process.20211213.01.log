@@ -1,0 +1,108 @@
+[2021/12/13 10:26:38.174] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 10:30:11.058] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 10:31:53.620] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 10:32:07.359] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(63618) 종료
+[2021/12/13 10:33:16.548] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 10:33:39.373] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 10:35:02.359] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 10:35:19.116] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(63685) 종료
+[2021/12/13 10:37:50.914] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 10:38:00.410] [INFO]  [UbiGuard FMS 5.6] BadRequestError (으)로 node process(63739) 종료
+[2021/12/13 10:40:11.033] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:12:27.565] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:20:24.768] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:22:07.683] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:22:54.724] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:25:54.823] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:31:22.025] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:31:41.405] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(64371) 종료
+[2021/12/13 11:33:01.380] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:33:21.082] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(64399) 종료
+[2021/12/13 11:34:08.228] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:36:17.862] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(64445) 종료
+[2021/12/13 11:36:54.739] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:37:29.570] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:41:20.672] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:43:41.230] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:43:47.179] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 11:44:51.928] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 12:58:27.602] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 13:01:39.361] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 13:02:31.435] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 13:04:04.645] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 13:06:13.738] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 13:07:17.593] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 13:07:26.591] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 13:15:11.456] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(65499) 종료
+[2021/12/13 13:15:26.247] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(65510) 종료
+[2021/12/13 14:21:21.528] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:21:32.993] [INFO]  [UbiGuard FMS 5.6] RangeError (으)로 node process(66135) 종료
+[2021/12/13 14:22:32.937] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:25:46.114] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:25:58.641] [INFO]  [UbiGuard FMS 5.6] RangeError (으)로 node process(66197) 종료
+[2021/12/13 14:26:14.374] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:31:32.073] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:31:54.976] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:40:51.022] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:42:33.825] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:45:37.491] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:45:58.855] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(66522) 종료
+[2021/12/13 14:46:27.185] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:47:30.574] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:48:24.855] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(66577) 종료
+[2021/12/13 14:51:17.901] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 14:52:54.723] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:12:29.866] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:13:01.221] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:13:38.940] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:17:39.321] [INFO]  [UbiGuard FMS 5.6] ReferenceError (으)로 node process(67109) 종료
+[2021/12/13 15:18:13.737] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:20:33.660] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:20:43.389] [INFO]  [UbiGuard FMS 5.6] RangeError (으)로 node process(67172) 종료
+[2021/12/13 15:29:20.521] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:31:30.721] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:32:35.454] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:35:23.023] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:44:43.500] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:47:27.817] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:49:07.753] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:53:06.430] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 15:54:40.794] [INFO]  [UbiGuard FMS 5.6] RangeError (으)로 node process(75658) 종료
+[2021/12/13 15:55:39.294] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 16:15:22.976] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 16:47:04.119] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(75985) 종료
+[2021/12/13 16:51:41.346] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 16:58:10.325] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(76641) 종료
+[2021/12/13 16:58:48.854] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 17:28:08.254] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(76891) 종료
+[2021/12/13 17:55:05.789] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:13:11.935] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(78349) 종료
+[2021/12/13 18:13:59.387] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:14:53.764] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:19:52.337] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:20:02.025] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(78472) 종료
+[2021/12/13 18:21:18.171] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:21:48.808] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(78500) 종료
+[2021/12/13 18:23:22.983] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:30:08.351] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:30:44.827] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:31:30.633] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:32:22.329] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:33:51.123] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:34:12.708] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(78707) 종료
+[2021/12/13 18:34:58.582] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:36:01.157] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(78731) 종료
+[2021/12/13 18:36:15.438] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:36:25.762] [INFO]  [UbiGuard FMS 5.6] TypeError (으)로 node process(78755) 종료
+[2021/12/13 18:37:42.813] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:39:10.365] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:39:45.468] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:40:32.955] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:41:01.297] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 18:42:11.158] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 19:06:04.452] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 19:06:19.981] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 19:06:47.386] [INFO]  [UbiGuard FMS 5.6] Error (으)로 node process(79160) 종료
+[2021/12/13 19:07:13.191] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 19:07:56.761] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/12/13 19:09:07.131] [INFO]  [UbiGuard FMS 5.6] WebSocket Start

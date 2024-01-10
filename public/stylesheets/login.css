@@ -1,0 +1,388 @@
+html {
+    height: 100%;
+    font-family: Malgun Gothic;
+}
+
+body {
+	background-image: url("/img/login/login_background.png");
+    background-size:100% 100%;
+}
+
+.form-signin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -210px;
+    margin-top: -80px;
+	width: 420px;
+    text-align: center;
+}
+
+.form-signin .form-control {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    border-radius: 0px;
+    height: 50px;
+	padding-left: 45px;
+    color: #8e8e8e;
+    font-size: 16px;
+    border: 1px solid #eeeeee;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.form-signin label {
+    margin-top: 20px;
+	font-size: 16px;
+	color: #4782d0;
+    font-weight: bold;
+}
+
+.form-signin .btn-block {
+	height: 50px;
+	background-color: #172f51;
+	color: #fff;
+	border: 1px solid #eeeeee;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.form-signin .image_id {
+	background-image: url("/img/login/icon_login_id.png");
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
+
+.form-signin .image_pw {
+	background-image: url("/img/login/icon_login_password.png");
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
+
+.form-signin .image_login {
+	background-image: url("/img/login/login_button_icon.png");
+	background-repeat: no-repeat;
+	background-position: 150px;
+}
+
+.form-signin .image_check {
+	background-image: url("/img/new/check_02.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.form-signin #responseSignIn {
+    position: relative;
+    top: 10px;
+}
+
+.alert_msg {
+    border: 1px solid #4782d0;
+    height: 50px;
+	background-color: #2e2e2e;
+	color: #fff;
+	font-size: 16px;
+    font-weight: bold;
+    padding-top: 12px;
+	background-image: url('/img/login/icon_login_q.png');
+    background-repeat: no-repeat;
+    background-position: 20px;
+}
+
+.background-icon {
+    position: absolute;
+    left: 0px;
+    bottom: 150px;
+    width: 100%;
+    height: 34px;
+    background-image: url('/img/login/login_icon.png');
+    background-repeat: no-repeat;
+    background-position: -10px;
+}
+
+.background-logo {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    margin-top: -240px;
+    width: 410px;
+    height: 150px;
+    background-image: url('/img/login/login_logo.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+@media screen and (max-width: 1370px)
+{
+    .background-logo {
+        left: 50%;
+        margin-left: -200px;
+    }
+}
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210310: NPS - Login start                                                                                                       */
+/**********************************************************************************************************************************************/
+.nps-login {
+    background-image: url("/img/login/login_background_nps.png");
+}
+
+.background-logo-nps {
+    left: 13%;
+    background-image: url('/img/login/login_logo_nps.png');
+}
+
+.form-signin-nps {
+    left: 27%;
+}
+
+@media screen and (max-width: 1370px)
+{
+    .background-logo-nps {
+        left: 10%;
+    }
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210310: NPS - Login end                                                                                                         */
+/**********************************************************************************************************************************************/
+
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20210310: WOORI FIS - Login start                                                                                                 */
+/**********************************************************************************************************************************************/
+.wrfis-login {
+    background-image: url("/img/customizing/wrfis/wrfis_login_bk_3.jpg");
+}
+
+.form-signin-wrfis {
+    width: 360px;
+    left: 50%;
+    top: 55%;
+    margin-left: -180px;
+    margin-top: -80px;
+    background: transparent;
+}
+
+.form-signin-wrfis .form-control {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #ffffff;
+    height: 36px;
+    margin-bottom: 4px;
+}
+
+.form-signin-wrfis .form-control::placeholder {
+    color: #aaaaaa;
+}
+
+.form-signin-wrfis .btn-block {
+    margin-top: 8px;
+    height: 40px;
+    background-color: rgb(61,189,240);
+    border-color: #666666;
+}
+
+.form-signin-wrfis .btn-block:active:focus {
+    outline: none;
+}
+
+.form-signin-wrfis .image_login {
+	background-position: 120px;
+}
+
+.form-signin-wrfis .image_id {
+	background-image: url("/img/login/icon_login_id_w.png");
+}
+
+.form-signin-wrfis .image_pw {
+	background-image: url("/img/login/icon_login_password_w.png");
+}
+
+.form-signin .label1-wrfis {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.background-logo-wrfis {
+    margin-top: 0px;
+    top: 28%;
+    left: 50%;
+    margin-left: -200px;
+    background-image: url("/img/customizing/wrfis/wrfis_logo.png");
+    animation: logoAnim 2s ease-out both;
+    background-position: 50% 50%;
+}
+
+.background-icon-wrfis {
+    display: none;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20210310: WOORI FIS - Login end                                                                                                   */
+/**********************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20211202: KEPCO DAEGEON ICT - Login start                                                                                         */
+/**********************************************************************************************************************************************/
+.kepco-login {
+    background-image: url("/img/customizing/kepco/wrfis_login_bk_2.jpg");
+}
+
+.form-signin-kepco {
+    width: 360px;
+    left: 50%;
+    top: 55%;
+    margin-left: -180px;
+    margin-top: -80px;
+    background: transparent;
+}
+
+.form-signin-kepco .form-control {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #ffffff;
+    height: 36px;
+    margin-bottom: 4px;
+}
+
+.form-signin-kepco .form-control::placeholder {
+    color: #aaaaaa;
+}
+
+.form-signin-kepco .btn-block {
+    margin-top: 8px;
+    height: 40px;
+    background-color: rgb(0, 67, 151);
+    border-color: #666666;
+}
+
+.form-signin-kepco .btn-block:active:focus {
+    outline: none;
+}
+
+.form-signin-kepco .image_login {
+	background-position: 120px;
+}
+
+.form-signin-kepco .image_id {
+	background-image: url("/img/login/icon_login_id_w.png");
+}
+
+.form-signin-kepco .image_pw {
+	background-image: url("/img/login/icon_login_password_w.png");
+}
+
+.form-signin .label1-kepco {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.background-logo-kepco {
+    margin-top: 0px;
+    top: 28%;
+    left: 50%;
+    margin-left: -200px;
+    background-image: url("/img/customizing/kepco/kepco_logo.png");
+    animation: logoAnim 2s ease-out both;
+    background-position: 50% 50%;
+}
+
+.background-icon-kepco {
+    display: none;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20211202: KEPCO DAEGEON ICT - Login end                                                                                           */
+/**********************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************/
+/* by shkoh 20230504: DIDC - Login start                                                                                                      */
+/**********************************************************************************************************************************************/
+.didc-login {
+    background-image: url("/img/customizing/didc/didc_login_bk_2.jpg");
+}
+
+.form-signin-didc {
+    width: 360px;
+    left: 50%;
+    top: 55%;
+    margin-left: -180px;
+    margin-top: -80px;
+    background: transparent;
+}
+
+.form-signin-didc .form-control {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #ffffff;
+    height: 36px;
+    margin-bottom: 4px;
+}
+
+.form-signin-didc .form-control::placeholder {
+    color: #aaaaaa;
+}
+
+.form-signin-didc .btn-block {
+    margin-top: 8px;
+    height: 40px;
+    background-color: rgba(0, 67, 151, 0.4);
+    border-color: #666666;
+}
+
+.form-signin-didc .btn-block:active:focus {
+    outline: none;
+}
+
+.form-signin-didc .image_login {
+	background-position: 120px;
+}
+
+.form-signin-didc .image_id {
+	background-image: url("/img/login/icon_login_id_w.png");
+}
+
+.form-signin-didc .image_pw {
+	background-image: url("/img/login/icon_login_password_w.png");
+}
+
+.form-signin .label1-didc {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.background-logo-didc {
+    width: 580px;
+    margin-top: 0px;
+    top: 30%;
+    left: calc(50% - 300px);
+    background-image: url("/img/customizing/didc/didc_logo.png");
+    animation: logoAnim 2s ease-out both;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+.background-icon-didc {
+    display: none;
+}
+/**********************************************************************************************************************************************/
+/* by shkoh 20230504: DIDC - Login end                                                                                                        */
+/**********************************************************************************************************************************************/
+@keyframes logoAnim {
+    from {
+        opacity: 0;
+        background-position: 50% 100%;
+    }
+    to {
+        opacity: 1;
+        background-position: 50% 50%;
+    }
+}

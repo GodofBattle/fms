@@ -1,0 +1,253 @@
+[2023/07/31 09:50:46.073] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:93:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/07/31 09:51:30.631] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:93:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/07/31 13:47:46.855] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:93:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:635:15
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:47:12)
+[2023/07/31 17:41:54.379] [ERROR] ClientError [NotFoundError]: Not Found
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:94:10
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:275:10)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/app.js:62:5
+    at Layer.handle [as handle_request] (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:317:13)
+    at /Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/express/lib/router/index.js:284:7
+[2023/07/31 17:43:02.592] [ERROR] SqlError: (conn=80044, no: 1054, SQLState: 42S22) Unknown column 'groupList' in 'where clause'
+sql: SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'groupList' in 'where clause'",
+  sql: "SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/07/31 17:44:02.415] [ERROR] SqlError: (conn=80046, no: 1054, SQLState: 42S22) Unknown column 'groupList' in 'where clause'
+sql: SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'groupList' in 'where clause'",
+  sql: "SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/07/31 17:44:51.835] [ERROR] SqlError: (conn=80048, no: 1054, SQLState: 42S22) Unknown column 'groupList' in 'where clause'
+sql: SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'groupList' in 'where clause'",
+  sql: "SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/07/31 17:45:13.090] [ERROR] SqlError: (conn=80050, no: 1054, SQLState: 42S22) Unknown column 'groupList' in 'where clause'
+sql: SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'groupList' in 'where clause'",
+  sql: "SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/07/31 17:47:53.016] [ERROR] SqlError: (conn=80042, no: 1054, SQLState: 42S22) Unknown column 'groupList' in 'where clause'
+sql: SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'groupList' in 'where clause'",
+  sql: "SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/07/31 17:47:59.974] [ERROR] SqlError: (conn=80045, no: 1054, SQLState: 42S22) Unknown column 'groupList' in 'where clause'
+sql: SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'groupList' in 'where clause'",
+  sql: "SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/07/31 17:48:01.788] [ERROR] SqlError: (conn=80046, no: 1054, SQLState: 42S22) Unknown column 'groupList' in 'where clause'
+sql: SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'groupList' in 'where clause'",
+  sql: "SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/07/31 17:48:27.076] [ERROR] SqlError: (conn=80048, no: 1054, SQLState: 42S22) Unknown column 'groupList' in 'where clause'
+sql: SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'groupList' in 'where clause'",
+  sql: "SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/07/31 17:49:47.832] [ERROR] SqlError: (conn=80049, no: 1054, SQLState: 42S22) Unknown column 'groupList' in 'where clause'
+sql: SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'groupList' in 'where clause'",
+  sql: "SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/07/31 17:49:50.622] [ERROR] SqlError: (conn=80050, no: 1054, SQLState: 42S22) Unknown column 'groupList' in 'where clause'
+sql: SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'groupList' in 'where clause'",
+  sql: "SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2023/07/31 17:50:04.228] [ERROR] SqlError: (conn=80042, no: 1054, SQLState: 42S22) Unknown column 'groupList' in 'where clause'
+sql: SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...
+    at module.exports.createError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/misc/errors.js:61:10)
+    at PacketNodeEncoded.readError (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet.js:511:19)
+    at Query.readResponsePacket (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/cmd/resultset.js:46:28)
+    at PacketInputStream.receivePacketBasic (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:104:9)
+    at PacketInputStream.onData (/Users/icomer/Documents/ICOMER/UbiGuard/UbiGuard_FMS_v5.6/node_modules/mariadb/lib/io/packet-input-stream.js:169:20)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  text: "Unknown column 'groupList' in 'where clause'",
+  sql: "SELECT pc.code_int AS idx, pc.code_name AS alarm_name, (SELECT COUNT(1) FROM cn_equipment ce WHERE ce.b_use = 'Y' AND ce.b_delete = 'N' AND ce.current_level = pc.code_int AND FIND_IN_SET(ce.group_id, ?)) AS value FROM pd_code pc WHERE pc.code_type = 'A' UN...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}

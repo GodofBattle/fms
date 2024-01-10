@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title><%= title %></title>
+
+    <!-- by shkoh 20210324: 공통 css -->
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.common-bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/kendoui-2021.1.119/styles/kendo.bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/component/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css"/>
+    
+    <link rel="stylesheet" href="/component/jquery-ui-1.12.1/jquery-ui.min.css"/>
+
+    <!-- by shkoh 20210324: zTree -->
+    <link rel="stylesheet" href="/component/zTree_v3.5.23/css/zTreeStyle/zTreeStyle.css"/>
+
+    <!-- by shkoh 20210324: ubiGuard -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css"/>
+    <link rel="stylesheet" href="/stylesheets/didc/pue.css"/>
+</head>
+<body class="<%= extra %>">
+    <div class="container-fluid">
+        <div class="pue-panel">
+            <div class="contents">
+                <div class="pue">
+                    <div class="values">
+                        <span class="current" id="pue">0</span>
+                        <span class="icon"></span>
+                        <span class="compare" id="previous_pue">0</span>
+                    </div>
+                    <div class="formula <%= extra %>">
+                        <table class="formula-table">
+                            <tr>
+                                <th rowspan="2">PUE</th>
+                                <th rowspan="2" class="equation">=</th>
+<%if(extra === '') {%>
+                                <th>데이터센터 전력(① + ② + ③)</th>
+<%} else {%>
+                                <th>데이터센터 전력(① + ② + ③ + ④)</th>
+<%}%>
+                            </tr>
+                            <tr>
+                                <th class="border-top">① IT전력</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="pie">
+                    <div class="pie-chart"></div>
+                </div>
+                <div class="kw">
+                    <div class="contents <%= extra %>">
+                        <table class="table table-condesed">
+                            <tbody>
+                                <tr>
+                                    <td class="title">데이터센터 전력</td>
+                                    <td class="value" id="total_kw">0</td>
+                                    <td class="unit">kW</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">① IT 전력</td>
+                                    <td class="value" id="it_kw">0</td>
+                                    <td class="unit">kW</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">② IT 동력</td>
+                                    <td class="value" id="hvac_kw">0</td>
+                                    <td class="unit">kW</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">③ 행정동 전력</td>
+                                    <td class="value" id="loss_kw">0</td>
+                                    <td class="unit">kW</td>
+                                </tr>
+<%if(extra === 'extra') {%>
+                                <tr>
+                                    <td class="title">④ 냉수 전력</td>
+                                    <td class="value" id="water_kw">0</td>
+                                    <td class="unit">kW</td>
+                                </tr>
+<%}%>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chart-panel">
+            <div class="bar-chart"></div>
+        </div>
+    </div>
+
+    <!-- by shkoh 20210324: 공통 js -->
+    <script src="/component/kendoui-2021.1.119/js/jquery.min.js"></script>
+    <script src="/component/kendoui-2021.1.119/js/kendo.all.min.js"></script>
+    
+    <script src="/component/jquery-3.3.1/jquery.session.js"></script>
+    
+    <script src="/component/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <script src="/component/promise-polyfill/promise-polyfill.js"></script>
+
+    <!-- by shkoh 20210324: custom scrollbar -->
+    <script src="/component/mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="/component/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+    <!-- by shkoh 20210324: zTree -->
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.core.min.js"></script>
+    <script src="/component/zTree_v3.5.23/js/jquery.ztree.excheck.min.js"></script>
+
+    <!-- by shkoh 20210324: ubiguard -->
+    <script src="/javascripts/customizing/didc/pue/main.js"></script>
+</body>
+</html>

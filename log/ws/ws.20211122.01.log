@@ -1,0 +1,6 @@
+[2021/11/22 09:47:15.245] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/11/22 09:51:14.410] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:49975
+[2021/11/22 17:26:04.950] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/11/22 17:26:32.545] [INFO]  [UbiGuard FMS 5.6] WebSocket Start
+[2021/11/22 17:26:47.121] [INFO]  [Client Connecting(0 -> 1)] ::ffff:127.0.0.1:63574
+[2021/11/22 17:27:04.008] [INFO]  [Client Closed(1 -> 0)] ::ffff:127.0.0.1:63574

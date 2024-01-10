@@ -1,0 +1,12 @@
+<div class="i-widget i-alarm" id="<%= object_id %>" style="left: <%= left %>; top: <%= top %>">
+    <span class="i-alarm-list">
+    </span>
+</div>
+
+<script type="text/x-kendo-template" id="alarm-template">
+    <div class="i-alarm-item">
+        <span class="i-alarm-icon #: data.lvl #"></span>
+        <span class="i-alarm-text equip">#: data.name #</span>
+        <span class="i-alarm-text status">#: data.alarm #</span>
+    </div>
+</script>
